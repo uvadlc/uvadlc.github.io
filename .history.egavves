@@ -166,3 +166,6 @@
 2016-01-20.22-58-30 git push -u origin master
 2016-01-20.22-58-32 git status
 2016-01-20.22-58-40 git commit -m 'Updated about'
+2016-01-20.22-58-43 git add .
+2016-01-20.22-58-44 git commit -m 'Updated about'
+2016-01-20.22-58-47 git status
