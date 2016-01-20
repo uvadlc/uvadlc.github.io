@@ -1,0 +1,22 @@
+2016-01-20.17-44-36 git add .
+2016-01-20.17-44-46 git commit -m 'Uploaded initial template'
+2016-01-20.17-45-27 git push -u origin master
+2016-01-20.17-45-38 git push -u origin master
+2016-01-20.17-45-39 git push -u origin master
+2016-01-20.17-46-36 vim .git/config 
+2016-01-20.17-46-39 clear
+2016-01-20.17-46-41 git push -u origin master
+2016-01-20.17-46-57 vim .git/config 
+2016-01-20.17-46-58 git push -u origin master
+2016-01-20.17-47-38 vim .git/config 
+2016-01-20.17-47-39 clc
+2016-01-20.17-47-43 git push -u origin master
+2016-01-20.17-48-50 git push -u origin master
+2016-01-20.17-56-17 clc
+2016-01-20.17-57-02 git add index.html 
+2016-01-20.17-57-08 git commit -m 'Small updates'
+2016-01-20.17-57-13 git push -u origin master
+2016-01-20.17-58-08 mkdir lectures
+2016-01-20.17-58-11 mkdir lecture_notes
+2016-01-20.17-58-16 mkdir practicals
+2016-01-20.17-58-38 mkdir other_sources
