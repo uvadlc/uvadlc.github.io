@@ -483,5 +483,5 @@ tt {  /* or .call em, but you should aim for consistency in your styling */
     font-style: normal;
     font-size: 110%;
     font-family: monospace;
-    font-color: #f05f40 ;
+    color: #f05f40 ;
 }
