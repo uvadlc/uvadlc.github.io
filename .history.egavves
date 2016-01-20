@@ -63,3 +63,6 @@
 2016-01-20.19-49-27 git add .
 2016-01-20.19-49-30 git commit -m 'Add url to lectures'
 2016-01-20.19-49-34 git push -u origin master
+2016-01-20.20-10-54 git add .
+2016-01-20.20-11-01 git commit -m 'Add more lectures'
+2016-01-20.20-11-05 git push -u origin master
