@@ -53,3 +53,6 @@
 2016-01-20.19-18-14 git add .
 2016-01-20.19-18-25 git commit -m 'some small changes to lecture notes page'
 2016-01-20.19-18-33 git push -u origin master
+2016-01-20.19-43-54 git add .
+2016-01-20.19-44-05 git commit -m 'Changes to index.html'
+2016-01-20.19-44-11 git push -u origin master
