@@ -20,3 +20,6 @@
 2016-01-20.17-58-11 mkdir lecture_notes
 2016-01-20.17-58-16 mkdir practicals
 2016-01-20.17-58-38 mkdir other_sources
+2016-01-20.18-00-11 git add .
+2016-01-20.18-00-15 git commit -m 'Small updates'
+2016-01-20.18-00-20 git push -u origin master
