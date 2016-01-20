@@ -50,3 +50,6 @@
 2016-01-20.19-10-16 git add -A .
 2016-01-20.19-10-34 git commit -m 'changed css style sheet in lecture notes'
 2016-01-20.19-10-39 git push -u origin master
+2016-01-20.19-18-14 git add .
+2016-01-20.19-18-25 git commit -m 'some small changes to lecture notes page'
+2016-01-20.19-18-33 git push -u origin master
