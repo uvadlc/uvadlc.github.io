@@ -32,3 +32,6 @@
 2016-01-20.18-05-52 git add .
 2016-01-20.18-05-53 git commit -m 'Small updates'
 2016-01-20.18-05-58 git push -u origin master
+2016-01-20.18-09-52 git add .
+2016-01-20.18-10-00 git commit -m 'Added new page'
+2016-01-20.18-10-04 git push -u origin master
