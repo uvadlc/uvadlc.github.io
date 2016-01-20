@@ -115,3 +115,6 @@
 2016-01-20.21-41-49 git push -u origin master
 2016-01-20.21-42-45 git push -u origin master
 2016-01-20.21-42-45 git push -u origin master
+2016-01-20.21-42-47 git add .
+2016-01-20.21-42-49 git commit -m 'Updated main pic'
+2016-01-20.21-42-53 git push -u origin master
