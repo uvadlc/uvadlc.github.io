@@ -115,44 +115,60 @@
                     <h2 class="section-heading">Intro to Torch</h2>
                     <hr class="primary">
                     
-<p class="running-text" style="text-align:justify">
+                    <p class="running-text" style="text-align:justify">
 
-Torch is quite popular in top research labs around the world, like Facebook and Google (heavily used in Google DeepMind).
-It started from <a href="http://yann.lecun.com/">Y. LeCun's</a> lab, who is one of the leading experts in deep learning.
-The underlying language, Lua, resembles the Matlab coding style, namely it is a scripting language.
-Torch and Lua are rich in features and relatively easy to use (although annoying some times) and, therefore, are ideal for rapid prototyping.
+                    Torch is quite popular in top research labs around the world, like Facebook and Google (heavily used in Google DeepMind).
+                    It started from <a href="http://yann.lecun.com/">Y. LeCun's</a> lab, who is one of the leading experts in deep learning.
+                    The underlying language, Lua, resembles the Matlab coding style, namely it is a scripting language.
+                    Torch and Lua are rich in features and relatively easy to use (although annoying some times) and, therefore, are ideal for rapid prototyping.
 
-</p>
+                    </p>
 
                     <h3 class="section-heading">Starting with Lua</h3>
 
-<p class="running-text">
-A useful Lua tutorial can be found here: <a href="http://tylerneylon.com/a/learn-lua/" target="_blank">http://tylerneylon.com/a/learn-lua/</a>
+                    <p class="running-text">
+                    A useful Lua tutorial can be found here: <a href="http://tylerneylon.com/a/learn-lua/" target="_blank">http://tylerneylon.com/a/learn-lua/</a>
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    After you read these tutorials, you should be able to start programming with Lua.
+                    Before continuing, you should be confident that you can answer the following questions:
+
+                    </p>
+
+                    <p class="running-text" style="text-align:left">
+                    <ul>
+                    <li> When do we need to use the keyword <em>local</em>? What is the default scope in Lua? </li>
+                    <li> What is the difference between <tt>a.f()</tt> and <tt>a:f()</tt>?</li>
+                    <li> What does <tt>require</tt> do? Why do we sometimes need to capture its value in a variable?</li>
+                    <li> What is the Lua equivalent of a list object? 
+                    How do we access or iterate over elements in such a construction?</li>
+                    </ul>
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Note that local variables only exist in standalone scripts that one runs from the terminal.
+                    If you just start an interactive session with <tt>th</tt>, local variables do not make sense.
+                    If you define one, you will simply not be able to access it.
+
+                    </p>
+
+                    <h3 class="section-heading">Starting with Torch</h3>
+
+<p class="running-text" style="text-align:justify">
+
+You might find useful the following Torch tutorials:
+
 </p>
 
 <p class="running-text" style="text-align:justify">
 
-After you read these tutorials, you should be able to start programming with Lua.
-Before continuing, you should be confident that you can answer the following questions:
+Torch generalizes in an efficient manner vectors (1-d) arrays and matrices (2-d) arrays to tensors (\texttt{torch.Tensor()}) of $n$-dimensions.
+Some links with documentation on the most important Torch classes of objects are:
 
-</p>
-
-<p class="running-text" style="text-align:left">
-<ul>
-<li> When do we need to use the keyword <em>local</em>? What is the default scope in Lua? </li>
-<li> What is the difference between <tt>a.f()</tt> and <tt>a:f()</tt>?</li>
-<li> What does <tt>require</tt> do? Why do we sometimes need to capture its value in a variable?</li>
-<li> What is the Lua equivalent of a list object? 
-How do we access or iterate over elements in such a construction?</li>
-</ul>
-
-</p>
-
-<p class="running-text" style="text-align:justify">
-
-Note that local variables only exist in standalone scripts that one runs from the terminal.
-If you just start an interactive session with <tt>th</tt>, local variables do not make sense.
-If you define one, you will simply not be able to access it.
 
 </p>
 
