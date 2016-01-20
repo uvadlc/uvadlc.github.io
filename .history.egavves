@@ -47,3 +47,6 @@
 2016-01-20.19-07-32 git push -u origin master
 2016-01-20.19-09-59 git push -u origin master
 2016-01-20.19-10-01 git add .
+2016-01-20.19-10-16 git add -A .
+2016-01-20.19-10-34 git commit -m 'changed css style sheet in lecture notes'
+2016-01-20.19-10-39 git push -u origin master
