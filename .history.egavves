@@ -103,3 +103,7 @@
 2016-01-20.21-32-38 git commit -m 'Changed main pic'
 2016-01-20.21-32-42 git pull
 2016-01-20.21-32-53 git push -u origin master
+2016-01-20.21-36-58 git add .
+2016-01-20.21-37-06 git commit -m 'Updated main pic'
+2016-01-20.21-37-18 git push -u origin master
+2016-01-20.21-37-51 identify img/header.jpg 
