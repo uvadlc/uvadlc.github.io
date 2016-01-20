@@ -180,3 +180,6 @@
 2016-01-20.23-01-50 git commit -m 'Updated about'
 2016-01-20.23-01-55 git push -u origin master
 2016-01-20.23-09-50 clear
+2016-01-20.23-09-52 git add .
+2016-01-20.23-10-00 git commit -m 'Intro to torch'
+2016-01-20.23-10-09 git push -u origin master
