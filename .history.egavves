@@ -130,3 +130,6 @@
 2016-01-20.22-06-18 git add .
 2016-01-20.22-06-19 git commit -m 'Updated about'
 2016-01-20.22-06-24 git push -u origin master
+2016-01-20.22-08-06 git add .
+2016-01-20.22-08-07 git commit -m 'Updated about'
+2016-01-20.22-08-11 git push -u origin master
