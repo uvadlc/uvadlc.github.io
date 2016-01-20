@@ -479,8 +479,8 @@ body {
     webkit-tap-highlight-color: #222;
 }
 
-ttt {  /* or .call em, but you should aim for consistency in your styling */
+tt {  /* or .call em, but you should aim for consistency in your styling */
     font-style: normal;
-    font-size: 120%;
-    text-transform: uppercase;
+    font-size: 110%;
+    font-family: monospace;
 }

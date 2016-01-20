@@ -236,3 +236,6 @@
 2016-01-20.23-38-39 git commit -m 'Intro to torch'
 2016-01-20.23-38-40 git commit -m 'Intro to torch'
 2016-01-20.23-38-45 git push -u origin master
+2016-01-20.23-45-23 git add .
+2016-01-20.23-45-25 git commit -m 'Intro to torch'
+2016-01-20.23-45-30 git push -u origin master
