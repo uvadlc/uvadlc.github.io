@@ -326,6 +326,10 @@ header .header-content .header-content-inner p {
     color: #f05f40;
 }
 
+.running-text {
+    color: #3e3e3e;
+}
+
 .no-gutter > [class*=col-] {
     padding-right: 0;
     padding-left: 0;
