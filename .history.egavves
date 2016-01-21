@@ -316,3 +316,5 @@
 2016-01-21.08-48-53 identify img/2.jpg 
 2016-01-21.08-48-55 identify img/3.jpg 
 2016-01-21.08-50-01 gimp img/3.jpg 
+2016-01-21.10-32-57 git reset --hard origin/master
+2016-01-21.10-33-36 cp lecture_notes/lecture_notes1.html lecture_notes.html
