@@ -309,3 +309,10 @@
 2016-01-21.08-42-50 git add .
 2016-01-21.08-42-51 git commit -m 'Updated themes'
 2016-01-21.08-42-54 git push -u origin master
+2016-01-21.08-48-15 git add .
+2016-01-21.08-48-21 git commit -m 'Updated pic 1'
+2016-01-21.08-48-27 git commit -m 'Updated pic 1'
+2016-01-21.08-48-32 git push -u origin master
+2016-01-21.08-48-53 identify img/2.jpg 
+2016-01-21.08-48-55 identify img/3.jpg 
+2016-01-21.08-50-01 gimp img/3.jpg 
