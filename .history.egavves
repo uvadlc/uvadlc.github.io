@@ -285,3 +285,6 @@
 2016-01-21.08-25-27 git add .
 2016-01-21.08-25-29 git commit -m 'Link to icon'
 2016-01-21.08-25-34 git push -u origin master
+2016-01-21.08-27-55 git add .
+2016-01-21.08-28-07 git commit -m 'Socrative icons'
+2016-01-21.08-28-12 git push -u origin master
