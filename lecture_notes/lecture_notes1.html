@@ -158,17 +158,38 @@
 
                     <h3 class="section-heading">Starting with Torch</h3>
 
-<p class="running-text" style="text-align:justify">
-
-You might find useful the following Torch tutorials:
-
-</p>
 
 <p class="running-text" style="text-align:justify">
 
 Torch generalizes in an efficient manner vectors (1-d) arrays and matrices (2-d) arrays to tensors (\texttt{torch.Tensor()}) of $n$-dimensions.
 Some links with documentation on the most important Torch classes of objects are:
 
+</p>
+
+<p class="running-text" style="text-align:justify">
+
+In large scale machine learning research memory and computational efficiency can be of paramount importance.
+With Torch one can achieve high efficiency if one performs as many operations as possible in-place.
+This means, you should try to avoid to define/call new variables, if you can reuse existing ones.
+Trhough specialized functions Torch allows this to be done quite easily.
+For example consider the following case.
+
+</p>
+
+<p class="running-text" style="text-align:justify">
+
+In the first example a new variablel, \texttt{t3}, is defined and memory allocation is performed.
+If, however, \texttt{t}, is not needed anymore, we can just overwrite it to store the final summation.
+As a result, we avoid allocating new resources.
+Although this example is trivial, you might want to rethink it when you have matrices with millions of entries.
+In general there are specialized functions for avoiding to performing specific tensor operations manually. For example \texttt{torch.expand([...])} expands a tensor without allocating memory and \texttt{torch.fill([...])} fills in matrix entries without needing to run a for loop.
+
+</p>
+
+
+<p class="running-text" style="text-align:justify">
+
+You might find useful the following Torch tutorials:
 
 </p>
 
