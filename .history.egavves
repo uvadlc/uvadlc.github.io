@@ -273,3 +273,6 @@
 2016-01-21.00-04-05 git commit -m 'Intro to torch'
 2016-01-21.00-04-09 git push -u origin master
 2016-01-21.08-12-03 git add .
+2016-01-21.08-12-07 git add -A .
+2016-01-21.08-12-16 git commit -m 'Small changes'
+2016-01-21.08-12-22 git push -u origin master
