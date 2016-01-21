@@ -279,3 +279,6 @@
 2016-01-21.08-15-37 git add -A .
 2016-01-21.08-15-41 git commit -m 'Small changes'
 2016-01-21.08-15-45 git push -u origin master
+2016-01-21.08-20-24 git add .
+2016-01-21.08-20-38 git commit -m 'Link to icon'
+2016-01-21.08-20-43 git push -u origin master
