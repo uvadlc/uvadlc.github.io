@@ -336,3 +336,6 @@
 2016-01-21.10-42-11 git push -u origin master
 2016-01-21.15-34-42 git add .
 2016-01-21.15-35-14 git add .
+2016-01-21.15-35-15 git add .
+2016-01-21.15-35-17 git commit -m 'architectural changes'
+2016-01-21.15-35-22 git push -u origin master
