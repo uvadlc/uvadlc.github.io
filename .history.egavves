@@ -318,3 +318,7 @@
 2016-01-21.08-50-01 gimp img/3.jpg 
 2016-01-21.10-32-57 git reset --hard origin/master
 2016-01-21.10-33-36 cp lecture_notes/lecture_notes1.html lecture_notes.html
+2016-01-21.10-35-56 git add .
+2016-01-21.10-36-03 git commit -m 'architectural changes'
+2016-01-21.10-36-07 git pull
+2016-01-21.10-36-12 git push -u origin master
