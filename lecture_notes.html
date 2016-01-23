@@ -293,27 +293,35 @@
                     For example consider the following two cases.
                     </p>
 
-                    <pre><code>
+                    <pre>
+                    <code>
+                    <div align="left">
 
                     local t  = torch.Tensor(10, 10)
                     local t2 = torch.Tensor(10, 10)
                     t3       = t + t2
 
-                    </code></pre>
+                    </div>
+                    </code>
+                    </pre>
 
                     <p class="running-text" style="text-align:justify">
 
                     and
-                    
+
                     </p>
 
-                    <pre><code>
+                    <pre>
+                    <code>
+                    <div align="left">
 
                     local t  = torch.Tensor(10, 10)
                     local t2 = torch.Tensor(10, 10)
                     t:add(t2)
 
-                    </code></pre>
+                    </div>
+                    </code>
+                    </pre>
 
                     In the first example a new variablel, \texttt{t3}, is defined and memory allocation is performed.
                     If, however, \texttt{t}, is not needed anymore, we can just overwrite it to store the final summation.
