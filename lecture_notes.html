@@ -38,6 +38,7 @@
     <script type="text/javascript" async
       src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
 </head>
 
@@ -293,15 +294,11 @@
                     For example consider the following two cases.
                     </p>
 
-                    <pre>
-                    <code>
-                    <div align="left">
+                    <pre><code><div align="left">
                     local t  = torch.Tensor(10, 10)
                     local t2 = torch.Tensor(10, 10)
                     t3       = t + t2
-                    </div>
-                    </code>
-                    </pre>
+                    </div></code></pre>
 
                     <p class="running-text" style="text-align:justify">
 
@@ -309,15 +306,17 @@
 
                     </p>
 
-                    <pre>
-                    <code>
-                    <div align="left">
+                    <pre><code><div align="left">
                     local t  = torch.Tensor(10, 10)
                     local t2 = torch.Tensor(10, 10)
                     t:add(t2)
-                    </div>
-                    </code>
-                    </pre>
+                    </div></code></pre>
+
+                    <pre class="prettyprint">
+                    local t  = torch.Tensor(10, 10)
+                    local t2 = torch.Tensor(10, 10)
+                    t3       = t + t2
+                    }</pre>
 
                     <p class="running-text" style="text-align:justify">
 
