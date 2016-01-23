@@ -342,3 +342,6 @@
 2016-01-23.10-06-02 git reset --hard origin/master
 2016-01-23.10-06-17 cp ~/Writing/cvpr2016-dynamic_images/.gitignore .
 2016-01-23.10-06-21 clc
+2016-01-23.10-26-29 git add .
+2016-01-23.10-26-42 git commit -m 'Working on intro to torch'
+2016-01-23.10-26-47 git push
