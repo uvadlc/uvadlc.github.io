@@ -186,6 +186,7 @@
                     <p class="running-text" style="text-align:justify">
 
                     There are several useful or even necessary packages that you should now install: <tt>nn</tt>, <tt>gnuplot</tt>, <tt>optim</tt> and of course <tt>itorch</tt>.
+                    For more packages you can visit the <a href="https://github.com/torch/torch7/wiki/Cheatsheet">Torch cheatsheet</a>.
 
                     </p>
 
@@ -221,58 +222,113 @@
                     Once you read these tutorials, you should be able to start some basic programming with Lua.
                     Before continuing, you should be confident in understanding the following concepts.<br><br>
 
-                    <b>Defining new variables with <tt>=</tt> &nbsp; </b> The <tt>local</tt> works <u>like</u> in Python and <u>unlike</u> Matlab. This means that once you declare a variable <tt>myvar = 10</tt> and then you use another variable <tt>myvar2 = myvar</tt>, <tt>myvar2</tt> refers to the actually memory address of <tt>myvar</tt>. Hence, if you change <tt>myvar2</tt>, also <tt>myvar</tt> will change. If you want a clean fresh variable you should use <tt>copy()</tt>. <br><br>
+                    <b>Defining new variables with <tt>=</tt> &nbsp; </b> The <tt>local</tt> works <u>like</u> in Python and <u>unlike</u> Matlab.
+                    This means that once you declare a variable <tt>myvar = 10</tt> and then you define another variable <tt>myvar2 = myvar</tt>, the <tt>myvar2</tt> actually refers to the memory address of <tt>myvar</tt>.
+                    Hence, if you change <tt>myvar2</tt>, also <tt>myvar</tt> will change.
+                    If you want a clean fresh variable you should use <tt>copy()</tt>. <br><br>
 
-                    <b>The keyword <tt>local</tt> &nbsp; </b> The <tt>local</tt> keyword is a very important concept to understand. In Lua by default all variables are declard global, unless you add the keyword <tt>local</tt> in front, like <tt>local myvar = 10</tt>. Although this might look like an innocent mistake, it can create complete chaos in combination with the <tt>=</tt>. If you don't define you variable to be local inside your function <tt>fun1</tt> (e.g., you just type <tt>num_epochs=10</tt>), and accidentally (or not) have the same variable name in other functions <tt>funOthers</tt>, changing <tt>num_epochs</tt> in <tt>fun1</tt> will also affect the same variable in <tt>funOthers</tt>. 
+                    <b>The keyword <tt>local</tt> &nbsp; </b> The <tt>local</tt> keyword is a very important concept to understand.
+                    In Lua by default all variables are declard global, unless you add the keyword <tt>local</tt> in front, like <tt>local myvar = 10</tt>.
+                    Although this might look like an innocent mistake, it can create complete chaos in combination with the <tt>=</tt>.
+                    If you don't define you variable to be local inside your function <tt>fun1</tt> (e.g., you just type <tt>num_epochs=10</tt>), and accidentally (or not) have the same variable name in other functions <tt>funOthers</tt>, changing <tt>num_epochs</tt> in <tt>fun1</tt> will also affect the same variable in <tt>funOthers</tt>. 
 
                     Also, note that local variables only exist in standalone scripts that one runs from the terminal.
                     If you just start an interactive session with <tt>th</tt> or with iTorch, local variables do not make sense.
                     If you define one, you will simply not be able to access it. <br><br>
 
-                    <b>Lua <tt>table</tt> &nbsp; </b> Lua does not have lists, arrays, dictionaries and all the exotic variations of "keeping things together in a single variable", like Python. Instead, it has tables (and metatables), with which one can do pretty much the same things. One can iterate of the table elements with <tt>ipairs</tt>.<br><br>
+                    <b>Lua <tt>table</tt> &nbsp; </b> Lua does not have lists, arrays, dictionaries and all the exotic variations of "keeping things together in a single variable", like Python.
+                    Instead, it has tables (and metatables), with which one can do pretty much the same things.
+                    One can iterate of the table elements with <tt>ipairs</tt>.<br><br>
 
-                    <b>The keyword <tt>require</tt> &nbsp; </b> The <tt>require</tt> keyword works like <tt>import</tt> in Python, namely to import packages to your script/function/file. Beware that the same rules apply about the <tt>local</tt> keyword. Unless you want the package to be accessible by all files, use the <tt>local</tt>.<br><br>
+                    <b>The keyword <tt>require</tt> &nbsp; </b> The <tt>require</tt> keyword works like <tt>import</tt> in Python, namely to import packages to your script/function/file.
+                    Beware that the same rules apply about the <tt>local</tt> keyword.
+                    Unless you want the package to be accessible by all files, use the <tt>local</tt>.<br><br>
 
-                    <b>Difference between <tt>a.f()</tt> and <tt>a:f()</tt> &nbsp; </b> <b>NOTE READY YET.</b> With <tt>a.f()</tt> you need to explicitly add the function itself as first argument, with tt>a:f()</tt> this is implicitly added.
+                    <b>Difference between <tt>a.f()</tt> and <tt>a:f()</tt> &nbsp; </b> <b>NOTE READY YET.</b>
+                    With <tt>a.f()</tt> you need to explicitly add the function itself as first argument, with tt>a:f()</tt> this is implicitly added.
 
                     </p>
 
                     <h3 class="section-heading">Starting with Torch</h3>
 
 
-<p class="running-text" style="text-align:justify">
+                    <p class="running-text" style="text-align:justify">
 
-Torch generalizes in an efficient manner vectors (1-d) arrays and matrices (2-d) arrays to tensors (\texttt{torch.Tensor()}) of $n$-dimensions.
-Some links with documentation on the most important Torch classes of objects are:
+                    Torch is a scientific computing framework with wide support for machine learning algorithms.
+                    A basic component for machine learning and scientific programming are vectors, arrays, matrices, etc. 
+                    Torch generalizes in an efficient manner vectors (1-d) and matrices (2-d) to tensors <tt>torch.Tensor()</tt> of n-dimensions.
+                    By calling <tt>t = torch.Tensor(2, 3, 4, 5, 6)</tt> you get a new 5-d tensor <tt>t</tt>.
 
-</p>
+                    </p>
 
-<p class="running-text" style="text-align:justify">
+                    <p class="running-text" style="text-align:justify">
+                    There are some nice tutorials out there about Torch. Consider some of the following:
+                    </p>
 
-In large scale machine learning research memory and computational efficiency can be of paramount importance.
-With Torch one can achieve high efficiency if one performs as many operations as possible in-place.
-This means, you should try to avoid to define/call new variables, if you can reuse existing ones.
-Trhough specialized functions Torch allows this to be done quite easily.
-For example consider the following case.
+                    <p class="running-text">
+                    <div align="left">
 
-</p>
+                    <ul class="running-text">
+                    <li><a href="http://code.madbits.com/wiki/doku.php?id=tutorial" *-target="_blank">http://code.madbits.com/wiki/doku.php?id=tutorial</a></li>
+                    <li><a href="http://torch.ch/docs/tutorials-demos.html" *-target="_blank">http://torch.ch/docs/tutorials-demos.html</a></li>
+                    <li><a href="http://atamahjoubfar.github.io/Torch_for_Matlab_users.pdf" *-target="_blank">http://atamahjoubfar.github.io/Torch_for_Matlab_users.pdf</a></li>
+                    </ul>
 
-<p class="running-text" style="text-align:justify">
+                    </div>
+                    </p>
 
-In the first example a new variablel, \texttt{t3}, is defined and memory allocation is performed.
-If, however, \texttt{t}, is not needed anymore, we can just overwrite it to store the final summation.
-As a result, we avoid allocating new resources.
-Although this example is trivial, you might want to rethink it when you have matrices with millions of entries.
-In general there are specialized functions for avoiding to performing specific tensor operations manually. For example \texttt{torch.expand([...])} expands a tensor without allocating memory and \texttt{torch.fill([...])} fills in matrix entries without needing to run a for loop.
+                    <p class="running-text" style="text-align:justify">
+                    The two single most important classes of objects in Torch is the <a href="https://github.com/torch/torch7/blob/master/doc/tensor.md">tensor</a> and <a href="https://github.com/torch/torch7/blob/master/doc/maths.md">maths</a>.
+                    The tensor class provides all sorts of functionalities for manipulating vectors, matrices and tensors.
+                    The math class provides all sorts of mathematical functions necessary in every scientific programming framework.
 
-</p>
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    In large scale machine learning research memory and computational efficiency can be of paramount importance.
+                    With Torch one can achieve high efficiency if one performs as many operations as possible in-place.
+                    This means, you should try to avoid to define/call new variables, if you can reuse existing ones.
+                    Through specialized functions Torch allows this to be done quite easily.
+                    For example consider the following two cases.
+                    </p>
+
+                    <pre><code>
+
+                    local t  = torch.Tensor(10, 10)
+                    local t2 = torch.Tensor(10, 10)
+                    t3       = t + t2
+
+                    </code></pre>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    and
+                    
+                    </p>
+
+                    <pre><code>
+
+                    local t  = torch.Tensor(10, 10)
+                    local t2 = torch.Tensor(10, 10)
+                    t:add(t2)
+
+                    </code></pre>
+
+                    In the first example a new variablel, \texttt{t3}, is defined and memory allocation is performed.
+                    If, however, \texttt{t}, is not needed anymore, we can just overwrite it to store the final summation.
+                    As a result, we avoid allocating new resources.
+                    Although this example is trivial, you might want to rethink it when you have matrices with millions of entries.
+                    In general there are specialized functions for avoiding to performing specific tensor operations manually. For example \texttt{torch.expand([...])} expands a tensor without allocating memory and \texttt{torch.fill([...])} fills in matrix entries without needing to run a for loop.
+
+                    </p>
 
 
-<p class="running-text" style="text-align:justify">
+                    <p class="running-text" style="text-align:justify">
 
-You might find useful the following Torch tutorials:
+                    You might find useful the following Torch tutorials:
 
-</p>
+                    </p>
 
 
 
@@ -286,7 +342,7 @@ You might find useful the following Torch tutorials:
                     <h2 class="section-heading">How to learn with neural networks?</h2>
                     <hr class="primary">
 
-                    <p class="running-text">Test test testse</p>
+                    <p class="running-text">Not ready yet.</p>
                 </div>
             </div>
         </div>
@@ -298,7 +354,7 @@ You might find useful the following Torch tutorials:
                     <h2 class="section-heading">How to classify pixels?</h2>
                     <hr class="primary">
 
-                    <p class="running-text">Test test testse</p>
+                    <p class="running-text">Not ready yet.</p>
                 </div>
             </div>
         </div>
@@ -310,7 +366,7 @@ You might find useful the following Torch tutorials:
                     <h2 class="section-heading">How to synthesize words?</h2>
                     <hr class="primary">
 
-                    <p class="running-text">Test test testse</p>
+                    <p class="running-text">Not ready yet.</p>
                 </div>
             </div>
         </div>
@@ -322,7 +378,7 @@ You might find useful the following Torch tutorials:
                     <h2 class="section-heading">All things unsupervised</h2>
                     <hr class="primary">
 
-                    <p class="running-text">Test test testse</p>
+                    <p class="running-text">Not ready yet.</p>
                 </div>
             </div>
         </div>
@@ -334,7 +390,7 @@ You might find useful the following Torch tutorials:
                     <h2 class="section-heading">The bigger picture</h2>
                     <hr class="primary">
 
-                    <p class="running-text">Test test testse</p>
+                    <p class="running-text">Not ready yet.</p>
                 </div>
             </div>
         </div>
