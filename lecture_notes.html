@@ -323,11 +323,14 @@
                     </code>
                     </pre>
 
-                    In the first example a new variablel, \texttt{t3}, is defined and memory allocation is performed.
-                    If, however, \texttt{t}, is not needed anymore, we can just overwrite it to store the final summation.
+                    <p class="running-text" style="text-align:justify">
+
+                    In the first example a new variable, <tt>t3</tt>, is defined and new memory needs to be allocated.
+                    If, however, <tt>t</tt>, is not needed anymore, we can just overwrite it to store the final summation.
                     As a result, we avoid allocating new resources.
                     Although this example is trivial, you might want to rethink it when you have matrices with millions of entries.
-                    In general there are specialized functions for avoiding to performing specific tensor operations manually. For example \texttt{torch.expand([...])} expands a tensor without allocating memory and \texttt{torch.fill([...])} fills in matrix entries without needing to run a for loop.
+                    In general there are specialized functions for avoiding to performing specific tensor operations manually.
+                    For example <tt>torch.expand([...])</tt> expands a tensor without allocating memory and <tt>torch.fill([...])</tt> fills in matrix entries without needing to run a for loop.
 
                     </p>
 
