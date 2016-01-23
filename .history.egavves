@@ -339,3 +339,6 @@
 2016-01-21.15-35-15 git add .
 2016-01-21.15-35-17 git commit -m 'architectural changes'
 2016-01-21.15-35-22 git push -u origin master
+2016-01-23.10-06-02 git reset --hard origin/master
+2016-01-23.10-06-17 cp ~/Writing/cvpr2016-dynamic_images/.gitignore .
+2016-01-23.10-06-21 clc
