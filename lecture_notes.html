@@ -221,19 +221,19 @@
                     Once you read these tutorials, you should be able to start some basic programming with Lua.
                     Before continuing, you should be confident in understanding the following concepts.<br><br>
 
-                    <b>Defining new variables with <tt>=</tt></b>. The <tt>local</tt> works <u>like</u> in Python and <u>unlike</u> Matlab. This means that once you declare a variable <tt>myvar = 10</tt> and then you use another variable <tt>myvar2 = myvar</tt>, <tt>myvar2</tt> refers to the actually memory address of <tt>myvar</tt>. Hence, if you change <tt>myvar2</tt>, also <tt>myvar</tt> will change. If you want a clean fresh variable you should use <tt>copy()</tt>. <br><br>
+                    <b>Defining new variables with <tt>=</tt>:</b> The <tt>local</tt> works <u>like</u> in Python and <u>unlike</u> Matlab. This means that once you declare a variable <tt>myvar = 10</tt> and then you use another variable <tt>myvar2 = myvar</tt>, <tt>myvar2</tt> refers to the actually memory address of <tt>myvar</tt>. Hence, if you change <tt>myvar2</tt>, also <tt>myvar</tt> will change. If you want a clean fresh variable you should use <tt>copy()</tt>. <br><br>
 
-                    <b>The keyword <tt>local</tt></b>. The <tt>local</tt> keyword is a very important concept to understand. In Lua by default all variables are declard global, unless you add the keyword <tt>local</tt> in front, like <tt>local myvar = 10</tt>. Although this might look like an innocent mistake, it can create complete chaos in combination with the <tt>=</tt>. If you don't define you variable to be local inside your function <tt>fun1</tt> (e.g., you just type <tt>num_epochs=10</tt>), and accidentally (or not) have the same variable name in other functions <tt>funOthers</tt>, changing <tt>num_epochs</tt> in <tt>fun1</tt> will also affect the same variable in <tt>funOthers</tt>. 
+                    <b>The keyword <tt>local</tt>:</b> The <tt>local</tt> keyword is a very important concept to understand. In Lua by default all variables are declard global, unless you add the keyword <tt>local</tt> in front, like <tt>local myvar = 10</tt>. Although this might look like an innocent mistake, it can create complete chaos in combination with the <tt>=</tt>. If you don't define you variable to be local inside your function <tt>fun1</tt> (e.g., you just type <tt>num_epochs=10</tt>), and accidentally (or not) have the same variable name in other functions <tt>funOthers</tt>, changing <tt>num_epochs</tt> in <tt>fun1</tt> will also affect the same variable in <tt>funOthers</tt>. 
 
                     Also, note that local variables only exist in standalone scripts that one runs from the terminal.
                     If you just start an interactive session with <tt>th</tt> or with iTorch, local variables do not make sense.
                     If you define one, you will simply not be able to access it. <br><br>
 
-                    <b>Lua <tt>table</tt></b>. Lua does not have lists, arrays, dictionaries and all the exotic variations of "keeping things together in a single variable", like Python. Instead, it has tables (and metatables), with which one can do pretty much the same things. One can iterate of the table elements with <tt>ipairs</tt>.<br><br>
+                    <b>Lua <tt>table</tt>:</b> Lua does not have lists, arrays, dictionaries and all the exotic variations of "keeping things together in a single variable", like Python. Instead, it has tables (and metatables), with which one can do pretty much the same things. One can iterate of the table elements with <tt>ipairs</tt>.<br><br>
 
-                    <b>The keyword <tt>require</tt></b>. The <tt>require</tt> keyword works like <tt>import</tt> in Python, namely to import packages to your script/function/file. Beware that the same rules apply about the <tt>local</tt> keyword. Unless you want the package to be accessible by all files, use the <tt>local</tt>.<br><br>
+                    <b>The keyword <tt>require</tt>:</b> The <tt>require</tt> keyword works like <tt>import</tt> in Python, namely to import packages to your script/function/file. Beware that the same rules apply about the <tt>local</tt> keyword. Unless you want the package to be accessible by all files, use the <tt>local</tt>.<br><br>
 
-                    <b>Difference between <tt>a.f()</tt> and <tt>a:f()</tt></b>. <b>NOTE READY YET.</b> With <tt>a.f()</tt> you need to explicitly add the function itself as first argument, with tt>a:f()</tt> this is implicitly added.
+                    <b>Difference between <tt>a.f()</tt> and <tt>a:f()</tt>:</b> <b>NOTE READY YET.</b> With <tt>a.f()</tt> you need to explicitly add the function itself as first argument, with tt>a:f()</tt> this is implicitly added.
 
                     </p>
 
