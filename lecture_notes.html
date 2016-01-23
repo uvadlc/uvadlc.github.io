@@ -159,6 +159,36 @@
                     Next, we will guide you through the installation process and provide you with some short tutorial in Lua, and a longer tutorial in Torch.
                     </p>
 
+                    <h3 class="section-heading">Installing Lua and Torch</h3>
+
+                    <p class="running-text" style="text-align:justify">
+                    You do not need to explicitly install Lua, just install Torch and everything is going to work just fine.
+                    To install Torch, <a href="http://torch.ch/docs/getting-started.html">please visit their website and follow the instructions.</a>
+                    Although the basic installations are alright, you might experience some complications because of prior iPython installations.
+                    In that you case you might need to rename some library files in the iPython installation (such libreadlince.* to something else -- do not delete them as you might need to bring them back in the future)
+                    In any case, the installation should not take more than a few minutes if everything goes smoothly, or an hour if you have difficulties.
+                    If you have difficulties that you cannot resolve, please <a href="http://lmgtfy.com/">lmgtfy</a> or ask a question in our virtual class in <a href="index.html#course-links">Piazza</a>.
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    At this point we have to note that Torch is mainly supported for X systems (Linux, OS X), but not Windows. For those that cannot live without Windows for some reason, or that cannot have a separate partition where they install Ubuntu or Linux Mint, go to <a href="http://cilvr.nyu.edu/doku.php?id=software:torch:start#torch_tutorial_for_machine_learning">LeCun's NYU research group website</a>. The simplest solution is to download this <a href="http://data.neuflow.org/share/Torch7.ova">Ubuntu virtual machine</a> they have prepared, which includes a pre-compiled, pre-installed version of Torch. This virtual machine requires <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Once you have the basic Torch installation, you shoule install additional Torch packages that are very useful for this course and beyond.
+                    To install new Torch packages one simply needs to type in his terminal
+
+                    <pre><code>
+                    luarocks install MyNewPackage
+                    </code></pre>
+
+                    There are several useful or even necessary packages that you should now install: <tt>nn</tt>, <tt>gnuplot</tt>, <tt>optim</tt> and of course <tt>itorch</tt>.
+
+                    </p>
+
                     <h3 class="section-heading">Starting with Lua</h3>
 
                     <p class="running-text">
