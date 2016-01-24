@@ -474,3 +474,6 @@
 2016-01-24.09-14-15 git push -u origin master
 2016-01-24.13-43-03 git push -u origin master
 2016-01-24.13-43-34 mv implement_simple_function.lua ~/Teaching/deeplearningcourse/practicals/assignments/assignment1/images/
+2016-01-24.14-14-26 git add -A .
+2016-01-24.14-14-33 git commit -m 'Added practical 2'
+2016-01-24.14-14-39 git push

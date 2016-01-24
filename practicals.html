@@ -156,9 +156,9 @@
 
                     <p class="running-text" style="text-align:justify">
 
-                    <b>Question 1.2</b> Slice and print the tensor you defined to get different "sub-tensors" as in the the picture below. Please explain what is the difference between <tt>a[{{-1}, {}}]</tt> and a[{-1, {}}].
+                    <b>Question 1.2</b> Slice and print the tensor you defined to get different "sub-tensors" as in the the picture below. Please explain what is the difference between <tt>a[{{-1}, {}}]</tt> and <tt>a[{-1, {}}]</tt>.
 
-                    <img src="img/matrix.png" class="img-responsive" alt="">
+                    <img src="img/matrix.png" class="img-responsive" alt="" align="middle">
 
                     </p>
 
@@ -190,12 +190,13 @@
 
                     whose plot should look like (rendered with Wolfram Alpha):
 
-                    <img src="img/function.gif" class="img-responsive" alt="">
+                    <img src="img/function.gif" class="img-responsive" alt="" align="middle">
 
                     </p>
 
                     <p class="running-text" style="text-align:justify">
 
+                    $\DeclareMathOperator*{\argmin}{arg\; min}$
                     We want to find the location $x^*$, where $f(x)$ obtains its minimum value, i.e., $x^*=\argmin_{x} f(x)$.
                     To do this, we will be using the optimization package <i>optim</i> and more specifically going to optimize the function using the L-BFGS algorithm.
                     To find the minimum of the function $f(x)$ L-BFGS requires the gradient $\nabla_x f(x)$.
