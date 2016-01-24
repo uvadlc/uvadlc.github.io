@@ -146,7 +146,7 @@
                     </div>
                     </p>
 
-                    <h3 class="section-heading">Master Torch and Lua</h3>
+                    <h3 class="section-heading">Section 1 Master Torch and Lua</h3>
 
                     <p class="running-text" style="text-align:justify">
 
@@ -182,7 +182,7 @@
 
                     </p>
 
-                    <h4 class="section-heading">Basic implementations, visualizations and optimizations</h4>
+                    <h4 class="section-heading">Section 2 Basic implementations, visualizations and optimizations</h4>
 
                     <p class="running-text" style="text-align:justify">
 
@@ -210,10 +210,6 @@
                     <p class="running-text" style="text-align:justify">
 
                     <b>Question 2.1</b> Implement and visualize function $f(x)$ in Torch, so that you obtain a similar plot.
-                    Either write the function inline, or write your code in a separate file and call it using the way we described in the beginning.
-                    The starter code for both this question and 2.2 is in the file "implement_simple_function.lua".
-                    Check for the TODO items and implement them.
-
                     </p>
 
                     <p class="running-text" style="text-align:justify">
@@ -243,6 +239,108 @@
                     Note that since you want to find the minimum of the function, your optimization search will be for the point $x^*$ for which $f(x^*)\neq(x), \forall x$. Hence, your parameter <b>lies in</b> the input space <tt>x</tt>.
 
                     </p>
+
+                    <h4 class="section-heading">Section 2 Fitting a function to data points</h4>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    In questions 2.1 you were asked to implement a function $f(x)$, its gradient $\nabla_x f(x)$, and compute the minimum of $f(x)$.
+                    Now, let's assume that we are not given the function form, as in most cases in machine learning and applied statistics.
+                    Instead, we are given a bunch of points in space and we want to fit a parameteric model, which explains it pretty well.
+                    We are given the following point $(x, y)$ pairs (the actual points you might differ a bit, but it shouldn't matter)
+
+                    <img src="img/points.png">
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    We can see that the way the points are positioned on the plot, it looks a lot like our function $f(x)$ from question 2.1.
+                    However, it's only the shape that looks similar, the points are located somewhere else in space and they are even upside down.
+                    This means we need to fit our function $f(x)$ to our particular point set.
+                    To this end wee parameterize the components that control the shape and position of the function,
+
+                    $$
+                    f(x; \theta)=\theta_0 + \theta_1 x^2+ \theta_2 \exp(\theta_3 |x| - \theta_4 x^2).
+                    $$
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Note that compared to the previous section, where the parameters where the inputs $x$.
+                    In this example, however, $x$ are the observed variables.
+                    Our parameters, instead, are the varables $\theta$.
+                    Our goal now is to find the the optimal parameters $\theta^*$ for which we could a render $\hat{f}(x)$ function that would look plausible, given these points.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    <b>Question 3.1</b> We first need to define a good loss function, which is going to inform us how bad our rendered $\hat{f}(x)$ is from the actual values $y$. What could be a good cost function $\mathcal{L}(x, y)$?
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    <b>Question 3.2</b> Solve for the gradient $\nabla_\theta f(x)$. Write down the gradient $\nabla_\theta f(x)$.
+
+                    </p>
+
+
+                    <p class="running-text" style="text-align:justify">
+
+                    <b>Question 3.3</b> Implement the gradient function $\nabla_\theta f(x)$.
+                    Make sure your gradient outputs are correct.
+                    To do so you can implement some unit tests, although this is not required by the assignment.
+                    To implement a unit test, first define an input $x$.
+                    From question 3.2 you know what the gradient function should return in theory for that particular input.
+                    Compare what you should be getting in theory with what you get from your code.
+                    If you find this difficult, you can break the function in smaller functions, like $f_1(x)=\theta_0+\theta_1 x^2$, $f_2(x)=\theta_2 \exp(x)$ and $f_3(x)=\theta_3 |x| - \theta_4 x^2$ and implement the gradients for these functions individually.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    <i>Hint. For the implementations here check the math package in Torch. You probably gonna be needing functions like <tt>addcmul</tt>, <tt>mul</tt>, etc.</i>
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    <i>Hint 2. It's good here if you define <b>by default</b> all your variables to be local. It's alright if you mess it up, you will get a runtime error and you will not have access to a variable. Then, you just drop the keyword local. It's much worse if you forget to add the keyword local and your variable changes values because of other, external functions. The problem in that case is that you will not get a runtime error, you will just get crazy numbers and you will not know where the problem is exactly.</i>
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    <i>Hint 3. Make sure when you initialize your tensors, to set them to 0. Like in C/C++, Torch does not do that by default. If you don't do that, you might again get crazy numbers, especially if you use math functions like <tt>addcmul</tt>, that accumulate the output on an output variable that you must have defined earlier.</i>
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    <i>Note. In Torch (unfortunately) you cannot simply multiply a tensor with a number using a "*" operator. You need to use a specialized function like <tt>torch.mul(...)</tt> that multiplies all tensor entries with a specific number.</i>
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    <b>Question 3.4</b> Now that you have implemented the gradients correctly, it's time to find the optimal parameters $\theta^*$.
+                    Use the <i>conjucate gradient(CG)</i> algorithm from the optim package to find the parameters $\theta$ that would fit $f(x; \theta)$ to the point set optimally.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Write down these parameters and plot the point set and the obtained function using the $\theta$ parameters.
+                    Does the function make sense, namely does it fit well to the provided points?
+                    Change the optimization function from <i>conjugate gradient</i> to <i>stochastic gradient descent (SGD)</i>.
+                    Do you see any difference?
+                    If yes, please explain why.
+
+                    </p>
+
 
             </div>
         </div>
