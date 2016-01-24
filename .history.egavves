@@ -509,3 +509,6 @@
 2016-01-24.18-58-05 git commit -m 'Changes folder names'
 2016-01-24.18-58-12 git push -u origin master
 2016-01-24.19-01-20 mv favicon.png favicon.ico
+2016-01-24.19-01-25 git add .
+2016-01-24.19-01-33 git commit -m 'Added favicon'
+2016-01-24.19-01-37 git push
