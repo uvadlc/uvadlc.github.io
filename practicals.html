@@ -207,6 +207,43 @@
 
                     </p>
 
+                    <p class="running-text" style="text-align:justify">
+
+                    <b>Question 2.1</b> Implement and visualize function $f(x)$ in Torch, so that you obtain a similar plot.
+                    Either write the function inline, or write your code in a separate file and call it using the way we described in the beginning.
+                    The starter code for both this question and 2.2 is in the file "implement_simple_function.lua".
+                    Check for the TODO items and implement them.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    <b>Question 2.2</b> Solve for the gradient $\nabla_x f(x)$.
+                    In your report write down the gradient $\nabla_x f(x)$.
+                    The gradient plot should look like:
+
+                    <div align="middle">
+                    <img src="img/gradient.gif">
+                    </div>
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    <b>Question 2.3</b> Use this gradient with the <tt>feval</tt> function of the <tt>optim</tt> package, using the L-BFGS optimization algorithm setting and the default parameters to compute the minimum.
+
+                    <div align="middle">
+                    <img src="img/gradient.gif">
+                    </div>
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Note that since you want to find the minimum of the function, your optimization search will be for the point $x^*$ for which $f(x^*)\neq(x), \forall x$. Hence, your parameter <b>lies in</b> the input space <tt>x</tt>.
+
+                    </p>
+
             </div>
         </div>
     </section>
