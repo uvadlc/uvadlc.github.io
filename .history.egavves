@@ -501,3 +501,7 @@
 2016-01-24.18-51-38 git add .
 2016-01-24.18-51-48 git commit -m 'Fixed small stuff'
 2016-01-24.18-51-54 git push -u origin master
+2016-01-24.18-52-52 git add .
+2016-01-24.18-52-53 git commit -m 'Fixed small stuff'
+2016-01-24.18-52-56 git push -u origin master
+2016-01-24.18-57-24 mv img images
