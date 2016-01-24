@@ -462,3 +462,6 @@
 2016-01-23.13-57-48 exit
 2016-01-24.09-10-00 cp lecture_notes.html practicals.html
 2016-01-24.09-11-27 git add .
+2016-01-24.09-11-31 git add -A .
+2016-01-24.09-11-43 git commit -m 'added practicals'
+2016-01-24.09-11-54 git push -u origin master
