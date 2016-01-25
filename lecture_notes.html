@@ -455,6 +455,46 @@ t3       = t + t2</div></pre>
 
                     </p>
 
+                    <p class="running-text" style="text-align:justify">
+
+                    To optimize the network, namely to find the optimal weights $\theta_l, l=1, \dots, L-1$, we se (stochastic) gradient descent.
+                    Hence, we need to compute all the gradients of the network with respect to the weights, namely $\dfrac{\partial{\mathcal{L}}}{\partial \theta_l}, l=1, \dots, L-1$
+                    The module of layer $L$ implements the loss function, therefore does not contain any parameters.
+                    For layer $L-1$ we have parameters $\theta_{L-1}$, hence no gradient need to be computed.
+                    For all other layers, however, we can have potentially gradients.
+                    For the module of layer $L-1$, given the good old \emph{chain rule} for computing the derivatives adn the loss function $\mathcal{L}$ (normally we should write it as $\mathcal{L}(x_L, y_L)$, but we opt for $\mathcal{L}$ for consiceness), we have for
+
+                    $$\begin{eqnarray}
+                    \dfrac{\partial \mathcal{L}}{\partial \theta_{L-1}} & = & \dfrac{\partial \mathcal{L}(a_{L-1}, y_L)}{\partial \theta_{L-1}} \text{\footnotemark}\\
+                    & = &
+                    \dfrac{\partial \mathcal{L}}{\partial{a_{L-1}}} \dfrac{\partial a_{L-1}}{\partial{\theta_{L-1}}}
+                    \end{eqnarray}$$
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Generally, for the module of layer $l$ we would have that
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    $$\begin{eqnarray}
+                    \dfrac{\partial \mathcal{L}}{\partial \theta_l} = \dfrac{\partial \mathcal{L}}{\partial{a_l}} \dfrac{\partial a_l}{\partial{\theta_l}}
+                    \label{eq:grad-layer}
+                    \end{eqnarray}$$
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Eq.~\eqref{eq:grad-layer} provides us with a pretty straightforward way of computing the gradients for layer $l$.
+                    We first need the gradient of the module w.r.t. each parameters $\dfrac{\partial a_l}{\partial{\theta_l}}$, which is easy to compute provided the module activation function is a (almost everywhere) differentiable function.
+                    For example, if our module $l$ had the activation function $a_l=h_l(x_l, \theta_l)=\sqrt{\theta_l \cdot x_l}$, we would simply have $\dfrac{\partial a_l}{\partial{\theta_l}}=\dfrac{-0.5 x_l}{\sqrt{\theta_l \cdot x_l}}$.
+
+                    </p>
+
                     <!-- As mentioned above, backpropagation is composed of two half-steps, forward and backward propagation.
                     During the forward propagation the module generates an output given an input.
                     If we would have a module for computing the input to the power of two, $f(x)=x^2$, during forward propagation we simply do that, namely compute the $x^2$.
