@@ -497,17 +497,86 @@ t3       = t + t2</div></pre>
 
                     </p>
 
+                    <p class="running-text" style="text-align:justify">
+
+                    Second, we need the gradient of the loss function with respect to the output of layer $\dfrac{\partial \mathcal{L}}{\partial{a_l}}$.
+                    Given that between the loss function $\mathcal{L}$ and the module of layer $l$ there might be several other layers, if we would explicitly write down the full equation would yield a very complicated function.
+                    However, we notice that we could decompose $\dfrac{\partial \mathcal{L}}{\partial{a_l}}$ as
+
+                    $$
+                    \dfrac{\partial \mathcal{L}}{\partial{a_l}} = \dfrac{\partial \mathcal{L}}{\partial{a_{l+1}}} \dfrac{\partial a_{l+1}}{\partial{a_l}}
+                    $$
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Hence, we rewrite the gradient w.r.t. the output of layer $l$ as the gradient w.r.t. the output of layer $l+1$, times the gradient of output of layer $l+1$ w.r.t. to the output of layer $l$, $\partial a_{l+1}/\partial{a_l}=\partial a_{l+1}/\partial{x_{l+1}}\footnotemark$.
+                    \footnotetext{Remember that $a_l=x_{l+1}$}
+                    As such, we can simply compute the gradients $\dfrac{\partial \mathcal{L}}{\partial{a_l}}, l=1, ..., L$ recursively: compute first the gradient $\partial \mathcal{L}/\partial{a_{L-1}}$ for layer $L-1$, then use $\partial \mathcal{L}/\partial{a_{L-1}}$ to compute the gradient $\partial \mathcal{L}/\partial{a_{L-2}}$ for layer $L-2$ and so on.
+
+                    </p>
+
+
+                    <p class="running-text" style="text-align:justify">
+
+                    It is important here to draw the attention to $\partial a_l/\partial{x_l}$.
+                    On a first sight this a simple derivation.
+                    This is indeed the case, when a specific output dimension $a_l^j$ relates only to the respective input dimension $x_l^j$.
+                    Such a case is for \emph{elementwise} functions, like $a_j=h(x_j)=\tanh(x_j), \forall j$, or $a_j=h(x_j=\text{ReLU}(x_j), \forall j$, where the nonlinearities are applied on each dimension independently.
+                    However, there are functions and modules, where an output dimension relates to multiple input dimensions, $a_j=h(x_1, \dots, x_j, x_{j+1}, \dots)$.
+                    Such a a function is the softmax 
+
+                    $$
+                    a_j = \dfrac{\exp{x_j}}{\sum_i{\exp{x_i}}}
+                    $$
+
+                    or the $\ell_2$ normalization function
+
+                    $$
+                    a_j = \dfrac{x_j}{\sqrt{\sum_i{x_i^2}}}
+                    $$
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    As for these functions each output dimension relates to multiple input dimension, to compute $\partial a_l/\partial{x_l}$ actually means that one needs to compute the Jacobian matrix
+
+                    $$
+                    \dfrac{\partial a_l}{\partial{x_l}}=
+                    \begin{bmatrix}
+                    \dfrac{\partial a_l^1}{\partial{x_l^1}} & \dfrac{\partial a_l^1}{\partial{x_l^2}} & \dots & \dfrac{\partial a_l^1}{\partial{x_l^n}} \\ 
+                    \dfrac{\partial a_l^2}{\partial{x_l^1}} & \dfrac{\partial a_l^2}{\partial{x_l^2}} & \dots & \dfrac{\partial a_l^2}{\partial{x_l^n}} \\ 
+                    \dots                          & \dots & \dots & \dots \\ 
+                    \dfrac{\partial a_l^m}{\partial{x_l^1}} & \dfrac{\partial a_l^2}{\partial{x_l^2}} & \dots & \dfrac{\partial a_l^m}{\partial{x_l^n}}
+                    \end{bmatrix}
+                    \end{equation}
+                    $$
+
+                    In that case to compute $\dfrac{\partial \mathcal{L}}{\partial{a_l}}$ we have to perform a matrix multiplication of the gradient vector $\dfrac{\partial \mathcal{L}}{\partial{a_{l+1}}}$ and the Jacobian $\dfrac{\partial a_{l+1}}{\partial{x_{l+1}}}$.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Although keeping up with all these operations can be confusing, a good way to make sure that all operations are done flawlessly is to resort to dimension analysis.
+                    More specifically, if the parameter matrix for layer $l$ have dimensions $d_{l-1} \times d_l$, then the gradient w.r.t. to the parameter matrix must also have the same dimensions.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Now that we have an easy way to compute $\dfrac{\partial \mathcal{L}}{\partial{a_l}}, l=1, ..., L$, and given that we can easily compute $\dfrac{\partial a_l}{\partial{\theta_l}}$ and $\partial a_{l+1}/\partial{x_{l+1}}$, we can summarize the backpropagation algorithm for computing the network gradients.
+
+                    </p>
+
                     <!-- As mentioned above, backpropagation is composed of two half-steps, forward and backward propagation.
                     During the forward propagation the module generates an output given an input.
                     If we would have a module for computing the input to the power of two, $f(x)=x^2$, during forward propagation we simply do that, namely compute the $x^2$.
                     This step is essentially the same as when we use the network at test time and use it to generate an output given an input.
                     The backward propagation is essentially very similar to the forward propagation, instead now we use the gradient of the module function to compute the output, namely $\nabla_x f(x)=2x$. -->
 
-                    <p class="running-text" style="text-align:justify">
-
-                    The first half-step computes 
-
-                    </p>
 
                     <h3 class="section-heading">Implementing your own module</h3>
 
