@@ -428,14 +428,55 @@ t3       = t + t2</div></pre>
 
                     <h3 class="section-heading">Backpropagation</h3>
 
+                    <p class="running-text" style="text-align:justify">
+
+                    Backpropagation is the single most popular algorithm for training neural networks.
+                    Let's assume we have the network below, composed of $L$ layers.
+                    The per layer activations based on the module functions per layer are:
+
+                    $$\begin{eqnarray}
+                    a_1 = h_1(x_1, \theta_1), \\
+                    a_2 = h_2(x_2, \theta_2), \\
+                    a_3 = h_3(x_3, \theta_3), \\
+                    \dots, \\
+                    a_L = h_L(x_L, y), \\
+                    \end{eqnarray}$$
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    where the last layer module equals to the loss function for our network, $h_5 \equiv \mathcal{L}$.
+                    Apparently, the output of layer $l$ is the input for layer $l+1$, therefore, we have that
+
+                    $$
+                    a_l = x_{l+1}
+                    $$
+
+                    </p>
+
+                    <!-- As mentioned above, backpropagation is composed of two half-steps, forward and backward propagation.
+                    During the forward propagation the module generates an output given an input.
+                    If we would have a module for computing the input to the power of two, $f(x)=x^2$, during forward propagation we simply do that, namely compute the $x^2$.
+                    This step is essentially the same as when we use the network at test time and use it to generate an output given an input.
+                    The backward propagation is essentially very similar to the forward propagation, instead now we use the gradient of the module function to compute the output, namely $\nabla_x f(x)=2x$. -->
+
+                    <p class="running-text" style="text-align:justify">
+
+                    The first half-step computes 
+
+                    </p>
+
+                    <h3 class="section-heading">Implementing your own module</h3>
+
                     <h3 class="section-heading">Implementing a multi-layer perceptron (MLP)</h3>
 
-                    A feedforward, multi-layer neural network, like in the figure below, is often called also multi-layer perceptron <b>(MLP)</b>.
+<!--                     A feedforward, multi-layer neural network, like in the figure below, is often called also multi-layer perceptron <b>(MLP)</b>.
                     Each layers hosts a module like the ones we discussed earlier.
 
                     Each module receives an input and performs an operation on it, be it a linear transformation of the form $y=Wx+b$ or a non-linear one like $y=tanh(x)$ or pooling.
                     Also, typically there are connections only from layer $l$ to the subsequent one $l+1$, as in the figure to the right.
-                    Hence, when we design our multilinear perceptron, the possible design choices we have, outside the learning hyperparameters, are the following:
+                    Hence, when we design our multilinear perceptron, the possible design choices we have, outside the learning hyperparameters, are the following: -->
 <!--                     %
                     \begin{itemize}
                     \item number of modules
