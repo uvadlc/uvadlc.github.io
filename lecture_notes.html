@@ -426,6 +426,25 @@ t3       = t + t2</div></pre>
 
                     <h3 class="section-heading">What is a module</h3>
 
+                    <h3 class="section-heading">Backpropagation</h3>
+
+                    <h3 class="section-heading">Implementing a multi-layer perceptron (MLP)</h3>
+
+                    A feedforward, multi-layer neural network, like in the figure below, is often called also multi-layer perceptron <b>(MLP)</b>.
+                    Each layers hosts a module like the ones we discussed earlier.
+
+                    Each module receives an input and performs an operation on it, be it a linear transformation of the form $y=Wx+b$ or a non-linear one like $y=tanh(x)$ or pooling.
+                    Also, typically there are connections only from layer $l$ to the subsequent one $l+1$, as in the figure to the right.
+                    Hence, when we design our multilinear perceptron, the possible design choices we have, outside the learning hyperparameters, are the following:
+<!--                     %
+                    \begin{itemize}
+                    \item number of modules
+                    \item number of units in each module
+                    \item type of operation applied inside each module
+                    \item type of loss function
+                    \end{itemize} -->
+
+
                 </div>
             </div>
         </div>
