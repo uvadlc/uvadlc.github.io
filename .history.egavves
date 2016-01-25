@@ -527,3 +527,7 @@
 2016-01-24.19-14-25 rm 651a7e6d822966890500f24740e0881b.ico.zip 
 2016-01-24.19-14-26 clc
 2016-01-24.19-14-34 clc
+2016-01-25.09-21-19 git reset --hard origin/master
+2016-01-25.09-21-42 mkdir practicals
+2016-01-25.09-21-46 mkdir practicals/practical1
+2016-01-25.09-21-59 vim practicals/practical1/TODO.txt
