@@ -531,3 +531,6 @@
 2016-01-25.09-21-42 mkdir practicals
 2016-01-25.09-21-46 mkdir practicals/practical1
 2016-01-25.09-21-59 vim practicals/practical1/TODO.txt
+2016-01-25.09-22-03 git add .
+2016-01-25.09-22-11 git commit -m 'added practicals folder'
+2016-01-25.09-22-14 git push
