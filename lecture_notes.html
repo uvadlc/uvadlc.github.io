@@ -428,6 +428,7 @@ t3       = t + t2</div></pre>
 
                     <h3 class="section-heading">What is a module</h3>
 
+
                     <h3 class="section-heading">Backpropagation</h3>
 
                     <p class="running-text" style="text-align:justify">
@@ -591,6 +592,31 @@ t3       = t + t2</div></pre>
 
 
                     <h3 class="section-heading">Implementing your own module</h3>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    To implement a new module, you must first define the forward pass of the module, $a=h(x;\theta)$, where $a$ are the activations and $h(\cdot)$ the module function.
+                    Implementing the forward pass is relatively straightforward.
+                    Then, you must define the backward pass used by backpropagation to compute the gradients of the module with respect to the input $x$ and the module parameters $\theta$, if the module has trainable parameters.
+                    Implementing the backward pass is slighlty more complicated, as you need to calculate the module gradient first.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Hence, to implement our \underline{isolated} module to backpropagate its gradients, what we really care about are:
+                    \begin{itemize}
+                    \item the input $x$ to the module
+                    \item the error gradients from the module above
+                    \item and of course the gradient equation of the module with respect to the input and the gradient parameters.
+                    \end{itemize}
+
+                    </p>
+
+                    <h3 class="section-heading">Gradient checks and Jacobians</h3>
+
+
+
 
                     <h3 class="section-heading">Implementing a multi-layer perceptron (MLP)</h3>
 
