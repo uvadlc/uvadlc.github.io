@@ -601,3 +601,6 @@
 2016-01-25.15-20-08 git commit -m 'added stuff'
 2016-01-25.15-20-11 git push
 2016-01-27.15-43-01 git reset --hard origin/master
+2016-01-27.15-43-42 git add .
+2016-01-27.15-43-46 git commit -m 'updated titles'
+2016-01-27.15-43-51 git push
