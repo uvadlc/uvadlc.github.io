@@ -266,8 +266,8 @@
                     Beware that the same rules apply about the <tt>local</tt> keyword.
                     Unless you want the package to be accessible by all files, use the <tt>local</tt>.<br><br>
 
-                    <b>Difference between <tt>a.f()</tt> and <tt>a:f()</tt> &nbsp; </b> <b>NOTE READY YET.</b>
-                    With <tt>a.f()</tt> you need to explicitly add the function itself as first argument, with tt>a:f()</tt> this is implicitly added.
+                    <!-- <b>Difference between <tt>a.f()</tt> and <tt>a:f()</tt> &nbsp; </b> <b>NOTE READY YET.</b>
+                    With <tt>a.f()</tt> you need to explicitly add the function itself as first argument, with tt>a:f()</tt> this is implicitly added. -->
 
                     </p>
 
@@ -328,7 +328,7 @@ t3       = t + t2</div></code></pre>
 
  <pre class="prettyprint"><div align="left">local t  = torch.Tensor(10, 10)
 local t2 = torch.Tensor(10, 10)
-t3       = t + t2</div></pre>
+t:add(t2)</div></pre>
 
                     <p class="running-text" style="text-align:justify">
 
