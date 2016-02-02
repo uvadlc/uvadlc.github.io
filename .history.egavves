@@ -616,3 +616,4 @@
 2016-01-27.15-54-22 git add .
 2016-01-27.15-54-23 git commit -m 'updated titles'
 2016-01-27.15-54-26 git push
+2016-02-02.08-46-07 git reset --hard origin/master
