@@ -449,6 +449,11 @@ t:add(t2)</div></pre>
                     
                     $$\theta^* \leftarrow argmin_{\theta} \frac{1}{n} \sum{i=1}^n \mathcal{L}(\theta; x_i, y_i)$$
 
+                    To find the optimal parameters of a neural netowrk, we almost always use Gradient Descend
+
+                    $$
+                    \theta^{(t+1)}=\theta^{(t+1)}-\frac{\eta_t}{n} \sum_i \nabla_{\theta} \mathcal{L}(\theta^{(t)}; x_i, y_i)
+                    $$
 
                     </p>
 
