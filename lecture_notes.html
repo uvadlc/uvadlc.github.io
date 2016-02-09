@@ -582,13 +582,20 @@ t:add(t2)</div></pre>
                     For the module of layer $L-1$, given the good old \emph{chain rule} for computing the derivatives adn the loss function $\mathcal{L}$ (normally we should write it as $\mathcal{L}(x_L, y_L)$, but we opt for $\mathcal{L}$ for consiceness), we have for
 
                     $$\begin{eqnarray}
-                    \dfrac{\partial \mathcal{L}}{\partial \theta_{L-1}} & = & \dfrac{\partial \mathcal{L}(a_{L-1}, y_L)}{\partial \theta_{L-1}} \text{\footnotemark}\\
+                    \dfrac{\partial \mathcal{L}}{\partial \theta_{L-1}} & = & \dfrac{\partial \mathcal{L}(a_{L-1}, y_L)}{\partial \theta_{L-1}} 
                     & = &
                     \dfrac{\partial \mathcal{L}}{\partial{a_{L-1}}} \dfrac{\partial a_{L-1}}{\partial{\theta_{L-1}}}
                     \end{eqnarray}$$
 
                     </p>
 
+                    <!-- <footer>
+                    <a href="http://jupyter.org/">The Jupyter Team</a>
+                    </footer>
+                    </blockquote>
+                    </i>
+                    </p>
+ -->
                     <p class="running-text" style="text-align:justify">
 
                     Generally, for the module of layer $l$ we would have that
@@ -626,8 +633,12 @@ t:add(t2)</div></pre>
 
                     <p class="running-text" style="text-align:justify">
 
-                    Hence, we rewrite the gradient w.r.t. the output of layer $l$ as the gradient w.r.t. the output of layer $l+1$, times the gradient of output of layer $l+1$ w.r.t. to the output of layer $l$, $\partial a_{l+1}/\partial{a_l}=\partial a_{l+1}/\partial{x_{l+1}}\footnotemark$.
-                    \footnotetext{Remember that $a_l=x_{l+1}$}
+                    Hence, we rewrite the gradient w.r.t. the output of layer $l$ as the gradient w.r.t. the output of layer $l+1$, times the gradient of output of layer $l+1$ w.r.t. to the output of layer $l$, $\partial a_{l+1}/\partial{a_l}=\partial a_{l+1}/\partial{x_{l+1}}.
+
+                    <footer>
+                    Remember that $a_l=x_{l+1}$
+                    </footer>
+                    
                     As such, we can simply compute the gradients $\dfrac{\partial \mathcal{L}}{\partial{a_l}}, l=1, ..., L$ recursively: compute first the gradient $\partial \mathcal{L}/\partial{a_{L-1}}$ for layer $L-1$, then use $\partial \mathcal{L}/\partial{a_{L-1}}$ to compute the gradient $\partial \mathcal{L}/\partial{a_{L-2}}$ for layer $L-2$ and so on.
 
                     </p>
