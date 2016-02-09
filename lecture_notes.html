@@ -703,7 +703,7 @@ t:add(t2)</div></pre>
 <p><b>Step 2.</b> Set $\delta_L=\dfrac{\partial \mathcal{L}}{\partial{a_{L}}}=I$, since this operation practically stands for the derivative of a function with respect to its output.</p>
 <p><b>Step 3.</b> $l\leftarrow l-1$</p>
 <p><b>Step 4.</b> If convergence, exit.</p>
-<p><b>Step 5.</b> Compute $\dfrac{\partial \mathcal{L}}{\partial{a_l}}=\dfrac{\partial a_l}{\partial{x_l}}^T\delta_{l+1}$</p>
+<p><b>Step 5.</b> Compute $\dfrac{\partial \mathcal{L}}{\partial{a_l}}=(\dfrac{\partial a_{l+1}}{\partial{x_{l+1}}})^T \dfrac{\partial \mathcal{L}}{\partial a_{l+1}}$</p>
 <p><b>Step 6.</b> Set $\delta_l \leftarrow \dfrac{\partial \mathcal{L}}{\partial{a_{L}}}$</p>
 <p><b>Step 7.</b> Compute $\dfrac{\partial \mathcal{L}}{\partial{\theta_l}}=\dfrac{\partial \mathcal{L}}{\partial{a_l}} \dfrac{\partial a_l}{\partial{\theta_l}}$</p>
 <p><b>Step 8.</b> GOTO Step 3.</p>
