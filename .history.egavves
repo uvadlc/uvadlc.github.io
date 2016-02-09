@@ -640,3 +640,6 @@
 2016-02-07.21-56-07 git add lecture_notes.html 
 2016-02-07.21-56-09 git commit -m 'Added reading material'
 2016-02-07.21-56-14 git push
+2016-02-09.20-11-22 git add lecture_notes.html .
+2016-02-09.20-11-31 git commit -m 'Updated lectures notes'
+2016-02-09.20-11-36 git push

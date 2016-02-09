@@ -396,32 +396,61 @@ t:add(t2)</div></pre>
                     Mathematically, this verbal definition is described as
                     $a_L(x; \theta_{1, ..., L})=h_L(h_{L-1}(...h_1(x, \theta_1)..., \theta_{L-1}), \theta_L)$.
 
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
                     <b>A neural network is a parametric</b> class of models, because the parameters $\theta_{1, ..., L}$ need to be trained to minimize the empirical risk on a training set.
+
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
 
                     <b>A neural network is in its general form non-linear</b>, as some of the functions $$h_1, ..., h_L$$ are non-linear.
                     Although one could also a design a neural network with only linear layers, that would be in vain, as it would practically amount to a series of matrix multiplications.
                     As such, it could be replaced by a single matrix multiplication, that is by a single layer neural network.
 
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
                     <b>A neural network is hierarchical</b>, because the non-linear functions $$h_1, ..., h_L$$ are nested one inside the other.
                     The order with which they are placed defines the hierarchy.
+
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
 
                     <b>A neural networks learns representations</b> through the non-linear functions $$h_1, ..., h_L$$.
                     More specifically, a neural network should receive inputs that are raw as possible (although the right data preprocessing and normalization is important).
                     Starting from this raw input, the non-linear functions learn co-hierarchical co-dependencies, or features.
                     For new test samples, which resemble the training samples the features were learnt upon, these features should become stronger.
 
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
                     <b>A neural networks is massively optimized</b> because it contains a great deal of parameters.
                     As such, without the right amount of data our neural network will overfit tremendously, leading to unusable models.
 
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
                     <b>Last, a neural networks learns domain knowledge</b>, as the hypothesis is by encoding this domain knowledge in its features, the neural network can fit better the underlying data distributions, while being more (controllably) invariant to the unespabable dataset noise.
 
-                    From a system engineering point of view, a neural network can also be viewed as a pipeline of connected modules.
-                    The way the modules are connected define the network architecture.
-                    Each of these modules has trainable parameters.
-                    The goal during training is to learn the parameters that can fit our training data (training set) the best, while leading to a model that can generalize well enough on new data (validation set).
+                    </p>
 
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
+                    $\DeclareMathOperator*{\argmin}{arg\; min}$
+                    During training the goal is to find the optimal parameters $$\theta^*$$ which minimize the empirical risk both on the training and a separate validation set.
+                    Mathematically, we write this as
                     
-A family of parametric, non-linear and hierarchical representation learning functions, which are massively optimized with stochastic gradient descent to encode domain knowledge, i.e. domain invariances, stationarity.
+                    $\theta^* \leftarrow argmin_{\theta} \frac{1}{n} \sum{i=1}^n \mathcal{L}(\theta; x_i, y_i)$
+
+
+                    </p>
 
                     The learning stage in this pipeline is simply a propagation of forward and backward flows from one module to neighboring modules.
                     At the first half of each learning round <i>(or epoch)</i>, the network makes a guess what the input it received could be.
@@ -433,6 +462,12 @@ A family of parametric, non-linear and hierarchical representation learning func
                     Both steps are usually referred to as <i>backpropagation</i>, which is one of the most heavily used terms in the neural network nomenclature.
 
                     </p>
+
+                    From a system engineering point of view, a neural network can also be viewed as a pipeline of connected modules.
+                    The way the modules are connected define the network architecture.
+                    Each of these modules has trainable parameters.
+                    The goal during training is to learn the parameters that can fit our training data (training set) the best, while leading to a model that can generalize well enough on new data (validation set).
+
 
                     <p class="running-text" style="text-align:justify">
 
