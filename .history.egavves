@@ -620,3 +620,23 @@
 2016-02-02.08-46-18 git add .
 2016-02-02.08-46-21 git commit -m 'Added course links'
 2016-02-02.08-46-26 git push -u origin master
+2016-02-07.16-03-36 git reset --hard origin/master
+2016-02-07.16-08-31 git add index.html 
+2016-02-07.16-08-37 git commit -m 'added lecture 2'
+2016-02-07.16-08-55 git push
+2016-02-07.16-26-05 git add lecture_notes.html 
+2016-02-07.16-26-12 git commit -m 'Added reading material'
+2016-02-07.16-26-16 git push
+2016-02-07.16-27-21 git add lecture_notes.html 
+2016-02-07.16-28-49 git add lecture_notes.html 
+2016-02-07.16-28-52 git commit -m 'Added reading material'
+2016-02-07.16-28-56 git push
+2016-02-07.21-41-29 git add lecture_notes.html 
+2016-02-07.21-41-33 git commit -m 'Added reading material'
+2016-02-07.21-41-40 git push
+2016-02-07.21-52-34 git add lecture_notes.html 
+2016-02-07.21-52-35 git commit -m 'Added reading material'
+2016-02-07.21-52-39 git push
+2016-02-07.21-56-07 git add lecture_notes.html 
+2016-02-07.21-56-09 git commit -m 'Added reading material'
+2016-02-07.21-56-14 git push
