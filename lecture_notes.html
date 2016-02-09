@@ -447,15 +447,19 @@ t:add(t2)</div></pre>
                     During training the goal is to find the optimal parameters $\theta^*$ which minimize the empirical risk both on the training and a separate validation set.
                     Mathematically, we write this as
                     
-                    $$\theta^* \leftarrow \argmin_{\theta} \frac{1}{n} \sum_{i=1}^n \mathcal{L}(\theta; x_i, y_i)$$
-
-                    To find the optimal parameters of a neural netowrk, we almost always use Gradient Descend
+                    $$\theta^* \leftarrow \argmin_{\theta} \frac{1}{n} \sum_{i=1}^n \mathcal{L}(\theta; x_i, y_i) \;\; (1)$$
+ 
+                    To find the optimal parameters of a neural netowrk, we almost always use some variant of Gradient Descend
 
                     $$
-                    \theta^{(t+1)}=\theta^{(t+1)}-\frac{\eta_t}{n} \sum_i \nabla_{\theta} \mathcal{L}(\theta^{(t)}; x_i, y_i)
+                    \theta^{(t+1)}=\theta^{(t)}-\frac{\eta_t}{n} \sum_i \nabla_{\theta} \mathcal{L}(\theta^{(t)}; x_i, y_i) \;\; (2)
                     $$
+
+                    All there is to a neural network, be it model details, architecture and learning are summarized by eq. (1) and (2).
 
                     </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
 
                     The learning stage in this pipeline is simply a propagation of forward and backward flows from one module to neighboring modules.
                     At the first half of each learning round <i>(or epoch)</i>, the network makes a guess what the input it received could be.
@@ -468,11 +472,14 @@ t:add(t2)</div></pre>
 
                     </p>
 
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
                     From a system engineering point of view, a neural network can also be viewed as a pipeline of connected modules.
                     The way the modules are connected define the network architecture.
                     Each of these modules has trainable parameters.
                     The goal during training is to learn the parameters that can fit our training data (training set) the best, while leading to a model that can generalize well enough on new data (validation set).
 
+                    </p>
 
                     <p class="running-text" style="text-align:justify">
 
