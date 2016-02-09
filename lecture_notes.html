@@ -406,7 +406,7 @@ t:add(t2)</div></pre>
 
                     <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
 
-                    <b>A neural network is in its general form non-linear</b>, as some of the functions $$h_1, ..., h_L$$ are non-linear.
+                    <b>A neural network is in its general form non-linear</b>, as some of the functions $h_1, ..., h_L$ are non-linear.
                     Although one could also a design a neural network with only linear layers, that would be in vain, as it would practically amount to a series of matrix multiplications.
                     As such, it could be replaced by a single matrix multiplication, that is by a single layer neural network.
 
@@ -414,14 +414,14 @@ t:add(t2)</div></pre>
 
                     <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
 
-                    <b>A neural network is hierarchical</b>, because the non-linear functions $$h_1, ..., h_L$$ are nested one inside the other.
+                    <b>A neural network is hierarchical</b>, because the non-linear functions $h_1, ..., h_L$ are nested one inside the other.
                     The order with which they are placed defines the hierarchy.
 
                     </p>
 
                     <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
 
-                    <b>A neural networks learns representations</b> through the non-linear functions $$h_1, ..., h_L$$.
+                    <b>A neural networks learns representations</b> through the non-linear functions $h_1, ..., h_L$.
                     More specifically, a neural network should receive inputs that are raw as possible (although the right data preprocessing and normalization is important).
                     Starting from this raw input, the non-linear functions learn co-hierarchical co-dependencies, or features.
                     For new test samples, which resemble the training samples the features were learnt upon, these features should become stronger.
@@ -444,10 +444,10 @@ t:add(t2)</div></pre>
                     <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
 
                     $\DeclareMathOperator*{\argmin}{arg\; min}$
-                    During training the goal is to find the optimal parameters $$\theta^*$$ which minimize the empirical risk both on the training and a separate validation set.
+                    During training the goal is to find the optimal parameters $\theta^*$ which minimize the empirical risk both on the training and a separate validation set.
                     Mathematically, we write this as
                     
-                    $\theta^* \leftarrow argmin_{\theta} \frac{1}{n} \sum{i=1}^n \mathcal{L}(\theta; x_i, y_i)$
+                    $$\theta^* \leftarrow argmin_{\theta} \frac{1}{n} \sum{i=1}^n \mathcal{L}(\theta; x_i, y_i)$$
 
 
                     </p>
