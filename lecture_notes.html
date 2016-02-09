@@ -462,71 +462,66 @@ t:add(t2)</div></pre>
                     <h3 class="section-heading">Everything is a module</h3>
                     <!-- Architectural details -->
 
-                    <h3 class="section-heading">Computing the gradients with Backpropagation</h3>
-
-                    <h3 class="section-heading">Data preprocessing and normalization</h3>
-
-                    <h3 class="section-heading">Optimization methods</h3>
-
-                    <h3 class="section-heading">Regularization</h3>
-
-                    <h3 class="section-heading">Learning rate</h3>
-
-                    <h3 class="section-heading">Weight initialization</h3>
-
-                    <h3 class="section-heading">Loss functions</h3>
-
-                    <h3 class="section-heading">Babysitting a neural network</h3>
-
                     <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
 
-                    The learning stage in this pipeline is simply a propagation of forward and backward flows from one module to neighboring modules.
-                    At the first half of each learning round <i>(or epoch)</i>, the network makes a guess what the input it received could be.
-                    This is called forward progapation.
-                    At the second half of each learning epoch the network tests how good the guess was.
-                    If the guess was bad, then the network modules have to change a lot to come closer to the desired output.
-                    If, instead, the guess was quite good, it means that the network is in pretty good shape and only fine changes are needed, if any.
-                    The second step is called backward progapation.
-                    Both steps are usually referred to as <i>backpropagation</i>, which is one of the most heavily used terms in the neural network nomenclature.
-
-                    </p>
-
-                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
-
-                    From a system engineering point of view, a neural network can also be viewed as a pipeline of connected modules.
+                    From a system engineering point of view, a neural network is as a pipeline of connected modules.
                     The way the modules are connected define the network architecture.
-                    Each of these modules has trainable parameters.
-                    The goal during training is to learn the parameters that can fit our training data (training set) the best, while leading to a model that can generalize well enough on new data (validation set).
+                    Each of these modules implement a particular function.
+                    The input of a module is the output of one or more modules from below, while in turn the output of that module becomes the input for another module.
+                    The only exception is the data layer module.
 
                     </p>
 
                     <p class="running-text" style="text-align:justify">
 
-                    From engineering sciences (software engineering, electrical engineering, etc.) we know that a system design is good, when it is decomposable.
-                    From the point of view of the system's architect, any module does not need to know anything about the rest of the modules.
-                    What any module only needs to know, instead, is <i>(a)</i> where it is connected to so that it can transfer the information and, <i>(b)</i> what are the incoming inputs during forward or backward propagation.
-                    Then, the system complexity is achieved by combining different modules of various purposes and sophistications into all sorts of crazy architectures.
-                    
+                    Two main operations define the training of a neural network, namely the forward and the backward propagation of flows, better known as the forward propagation and backpropagation.
+                    During the forward propagation the network gets activated based on a particular input, e.g. based on an image that the network received.
+                    During the backpropagation the gradients of the neural network loss function with respect to the network parameters are computed.
+                    These gradients are then used to update the parameters with Gradient Descend.
+
+                    </p>                    
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Every module is independent from almost all other modules.
+                    The only things any module needs to know are <i>(a)</i> to what modules is the input directly connected to and, <i>(b)</i> what are its parameters.
+                    The architect can thereafter increase the neural network complexity by combining different modules of various purposes and sophistications into all sorts of crazy architectures.
+
                     </p>
 
                     <p class="running-text" style="text-align:justify">
 
                     This design philosophy has three strong advantages.
-                    First, as long as the modules meet certain requirements, which we are going to revisit later, one can build as complex modules as s/he desires.
-                    The reason module complexity will not affect the operationality of the overall network, as all module have the same "API".
+                    First, as long as the modules meet certain requirements, which we are going to revisit later, one can build as complex modules as one desires.
+                    Whether one module is complex or not, it will not affect the operationality of the overall network.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
                     Second, as long as one can define a meaningful forward and backward propagation of flows, one is free to design a wide variety of different neural network architectures and connectivities, ranging from feedforward networks to loopy networks.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
                     Third, given good modularity it is much easier to "debug" a complicated architecture with "unit tests".
                     A unit test is a test where one checks whether a module produces the output, which the theory predicts, given a standard predefined input.
                     For example, if our module is designed to compute the square root of any number, when we define it's input to be "9", "16", "25", it should return "3", "4", "5".
-                    Since we can now verify the correctedness of each module independently, we can build very complicated networks and still be sure to backtrace future problems relativelye easily.
+                    Since we can now verify the correctedness of each module independently, we can build very complicated networks and still be sure to backtrace future problems relatively easily.
 
                     </p>
 
                     <p class="running-text" style="text-align:justify">
 
                     Architectures that have only forward connections are called feedforward neural networks and are straightforward to implement.
-                    Architectures that have forward connections between layers, which, however, are not adjacent to each other, form directed acyclic graphs <b>(DAG)</b> networks.
-                    A frequently used term in DAG networks is <b>skip layers</b>.
+                    Architectures that have forward connections between layers, which, however, are not adjacent to each other, form directed acyclic graphs (DAG) networks or DAGNN.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    A frequently used term in DAGNNs is <b>skip layers</b>.
                     A layer that has forward connections not only to its immediate adjacent layers is a skip layer.
                     DAG networks are also quite easy to implement as again, a given module is agnostic to the incoming inputs.
 
@@ -535,6 +530,7 @@ t:add(t2)</div></pre>
                     <p class="running-text" style="text-align:justify">
 
                     Architectures that have layers connected in cycles form loopy networks.
+                    These are recurrent neural networks.
                     Loopy networks are more complicated, since training and inference cannot be performed in a straightforward manner.
                     Instead, they have to be unrolled in time.
 
@@ -542,17 +538,12 @@ t:add(t2)</div></pre>
 
                     <p class="running-text" style="text-align:justify">
 
-                    An important note here is that although with neural networks one can design crazy complicated modules and architectures, the final network is not going to necessarily be better.
-                    For one experiments show that less complicated modules (<i>ReLUs</i> instead of <i>tanh</i>) are to be preferred, as they are easier to train given a certain amount of time.
-                    Also, more complex architectures will generally be harder to train, therefore less data will be processed during training, leading to worse generalizations.
-                    Hence, <i>just because you can does not mean that you should</i> design very complex networks.
-
+                    An important note here is that although one can design crazy neural network architectures, this does not mean one should.
+                    Less complicated modules, e.g. <i>ReLUs</i> instead of <i>tanh</i>, are usually better theoretically as well as experimentally, while they are easier to train and generalize better.
+                    
                     </p>
 
-                    <h3 class="section-heading">What is a module</h3>
-
-
-                    <h3 class="section-heading">Backpropagation</h3>
+                    <h3 class="section-heading">Computing the gradients with Backpropagation</h3>
 
                     <p class="running-text" style="text-align:justify">
 
@@ -705,16 +696,7 @@ t:add(t2)</div></pre>
 <b>Step 7.</b> Compute $\dfrac{\partial \mathcal{L}}{\partial{\theta_l}}=\dfrac{\partial \mathcal{L}}{\partial{a_l}} \dfrac{\partial a_l}{\partial{\theta_l}}$
 <b>Step 8.</b> GOTO Step 3.</div></code></pre>
 
-                    </p>
-
-                    <!-- As mentioned above, backpropagation is composed of two half-steps, forward and backward propagation.
-                    During the forward propagation the module generates an output given an input.
-                    If we would have a module for computing the input to the power of two, $f(x)=x^2$, during forward propagation we simply do that, namely compute the $x^2$.
-                    This step is essentially the same as when we use the network at test time and use it to generate an output given an input.
-                    The backward propagation is essentially very similar to the forward propagation, instead now we use the gradient of the module function to compute the output, namely $\nabla_x f(x)=2x$. -->
-
-
-                    <h3 class="section-heading">Implementing your own module</h3>
+                    <h4 class="section-heading">Implementing your own module</h4>
 
                     <p class="running-text" style="text-align:justify">
 
@@ -738,13 +720,43 @@ t:add(t2)</div></pre>
 
                     </p>
 
-                    <h3 class="section-heading">Gradient checks and Jacobians</h3>
+                    <h4 class="section-heading">Gradient checks and Jacobians</h4>
 
 
 
+                    </p>
 
-                    <h3 class="section-heading">Implementing a multi-layer perceptron (MLP)</h3>
+                    <h3 class="section-heading">Types of modules</h3>
 
+                    <h3 class="section-heading">Data preprocessing and normalization</h3>
+
+                    <h3 class="section-heading">Optimization methods</h3>
+
+                    <h3 class="section-heading">Regularization</h3>
+
+                    <h3 class="section-heading">Learning rate</h3>
+
+                    <h3 class="section-heading">Weight initialization</h3>
+
+                    <h3 class="section-heading">Loss functions</h3>
+
+                    <h3 class="section-heading">Babysitting a neural network</h3>
+
+                    <h3 class="section-heading">What is a module</h3>
+
+
+                    <h3 class="section-heading">Backpropagation</h3>
+
+                    
+
+                    <!-- As mentioned above, backpropagation is composed of two half-steps, forward and backward propagation.
+                    During the forward propagation the module generates an output given an input.
+                    If we would have a module for computing the input to the power of two, $f(x)=x^2$, during forward propagation we simply do that, namely compute the $x^2$.
+                    This step is essentially the same as when we use the network at test time and use it to generate an output given an input.
+                    The backward propagation is essentially very similar to the forward propagation, instead now we use the gradient of the module function to compute the output, namely $\nabla_x f(x)=2x$. -->
+
+
+                    
 <!--                     A feedforward, multi-layer neural network, like in the figure below, is often called also multi-layer perceptron <b>(MLP)</b>.
                     Each layers hosts a module like the ones we discussed earlier.
 
