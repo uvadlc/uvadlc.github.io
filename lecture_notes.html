@@ -394,7 +394,7 @@ t:add(t2)</div></pre>
 
                     A neural network is a family of parametric, non-linear and hierarchical representation learning functions, which are massively optimized with stochastic gradient descent to encode domain knowledge, i.e. domain invariances, stationarity.
                     Mathematically, this verbal definition is described as
-                    $a_L(x; \theta_{1, ..., L})=h_L(h_{L-1}(...h_1(x, \theta_1)..., \theta_{L-1}), \theta_L)$.
+                    $a_L(x; \theta_{1, ..., L})=h_L(h_{L-1}(...h_1(x, \theta_1)..., \theta_{L-1}), \theta_L)$. In this definition the output of a module becomes (part of) the input in a subsequent module, which is higher in the hierarchy of the functions that constitute the neural network.
 
                     </p>
 
@@ -557,13 +557,29 @@ t:add(t2)</div></pre>
                     a_3 = h_3(x_3, \theta_3), \\
                     \dots, \\
                     a_L = h_L(x_L, y), \\
+                    where x_l=a_{l-1}\\
                     \end{eqnarray}$$
 
                     </p>
 
                     <p class="running-text" style="text-align:justify">
 
-                    where the last layer module equals to the loss function for our network, $h_5 \equiv \mathcal{L}$.
+                    where the last layer module equals to the loss function for our network.
+                    To make the explanations more hands-on, let us accompany the formal definitions with the specific neural network from the figure above.
+                    The first module (layer) is linear, receives the 256-d data from the data input module and projects them via a matrix-matrix multiplication onto a 128 space,
+                    
+                    $$a_1 = \theta_1 x_1.$$
+                    
+                    Hence, $dim(x_1)=[256\times 1]$, $dim(a_1)=[128\times 1]$ and $dim(\theta_1)=[128\times 256]$
+                    The second module receives the input from module 1, so $x_2=a_1$ and applies a non-linear sigmoid transformation, namely
+                    
+                    $$a_2 = \sigma(x_2).$$
+
+                    The second module does not contain any trainable parameters and only applies the sigmoid non-linearity to the data.
+                    Hence, $\theta_2=\emptyset$.
+
+
+                     $h_5 \equiv \mathcal{L}$.
                     Apparently, the output of layer $l$ is the input for layer $l+1$, therefore, we have that
 
                     $$
