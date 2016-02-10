@@ -394,7 +394,10 @@ t:add(t2)</div></pre>
 
                     A neural network is a family of parametric, non-linear and hierarchical representation learning functions, which are massively optimized with stochastic gradient descent to encode domain knowledge, i.e. domain invariances, stationarity.
                     Mathematically, this verbal definition is described as
-                    $a_L(x; \theta_{1, ..., L})=h_L(h_{L-1}(...h_1(x, \theta_1)..., \theta_{L-1}), \theta_L)$. In this definition the output of a module becomes (part of) the input in a subsequent module, which is higher in the hierarchy of the functions that constitute the neural network.
+
+                    $$a_L(x; \theta_{1, ..., L})=h_L(h_{L-1}(...h_1(x, \theta_1)..., \theta_{L-1}), \theta_L).$$
+
+                    In this definition the output of a module becomes (part of) the input in a subsequent module, which is higher in the hierarchy of the functions that constitute the neural network.
 
                     </p>
 
@@ -584,11 +587,13 @@ t:add(t2)</div></pre>
 
                     and a ReLU module with no trainable parameters,
 
-                    $$a_4 = ReLU(x_4)$$.
+                    $$a_4 = ReLU(x_4).$$
 
                     The last layer is impemented by a cross entropy (negative log-likelihood) module, namely
 
-                    $$a_5 = \mathcal{L}(x_4, y)=0.5\|y-x_4\|^2$$.
+                    $$a_5 = \mathcal{L}(x_5, y)=0.5\|y-x_5\|^2.$$
+
+                    Remember that in all cases $$x_l=a_{l-1}$$.
                     
 
                     </p>
