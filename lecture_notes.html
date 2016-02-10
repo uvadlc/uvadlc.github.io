@@ -557,8 +557,9 @@ t:add(t2)</div></pre>
                     a_3 = h_3(x_3, \theta_3), \\
                     \dots, \\
                     a_L = h_L(x_L, y), \\
-                    where x_l=a_{l-1}\\
                     \end{eqnarray}$$
+
+                    where $x_l=a_{l-1}$.
 
                     </p>
 
@@ -577,14 +578,18 @@ t:add(t2)</div></pre>
 
                     The second module does not contain any trainable parameters and only applies the sigmoid non-linearity to the data.
                     Hence, $\theta_2=\emptyset$.
+                    Similarly, we consider for the next to layers to be implemented by a linear module projecting the input to a 64 dimensional space,
 
+                    $$a_3 = \theta_3 x_3$$
 
-                     $h_5 \equiv \mathcal{L}$.
-                    Apparently, the output of layer $l$ is the input for layer $l+1$, therefore, we have that
+                    and a ReLU module with no trainable parameters,
 
-                    $$
-                    a_l = x_{l+1}
-                    $$
+                    $$a_4 = ReLU(x_4)$$.
+
+                    The last layer is impemented by a cross entropy (negative log-likelihood) module, namely
+
+                    $$a_5 = \mathcal{L}(x_4, y)=0.5\|y-x_4\|^2$$.
+                    
 
                     </p>
 
