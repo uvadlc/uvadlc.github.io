@@ -698,15 +698,15 @@ t:add(t2)</div></pre>
 <b>Step 3.</b> If $l==0$, exit.</br>
 <b>Step 4.</b> Compute
 
-$$\dfrac{\partial \mathcal{L}} {\partial \a_l} = (\dfrac{\partial a_{l+1}} {\partial x_{l+1}})^T \cdot \dfrac{\partial \mathcal{L}} {\partial a_{l+1}}.$$
+$\dfrac{\partial \mathcal{L}} {\partial a_l} = (\dfrac{\partial a_{l+1}} {\partial x_{l+1}})^T \cdot \dfrac{\partial \mathcal{L}} {\partial a_{l+1}}.$
 
 Note that for $l+1=L$, $\dfrac{\partial \mathcal{L}}{\partial a_{l+1}}=I$, as we take the derivative of a function with respect to itself. </br>
 
 <b>Step 5.</b> Compute 
 
-$$
+$
 \dfrac{\partial \mathcal{L}}{\partial \theta_l}=\dfrac{\partial \mathcal{L}}{\partial a_l} \cdot (\dfrac{\partial a_l}{\partial \theta_l})^T.
-$$
+$
 
 When the module has no parameters (e.g. for non-parametric loss modules for $l=L$), there is no $\dfrac{\partial \mathcal{L}}{\partial \theta_l}$, hence we can omit this step.</br>
 <b>Step 6.</b> GOTO Step 1.</p>
