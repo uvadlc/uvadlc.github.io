@@ -568,36 +568,6 @@ t:add(t2)</div></pre>
 
                     <p class="running-text" style="text-align:justify">
 
-                    To make the explanations more hands-on, let us accompany the formal definitions with the specific neural network from the figure above.
-                    The first module (layer) is linear, receives the 256-d data from the data input module and projects them via a matrix-matrix multiplication onto a 128 space,
-                    
-                    $$a_1 = \theta_1 x_1.$$
-                    
-                    Hence, $dim(x_1)=[256\times 1]$, $dim(a_1)=[128\times 1]$ and $dim(\theta_1)=[128\times 256]$
-                    The second module receives the input from module 1, so $x_2=a_1$ and applies a non-linear sigmoid transformation, namely
-                    
-                    $$a_2 = \sigma(x_2).$$
-
-                    The second module does not contain any trainable parameters and only applies the sigmoid non-linearity to the data.
-                    Hence, $\theta_2=\emptyset$.
-                    Similarly, we consider for the next to layers to be implemented by a linear module projecting the input to a 64 dimensional space,
-
-                    $$a_3 = \theta_3 x_3$$
-
-                    and a ReLU module with no trainable parameters,
-
-                    $$a_4 = ReLU(x_4).$$
-
-                    The last layer is impemented by a cross entropy (negative log-likelihood) module, namely
-
-                    $$a_5 = \mathcal{L}(x_5, y)=0.5\|y-x_5\|^2.$$
-
-                    Remember that in all cases $x_l=a_{l-1}$.
-                    
-                    </p>
-
-                    <p class="running-text" style="text-align:justify">
-
                     Next, we want to optimize the neural networks, namely to find the optimal weights $\theta_l, l=1, \dots, L-1$ for which the final loss $\mathcal{L}$ is low in both the training and the validation sets.
                     For this we use different flavors of the Gradient Descend algorithm.
                     All these flavors have in common that need to compute the gradients of the network losses with respect to the network parameters, namely
@@ -712,9 +682,84 @@ When the module has no parameters (e.g. for non-parametric loss modules for $l=L
 <b>Step 6.</b> GOTO Step 1.</p>
 </div>
 
+                    <h3 class="section-heading">Implementing your own module, layer, network</h3>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    To implement a new module, you must first define the forward computation of the module, $a=h(x;\theta)$, where $a$ are the activations and $h(\cdot)$ the module function.
+                    Implementing the forward pass is straightforward.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Then, you must define the backward computation of the model, which is going to be used by the backpropagation.
+                    As explained before, you need to be able to define the gradient $\dfrac{\partial a}{\partial \theta}$ and the gradient $\dfrac{\partial a}{\partial x}$.
+                    Hence, a basic requirement for a module is that it is (at least first-order) differentiable with respect to its input and its parameters almost everywhere.
+                    We say here almost everywhere, because one can turn a blind eye at points where a gradient cannot be explicitly computed.
+                    E.g. when at $x=0$ for $a=h(x)=|x|$, we can assume the gradient to be 0.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    We can therefore implement a new module by writing 3 functions:
+                    <ul>
+                    <div align="left">
+                    <li> $a=h(x)$ </li>
+                    <li> $\dfrac{\partial a}{\partial x}$ </li>
+                    <li> $\dfrac{\partial a}{\partial \theta}$</li>
+                    </div>
+                    </ul>
+                    The last function should be implemented only if the module contains trainable parameters $\theta$.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    In Torch this is exactly how you implement a new module.
+                    After you open a new file, where you will implement the new module, you need to overload the following functions.
+
+ <pre class="prettyprint"><div align="left">local MyModule, Parent = torch.class('nn.MyModule', 'nn.Module')
+
+function MyModule:__init(var1, var2)
+   Parent.__init(self)
+   self.W                  = torch.randn( ...
+   self.gradWeight         = torch.zeros( ...
+   self.mymodule_variable1 = var1
+   self.mymodule_variable1 = var2
+   ...
+   
+end
+
+function MyModule:updateOutput(input)
+   ...
+   self.output ...
+   return self.output
+end
+
+function MyModule:updateGradInput(input, gradOutput)
+   ...
+   self.gradInput:zeros...
+   ...
+   self.gradInput...
+   return self.gradInput
+end
+
+function MyModule:accGradParameters(input, gradOutput, scale)
+   ...
+   self.gradWeight:...
+   ...
+   return self.gradWeight
+end</div></pre>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    The last function <tt>accGradParameters</tt> needs to be overload only if the module is parametric, namely if the module contains trainable parameters.
+
+                    </p>
 
                     <h3 class="section-heading">Checking your gradients, checking your backpropagation</h3>
-
 
                     <p class="running-text" style="text-align:justify">
 
@@ -729,37 +774,37 @@ When the module has no parameters (e.g. for non-parametric loss modules for $l=L
 
                     </p>
 
-                    <p class="running-text" style="text-align:justify">
+                    <h3 class="section-heading">Example</h3>
 
+<p class="running-text" style="text-align:justify">
+
+                    To make the explanations more hands-on, let us accompany the formal definitions with the specific neural network from the figure above.
+                    The first module (layer) is linear, receives the 256-d data from the data input module and projects them via a matrix-matrix multiplication onto a 128 space,
+                    
+                    $$a_1 = \theta_1 x_1.$$
+                    
+                    Hence, $dim(x_1)=[256\times 1]$, $dim(a_1)=[128\times 1]$ and $dim(\theta_1)=[128\times 256]$
+                    The second module receives the input from module 1, so $x_2=a_1$ and applies a non-linear sigmoid transformation, namely
+                    
+                    $$a_2 = \sigma(x_2).$$
+
+                    The second module does not contain any trainable parameters and only applies the sigmoid non-linearity to the data.
+                    Hence, $\theta_2=\emptyset$.
+                    Similarly, we consider for the next to layers to be implemented by a linear module projecting the input to a 64 dimensional space,
+
+                    $$a_3 = \theta_3 x_3$$
+
+                    and a ReLU module with no trainable parameters,
+
+                    $$a_4 = ReLU(x_4).$$
+
+                    The last layer is impemented by a cross entropy (negative log-likelihood) module, namely
+
+                    $$a_5 = \mathcal{L}(x_5, y)=0.5\|y-x_5\|^2.$$
+
+                    Remember that in all cases $x_l=a_{l-1}$.
+                    
                     </p>
-
-                    <h4 class="section-heading">Implementing your own module</h4>
-
-                    <p class="running-text" style="text-align:justify">
-
-                    To implement a new module, you must first define the forward pass of the module, $a=h(x;\theta)$, where $a$ are the activations and $h(\cdot)$ the module function.
-                    Implementing the forward pass is relatively straightforward.
-                    Then, you must define the backward pass used by backpropagation to compute the gradients of the module with respect to the input $x$ and the module parameters $\theta$, if the module has trainable parameters.
-                    Implementing the backward pass is slighlty more complicated, as you need to calculate the module gradient first.
-
-                    </p>
-
-                    <p class="running-text" style="text-align:justify">
-
-                    Hence, to implement our <i>isolated</i> module to backpropagate its gradients, what we really care about are:
-                    <ul>
-                    <div align="left">
-                    <li> the input $x$ to the module </li>
-                    <li> the error gradients from the module above </li>
-                    <li> and of course the gradient equation of the module with respect to the input and the gradient parameters.</li>
-                    </div>
-                    </ul>
-
-                    </p>
-
-                    <h4 class="section-heading">Gradient checks and Jacobians</h4>
-
-
 
                     </p>
 
