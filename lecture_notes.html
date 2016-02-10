@@ -642,7 +642,7 @@ t:add(t2)</div></pre>
                     More specifically, and given that $a_l=x_{l+1}$, we have that
 
                     $$
-                    \dfrac{\partial \mathcal{L}}{\partial \a_l} = (\dfrac{\partial a_{l+1}}{\partial x_{l+1}})^T \cdot \dfrac{\partial \mathcal{L}}{\partial a_{l+1}}. (5)
+                    \dfrac{\partial \mathcal{L}}{\partial a_l} = (\dfrac{\partial a_{l+1}}{\partial x_{l+1}})^T \cdot \dfrac{\partial \mathcal{L}}{\partial a_{l+1}}. (5)
                     $$
 
                     </p>
@@ -650,10 +650,10 @@ t:add(t2)</div></pre>
                     <p class="running-text" style="text-align:justify">
 
                     This is a very convenient formulation.
-                    First, we need to compute the gradient of a module with respect to its input, $\dfrac{\partial a_{l+1}}{\partial x_{l+1}}}$, which is easy.
+                    First, we need to compute the gradient of a module with respect to its input, $\dfrac{\partial a_{l+1}}{\partial x_{l+1}}$, which is easy.
                     Second, this formulation is recursive.
-                    To compute the gradient of $\dfrac{\partial \mathcal{L}}{\partial \a_l}$, we can simply rely on (and reuse) the same type of gradient from the layer above, $\dfrac{\partial \mathcal{L}}{\partial \a_{l+1}}$.
-                    As such, if we start from the last layer and traverse the network in the reverse manner than what we did during the forward propagation to the first layer, we can recursively compute all $\dfrac{\partial \mathcal{L}}{\partial \a_l}, l=1,..., L$ quite easily.
+                    To compute the gradient of $\dfrac{\partial \mathcal{L}}{\partial a_l}$, we can simply rely on (and reuse) the same type of gradient from the layer above, $\dfrac{\partial \mathcal{L}}{\partial a_{l+1}}$.
+                    As such, if we start from the last layer and traverse the network in the reverse manner than what we did during the forward propagation to the first layer, we can recursively compute all $\dfrac{\partial \mathcal{L}}{\partial a_l}, l=1,..., L$ quite easily.
 
                     </p>
 
