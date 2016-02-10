@@ -661,7 +661,7 @@ t:add(t2)</div></pre>
 
                     It is important to note at this point that the function $h_l(\cdot)$, which generates $a_l$, is a function that receives a vector of inputs.
                     Hence, each output dimension of $a_l$ might depend on multiple input dimensions in the vector of $x_l$.
-                    Hence, when computing the gradient of a module with respect to its parameters, $\dfrac{\partial a_l}{\partial \theta_l$, we need to compute the Jacobian matrix
+                    Hence, when computing the gradient of a module with respect to its parameters, $\dfrac{\partial a_l}{\partial \theta_l}$, we need to compute the Jacobian matrix
 
                     $$
                     \dfrac{\partial a_l}{\partial{x_l}}=
@@ -680,7 +680,7 @@ t:add(t2)</div></pre>
 
                     <p class="running-text" style="text-align:justify">
 
-                    In contrast, a module can also be implemented to compute only element-wise nonlinearities, such as the standard $\tanh(\cdot), \sigma(\cdot), \ReLU(\cdot)$ functions.
+                    In contrast, a module can also be implemented to compute only element-wise nonlinearities, such as the standard $\tanh(\cdot), \sigma(\cdot), ReLU(\cdot)$ functions.
                     For these functions each output dimension $a_j$ depends <b>only</b> on the respective input dimension $x_j$.
                     As such, the Jacobian matrix for these functions will be diagonal.
 
@@ -698,7 +698,7 @@ t:add(t2)</div></pre>
 <b>Step 3.</b> If $l==0$, exit.</br>
 <b>Step 4.</b> Compute
 
-$$\dfrac{\partial \mathcal{L}}{\partial \a_l} = (\dfrac{\partial a_{l+1}}{\partial x_{l+1}}})^T \cdot \dfrac{\partial \mathcal{L}}{\partial a_{l+1}}.$$
+$$\dfrac{\partial \mathcal{L}} {\partial \a_l} = (\dfrac{\partial a_{l+1}} {\partial x_{l+1}})^T \cdot \dfrac{\partial \mathcal{L}} {\partial a_{l+1}}.$$
 
 Note that for $l=L$ (during the first step) $\dfrac{\partial \mathcal{L}}{\partial \a_L}=I$, as we take the derivative of a function with respect to itself. </br>
 
