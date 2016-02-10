@@ -395,7 +395,7 @@ t:add(t2)</div></pre>
                     A neural network is a family of parametric, non-linear and hierarchical representation learning functions, which are massively optimized with stochastic gradient descent to encode domain knowledge, i.e. domain invariances, stationarity.
                     Mathematically, this verbal definition is described as
 
-                    $$a_L(x; \theta_{1, ..., L})=h_L(h_{L-1}(...h_1(x, \theta_1)..., \theta_{L-1}), \theta_L).$$
+                    $$a_L(x; \theta_{1, ..., L})=h_L(h_{L-1}(...h_1(x, \theta_1)..., \theta_{L-1}), \theta_L). (1)$$
 
                     In this definition the output of a module becomes (part of) the input in a subsequent module, which is higher in the hierarchy of the functions that constitute the neural network.
 
@@ -450,15 +450,15 @@ t:add(t2)</div></pre>
                     During training the goal is to find the optimal parameters $\theta^*$ which minimize the empirical risk both on the training and a separate validation set.
                     Mathematically, we write this as
                     
-                    $$\theta^* \leftarrow \argmin_{\theta} \frac{1}{n} \sum_{i=1}^n \mathcal{L}(\theta; x_i, y_i) \;\; (1)$$
+                    $$\theta^* \leftarrow \argmin_{\theta} \frac{1}{n} \sum_{i=1}^n \mathcal{L}(\theta; x_i, y_i) \;\; (2)$$
  
                     To find the optimal parameters of a neural netowrk, we almost always use some variant of Gradient Descend
 
                     $$
-                    \theta^{(t+1)}=\theta^{(t)}-\frac{\eta_t}{n} \sum_i \nabla_{\theta} \mathcal{L}(\theta^{(t)}; x_i, y_i) \;\; (2)
+                    \theta^{(t+1)}=\theta^{(t)}-\frac{\eta_t}{n} \sum_i \nabla_{\theta} \mathcal{L}(\theta^{(t)}; x_i, y_i) \;\; (3)
                     $$
 
-                    All there is to a neural network, be it model details, architecture and learning are summarized by eq. (1) and (2).
+                    All there is to a neural network, be it model details, architecture and learning are summarized by eq. (1), (2) and (3).
 
                     </p>
 
@@ -546,7 +546,7 @@ t:add(t2)</div></pre>
                     
                     </p>
 
-                    <h3 class="section-heading">Computing the gradients with Backpropagation</h3>
+                    <h3 class="section-heading">Computing the gradients with backpropagation</h3>
 
                     <p class="running-text" style="text-align:justify">
 
@@ -592,107 +592,76 @@ t:add(t2)</div></pre>
 
                     $$a_5 = \mathcal{L}(x_5, y)=0.5\|y-x_5\|^2.$$
 
-                    Remember that in all cases $$x_l=a_{l-1}$$.
+                    Remember that in all cases $x_l=a_{l-1}$.
                     
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Next, we want to optimize the neural networks, namely to find the optimal weights $\theta_l, l=1, \dots, L-1$ for which the final loss $\mathcal{L}$ is low in both the training and the validation sets.
+                    For this we use different flavors of the Gradient Descend algorithm.
+                    All these flavors have in common that need to compute the gradients of the network losses with respect to the network parameters, namely
+
+                    $$\dfrac{\partial{\mathcal{L}}}{\partial \theta_l}, l=1, \dots, L-1$$
+
+                    However, <i>how can we compute the gradients of such a complicated function of eq. (1)?</i>?
 
                     </p>
 
                     <p class="running-text" style="text-align:justify">
 
-                    To optimize the network, namely to find the optimal weights $\theta_l, l=1, \dots, L-1$, we se (stochastic) gradient descent.
-                    Hence, we need to compute all the gradients of the network with respect to the weights, namely $\dfrac{\partial{\mathcal{L}}}{\partial \theta_l}, l=1, \dots, L-1$
-                    The module of layer $L$ implements the loss function, therefore does not contain any parameters.
-                    For layer $L-1$ we have parameters $\theta_{L-1}$, hence no gradient need to be computed.
-                    For all other layers, however, we can have potentially gradients.
-                    For the module of layer $L-1$, given the good old \emph{chain rule} for computing the derivatives adn the loss function $\mathcal{L}$ (normally we should write it as $\mathcal{L}(x_L, y_L)$, but we opt for $\mathcal{L}$ for consiceness), we have for
-
-                    $$\begin{eqnarray}
-                    \dfrac{\partial \mathcal{L}}{\partial \theta_{L-1}} & = & \dfrac{\partial \mathcal{L}(a_{L-1}, y_L)}{\partial \theta_{L-1}} 
-                    & = &
-                    \dfrac{\partial \mathcal{L}}{\partial{a_{L-1}}} \dfrac{\partial a_{L-1}}{\partial{\theta_{L-1}}}
-                    \end{eqnarray}$$
-
-                    </p>
-
-                    <!-- <footer>
-                    <a href="http://jupyter.org/">The Jupyter Team</a>
-                    </footer>
-                    </blockquote>
-                    </i>
-                    </p>
- -->
-                    <p class="running-text" style="text-align:justify">
-
-                    Generally, for the module of layer $l$ we would have that
-
-                    </p>
-
-                    <p class="running-text" style="text-align:justify">
-
-                    $$\begin{eqnarray}
-                    \dfrac{\partial \mathcal{L}}{\partial \theta_l} = \dfrac{\partial \mathcal{L}}{\partial{a_l}} \dfrac{\partial a_l}{\partial{\theta_l}}
-                    \label{eq:grad-layer}
-                    \end{eqnarray}$$
-
-                    </p>
-
-                    <p class="running-text" style="text-align:justify">
-
-                    Eq.~\eqref{eq:grad-layer} provides us with a pretty straightforward way of computing the gradients for layer $l$.
-                    We first need the gradient of the module w.r.t. each parameters $\dfrac{\partial a_l}{\partial{\theta_l}}$, which is easy to compute provided the module activation function is a (almost everywhere) differentiable function.
-                    For example, if our module $l$ had the activation function $a_l=h_l(x_l, \theta_l)=\sqrt{\theta_l \cdot x_l}$, we would simply have $\dfrac{\partial a_l}{\partial{\theta_l}}=\dfrac{-0.5 x_l}{\sqrt{\theta_l \cdot x_l}}$.
-
-                    </p>
-
-                    <p class="running-text" style="text-align:justify">
-
-                    Second, we need the gradient of the loss function with respect to the output of layer $\dfrac{\partial \mathcal{L}}{\partial{a_l}}$.
-                    Given that between the loss function $\mathcal{L}$ and the module of layer $l$ there might be several other layers, if we would explicitly write down the full equation would yield a very complicated function.
-                    However, we notice that we could decompose $\dfrac{\partial \mathcal{L}}{\partial{a_l}}$ as
+                    It turns out that to answer this question we can use a 300-years old mathematical theory, the <b>Chain Rule</b>.
+                    The chain rule suggests that when one has a nested function, namely a function inside a function, $f(g(x))$, (or inside a function inside a function inside a function ...) like in eq. (1), one can compute the derivatives with respect to the input simply by
 
                     $$
-                    \dfrac{\partial \mathcal{L}}{\partial{a_l}} = \dfrac{\partial \mathcal{L}}{\partial{a_{l+1}}} \dfrac{\partial a_{l+1}}{\partial{a_l}}
+                    \dfrac{\partial f}{\partial x}=\dfrac{\partial f}{\partial g} \cdot \dfrac{\partial g}{\partial x}
+                    $$
+
+                    By applying the chain rule to eq. (1), and remembering that $a_L=\mathcal{L}$, we can compute the gradients of the loss with respect to the parameters of a particular layer,
+
+                    $$
+                    \dfrac{\partial \mathcal{L}}{\partial \theta_l}=\dfrac{\partial \mathcal{L}}{\partial a_l} \cdot (\dfrac{\partial a_l}{\partial \theta_l})^T. (4)
                     $$
 
                     </p>
 
                     <p class="running-text" style="text-align:justify">
 
-                    Hence, we rewrite the gradient w.r.t. the output of layer $l$ as the gradient w.r.t. the output of layer $l+1$, times the gradient of output of layer $l+1$ w.r.t. to the output of layer $l$, $\partial a_{l+1} / \partial{a_l}=\partial a_{l+1} / \partial{x_{l+1}}$.
+                    Eq. (4) says something straightforward.
+                    To compute the gradients of network loss with respect to the gradient parameters you need to quantities.
+                    The first quantity the gradient of the module with respect to its parameters, namely $\dfrac{\partial a_l}{\partial \theta_l}$.
+                    This is easy to compute, if the function is (at least first-order), almost everywhere differentiable.
+                    The second quantity is the gradient of the network loss with respect to the output of the layer $l$, \dfrac{\partial \mathcal{L}}{\partial a_l}.
+                    How can we compute the latter easily?
 
                     </p>
 
                     <p class="running-text" style="text-align:justify">
-                    
-                    As such, we can simply compute the gradients $\dfrac{\partial \mathcal{L}}{\partial{a_l}}, l=1, ..., L$ recursively: compute first the gradient $\partial \mathcal{L}/\partial{a_{L-1}}$ for layer $L-1$, then use $\partial \mathcal{L}/\partial{a_{L-1}}$ to compute the gradient $\partial \mathcal{L}/\partial{a_{L-2}}$ for layer $L-2$ and so on.
 
-                    </p>
-
-
-                    <p class="running-text" style="text-align:justify">
-
-                    It is important here to draw the attention to $\partial a_l/\partial{x_l}$.
-                    On a first sight this a simple derivation.
-                    This is indeed the case, when a specific output dimension $a_l^j$ relates only to the respective input dimension $x_l^j$.
-                    Such a case is for \emph{elementwise} functions, like $a_j=h(x_j)=\tanh(x_j), \forall j$, or $a_j=h(x_j=\text{ReLU}(x_j), \forall j$, where the nonlinearities are applied on each dimension independently.
-                    However, there are functions and modules, where an output dimension relates to multiple input dimensions, $a_j=h(x_1, \dots, x_j, x_{j+1}, \dots)$.
-                    Such a a function is the softmax 
+                    To answer this question, we resort once more to the chain rule.
+                    More specifically, and given that $a_l=x_{l+1}$, we have that
 
                     $$
-                    a_j = \dfrac{\exp{x_j}}{\sum_i{\exp{x_i}}}
-                    $$
-
-                    or the $\ell_2$ normalization function
-
-                    $$
-                    a_j = \dfrac{x_j}{\sqrt{\sum_i{x_i^2}}}
+                    \dfrac{\partial \mathcal{L}}{\partial \a_l} = (\dfrac{\partial a_{l+1}}{\partial x_{l+1}}})^T \cdot \dfrac{\partial \mathcal{L}}{\partial a_{l+1}}. (5)
                     $$
 
                     </p>
 
                     <p class="running-text" style="text-align:justify">
 
-                    As for these functions each output dimension relates to multiple input dimension, to compute $\partial a_l/\partial{x_l}$ actually means that one needs to compute the Jacobian matrix
+                    This is a very convenient formulation.
+                    First, we need to compute the gradient of a module with respect to its input, $\dfrac{\partial a_{l+1}}{\partial x_{l+1}}}$, which is easy.
+                    Second, this formulation is recursive.
+                    To compute the gradient of $\dfrac{\partial \mathcal{L}}{\partial \a_l}$, we can simply rely on (and reuse) the same type of gradient from the layer above, $\dfrac{\partial \mathcal{L}}{\partial \a_{l+1}}$.
+                    As such, if we start from the last layer and traverse the network in the reverse manner than what we did during the forward propagation to the first layer, we can recursively compute all $\dfrac{\partial \mathcal{L}}{\partial \a_l}, l=1,..., L$ quite easily.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    It is important to note at this point that the function $h_l(\cdot)$, which generates $a_l$, is a function that receives a vector of inputs.
+                    Hence, each output dimension of $a_l$ might depend on multiple input dimensions in the vector of $x_l$.
+                    Hence, when computing the gradient of a module with respect to its parameters, $\dfrac{\partial a_l}{\partial \theta_l$, we need to compute the Jacobian matrix
 
                     $$
                     \dfrac{\partial a_l}{\partial{x_l}}=
@@ -704,9 +673,48 @@ t:add(t2)</div></pre>
                     \end{bmatrix}
                     $$
 
-                    In that case to compute $\dfrac{\partial \mathcal{L}}{\partial{a_l}}$ we have to perform a matrix multiplication of the gradient vector $\dfrac{\partial \mathcal{L}}{\partial{a_{l+1}}}$ and the Jacobian $\dfrac{\partial a_{l+1}}{\partial{x_{l+1}}}$.
+                    Such functions are the softmax, $a_j = \dfrac{\exp{x_j}}{\sum_i{\exp{x_i}}}$ or the $\ell_2$ normalization, $a_j = \dfrac{x_j}{\sqrt{\sum_i{x_i^2}}}$.
+                    Clearly, for both these function the output $a_j$ depends on all the input variables, $x_1, ..., x_d$.
 
                     </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    In contrast, a module can also be implemented to compute only element-wise nonlinearities, such as the standard $\tanh(\cdot), \sigma(\cdot), \ReLU(\cdot)$ functions.
+                    For these functions each output dimension $a_j$ depends <b>only</b> on the respective input dimension $x_j$.
+                    As such, the Jacobian matrix for these functions will be diagonal.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    After we have computed the forward propagations, during which we have cached all the intermediate activations $a_l$ to avoid extra computations, backpropagation amounts to the following few steps.
+
+                    </p>
+
+                    <div style="border:1px solid black;" align="left">
+<b>Step 1.</b> Set $l=L+1$</br>
+<b>Step 2.</b> $l\leftarrow l-1$</br>
+<b>Step 3.</b> If $l==0$, exit.</br>
+<b>Step 4.</b> Compute
+
+$$\dfrac{\partial \mathcal{L}}{\partial \a_l} = (\dfrac{\partial a_{l+1}}{\partial x_{l+1}}})^T \cdot \dfrac{\partial \mathcal{L}}{\partial a_{l+1}}.$$
+
+Note that for $l=L$ (during the first step) $\dfrac{\partial \mathcal{L}}{\partial \a_L}=I$, as we take the derivative of a function with respect to itself. </br>
+
+<b>Step 5.</b> Compute 
+
+$$
+\dfrac{\partial \mathcal{L}}{\partial \theta_l}=\dfrac{\partial \mathcal{L}}{\partial a_l} \cdot (\dfrac{\partial a_l}{\partial \theta_l})^T.
+$$
+
+When the module has no parameters (e.g. for non-parametric loss modules), there is no $\dfrac{\partial \mathcal{L}}{\partial \theta_l}$, hence we can omit this step.</br>
+<b>Step 6.</b> GOTO Step 1.</p>
+</div>
+
+
+                    <h3 class="section-heading">Checking your gradients, checking your backpropagation</h3>
+
 
                     <p class="running-text" style="text-align:justify">
 
@@ -722,17 +730,6 @@ t:add(t2)</div></pre>
                     </p>
 
                     <p class="running-text" style="text-align:justify">
-
-<div style="border:1px solid black;" align="left">
-<p><b>Step 1.</b> Set $l=L$</p>
-<p><b>Step 2.</b> Set $\delta_L=\dfrac{\partial \mathcal{L}}{\partial{a_{L}}}=I$, since this operation practically stands for the derivative of a function with respect to its output.</p>
-<p><b>Step 3.</b> $l\leftarrow l-1$</p>
-<p><b>Step 4.</b> If convergence, exit.</p>
-<p><b>Step 5.</b> Compute $\dfrac{\partial \mathcal{L}}{\partial{a_l}}=(\dfrac{\partial a_{l+1}}{\partial{x_{l+1}}})^T \dfrac{\partial \mathcal{L}}{\partial a_{l+1}}$</p>
-<p><b>Step 6.</b> Set $\delta_l \leftarrow \dfrac{\partial \mathcal{L}}{\partial{a_{L}}}$</p>
-<p><b>Step 7.</b> Compute $\dfrac{\partial \mathcal{L}}{\partial{\theta_l}}=\dfrac{\partial \mathcal{L}}{\partial{a_l}} \dfrac{\partial a_l}{\partial{\theta_l}}$</p>
-<p><b>Step 8.</b> GOTO Step 3.</p>
-</div>
 
                     </p>
 
