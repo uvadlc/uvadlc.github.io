@@ -695,7 +695,7 @@ When the module has no parameters (e.g. for non-parametric loss modules for $l=L
 
                     Then, you must define the backward computation of the model, which is going to be used by the backpropagation.
                     As explained before, you need to be able to define the gradient $\dfrac{\partial a}{\partial \theta}$ and the gradient $\dfrac{\partial a}{\partial x}$.
-                    Hence, a basic requirement for a module is that it is (at least first-order) differentiable with respect to its input and its parameters almost everywhere.
+                    Hence, a basic requirement for a module is that it is <b>(at least first-order) differentiable with respect to its input and its parameters almost everywhere</b>.
                     We say here almost everywhere, because one can turn a blind eye at points where a gradient cannot be explicitly computed.
                     E.g. when at $x=0$ for $a=h(x)=|x|$, we can assume the gradient to be 0.
 
@@ -711,6 +711,11 @@ When the module has no parameters (e.g. for non-parametric loss modules for $l=L
                     <li> $\dfrac{\partial a}{\partial \theta}$</li>
                     </div>
                     </ul>
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
                     The last function should be implemented only if the module contains trainable parameters $\theta$.
 
                     </p>
@@ -763,20 +768,106 @@ end</div></pre>
 
                     <p class="running-text" style="text-align:justify">
 
-                    Although keeping up with all these operations can be confusing, a good way to make sure that all operations are done flawlessly is to resort to dimension analysis.
-                    More specifically, if the parameter matrix for layer $l$ have dimensions $d_{l-1} \times d_l$, then the gradient w.r.t. to the parameter matrix must also have the same dimensions.
+                    Keeping up with all the backpropagation computations can be confusing.
+                    For one, making a silly mistake, be it a mathematical or programming one, when computing the gradients is very easy.
+                    Moreoever, getting the dimensions of the backward computations right can be messy with all the matrices, the Jacobians etc.
+                    We can use, however, two very powerful tools in our quest of taming backpropagation.
 
                     </p>
 
                     <p class="running-text" style="text-align:justify">
 
-                    Now that we have an easy way to compute $\dfrac{\partial \mathcal{L}}{\partial{a_l}}, l=1, ..., L$, and given that we can easily compute $\dfrac{\partial a_l}{\partial{\theta_l}}$ and $\partial a_{l+1}/\partial{x_{l+1}}$, we can summarize the backpropagation algorithm for computing the network gradients.
+                    To make sure that all the gradient dimensions are correct, we resort to dimension analysis.
+                    Dimension analysis says the pretty straightforward thing, that our parameter vector $\theta_l$ for layer $l$ should have the same dimensionality with the gradient of the loss with respect to these parameters.
+                    Indeed, if our parameters at layer $l$ have dimensions $d_l \times d_{l-1}$ (remember, the input $x_l=a_{l-1}$, which has $d_{l-1} dimensions$), then for 
+                    
+                    $
+                    \dfrac{\partial \mathcal{L}}{\partial \theta_l})= \dfrac{\partial \mathcal{L}}{\partial a_l} \cdot (\dfrac{\partial a_l}{\partial \theta_l})^T.
+                    $
+
+                    we have that $[d_l \times d_{l-1}]=[d_l \times 1]\cdot[1 \times d_{l-1}].$
+                    
+                    And, for
+
+                    $\dfrac{\partial \mathcal{L}} {\partial a_l} = (\dfrac{\partial a_{l+1}} {\partial x_{l+1}})^T \cdot \dfrac{\partial \mathcal{L}} {\partial a_{l+1}}.$
+
+                    we have that $[d_l \times 1]=[d_l \times d_{l+1}]\cdot[d_{l+1} \times 1].$
+
+                    By checking the dimensions of our resulting network outputs each layer and whether they much, we can be pretty sure that our backpropagation implementation is correct.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Now that we have made sure that our basic computations for getting the backpropagation steps right, we need to make sure that also our module gradients are correct.
+                    To do this we resort to the so called gradient checks.
+                    The gradient check is something also pretty straightforward.
+                    To understand better what the gradient check is, let's take a step back and remember the original definition of the derivative, namely
+
+                    $$
+                    \dfrac{h}{\alpha}=\lim_{\epsilon \rightarrow 0} \dfrac{h(\alpha+\epsilon)-f(\alpha-\epsilon)}{2\epsilon} (6)
+                    $$
+
+                    The original formulation of the gradient (or derivative to be more precise) explains that we can approximate the gradient of a function $f$ at point $x$ quite accurately by just using the function itself.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Now, this is very convenient in the context of a neural network, because the function $f$ stands for the forward propagation.
+                    Assuming that we have implemented the forward propagation correct (which is a fair assumption, just plot if your function returns what it should return), we can check the gradient at a particular dimension $j$ by doing the following.
+                    We create a random dataset with random inputs $x$ and parameters $\theta$ (they don't need to be a real dataset, if our gradients are correct they are going to be correct for all kinds of data).
+                    We compute the module output $h(x, \theta^(+))$ using the input $x$ and the parameters
+
+                    $$
+                    \theta^(+)_i=[
+                    \begin{bmatrix}
+                    \theta_1 \\
+                    \theta_2 \\
+                    ...
+                    \theta_j+\epsilon \\
+                    ...
+                    ]
+                    \end{bmatrix}
+                    $$
+
+                    Similarly, we compute the module output $h(x, \theta^(-))$ using the input $x$ and the parameters
+
+                    $$
+                    \theta^(-)_i=[
+                    \begin{bmatrix}
+                    \theta_1 \\
+                    \theta_2 \\
+                    ...
+                    \theta_j-\epsilon \\
+                    ...
+                    ]
+                    \end{bmatrix}
+                    $$
+
+                    Next, we compute the gradient by using $h(x, \theta^(+))$, $h(x, \theta^(-))$ and eq. (6).
+                    We then compare this computationally derived gradient with the gradient we computed explicitly.
+                    If the difference is very small (somewhere between $10^{-5} and smaller$), we can be pretty sure that our gradients have been implemented correctly.
+                    This check can be done for both $\dfrac{\partial a}{\partial \theta}$ and $\dfrac{\partial a}{\partial x}$.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    It is important to note here that the gradient checks are performed per gradient dimension.
+                    Hence, the increment $\epsilon$ should be applied only for a single dimension at a time.
+                    Do not add all the gradient dimensions with $\epsilon$, otherwise you will get wrong results.
+                    Some other useful tips is to generate a few only random data.
+                    There is no difference if you have many, your gradients will not be more correct (or more wrong), but with fewer data your checks can be faster (which is an issue for very large networks).
+                    Also, for speed you can check only few of your gradient dimensions, especially if you have element-wise modules.
+                    However, make sure that you check dimensions evenly.
+                    If you have the biases separately, in your checks do not forget to include their gradients.
 
                     </p>
 
                     <h3 class="section-heading">Example</h3>
 
-<p class="running-text" style="text-align:justify">
+                    <p class="running-text" style="text-align:justify">
 
                     To make the explanations more hands-on, let us accompany the formal definitions with the specific neural network from the figure above.
                     The first module (layer) is linear, receives the 256-d data from the data input module and projects them via a matrix-matrix multiplication onto a 128 space,
