@@ -817,10 +817,10 @@ end</div></pre>
                     Now, this is very convenient in the context of a neural network, because the function $f$ stands for the forward propagation.
                     Assuming that we have implemented the forward propagation correct (which is a fair assumption, just plot if your function returns what it should return), we can check the gradient at a particular dimension $j$ by doing the following.
                     We create a random dataset with random inputs $x$ and parameters $\theta$ (they don't need to be a real dataset, if our gradients are correct they are going to be correct for all kinds of data).
-                    We compute the module output $h(x, \theta^{(+)})$ using the input $x$ and the parameters
+                    We compute the module output $h(x, \theta^{+})$ using the input $x$ and the parameters
 
                     $$
-                    \theta^{(+)}=
+                    \theta^{+}=
                     \begin{bmatrix}
                     \theta_1 \\
                     \theta_2 \\
@@ -831,10 +831,10 @@ end</div></pre>
                     \end{bmatrix}
                     $$
 
-                    Similarly, we compute the module output $h(x, \theta^(-))$ using the input $x$ and the parameters
+                    Similarly, we compute the module output $h(x, \theta^-)$ using the input $x$ and the parameters
 
                     $$
-                    \theta^{(-)}=
+                    \theta^{-}=
                     \begin{bmatrix}
                     \theta_1 \\
                     \theta_2 \\
@@ -845,7 +845,7 @@ end</div></pre>
                     \end{bmatrix}
                     $$
 
-                    Next, we compute the gradient by using $h(x, \theta^{(+)})$, $h(x, \theta^{(-)})$ and eq. (6).
+                    Next, we compute the gradient by using $h(x, \theta^{+})$, $h(x, \theta^{-})$ and eq. (6).
                     We then compare this computationally derived gradient with the gradient we computed explicitly.
                     If the difference is very small (somewhere between $10^{-5}$ and smaller), we can be pretty sure that our gradients have been implemented correctly.
                     This check can be done for both $\dfrac{\partial a}{\partial \theta}$ and $\dfrac{\partial a}{\partial x}$.
