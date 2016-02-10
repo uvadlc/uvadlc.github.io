@@ -817,7 +817,7 @@ end</div></pre>
                     Now, this is very convenient in the context of a neural network, because the function $f$ stands for the forward propagation.
                     Assuming that we have implemented the forward propagation correct (which is a fair assumption, just plot if your function returns what it should return), we can check the gradient at a particular dimension $j$ by doing the following.
                     We create a random dataset with random inputs $x$ and parameters $\theta$ (they don't need to be a real dataset, if our gradients are correct they are going to be correct for all kinds of data).
-                    We compute the module output $h(x, \theta^{+})$ using the input $x$ and the parameters
+                    To chech the gradient at dimension $j$, we compute the module output $h(x, \theta^{+})$ using the parameter vector
 
                     $$
                     \theta^{+}=
@@ -831,7 +831,7 @@ end</div></pre>
                     \end{bmatrix}
                     $$
 
-                    Similarly, we compute the module output $h(x, \theta^-)$ using the input $x$ and the parameters
+                    Similarly, we compute the module output $h(x, \theta^-)$ using the parameter vector
 
                     $$
                     \theta^{-}=
@@ -855,7 +855,7 @@ end</div></pre>
                     <p class="running-text" style="text-align:justify">
 
                     It is important to note here that the gradient checks are performed per gradient dimension.
-                    Hence, the increment $\epsilon$ should be applied only for a single dimension at a time.
+                    Hence, the increment $\epsilon$ should be applied <b>only for a single dimension at a time</b>.
                     Do not add all the gradient dimensions with $\epsilon$, otherwise you will get wrong results.
                     Some other useful tips is to generate a few only random data.
                     There is no difference if you have many, your gradients will not be more correct (or more wrong), but with fewer data your checks can be faster (which is an issue for very large networks).
