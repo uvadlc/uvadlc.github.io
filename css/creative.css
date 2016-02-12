@@ -79,7 +79,7 @@ aside {
   background-color: #f05f40;
   height: 500px;
   float: left;
-  width: 250px;
+  width: 200px;
   padding-top: 50px;
 }
 
@@ -500,3 +500,12 @@ tt {  /* or .call em, but you should aim for consistency in your styling */
 pre {
     white-space: pre-wrap;
 }
+
+.fixed {
+  position: fixed;
+  margin-top: 0px;
+}
+.hide {
+  display: none;
+}
+
