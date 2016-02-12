@@ -70,18 +70,18 @@ section {
     padding: 100px 0;
 }
 
-/*aside {
-    padding: 50px 0;
-}*/
-
 aside {
-  margin-top: 100px;
-  background-color: #f05f40;
-  height: 500px;
-  float: left;
-  width: 200px;
-  padding-top: 50px;
+    padding: 50px 0;
 }
+
+/*aside {*/
+/*  margin-top: 100px;*/
+/*  background-color: #f05f40;*/
+/*  height: 500px;*/
+/*  float: left;*/
+/*  width: 200px;*/
+/*  padding-top: 50px;*/
+/*}*/
 
 .no-padding {
     padding: 0;
@@ -500,12 +500,3 @@ tt {  /* or .call em, but you should aim for consistency in your styling */
 pre {
     white-space: pre-wrap;
 }
-
-.fixed {
-  position: fixed;
-  margin-top: 0px;
-}
-.hide {
-  display: none;
-}
-
