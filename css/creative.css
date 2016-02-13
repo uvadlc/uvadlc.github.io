@@ -523,12 +523,12 @@ pre {
 
 #sidebar {
 	float:right;
-	width:240px;
+	width:300px;
 	background-color: #f05f40
 }
 #sidebar #widget {
-	width:240px;
-	margin-bottom:10px;
+	width:300px;
+	margin-bottom:30px;
 	border-bottom:1px solid #ccc;
 	background-color: #f05f40
 }
