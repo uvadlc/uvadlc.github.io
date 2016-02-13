@@ -523,11 +523,11 @@ pre {
 
 sidebar {
 	float:right;
-	/*width:300px;*/
+	width:100%;
 	background-color: #f05f40;
 }
 widget {
-	/*width:300px;*/
+	width:100%;
 	margin-bottom:30px;
 	border-bottom:1px solid #f05f40;
 	background-color: #f05f40;
