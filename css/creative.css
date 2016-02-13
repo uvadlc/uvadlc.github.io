@@ -524,10 +524,11 @@ pre {
 #sidebar {
 	float:right;
 	width:240px;
+	background-color: #f05f40
 }
-	#sidebar #widget {
-		width:240px;
-		margin-bottom:10px;
-		border-bottom:1px solid #ccc;
-		background-color: #f05f40
-	}
+#sidebar #widget {
+	width:240px;
+	margin-bottom:10px;
+	border-bottom:1px solid #ccc;
+	background-color: #f05f40
+}
