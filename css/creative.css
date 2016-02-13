@@ -521,3 +521,12 @@ pre {
   background-color: #f5f5f5;
 }
 
+#sidebar {
+	float:right;
+	width:240px;
+}
+	#sidebar #widget {
+		width:240px;
+		margin-bottom:10px;
+		border-bottom:1px solid #ccc;
+	}
