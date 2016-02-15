@@ -8,7 +8,7 @@ testData.data = testData.data:float()
 ------------------------------------------------------
 print '==> Normalize data to uniform distribution.'
 
-channels = {'r', 'g', 'b'} -- for binary
+channels = {'b'} -- for binary
 
 mean = {}
 std = {}

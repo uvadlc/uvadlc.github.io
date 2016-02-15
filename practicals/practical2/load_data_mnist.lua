@@ -1,15 +1,15 @@
--- www = 'http://torch7.s3-website-us-east-1.amazonaws.com/data/housenumbers/'
+filepath = 'http://torch7.s3-website-us-east-1.amazonaws.com/data/mnist.t7.tgz'
+
+if not paths.dirp('mnist.t7') then
+   print 'MNIST data not found. Downloading...'
+   os.execute('wget ' .. filepath)
+   os.execute('tar xvf ' .. paths.basename(tar))
+else 
+   print 'MNIST data found'
+end
+
 train_file = 'mnist.t7/train_32x32.t7'
 test_file = 'mnist.t7/test_32x32.t7'
-
-if not paths.filep(opt.save .. train_file) then
-    www = 'http://torch7.s3-website-us-east-1.amazonaws.com/data/housenumbers/'
-    os.execute('wget ' .. www .. train_file)
-end
-if not paths.filep(opt.save .. test_file) then
-    www = 'http://torch7.s3-website-us-east-1.amazonaws.com/data/housenumbers/'
-    os.execute('wget ' .. www .. test_file)
-end
 
 ------------------------------------------------------
 print 'Loading data'
