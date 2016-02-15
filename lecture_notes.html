@@ -133,6 +133,10 @@
     <section id="intro-to-torch">
         <div class="container">
             <div class="row">
+  <!--        	<div id="widget" class="sticky" style="background-color:rgba(255, 0, 0, 1.0);width: 100%">-->
+		<!--<h2>Sticky Widget</h2>-->
+		<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum luctus eros sed pretium. Proin turpis odio, viverra et tincidunt nec, tincidunt sed nisl.</p>-->
+		<!--</div>-->
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Intro to Torch</h2>
                     <hr class="primary">
@@ -363,7 +367,7 @@ t:add(t2)</div></pre>
     </ul>
   </aside> -->
 
-    <aside class="sticky">
+    <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Suggested readings:</h2>
@@ -1059,6 +1063,33 @@ end</div></pre>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    
+    <!-- Sticky sidebox JavaScript -->
+    <script src="jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(function(){ // document ready
+
+	  if (!!$('.sticky').offset()) { // make sure ".sticky" element exists
+
+	    var stickyTop = $('.sticky').offset().top; // returns number 
+
+	    $(window).scroll(function(){ // scroll event
+
+	      var windowTop = $(window).scrollTop(); // returns number 
+
+	      if (stickyTop < windowTop){
+	        $('.sticky').css({ position: 'fixed', top: 30 });
+	      }
+	      else {
+	        $('.sticky').css('position','static');
+	      }
+
+	    });
+
+	  }
+
+	});
+	</script>
 
 </body>
 
