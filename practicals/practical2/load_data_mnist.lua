@@ -3,7 +3,7 @@ filepath = 'http://torch7.s3-website-us-east-1.amazonaws.com/data/mnist.t7.tgz'
 if not paths.dirp('mnist.t7') then
    print 'MNIST data not found. Downloading...'
    os.execute('wget ' .. filepath)
-   os.execute('tar xvf ' .. paths.basename(tar))
+   os.execute('tar xvf ' .. paths.basename('mnist.t7.tgz'))
 else 
    print 'MNIST data found'
 end
