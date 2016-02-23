@@ -103,6 +103,7 @@ function train(model, opt, model_opt, trainData, testData)
       learningRate      = model_opt.learningRate,
       weightDecay       = model_opt.weightDecay,
       momentum          = model_opt.momentum,
+     -- TODO: MORE IF YOU HAVE MORE OPTIONS
     }
     local optimize = optim.sgd
     local criterion = nn.CrossEntropyCriterion():cuda() -- HERE WE DEFINE THE OPERATIONS TO BE PERFORMED ON THE GPU
