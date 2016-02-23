@@ -3,12 +3,12 @@
 function initializeNetRandomly(net)
     local function initializeLayer(name)
         for k,v in pairs(net:findModules(name)) do
-            local n = v.kW*v.kH*v.nOutputPlane
-            v.weight:normal(0,math.sqrt(2/n))
-            v.bias:zero()
+            local n = -- TODO
+            v.weight --
+            v.bias: --
         end
     end
-    initializeLayer('nn.SpatialConvolution')
+    initializeLayer(--
 
     -- GO THROUGH ALL THE LAYERS OF THE NETWORK
     -- FIND THE ONES THAT CONTAIN TRAINABLE PARAMETERS
@@ -89,9 +89,9 @@ function setupLearningRateVector(model, model_opt)
 
         -- HERE YOU NEED TO LOAD THE DESIRED INITIAL LEARNING RATE FOR THE
         -- THE WEIGHTS AND THE BIASES
-        lrvector[{{offset, offset + wsize - 1}}] = --
+        lrvector[XX] = -- DIMENSIONS CORRESPONDING TO THE MODULE WEIGHT PARAMETERS
         offset = offset + wsize
-        lrvector[{{offset, offset + bsize - 1}}] = --
+        lrvector[XX] = -- DIMENSIONS CORRESPONDING TO THE MODULE BIAS PARAMETERS
         offset = offset + bsize
     end
 
