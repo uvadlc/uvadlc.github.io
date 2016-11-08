@@ -6,7 +6,7 @@ other_images
 # *.asv #
 .gitignore~
 *.tex~
-*.pdf
+#*.pdf
 *.log
 *.dvi
 *.aux
