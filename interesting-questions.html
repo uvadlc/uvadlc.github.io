@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Interesting questions</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="../css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/creative.css" type="text/css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="../index.html">Back to UvA Deep Learning Course</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="navbar-brand page-scroll" href="../index.html">Back to UvA Deep Learning Course</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+  
+<!--     <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Suggested readings:</h2>
+
+                <p class="text-faded">
+                    <div align="left">
+
+                    <ul class="text-faded">
+
+                    <li> <a href="http://www.deeplearningbook.org/" target="_blank" style="color: white;">I. Goodfellow, Y. Bengio, A. Courville. <i>Deep Learning</i>, MIT Press (in preparation), 2016.</a> A book for everything related to Deep Learning. [All lectures]</li>
+
+                    <li> <a href="http://arxiv.org/abs/1404.7828" target="_blank" style="color: white;">J. Schmidhuber. <i>Deep Learning in Neural Networks: An Overview</i>, arXiv, 2014.</a> A paper that summarizes the history of neural networks. [Lecture 1]</li>
+
+                    <li> <a href="https://www.google.nl/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjn8O-CltnKAhVBjQ8KHfj4DD0QFggfMAA&url=http%3A%2F%2Fpsych.stanford.edu%2F~jlm%2Fpapers%2FPDP%2FVolume%25201%2FChap8_PDP86.pdf&usg=AFQjCNEyzSem3aZnXoNcuAXiOMEP5MwVtQ&sig2=EWxwboc4glWfSD6SzpQoQg" target="_blank" style="color: white;">D.E. Rumelhart, G.E. Hinton, R.J. Williams. <i>Learning representations by back-propagating errors.</i>, Nature, 1986.</a> A paper that summarizes the history of neural networks. [Lecture 1, 2]</li>
+
+                    <li> <a href="http://www.cs.toronto.edu/~osindero/PUBLICATIONS/ncfast.pdf" target="_blank" style="color: white;">G.E. Hinton, S. Osindero, Y.W. Teh. <i>A Fast Learning Algorithm For Deep Belief Networks.</i>, Neural Computation, 2006.</a> A paper that marks the beginning of the Deep Learning era. [Lecture 1, 3]</li>
+
+                    </ul>
+
+                    </div>
+                    </p>  
+                
+            </div>
+        </div>
+    </aside> -->
+
+<!--     <section id="how-to-learn-with-neural-networks">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">How to learn with neural networks [UNDER CONSTRUCTION]</h2>
+                    <hr class="primary">
+
+                    <p class="running-text" style="text-align:justify">
+
+                    <h3 class="section-heading">What is a neural network?</h3>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
+                    A neural network is a family of parametric, non-linear and hierarchical representation learning functions, which are massively optimized with stochastic gradient descent to encode domain knowledge, i.e. domain invariances, stationarity.
+                    Mathematically, this verbal definition is described as
+
+                    $$a_L(x; \theta_{1, ..., L})=h_L(h_{L-1}(...h_1(x, \theta_1)..., \theta_{L-1}), \theta_L). (1)$$
+
+                    In this definition the output of a module becomes (part of) the input in a subsequent module, which is higher in the hierarchy of the functions that constitute the neural network.
+
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
+                    <b>A neural network is a parametric</b> class of models, because the parameters $\theta_{1, ..., L}$ need to be trained to minimize the empirical risk on a training set.
+
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
+                    <b>A neural network is in its general form non-linear</b>, as some of the functions $h_1, ..., h_L$ are non-linear.
+                    Although one could also a design a neural network with only linear layers, that would be in vain, as it would practically amount to a series of matrix multiplications.
+                    As such, it could be replaced by a single matrix multiplication, that is by a single layer neural network.
+
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
+                    <b>A neural network is hierarchical</b>, because the non-linear functions $h_1, ..., h_L$ are nested one inside the other.
+                    The order with which they are placed defines the hierarchy.
+
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
+                    <b>A neural networks learns representations</b> through the non-linear functions $h_1, ..., h_L$.
+                    More specifically, a neural network should receive inputs that are raw as possible (although the right data preprocessing and normalization is important).
+                    Starting from this raw input, the non-linear functions learn co-hierarchical co-dependencies, or features.
+                    For new test samples, which resemble the training samples the features were learnt upon, these features should become stronger.
+
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
+                    <b>A neural networks is massively optimized</b> because it contains a great deal of parameters.
+                    As such, without the right amount of data our neural network will overfit tremendously, leading to unusable models.
+
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
+                    <b>Last, a neural networks learns domain knowledge</b>, as the hypothesis is by encoding this domain knowledge in its features, the neural network can fit better the underlying data distributions, while being more (controllably) invariant to the unespabable dataset noise.
+
+                    </p>
+
+                    <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
+                    $\DeclareMathOperator*{\argmin}{arg\; min}$
+                    During training the goal is to find the optimal parameters $\theta^*$ which minimize the empirical risk both on the training and a separate validation set.
+                    Mathematically, we write this as
+                    
+                    $$\theta^* \leftarrow \argmin_{\theta} \frac{1}{n} \sum_{i=1}^n \mathcal{L}(\theta; x_i, y_i) \;\; (2)$$
+ 
+                    To find the optimal parameters of a neural netowrk, we almost always use some variant of Gradient Descend
+
+                    $$
+                    \theta^{(t+1)}=\theta^{(t)}-\frac{\eta_t}{n} \sum_i \nabla_{\theta} \mathcal{L}(\theta^{(t)}; x_i, y_i) \;\; (3)
+                    $$
+
+                    All there is to a neural network, be it model details, architecture and learning are summarized by eq. (1), (2) and (3).
+
+                    </p>
+
+                    <h3 class="section-heading">Everything is a module</h3>
+                    <!-- Architectural details -->
+
+<!--                     <p class="running-t$x^*=\argmin_{x} f(x)$ext" style="text-align:justify">
+
+                    From a system engineering point of view, a neural network is as a pipeline of connected modules.
+                    The way the modules are connected define the network architecture.
+                    Each of these modules implement a particular function.
+                    The input of a module is the output of one or more modules from below, while in turn the output of that module becomes the input for another module.
+                    The only exception is the data layer module.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Two main operations define the training of a neural network, namely the forward and the backward propagation of flows, better known as the forward propagation and backpropagation.
+                    During the forward propagation the network gets activated based on a particular input, e.g. based on an image that the network received.
+                    During the backpropagation the gradients of the neural network loss function with respect to the network parameters are computed.
+                    These gradients are then used to update the parameters with Gradient Descend.
+
+                    </p>                    
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Every module is independent from almost all other modules.
+                    The only things any module needs to know are <i>(a)</i> to what modules is the input directly connected to and, <i>(b)</i> what are its parameters.
+                    The architect can thereafter increase the neural network complexity by combining different modules of various purposes and sophistications into all sorts of crazy architectures.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    This design philosophy has three strong advantages.
+                    First, as long as the modules meet certain requirements, which we are going to revisit later, one can build as complex modules as one desires.
+                    Whether one module is complex or not, it will not affect the operationality of the overall network.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Second, as long as one can define a meaningful forward and backward propagation of flows, one is free to design a wide variety of different neural network architectures and connectivities, ranging from feedforward networks to loopy networks.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Third, given good modularity it is much easier to "debug" a complicated architecture with "unit tests".
+                    A unit test is a test where one checks whether a module produces the output, which the theory predicts, given a standard predefined input.
+                    For example, if our module is designed to compute the square root of any number, when we define it's input to be "9", "16", "25", it should return "3", "4", "5".
+                    Since we can now verify the correctedness of each module independently, we can build very complicated networks and still be sure to backtrace future problems relatively easily.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Architectures that have only forward connections are called feedforward neural networks and are straightforward to implement.
+                    Architectures that have forward connections between layers, which, however, are not adjacent to each other, form directed acyclic graphs (DAG) networks or DAGNN.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    A frequently used term in DAGNNs is <b>skip layers</b>.
+                    A layer that has forward connections not only to its immediate adjacent layers is a skip layer.
+                    DAG networks are also quite easy to implement as again, a given module is agnostic to the incoming inputs.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Architectures that have layers connected in cycles form loopy networks.
+                    These are recurrent neural networks.
+                    Loopy networks are more complicated, since training and inference cannot be performed in a straightforward manner.
+                    Instead, they have to be unrolled in time.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    An important note here is that although one can design crazy neural network architectures, this does not mean one should.
+                    Less complicated modules, e.g. <i>ReLUs</i> instead of <i>tanh</i>, are usually better theoretically as well as experimentally, while they are easier to train and generalize better.
+                    
+                    </p>
+
+                    <h3 class="section-heading">Computing the gradients with backpropagation</h3>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Backpropagation is the single most popular algorithm for training neural networks.
+                    Let's assume we have the network below, composed of $L$ layers.
+                    The per layer activations based on the module functions per layer are:
+
+                    $$\begin{eqnarray}
+                    a_1 = h_1(x_1, \theta_1), \\
+                    a_2 = h_2(x_2, \theta_2), \\
+                    a_3 = h_3(x_3, \theta_3), \\
+                    \dots, \\
+                    a_L = h_L(x_L, y), \\
+                    \end{eqnarray}$$
+
+                    where $x_l=a_{l-1}$.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Next, we want to optimize the neural networks, namely to find the optimal weights $\theta_l, l=1, \dots, L-1$ for which the final loss $\mathcal{L}$ is low in both the training and the validation sets.
+                    For this we use different flavors of the Gradient Descend algorithm.
+                    All these flavors have in common that need to compute the gradients of the network losses with respect to the network parameters, namely
+
+                    $$\dfrac{\partial{\mathcal{L}}}{\partial \theta_l}, l=1, \dots, L-1$$
+
+                    However, <i>how can we compute the gradients of such a complicated function of eq. (1)?</i>?
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    It turns out that to answer this question we can use a 300-years old mathematical theory, the <b>Chain Rule</b>.
+                    The chain rule suggests that when one has a nested function, namely a function inside a function, $f(g(x))$, (or inside a function inside a function inside a function ...) like in eq. (1), one can compute the derivatives with respect to the input simply by
+
+                    $$
+                    \dfrac{\partial f}{\partial x}=\dfrac{\partial f}{\partial g} \cdot \dfrac{\partial g}{\partial x}
+                    $$
+
+                    By applying the chain rule to eq. (1), and remembering that $a_L=\mathcal{L}$, we can compute the gradients of the loss with respect to the parameters of a particular layer,
+
+                    $$
+                    \dfrac{\partial \mathcal{L}}{\partial \theta_l}=\dfrac{\partial \mathcal{L}}{\partial a_l} \cdot (\dfrac{\partial a_l}{\partial \theta_l})^T. (4)
+                    $$
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Eq. (4) says something straightforward.
+                    To compute the gradients of network loss with respect to the gradient parameters you need to quantities.
+                    The first quantity the gradient of the module with respect to its parameters, namely $\dfrac{\partial a_l}{\partial \theta_l}$.
+                    This is easy to compute, if the function is (at least first-order), almost everywhere differentiable.
+                    The second quantity is the gradient of the network loss with respect to the output of the layer $l$, $\dfrac{\partial \mathcal{L}}{\partial a_l}$.
+                    How can we compute the latter easily?
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    To answer this question, we resort once more to the chain rule.
+                    More specifically, and given that $a_l=x_{l+1}$, we have that
+
+                    $$
+                    \dfrac{\partial \mathcal{L}}{\partial a_l} = (\dfrac{\partial a_{l+1}}{\partial x_{l+1}})^T \cdot \dfrac{\partial \mathcal{L}}{\partial a_{l+1}}. (5)
+                    $$
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    This is a very convenient formulation.
+                    First, we need to compute the gradient of a module with respect to its input, $\dfrac{\partial a_{l+1}}{\partial x_{l+1}}$, which is easy.
+                    Second, this formulation is recursive.
+                    To compute the gradient of $\dfrac{\partial \mathcal{L}}{\partial a_l}$, we can simply rely on (and reuse) the same type of gradient from the layer above, $\dfrac{\partial \mathcal{L}}{\partial a_{l+1}}$.
+                    As such, if we start from the last layer and traverse the network in the reverse manner than what we did during the forward propagation to the first layer, we can recursively compute all $\dfrac{\partial \mathcal{L}}{\partial a_l}, l=1,..., L$ quite easily.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    It is important to note at this point that the function $h_l(\cdot)$, which generates $a_l$, is a function that receives a vector of inputs.
+                    Hence, each output dimension of $a_l$ might depend on multiple input dimensions in the vector of $x_l$.
+                    Hence, when computing the gradient of a module with respect to its parameters, $\dfrac{\partial a_l}{\partial \theta_l}$, we need to compute the Jacobian matrix
+
+                    $$
+                    \dfrac{\partial a_l}{\partial{x_l}}=
+                    \begin{bmatrix}
+                    \dfrac{\partial a_l^1}{\partial{x_l^1}} & \dfrac{\partial a_l^1}{\partial{x_l^2}} & \dots & \dfrac{\partial a_l^1}{\partial{x_l^n}} \\ 
+                    \dfrac{\partial a_l^2}{\partial{x_l^1}} & \dfrac{\partial a_l^2}{\partial{x_l^2}} & \dots & \dfrac{\partial a_l^2}{\partial{x_l^n}} \\ 
+                    \dots                          & \dots & \dots & \dots \\ 
+                    \dfrac{\partial a_l^m}{\partial{x_l^1}} & \dfrac{\partial a_l^2}{\partial{x_l^2}} & \dots & \dfrac{\partial a_l^m}{\partial{x_l^n}}
+                    \end{bmatrix}
+                    $$
+
+                    Such functions are the softmax, $a_j = \dfrac{\exp{x_j}}{\sum_i{\exp{x_i}}}$ or the $\ell_2$ normalization, $a_j = \dfrac{x_j}{\sqrt{\sum_i{x_i^2}}}$.
+                    Clearly, for both these function the output $a_j$ depends on all the input variables, $x_1, ..., x_d$.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    In contrast, a module can also be implemented to compute only element-wise nonlinearities, such as the standard $\tanh(\cdot), \sigma(\cdot), ReLU(\cdot)$ functions.
+                    For these functions each output dimension $a_j$ depends <b>only</b> on the respective input dimension $x_j$.
+                    As such, the Jacobian matrix for these functions will be diagonal.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    After we have computed the forward propagations, during which we have cached all the intermediate activations $a_l$ to avoid extra computations, backpropagation amounts to the following few steps.
+
+                    </p>
+
+                    <div style="border:1px solid black;" align="left">
+<b>Step 1.</b> Set $l=L+1$</br>
+<b>Step 2.</b> $l\leftarrow l-1$</br>
+<b>Step 3.</b> If $l==0$, exit.</br>
+<b>Step 4.</b> Compute
+
+$\dfrac{\partial \mathcal{L}} {\partial a_l} = (\dfrac{\partial a_{l+1}} {\partial x_{l+1}})^T \cdot \dfrac{\partial \mathcal{L}} {\partial a_{l+1}}.$
+
+Note that for $l+1=L$, $\dfrac{\partial \mathcal{L}}{\partial a_{l+1}}=I$, as we take the derivative of a function with respect to itself. </br>
+
+<b>Step 5.</b> Compute 
+
+$
+\dfrac{\partial \mathcal{L}}{\partial \theta_l}=\dfrac{\partial \mathcal{L}}{\partial a_l} \cdot (\dfrac{\partial a_l}{\partial \theta_l})^T.
+$
+
+When the module has no parameters (e.g. for non-parametric loss modules for $l=L$), there is no $\dfrac{\partial \mathcal{L}}{\partial \theta_l}$, hence we can omit this step.</br>
+<b>Step 6.</b> GOTO Step 1.</p>
+</div>
+
+                    <h3 class="section-heading">Implementing your own module, layer, network</h3>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    To implement a new module, you must first define the forward computation of the module, $a=h(x;\theta)$, where $a$ are the activations and $h(\cdot)$ the module function.
+                    Implementing the forward pass is straightforward.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Then, you must define the backward computation of the model, which is going to be used by the backpropagation.
+                    As explained before, you need to be able to define the gradient $\dfrac{\partial a}{\partial \theta}$ and the gradient $\dfrac{\partial a}{\partial x}$.
+                    Hence, a basic requirement for a module is that it is <b>(at least first-order) differentiable with respect to its input and its parameters almost everywhere</b>.
+                    We say here almost everywhere, because one can turn a blind eye at points where a gradient cannot be explicitly computed.
+                    E.g. when at $x=0$ for $a=h(x)=|x|$, we can assume the gradient to be 0.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    We can therefore implement a new module by writing 3 functions:
+                    <ul>
+                    <div align="left">
+                    <li> $a=h(x)$ </li>
+                    <li> $\dfrac{\partial a}{\partial x}$ </li>
+                    <li> $\dfrac{\partial a}{\partial \theta}$</li>
+                    </div>
+                    </ul>
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    The last function should be implemented only if the module contains trainable parameters $\theta$.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    In Torch this is exactly how you implement a new module.
+                    After you open a new file, where you will implement the new module, you need to overload the following functions.
+
+ <pre class="prettyprint"><div align="left">local MyModule, Parent = torch.class('nn.MyModule', 'nn.Module')
+
+function MyModule:__init(var1, var2)
+   Parent.__init(self)
+   self.W                  = torch.randn( ...
+   self.gradWeight         = torch.zeros( ...
+   self.mymodule_variable1 = var1
+   self.mymodule_variable1 = var2
+   ...
+   
+end
+
+function MyModule:updateOutput(input)
+   ...
+   self.output ...
+   return self.output
+end
+
+function MyModule:updateGradInput(input, gradOutput)
+   ...
+   self.gradInput:zeros...
+   ...
+   self.gradInput...
+   return self.gradInput
+end
+
+function MyModule:accGradParameters(input, gradOutput, scale)
+   ...
+   self.gradWeight:...
+   ...
+   return self.gradWeight
+end</div></pre>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    The last function <tt>accGradParameters</tt> needs to be overload only if the module is parametric, namely if the module contains trainable parameters.
+
+                    </p>
+
+                    <h3 class="section-heading">Checking your gradients, checking your backpropagation</h3>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Keeping up with all the backpropagation computations can be confusing.
+                    For one, making a silly mistake, be it a mathematical or programming one, when computing the gradients is very easy.
+                    Moreoever, getting the dimensions of the backward computations right can be messy with all the matrices, the Jacobians etc.
+                    We can use, however, two very powerful tools in our quest of taming backpropagation.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    To make sure that all the gradient dimensions are correct, we resort to dimension analysis.
+                    Dimension analysis says the pretty straightforward thing, that our parameter vector $\theta_l$ for layer $l$ should have the same dimensionality with the gradient of the loss with respect to these parameters.
+                    Indeed, if our parameters at layer $l$ have dimensions $d_l \times d_{l-1}$ (remember, the input $x_l=a_{l-1}$, which has $d_{l-1}$ dimensions), then for 
+                    
+                    $
+                    \dfrac{\partial \mathcal{L}}{\partial \theta_l}= \dfrac{\partial \mathcal{L}}{\partial a_l} \cdot (\dfrac{\partial a_l}{\partial \theta_l})^T.
+                    $
+
+                    we have that $[d_l \times d_{l-1}]=[d_l \times 1]\cdot[1 \times d_{l-1}].$
+                    
+                    And, for
+
+                    $\dfrac{\partial \mathcal{L}} {\partial a_l} = (\dfrac{\partial a_{l+1}} {\partial x_{l+1}})^T \cdot \dfrac{\partial \mathcal{L}} {\partial a_{l+1}}.$
+
+                    we have that $[d_l \times 1]=[d_l \times d_{l+1}]\cdot[d_{l+1} \times 1].$
+
+                    By checking the dimensions of our resulting network outputs each layer and whether they much, we can be pretty sure that our backpropagation implementation is correct.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Now that we have made sure that our basic computations for getting the backpropagation steps right, we need to make sure that also our module gradients are correct.
+                    To do this we resort to the so called gradient checks.
+                    The gradient check is something also pretty straightforward.
+                    To understand better what the gradient check is, let's take a step back and remember the original definition of the derivative, namely
+
+                    $$
+                    \dfrac{\partial h}{\partial \alpha}=\lim_{\epsilon \rightarrow 0} \dfrac{h(\alpha+\epsilon)-f(\alpha-\epsilon)}{2\epsilon} (6)
+                    $$
+
+                    The original formulation of the gradient (or derivative to be more precise) explains that we can approximate the gradient of a function $f$ at point $x$ quite accurately by just using the function itself.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    Now, this is very convenient in the context of a neural network, because the function $f$ stands for the forward propagation.
+                    Assuming that we have implemented the forward propagation correct (which is a fair assumption, just plot if your function returns what it should return), we can check the gradient at a particular dimension $j$ by doing the following.
+                    We create a random dataset with random inputs $x$ and parameters $\theta$ (they don't need to be a real dataset, if our gradients are correct they are going to be correct for all kinds of data).
+                    To chech the gradient at dimension $j$, we compute the module output $h(x, \theta^{+})$ using the parameter vector
+
+                    $$
+                    \theta^{+}=
+                    \begin{bmatrix}
+                    \theta_1 \\
+                    \theta_2 \\
+                    ...\\
+                    \theta_j+\epsilon \\
+                    ...\\
+                    
+                    \end{bmatrix}
+                    $$
+
+                    Similarly, we compute the module output $h(x, \theta^-)$ using the parameter vector
+
+                    $$
+                    \theta^{-}=
+                    \begin{bmatrix}
+                    \theta_1 \\
+                    \theta_2 \\
+                    ...\\
+                    \theta_j-\epsilon \\
+                    ...\\
+                    
+                    \end{bmatrix}
+                    $$
+
+                    Next, we compute the gradient by using $h(x, \theta^{+})$, $h(x, \theta^{-})$ and eq. (6).
+                    We then compare this computationally derived gradient with the gradient we computed explicitly.
+                    If the difference is very small (somewhere between $10^{-5}$ and smaller), we can be pretty sure that our gradients have been implemented correctly.
+                    This check can be done for both $\dfrac{\partial a}{\partial \theta}$ and $\dfrac{\partial a}{\partial x}$.
+
+                    </p>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    It is important to note here that the gradient checks are performed per gradient dimension.
+                    Hence, the increment $\epsilon$ should be applied <b>only for a single dimension at a time</b>.
+                    Do not add all the gradient dimensions with $\epsilon$, otherwise you will get wrong results.
+                    Some other useful tips is to generate a few only random data.
+                    There is no difference if you have many, your gradients will not be more correct (or more wrong), but with fewer data your checks can be faster (which is an issue for very large networks).
+                    Also, for speed you can check only few of your gradient dimensions, especially if you have element-wise modules.
+                    However, make sure that you check dimensions evenly.
+                    If you have the biases separately, in your checks do not forget to include their gradients.
+
+                    </p>
+
+                    <h3 class="section-heading">Example</h3>
+
+                    <p class="running-text" style="text-align:justify">
+
+                    To make the explanations more hands-on, let us accompany the formal definitions with the specific neural network from the figure above.
+                    The first module (layer) is linear, receives the 256-d data from the data input module and projects them via a matrix-matrix multiplication onto a 128 space,
+                    
+                    $$a_1 = \theta_1 x_1.$$
+                    
+                    Hence, $dim(x_1)=[256\times 1]$, $dim(a_1)=[128\times 1]$ and $dim(\theta_1)=[128\times 256]$
+                    The second module receives the input from module 1, so $x_2=a_1$ and applies a non-linear sigmoid transformation, namely
+                    
+                    $$a_2 = \sigma(x_2).$$
+
+                    The second module does not contain any trainable parameters and only applies the sigmoid non-linearity to the data.
+                    Hence, $\theta_2=\emptyset$.
+                    Similarly, we consider for the next to layers to be implemented by a linear module projecting the input to a 64 dimensional space,
+
+                    $$a_3 = \theta_3 x_3$$
+
+                    and a ReLU module with no trainable parameters,
+
+                    $$a_4 = ReLU(x_4).$$
+
+                    The last layer is impemented by a cross entropy (negative log-likelihood) module, namely
+
+                    $$a_5 = \mathcal{L}(x_5, y)=0.5\|y-x_5\|^2.$$
+
+                    Remember that in all cases $x_l=a_{l-1}$.
+                    
+                    </p>
+
+                    </p>
+
+                    <h3 class="section-heading">Types of modules</h3>
+
+                    <h3 class="section-heading">Data preprocessing and normalization</h3>
+
+                    <h3 class="section-heading">Optimization methods</h3>
+
+                    <h3 class="section-heading">Regularization</h3>
+
+                    <h3 class="section-heading">Learning rate</h3>
+
+                    <h3 class="section-heading">Weight initialization</h3>
+
+                    <h3 class="section-heading">Loss functions</h3>
+
+                    <h3 class="section-heading">Babysitting a neural network</h3>
+
+                    <h3 class="section-heading">What is a module</h3>
+
+
+                    <h3 class="section-heading">Backpropagation</h3> -->
+
+                    
+
+                    <!-- As mentioned above, backpropagation is composed of two half-steps, forward and backward propagation.
+                    During the forward propagation the module generates an output given an input.
+                    If we would have a module for computing the input to the power of two, $f(x)=x^2$, during forward propagation we simply do that, namely compute the $x^2$.
+                    This step is essentially the same as when we use the network at test time and use it to generate an output given an input.
+                    The backward propagation is essentially very similar to the forward propagation, instead now we use the gradient of the module function to compute the output, namely $\nabla_x f(x)=2x$. -->
+
+
+                    
+<!--                     A feedforward, multi-layer neural network, like in the figure below, is often called also multi-layer perceptron <b>(MLP)</b>.
+                    Each layers hosts a module like the ones we discussed earlier.
+
+                    Each module receives an input and performs an operation on it, be it a linear transformation of the form $y=Wx+b$ or a non-linear one like $y=tanh(x)$ or pooling.
+                    Also, typically there are connections only from layer $l$ to the subsequent one $l+1$, as in the figure to the right.
+                    Hence, when we design our multilinear perceptron, the possible design choices we have, outside the learning hyperparameters, are the following: -->
+<!--                     %
+                    \begin{itemize}
+                    \item number of modules
+                    \item number of units in each module
+                    \item type of operation applied inside each module
+                    \item type of loss function
+                    \end{itemize} -->
+
+
+<!--                 </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Suggested readings:</h2>
+
+                <p class="text-faded">
+                    <div align="left">
+
+                    <ul class="text-faded">
+
+                    <li> <a href="https://www.google.nl/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjn8O-CltnKAhVBjQ8KHfj4DD0QFggfMAA&url=http%3A%2F%2Fpsych.stanford.edu%2F~jlm%2Fpapers%2FPDP%2FVolume%25201%2FChap8_PDP86.pdf&usg=AFQjCNEyzSem3aZnXoNcuAXiOMEP5MwVtQ&sig2=EWxwboc4glWfSD6SzpQoQg" target="_blank" style="color: white;">D.E. Rumelhart, G.E. Hinton, R.J. Williams. <i>Learning representations by back-propagating errors.</i>, Nature, 1986.</a> A paper that summarizes the history of neural networks. [Lecture 1, 2]</li>
+
+                    <li> <a href="http://www.cs.toronto.edu/~osindero/PUBLICATIONS/ncfast.pdf"  target="_blank" style="color: white;">G.E. Hinton, S. Osindero, Y.W. Teh. <i>A Fast Learning Algorithm For Deep Belief Networks.</i>, Neural Computation, 2006.</a> A paper that marks the beginning of the Deep Learning era. [Lecture 1, 3]</li>
+
+                    <li> <a href="http://www.cs.toronto.edu/~osindero/PUBLICATIONS/ncfast.pdf" target="_blank" style="color: white;">Y. LeCun, L. Bottou, G. B.Orr, K.R. Muller <i>Efficient Backprop.</i>, Lecture Notes in Computer Science, 2002.</a> A paper that describes very well how to train Neural Networks in practice. The writing is very clear and most of the tips are still useful for modern Deep Learning architectures. Highly Recommended! [Lecture 2, 3]</li>
+
+                    <li> <a href="http://research.google.com/archive/large_deep_networks_nips2012.html" target="_blank" style="color: white;">J. Dean, G.S. Corrado, R. Monga, K. Chen, M. Devin, Q.V. Le, M.Z. Mao, M.A. Ranzato, A. Senior, P. Tucker, K. Yang, and A.Y. Ng <i>Large Scale Distributed Deep Networks.</i>, NIPS, 2012.</a> A paper that compares L-BFGS with SGD. [Lecture 3]</li>
+
+                    <li> <a href="http://cs231n.github.io/neural-networks-1/" target="_blank" style="color: white;">http://cs231n.github.io/neural-networks-1/</a>, <a href="http://cs231n.github.io/neural-networks-2/" target="_blank" style="color: white;">http://cs231n.github.io/neural-networks-2/</a>, <a href="http://cs231n.github.io/neural-networks-3/" target="_blank" style="color: white;">http://cs231n.github.io/neural-networks-3/</a> A. Karpathy <i>CS231n Convolutional Neural Networks for Visual Recognition.</i> The course website for A. Karpathy's and Fei-Fei L.'s class on Convolutional Neural Networks. A very nice and clean website, with very clear explanations on neural networks. Highly Recommended! [Lecture 2-4]</li>
+
+                    <li> <a href="http://arxiv.org/abs/1206.5533" target="_blank" style="color: white;">Y. Bengio <i>Practical recommendations for gradient-based training of deep architectures.</i>, arXiv, 2012.</a> [Lecture 2, 3]</li>
+
+                    <li> <a href="http://cilvr.cs.nyu.edu/diglib/lsml/bottou-sgd-tricks-2012.pdf" target="_blank" style="color: white;">L. Bottou <i>Stochastic Gradient Descent Tricks.</i>, Lecture Notes in Computer Science, 2012.</a> [Lecture 2, 3]</li>
+
+                    <li> <a href="http://www.cs.toronto.edu/~jmartens/docs/Deep_HessianFree.pdf" target="_blank" style="color: white;">J. Martens <i>Deep learning via Hessian-free optimization.</i>, Lecture Notes in Computer Science, 2012.</a> [Lecture 3]</li>
+
+                    </ul>
+
+                    </div>
+                    </p>  
+                
+            </div>
+        </div>
+    </aside>
+
+
+    <section id="how-to-clasify-pixels">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How to classify pixels?</h2>
+                    <hr class="primary">
+
+                    <p class="running-text">Not ready yet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="how-to-synthesize-words">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How to synthesize words?</h2>
+                    <hr class="primary">
+
+                    <p class="running-text">Not ready yet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="all-things-unsupervised">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Unsupervised and Bayesian Deep Learning</h2>
+                    <hr class="primary">
+
+                    <p class="running-text">Not ready yet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="The bigger picture">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">The bigger picture</h2>
+                    <hr class="primary">
+
+                    <p class="running-text">Not ready yet.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+    
+    <!-- Sticky sidebox JavaScript -->
+    <script src="jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function(){ // document ready
+
+      if (!!$('.sticky').offset()) { // make sure ".sticky" element exists
+
+        var stickyTop = $('.sticky').offset().top; // returns number 
+
+        $(window).scroll(function(){ // scroll event
+
+          var windowTop = $(window).scrollTop(); // returns number 
+
+          if (stickyTop < windowTop){
+            $('.sticky').css({ position: 'fixed', top: 30 });
+          }
+          else {
+            $('.sticky').css('position','static');
+          }
+
+        });
+
+      }
+
+    });
+    </script>
+
+</body>
+
+</html>
