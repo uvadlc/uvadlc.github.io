@@ -1,0 +1,244 @@
+LISA GPU TUTORIALS: PYTORCH AND TENSORFLOW
+==========================================
+
+* Installing the tools and downloading the dataset and the examples
+  -----------------------------------------------------------------
+
+To download the dataset (CIFAR10) and install the tools it is better to use the main login nodes of Lisa
+ 
+ssh lgpu0XXX@lisa.surfsara.nl
+
+wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+
+Installing PyTorch requires cuDNN (library with CUDA functions for efficient convolution and matrix multiplication) and NCCL (efficient collective communication functions), as well as the use of the correct exports on the Lisa GPU login node.
+
+module load pre2019
+module load Python/3.6.3-foss-2017b
+module load cuDNN/7.0.5-CUDA-9.0.176
+module load NCCL/2.0.5-CUDA-9.0.176
+export LD_LIBRARY_PATH=/hpc/eb/Debian9/cuDNN/7.1-CUDA-8.0.44-GCCcore-5.4.0/lib64:$LD_LIBRARY_PATH
+pip3 install --user torch torchvision
+pip3 install --user tensorflow_gpu
+
+Download the example repository from PyTorch:
+
+git clone https://github.com/pytorch/examples.git pytorch_examples
+
+Download the example repository from TensorFlow:
+
+git clone https://github.com/tensorflow/models.git
+
+============================================
+============================================
+============================================
+
+* PyTorch example
+  ---------------
+
+For this example it is necessary to use the Lisa GPU login node
+
+ssh lgpu0XXX@login-gpu.lisa.surfsara.nl
+
+We will run a GAN (generative adversarial network) on the CIFAR10 dataset. First, copy the dataset to the dcgan folder of the examples, and use that folder as working directory:
+
+cp cifar-10-python.tar.gz pytorch_examples/dcgan/
+cd pytorch_examples/dcgan/
+
+
+Then, place the following pytorch.job in the same folder (edit with "nano pytorch.job")
+
+Contents of pytorch.job:
+
+================
+#!/bin/bash
+
+#SBATCH --job-name=example
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=3
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=1:00:00
+#SBATCH --mem=60000M
+#SBATCH --partition=gpu_shared_course
+#SBATCH --gres=gpu:1
+
+module purge
+module load eb
+
+module load pre2019
+module load Python/3.6.3-foss-2017b
+module load cuDNN/7.0.5-CUDA-9.0.176
+module load NCCL/2.0.5-CUDA-9.0.176
+export LD_LIBRARY_PATH=/hpc/eb/Debian9/cuDNN/7.1-CUDA-8.0.44-GCCcore-5.4.0/lib64:$LD_LIBRARY_PATH
+
+srun python3 -u main.py --dataset=cifar10 --dataroot=. --cuda
+================
+
+
+
+Submit the job with:
+
+sbatch pytorch.job
+
+Then, check SLURM output. It should be something like this:
+
+Namespace(batchSize=64, beta1=0.5, cuda=True, dataroot='.', dataset='cifar10', imageSize=64, lr=0.0002, manualSeed=None, ndf=64, netD='', netG='', ngf=64, ngpu=1, niter=25, nz=100, outf='.', workers=2)
+Random Seed:  8194
+Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to ./cifar-10-python.tar.gz
+Generator(
+  (main): Sequential(
+    (0): ConvTranspose2d(100, 512, kernel_size=(4, 4), stride=(1, 1), bias=False)
+    (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace)
+    (3): ConvTranspose2d(512, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace)
+    (6): ConvTranspose2d(256, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (7): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU(inplace)
+    (9): ConvTranspose2d(128, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (10): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (11): ReLU(inplace)
+    (12): ConvTranspose2d(64, 3, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (13): Tanh()
+  )
+)
+Discriminator(
+  (main): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (1): LeakyReLU(negative_slope=0.2, inplace)
+    (2): Conv2d(64, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (3): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (4): LeakyReLU(negative_slope=0.2, inplace)
+    (5): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (6): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (7): LeakyReLU(negative_slope=0.2, inplace)
+    (8): Conv2d(256, 512, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (9): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): LeakyReLU(negative_slope=0.2, inplace)
+    (11): Conv2d(512, 1, kernel_size=(4, 4), stride=(1, 1), bias=False)
+    (12): Sigmoid()
+  )
+)
+[0/25][0/782] Loss_D: 1.9226 Loss_G: 4.7332 D(x): 0.3970 D(G(z)): 0.4802 / 0.0112
+[0/25][1/782] Loss_D: 1.4282 Loss_G: 5.9478 D(x): 0.7768 D(G(z)): 0.5775 / 0.0048
+[0/25][2/782] Loss_D: 1.0728 Loss_G: 5.3339 D(x): 0.6434 D(G(z)): 0.2968 / 0.0070
+[0/25][3/782] Loss_D: 1.1183 Loss_G: 6.1291 D(x): 0.7238 D(G(z)): 0.4363 / 0.0031
+[0/25][4/782] Loss_D: 0.8597 Loss_G: 6.8755 D(x): 0.7401 D(G(z)): 0.3364 / 0.0016
+[0/25][5/782] Loss_D: 0.9826 Loss_G: 6.2175 D(x): 0.6471 D(G(z)): 0.2519 / 0.0028
+[0/25][6/782] Loss_D: 1.1336 Loss_G: 8.0856 D(x): 0.7768 D(G(z)): 0.5040 / 0.0005
+[0/25][7/782] Loss_D: 0.7810 Loss_G: 7.2080 D(x): 0.7059 D(G(z)): 0.2014 / 0.0012
+.
+.
+.
+.
+.
+
+============================================
+============================================
+============================================
+
+* TensorFlow example
+  ------------------
+
+For this example it is necessary to use the Lisa GPU login node
+
+ssh lgpu0XXX@login-gpu.lisa.surfsara.nl
+
+We will run a CNN (convolutional neural network) on the CIFAR10 dataset. First, copy the dataset to the cifar10_estimator folder of the examples, and use that folder as working directory. Then unpack the dataset there:
+
+cp cifar-10-python.tar.gz models/tutorials/image/cifar10_estimator/ 
+cd models/tutorials/image/cifar10_estimator/
+tar xzf cifar-10-python.tar.gz
+
+Now the TFRecords (images packed in a TensorFlow database) need to be prepared.
+
+IMPORTANT PATCH: you need to comment the download line in the script generate_cifar10_tfrecords.py (line 42)
+
+After you have commented that line, run the following routine to pack the data in TFRecords (and first load the necessary modules to run Python with CUDA libraries):
+
+module load pre2019
+module load Python/3.6.3-foss-2017b
+module load cuDNN/7.0.5-CUDA-9.0.176
+module load NCCL/2.0.5-CUDA-9.0.176
+export LD_LIBRARY_PATH=/hpc/eb/Debian9/cuDNN/7.1-CUDA-8.0.44-GCCcore-5.4.0/lib64:$LD_LIBRARY_PATH
+python generate_cifar10_tfrecords.py --data-dir=${PWD}
+
+Then, place the following tensorflow.job in the same folder (edit with "nano tensorflow.job").
+
+Contents of tensorflow.job:
+
+================
+#!/bin/bash
+
+#SBATCH --job-name=example
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=3
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=1:00:00
+#SBATCH --mem=60000M
+#SBATCH --partition=gpu_shared_course
+#SBATCH --gres=gpu:1
+
+module purge
+module load eb
+
+module load pre2019
+module load Python/3.6.3-foss-2017b
+module load cuDNN/7.0.5-CUDA-9.0.176
+module load NCCL/2.0.5-CUDA-9.0.176
+export LD_LIBRARY_PATH=/hpc/eb/Debian9/cuDNN/7.1-CUDA-8.0.44-GCCcore-5.4.0/lib64:$LD_LIBRARY_PATH
+
+srun python3 -u cifar10_main.py --data-dir=${PWD} --num-gpus=1 --job-dir=${PWD}/jobs
+================
+
+
+Submit the job with:
+
+sbatch tensorflow.job
+
+Then, check SLURM output. It should be something like this:
+
+2018-11-30 14:23:37.426372: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-30 14:23:37.667213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties:
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.6705
+pciBusID: 0000:3b:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2018-11-30 14:23:37.667262: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2018-11-30 14:23:40.870782: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-30 14:23:40.870842: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0
+2018-11-30 14:23:40.870853: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N
+2018-11-30 14:23:40.871194: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/device:GPU:0 with 10409 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:3b:00.0, compute capability: 6.1)
+WARNING:tensorflow:From cifar10_main.py:380: RunConfig.__init__ (from tensorflow.contrib.learn.python.learn.estimators.run_config) is deprecated and will be removed in a future version.
+Instructions for updating:
+When switching to tf.estimator.Estimator, use tf.estimator.RunConfig instead.
+WARNING:tensorflow:From cifar10_main.py:387: run (from tensorflow.contrib.learn.python.learn.learn_runner) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.estimator.train_and_evaluate.
+INFO:tensorflow:Using config: {'_task_type': None, '_task_id': 0, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x2b0f0f639fd0>, '_master': '', '_num_ps_replicas': 0, '_num_worker_replicas': 0, '_environment': 'local', '_is_chief': True, '_evaluation_master': '', '_train_distribute': None, '_eval_distribute': None, '_device_fn': None, '_tf_config': gpu_options {
+  per_process_gpu_memory_fraction: 1.0
+}
+, '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_secs': 600, '_log_step_count_steps': 100, '_protocol': None, '_session_config': gpu_options {
+  force_gpu_compatible: true
+}
+allow_soft_placement: true
+, '_save_checkpoints_steps': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_model_dir': '/home/valeriuc/gpu_island/slurm/models/tutorials/image/cifar10_estimator/jobs'}
+WARNING:tensorflow:From cifar10_main.py:360: Experiment.__init__ (from tensorflow.contrib.learn.python.learn.experiment) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.estimator.train_and_evaluate. You will also have to convert to a tf.estimator.Estimator.
+WARNING:tensorflow:From /home/valeriuc/.local/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/monitors.py:279: BaseMonitor.__init__ (from tensorflow.contrib.learn.python.learn.monitors) is deprecated and will be removed after 2016-12-05.
+Instructions for updating:
+Monitors are deprecated. Please use tf.train.SessionRunHook.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1/: (?, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1_1/: (?, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1_2/: (?, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1_3/: (?, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1_4/: (?, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1_5/: (?, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1_6/: (?, 16, 32, 32)
+.
+.
+.
+.
+.
+
