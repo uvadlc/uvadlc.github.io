@@ -1,0 +1,135 @@
+[
+	{
+		"type": "lecture",
+		"name": "Introduction to Deep Learning",
+		"date": "October 20, 2020 | 3pm-5pm | Online lecture",
+		"desc": "A short description of the lecture content",
+		"documents": [
+			{"name": "Slides",
+			 "link": "lectures/",
+			 "type": "powerpoint"}
+		],
+		"recordings": [
+			{"name": "Course Information",
+			 "link": ""},
+			{"name": "Applications of deep learning",
+			 "link": ""},
+			{"name": "Perceptrons",
+			 "link": ""},
+			{"name": "Deep learning arrives",
+			 "link": ""},
+			{"name": "Deep learning: The what and why",
+			 "link": ""},
+			{"name": "Types of (deep) learning",
+			 "link": ""},
+			{"name": "Neural network cheatsheet",
+			 "link": ""},
+			{"name": "Open questions",
+			 "link": ""}
+		]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Introduction to PyTorch and SURFSara",
+		"date": "October 20, 2020 | 5pm-7pm | Online tutorial",
+		"desc": "A short description of the lecture content",
+		"image": "images/lenet.jpg",
+		"documents": [
+			{"name": "Recording",
+			 "link": "",
+			 "type": "video"},
+			{"name": "Jupyter notebook",
+			 "link": "https://notebook-test.readthedocs.io/",
+			 "type": "notebook"}
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Modular Learning",
+		"date": "October 22, 2020 | 1pm-3pm | Online lecture",
+		"desc": "A short description of the lecture content",
+		"documents": [
+			{"name": "Slides",
+			 "link": "lectures/",
+			 "type": "powerpoint"}
+		],
+		"recordings": [
+			{"name": "Deep modularity",
+			 "link": ""},
+			{"name": "Optimizing deep networks",
+			 "link": ""},
+			{"name": "Deep learning modules",
+			 "link": ""},
+			{"name": "Deep learning nonlinearities",
+			 "link": ""},
+			{"name": "Chain rule",
+			 "link": ""},
+			{"name": "Backpropagation",
+			 "link": ""},
+			{"name": "Tricks of the trade",
+			 "link": ""}
+		]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Activation functions",
+		"date": "October 20, 2020 | 5pm-7pm | Online tutorial",
+		"desc": "A short description of the tutorial content",
+		"image": "images/lenet.jpg",
+		"documents": [
+			{"name": "Recording",
+			 "link": "",
+			 "type": "video"},
+			{"name": "Jupyter notebook",
+			 "link": "https://notebook-test.readthedocs.io/",
+			 "type": "notebook"}
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Deep Learning Optimizations",
+		"date": "October 27, 2020 | 3pm-5pm | Online lecture",
+		"desc": "A short description of the lecture content",
+		"documents": [
+			{"name": "Slides",
+			 "link": "lectures/",
+			 "type": "powerpoint"}
+		],
+		"recordings": [
+			{"name": "Intro to empirical risk minimization",
+			 "link": ""},
+			{"name": "Stochastic gradient descent",
+			 "link": ""},
+			{"name": "Optimizers",
+			 "link": ""},
+			{"name": "Initialization",
+			 "link": ""},
+			{"name": "Normalization",
+			 "link": ""},
+			{"name": "Regularization",
+			 "link": ""},
+			{"name": "Hyperparameters",
+			 "link": ""}
+		]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Controlling weight and activation distributions",
+		"date": "October 27, 2020 | 5pm-7pm | Online tutorial",
+		"desc": "A short description of the tutorial content",
+		"image": "images/lenet.jpg",
+		"documents": [
+			{"name": "Recording",
+			 "link": "",
+			 "type": "video"},
+			{"name": "Jupyter notebook",
+			 "link": "https://notebook-test.readthedocs.io/",
+			 "type": "notebook"}
+		]
+	}
+]

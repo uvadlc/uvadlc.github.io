@@ -967,10 +967,11 @@ widget {
 
 /* Style the collapsible content. Note: hidden by default */
 .lecture-content {
-  padding: 18px 18px;
-  display: none;
-  overflow: hidden;
   background-color: #f1f1f1;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 18px;
+  transition: max-height .3s ease-out;
 }
 
 .lecture-collapsible:after {
@@ -991,6 +992,10 @@ widget {
     margin-bottom: 10px;
 }
 
+.tutorial-box {
+    margin-bottom: 25px;
+}
+
 .lecture-title {
     font-size: 20px;
     padding-left: 10px;
@@ -1004,4 +1009,44 @@ widget {
 .lecture-document-list {
     padding-left: 25px;
     padding-bottom: 10px;
+}
+
+.padding-div {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.picture-container {
+    position: relative;
+    margin: auto;
+    width: 150;
+}
+
+.picture-overlay {
+  width: 150;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(100,100,100,0.5);
+}
+
+.picture-container:hover .picture-overlay {
+  opacity: 1;
+}
+
+.picture-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
