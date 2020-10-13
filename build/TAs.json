@@ -3,25 +3,25 @@
 		"name": "Maurice Weiler",
 		"picture": "images/people/maurice-weiler.png",
 		"website": "",
-		"mail": ""
+		"mail": "m.weiler@uva.nl"
 	},
 	{
 		"name": "Zenglin Shi",
-		"picture": "images/people/zenglin-shi.png",
+		"picture": "images/people/zenglin.jpeg",
 		"website": "",
-		"mail": ""
+		"mail": "z.shi@uva.nl"
 	},
 	{
 		"name": "Gabriele Cesa",
 		"picture": "images/people/gabriele-cesa.png",
 		"website": "",
-		"mail": ""
+		"mail": "gabriele.cesa@student.uva.nl"
 	},
 	{
 		"name": "Tao Hu",
 		"picture": "images/people/tao-hu.png",
 		"website": "",
-		"mail": ""
+		"mail": "taohu620@gmail.com"
 	},
 	{
 		"name": "Phillip Lippe",
@@ -31,56 +31,63 @@
 	},
 	{
 		"name": "Sindy Löwe",
-		"picture": "images/people/sindy-loewe.png",
+		"picture": "images/people/sindy-loewe.jpg",
 		"website": "",
-		"mail": ""
+		"mail": "loewe.sindy@gmail.com"
 	},
 	{
 		"name": "Jiaojiao Zhao",
 		"picture": "images/people/jiaojiao-zhao.png",
 		"website": "",
-		"mail": ""
+		"mail": "j.zhao3@uva.nl"
 	},
 	{
 		"name": "Riaan Zoetmulder",
-		"picture": "images/people/riaan-zoetmulder.png",
+		"picture": "images/people/default-picture.png",
 		"website": "",
-		"mail": ""
+		"mail": "riaanzoetmulder@gmail.com"
 	},
 	{
 		"name": "Miltos Kofinas",
-		"picture": "images/people/miltos-kofinas.png",
+		"picture": "images/people/miltos-kofinas.jpg",
 		"website": "",
-		"mail": ""
+		"mail": "m.kofinas@uva.nl"
 	},
 	{
 		"name": "Alex Gabel",
-		"picture": "images/people/alex-gabel.png",
+		"picture": "images/people/alex-gabel.jpeg",
 		"website": "",
-		"mail": ""
+		"mail": "a.gabel@uva.nl"
 	},
 	{
 		"name": "Andreas Panteli",
-		"picture": "images/people/andreas-panteli.png",
+		"picture": "images/people/andreas-panteli.jpg",
 		"website": "",
-		"mail": ""
+		"mail": "a.panteli.uva@gmail.com"
 	},
 	{
 		"name": "Christina Winkler",
-		"picture": "images/people/christina-winkler.png",
+		"picture": "images/people/christina-winkler.jpg",
 		"website": "",
-		"mail": ""
+		"mail": "c.e.winkler@uva.nl"
 	},
 	{
 		"name": "Peter Heemskerk",
-		"picture": "images/people/peter-heemskerk.png",
+		"picture": "images/people/default-picture.png",
 		"website": "",
-		"mail": ""
+		"mail": "p.o.m.heemskerk@uva.nl"
 	},
 	{
-		"name": "Yoni Schirris",
-		"picture": "images/people/yoni-schirris.png",
+		"name": "Emiel Hogeboom",
+		"picture": "images/people/emiel.jpeg",
 		"website": "",
-		"mail": ""
+		"mail": "e.hoogeboom@gmail.com"
+	},
+	{
+		"name": "Mariya Hendriksen",
+		"picture": "images/people/mariya-hendriksen.png",
+		"website": "",
+		"mail": "m.hendriksen@uva.nl"
 	}
+
 ]
