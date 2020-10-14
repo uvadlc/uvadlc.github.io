@@ -88,6 +88,20 @@
 		"picture": "images/people/mariya-hendriksen.png",
 		"website": "",
 		"mail": "m.hendriksen@uva.nl"
+	},
+		{
+		"name": "Alvise Sembenico",
+		"picture": "images/people/alvise.jpg",
+		"website": "",
+		"mail": "alivse.sembenico@gmail.com"
+	},
+		{
+		"name": "Pere-Lluis Huguet Cabot ",
+		"picture": "images/people/pere.jpg",
+		"website": "",
+		"mail": "perelluis1993@gmail.com"
 	}
+
+
 
 ]
