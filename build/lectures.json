@@ -31,24 +31,16 @@
 
 	{
 		"type": "tutorial",
-		"name": "Introduction to PyTorch and SURFSara",
-		"date": "October 20, 2020 | 5pm-7pm | Online tutorial",
-		"desc": "A short description of the lecture content",
-		"image": "images/lenet.jpg",
-		"documents": [
-			{"name": "Recording",
-			 "link": "",
-			 "type": "video"},
-			{"name": "Jupyter notebook",
-			 "link": "https://notebook-test.readthedocs.io/",
-			 "type": "notebook"}
-		]
+		"name": "Getting to know",
+		"date": "October 27, 2020 | 5pm-7pm | On-campus TA session",
+		"desc": "The first practical session will be used to help you setting up the provided conda environment in the assignment github repository. We will <i>not</i> have a notebook tutorial session in the first 30 minutes yet but start from the second tutorial on.",
+		"documents": []
 	},
 
 	{
 		"type": "lecture",
 		"name": "Modular Learning",
-		"date": "October 22, 2020 | 1pm-3pm | Online lecture",
+		"date": "October 29, 2020 | 1pm-3pm | Online lecture",
 		"desc": "A short description of the lecture content",
 		"documents": [
 			{"name": "Slides",
@@ -75,16 +67,18 @@
 
 	{
 		"type": "tutorial",
-		"name": "Activation functions",
-		"date": "October 20, 2020 | 5pm-7pm | Online tutorial",
-		"desc": "A short description of the tutorial content",
-		"image": "images/lenet.jpg",
+		"name": "Introduction to PyTorch",
+		"date": "October 29, 2020 | 1pm-3pm | Online tutorial + Online TA session",
+		"desc": "We will discuss the PyTorch machine learning framework, and introduce you to the basic concepts of Tensors, computation graphs and GPU computation. We will continue with a small hands-on tutorial of building your own, first neural network in PyTorch. If you are already familiar with PyTorch, you might just want to skim the notebook.</p><p>We also provide a short tutorial for working with the Lisa cluster, and how to setup your account for Lisa. This guide complements the Lisa presentation during the lecture. There will be no presentation about the Lisa notebook as it is only a short guide.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording",
 			 "link": "",
 			 "type": "video"},
-			{"name": "Jupyter notebook",
-			 "link": "https://notebook-test.readthedocs.io/",
+			{"name": "Lisa Tutorial",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial1/Lisa_Cluster.html",
+			 "type": "notebook"},
+			{"name": "PyTorch tutorial notebook",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial2/Introduction_to_PyTorch.html",
 			 "type": "notebook"}
 		]
 	},
@@ -119,16 +113,45 @@
 
 	{
 		"type": "tutorial",
-		"name": "Controlling weight and activation distributions",
-		"date": "October 27, 2020 | 5pm-7pm | Online tutorial",
-		"desc": "A short description of the tutorial content",
-		"image": "images/lenet.jpg",
+		"name": "Activation Functions",
+		"date": "November 3, 2020 | 5pm-7pm | Online tutorial + On-campus TA session",
+		"desc": "In this tutorial, we will discuss the role of activation functions in a neural network, and take a closer look at the optimization issues a poorly designed activation function can have.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording",
 			 "link": "",
 			 "type": "video"},
 			{"name": "Jupyter notebook",
-			 "link": "https://notebook-test.readthedocs.io/",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial3/Activation_Functions.html",
+			 "type": "notebook"}
+		]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Optimization and Initialization",
+		"date": "November 5, 2020 | 1pm-3pm | Online tutorial + Online TA session",
+		"desc": "In this tutorial, we will discuss the importance of proper parameter initialization in deep neural networks, and how we can find a suitable one for our network. In addition, we will review the optimizers SGD and Adam, and compare them on complex loss surfaces.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
+		"documents": [
+			{"name": "Recording",
+			 "link": "",
+			 "type": "video"},
+			{"name": "Jupyter notebook",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial4/Optimization_and_Initialization.html",
+			 "type": "notebook"}
+		]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Inception, ResNet and DenseNet",
+		"date": "November 5, 2020 | 1pm-3pm | Online tutorial + Online TA session",
+		"desc": "In this tutorial, we will implement three popular, modern ConvNet architectures: GoogleNet, ResNet, and DenseNet. We will compare them on the CIFAR10 dataset, and discuss the advantages that made them popular and successful across many tasks.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 1, lecture content and more.",
+		"documents": [
+			{"name": "Recording",
+			 "link": "",
+			 "type": "video"},
+			{"name": "Jupyter notebook",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial5/Inception_ResNet_DenseNet.html",
 			 "type": "notebook"}
 		]
 	}

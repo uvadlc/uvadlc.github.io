@@ -2,15 +2,15 @@
 	{
 		"name": "MLPs, CNNs and Backpropagation",
 		"deadline": "TBA",
-		"desc": "A short description of the practical",
+		"desc": "To be announced soon...",
 		"image": "images/lenet.jpg",
 		"image_desc": "The LeNet was one of the first CNNs proposed.",
 		"documents": [
 			{"name": "PDF description",
-			 "link": "",
+			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020",
 			 "type": "pdf"},
 			{"name": "Code",
-			 "link": "",
+			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020",
 			 "type": "code"}
 		]
 	},
@@ -18,15 +18,15 @@
 	{
 		"name": "Recurrent Neural Networks &amp Graph CNNs",
 		"deadline": "TBA",
-		"desc": "A short description of the practical",
+		"desc": "To be announced soon...",
 		"image": "images/rnns.jpg",
 		"image_desc": "RNNs unroll a network over time.",
 		"documents": [
 			{"name": "PDF description",
-			 "link": "",
+			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020",
 			 "type": "pdf"},
 			{"name": "Code",
-			 "link": "",
+			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020",
 			 "type": "code"}
 		]
 	},
@@ -34,15 +34,15 @@
 	{
 		"name": "Generative Models",
 		"deadline": "TBA",
-		"desc": "A short description of the practical",
+		"desc": "To be announced soon...",
 		"image": "images/vae.jpg",
 		"image_desc": "VAEs model a distribution in latent space.",
 		"documents": [
 			{"name": "PDF description",
-			 "link": "",
+			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020",
 			 "type": "pdf"},
 			{"name": "Code",
-			 "link": "",
+			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020",
 			 "type": "code"}
 		]
 	}
