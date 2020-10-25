@@ -2,29 +2,23 @@
 	{
 		"type": "lecture",
 		"name": "Introduction to Deep Learning",
-		"date": "October 20, 2020 | 3pm-5pm | Online lecture",
-		"desc": "A short description of the lecture content",
+		"date": "October 27, 2020 | 3pm-5pm | Online lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 			{"name": "Slides",
-			 "link": "lectures/",
+			 "link": "",
 			 "type": "powerpoint"}
 		],
 		"recordings": [
 			{"name": "Course Information",
 			 "link": ""},
-			{"name": "Applications of deep learning",
-			 "link": ""},
-			{"name": "Perceptrons",
+			{"name": "A brief history of NN and Perceptrons",
 			 "link": ""},
 			{"name": "Deep learning arrives",
 			 "link": ""},
 			{"name": "Deep learning: The what and why",
 			 "link": ""},
-			{"name": "Types of (deep) learning",
-			 "link": ""},
-			{"name": "Neural network cheatsheet",
-			 "link": ""},
-			{"name": "Open questions",
+			{"name": "Types of (deep) learning + Neural network cheatsheet",
 			 "link": ""}
 		]
 	},
@@ -40,27 +34,21 @@
 	{
 		"type": "lecture",
 		"name": "Modular Learning",
-		"date": "October 29, 2020 | 1pm-3pm | Online lecture",
-		"desc": "A short description of the lecture content",
+		"date": "October 29, 2020 | 11am-1pm | Online lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 			{"name": "Slides",
-			 "link": "lectures/",
+			 "link": "",
 			 "type": "powerpoint"}
 		],
 		"recordings": [
 			{"name": "Deep modularity",
 			 "link": ""},
-			{"name": "Optimizing deep networks",
-			 "link": ""},
 			{"name": "Deep learning modules",
 			 "link": ""},
-			{"name": "Deep learning nonlinearities",
-			 "link": ""},
-			{"name": "Chain rule",
+			{"name": "Gradient-based optimization",
 			 "link": ""},
 			{"name": "Backpropagation",
-			 "link": ""},
-			{"name": "Tricks of the trade",
 			 "link": ""}
 		]
 	},
@@ -86,18 +74,14 @@
 	{
 		"type": "lecture",
 		"name": "Deep Learning Optimizations",
-		"date": "October 27, 2020 | 3pm-5pm | Online lecture",
-		"desc": "A short description of the lecture content",
+		"date": "November 3, 2020 | 3pm-5pm | Online lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 			{"name": "Slides",
-			 "link": "lectures/",
+			 "link": "",
 			 "type": "powerpoint"}
 		],
 		"recordings": [
-			{"name": "Intro to empirical risk minimization",
-			 "link": ""},
-			{"name": "Stochastic gradient descent",
-			 "link": ""},
 			{"name": "Optimizers",
 			 "link": ""},
 			{"name": "Initialization",
@@ -127,6 +111,14 @@
 	},
 
 	{
+		"type": "lecture",
+		"name": "Convolutional Neural Networks",
+		"date": "Online lecture",
+		"desc": "Details will follow soon."
+	},
+
+
+	{
 		"type": "tutorial",
 		"name": "Optimization and Initialization",
 		"date": "November 5, 2020 | 1pm-3pm | Online tutorial + Online TA session",
@@ -142,9 +134,16 @@
 	},
 
 	{
+		"type": "lecture",
+		"name": "Modern ConvNets",
+		"date": "Online lecture",
+		"desc": "Details will follow soon."
+	},
+
+	{
 		"type": "tutorial",
 		"name": "Inception, ResNet and DenseNet",
-		"date": "November 5, 2020 | 1pm-3pm | Online tutorial + Online TA session",
+		"date": "November 5, 2020 | 1pm-3pm | Online tutorial + On-campus TA session",
 		"desc": "In this tutorial, we will implement three popular, modern ConvNet architectures: GoogleNet, ResNet, and DenseNet. We will compare them on the CIFAR10 dataset, and discuss the advantages that made them popular and successful across many tasks.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording",
@@ -154,5 +153,146 @@
 			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial5/Inception_ResNet_DenseNet.html",
 			 "type": "notebook"}
 		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Recurrent Neural Networks",
+		"date": "Online lecture",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "tutorial",
+		"name": "RNNs and Attention",
+		"date": "Online tutorial + Online TA session",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "lecture",
+		"name": "Graph Neural Networks",
+		"date": "Online lecture",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Graph Neural Networks",
+		"date": "Online tutorial + On-campus TA session",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "lecture",
+		"name": "Deep Generative Models",
+		"date": "Online lecture",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Deep Energy Models",
+		"date": "Online tutorial + Online TA session",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "lecture",
+		"name": "Deep Variational Inference",
+		"date": "Online lecture",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Deep Autoencoders",
+		"date": "Online tutorial + On-campus TA session",
+		"desc": "In this tutorial, we will discuss deep convolutional autoencoders and their applications. In the practical and lecture you have seen variational autoencoders (VAE), which add a stochastic part to vanilla autoencoders. Both have their advantages and applications, of which we visit image retrieval and compression.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 2, lecture content and more.",
+		"documents": [
+			{"name": "Jupyter notebook",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial9/AE_CIFAR10.html",
+			 "type": "notebook"}
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Generative Adversarial Networks",
+		"date": "Online lecture",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Adversarial Attacks",
+		"date": "Online tutorial + Online TA session",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "lecture",
+		"name": "Advanced Generative Models",
+		"date": "Online lecture",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Normalizing flows for image modeling",
+		"date": "Online tutorial + On-campus TA session",
+		"desc": "In this tutorial, we will discuss the application of Normalizing Flows to the task of image modeling. We review the ideas of (variational) dequantization, and show the potential of multi-scale flow architectures.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 3, lecture content and more.",
+		"documents": [
+			{"name": "Jupyter notebook",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial11/NF_image_modeling.html",
+			 "type": "notebook"}
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Deep Stochastic Models",
+		"date": "Online lecture",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Autoregressive Image Modeling",
+		"date": "Online tutorial + Online TA session",
+		"desc": "In this tutorial, we will discuss the application of autoregressive models to the task of image modeling. Specifically, we implement our own, small PixelCNN model, and review the design of masked autoregressive convolutions.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 3, lecture content and more.",		
+		"documents": [
+			{"name": "Jupyter notebook",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling.html",
+			 "type": "notebook"}
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Bayesian Deep Learning",
+		"date": "Online lecture",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Bayesian Deep Learning",
+		"date": "Online tutorial + On-campus TA session",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "lecture",
+		"name": "Deep Dynamics",
+		"date": "Online lecture",
+		"desc": "Details will follow soon."
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Deep Dynamics",
+		"date": "Online tutorial + On-campus TA session",
+		"desc": "Details will follow soon."
 	}
 ]

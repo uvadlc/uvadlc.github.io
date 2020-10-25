@@ -8,8 +8,8 @@ ICONS = {"pdf": "fa-file-text-o",
 		 "video": "fa-video-camera",
 		 "powerpoint": "fa-file-powerpoint-o"}
 DEFAULT_ICON = "fa-file-text-o"
-DEFAULT_DOCUMENT = "<a href='<!--$$LINK$$-->'><i class='fa fa <!--$$ICON$$--> text-primary'></i><span class='lecture-document'><!--$$NAME$$--></span></a></br>"
-DEFAULT_RECORDING = "<a href='<!--$$LINK$$-->'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'><!--$$NAME$$--></span></a></br>"
+DEFAULT_DOCUMENT = "<a <!--$$LINK$$-->><i class='fa fa <!--$$ICON$$--> text-primary'></i><span class='lecture-document'><!--$$NAME$$--></span></a></br>"
+DEFAULT_RECORDING = "<a <!--$$LINK$$-->><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'><!--$$NAME$$--></span></a></br>"
 DEFAULT_TA_NAME = "<a href='<!--$$LINK$$-->' target='_blank' style='color: white;'><!--$$NAME$$--></a>"
 DEFAULT_TA_PICTURE = "<a href='<!--$$LINK$$-->'><img class='img-circle' src='<!--$$IMAGE$$-->' hspace='5' width='150' alt='<!--$$NAME$$-->' title='<!--$$NAME$$-->'></a>"
 DEFAULT_PICTURE_FILENAME = "images/people/default-picture.png"
@@ -18,11 +18,13 @@ def _create_document_list(document_dict):
 	document_list = []
 	for d in document_dict:
 		doc_html = DEFAULT_DOCUMENT
-		doc_html = doc_html.replace("<!--$$NAME$$-->", d["name"])
-		doc_html = doc_html.replace("<!--$$LINK$$-->", d["link"])
+		doc_html = doc_html.replace("<!--$$NAME$$-->", d["name"] + (" (link TBA)" if len(d["link"])==0 else ""))
+		doc_html = doc_html.replace("<!--$$LINK$$-->", ("href='%s'"%d["link"]) if len(d["link"])>0 else "")
 		doc_html = doc_html.replace("<!--$$ICON$$-->", ICONS.get(d["type"], DEFAULT_ICON))
 		document_list.append(doc_html)
 	document_list = "\n".join(document_list)
+	if len(document_list) == 0:
+		document_list = "No documents."
 	return document_list
 
 def _create_recording_list(recording_dict):
@@ -30,10 +32,12 @@ def _create_recording_list(recording_dict):
 	for rec_num, record in enumerate(recording_dict):
 		record_html = DEFAULT_RECORDING
 		record["name"] = "Part %i: " % (rec_num+1) + record["name"]
-		record_html = record_html.replace("<!--$$NAME$$-->", record["name"])
-		record_html = record_html.replace("<!--$$LINK$$-->", record["link"])
+		record_html = record_html.replace("<!--$$NAME$$-->", record["name"] + (" (link TBA)" if len(record["link"])==0 else ""))
+		record_html = record_html.replace("<!--$$LINK$$-->", ("href='%s'"%record["link"]) if len(record["link"])>0 else "")
 		recording_list.append(record_html)
 	recording_list = "\n".join(recording_list)
+	if len(recording_list) == 0:
+		recording_list = "No recordings."
 	return recording_list
 
 
@@ -62,7 +66,11 @@ def build_practicals(index_file,
 			assert value in practical, "Practical entries require the value \"%s\" that could not be found in the following entry:\n%s" % (value, str(practical))
 			practical_html = practical_html.replace("<!--$$%s$$-->" % tag, practical[value])
 
-		practical_html = practical_html.replace("<!--$$DOCUMENTS$$-->", _create_document_list(practical["documents"]))
+		if "documents" in practical:
+			document_text = _create_document_list(practical["documents"])
+		else:
+			document_text = "Documents will be added soon."
+		practical_html = practical_html.replace("<!--$$DOCUMENTS$$-->", document_text)
 
 		html_entries.append(practical_html)
 
@@ -112,9 +120,17 @@ def build_lectures(index_file,
 			if value in dict_entry and ("<!--$$%s$$-->" % tag) in entry_html:
 				entry_html = entry_html.replace("<!--$$%s$$-->" % tag, dict_entry[value])
 
-		entry_html = entry_html.replace("<!--$$DOCUMENTS$$-->", _create_document_list(dict_entry["documents"]))
+		if "documents" in dict_entry:
+			document_text = _create_document_list(dict_entry["documents"])
+		else:
+			document_text = "Documents will be added soon."
+		entry_html = entry_html.replace("<!--$$DOCUMENTS$$-->", document_text)
 		if not is_tutorial:
-			entry_html = entry_html.replace("<!--$$RECORDINGS$$-->", _create_recording_list(dict_entry["recordings"]))
+			if "recordings" in dict_entry:
+				recordings_text = _create_recording_list(dict_entry["recordings"])
+			else:
+				recordings_text = "Recordings will be added soon."
+			entry_html = entry_html.replace("<!--$$RECORDINGS$$-->", recordings_text)
 
 		html_entries.append(entry_html)
 
