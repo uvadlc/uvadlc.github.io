@@ -2,31 +2,29 @@
 	{
 		"type": "lecture",
 		"name": "Introduction to Deep Learning",
-		"date": "October 27, 2020 | 3pm-5pm | Online lecture",
-		"desc": "Details will follow soon.",
+		"date": "October 27, 2020 | 13.00-15.00 | Online lecture",
+		"desc": "This lecture introduces the structure of the Deep Learning course, and gives a short overview of the history and motivation of Deep Learning.",
 		"documents": [
 			{"name": "Slides",
 			 "link": "",
 			 "type": "powerpoint"}
 		],
 		"recordings": [
-			{"name": "Course Information",
-			 "link": ""},
+			{"name": "Course Information (no link)",
+			 "link": "#"},
 			{"name": "A brief history of NN and Perceptrons",
-			 "link": ""},
+			 "link": "https://canvas.uva.nl/courses/17398/pages/lecture-1-dot-2?module_item_id=716572"},
 			{"name": "Deep learning arrives",
-			 "link": ""},
+			 "link": "https://canvas.uva.nl/courses/17398/pages/lecture-1-dot-3?module_item_id=716573"},
 			{"name": "Deep learning: The what and why",
-			 "link": ""},
-			{"name": "Types of (deep) learning + Neural network cheatsheet",
-			 "link": ""}
+			 "link": "https://canvas.uva.nl/courses/17398/pages/lecture-1-dot-4?module_item_id=716574"}
 		]
 	},
 
 	{
 		"type": "tutorial",
 		"name": "Getting to know",
-		"date": "October 27, 2020 | 5pm-7pm | On-campus TA session",
+		"date": "October 27, 2020 | 17.00-19.00 | On-campus TA session",
 		"desc": "The first practical session will be used to help you setting up the provided conda environment in the assignment github repository. We will <i>not</i> have a notebook tutorial session in the first 30 minutes yet but start from the second tutorial on.",
 		"documents": []
 	},
@@ -34,7 +32,7 @@
 	{
 		"type": "lecture",
 		"name": "Modular Learning",
-		"date": "October 29, 2020 | 11am-1pm | Online lecture",
+		"date": "October 29, 2020 | 11.00-13.00 | Online lecture",
 		"desc": "Details will follow soon.",
 		"documents": [
 			{"name": "Slides",
@@ -56,7 +54,7 @@
 	{
 		"type": "tutorial",
 		"name": "Introduction to PyTorch",
-		"date": "October 29, 2020 | 1pm-3pm | Online tutorial + Online TA session",
+		"date": "October 29, 2020 | 13.00-15.00 | Online tutorial + Online TA session",
 		"desc": "We will discuss the PyTorch machine learning framework, and introduce you to the basic concepts of Tensors, computation graphs and GPU computation. We will continue with a small hands-on tutorial of building your own, first neural network in PyTorch. If you are already familiar with PyTorch, you might just want to skim the notebook.</p><p>We also provide a short tutorial for working with the Lisa cluster, and how to setup your account for Lisa. This guide complements the Lisa presentation during the lecture. There will be no presentation about the Lisa notebook as it is only a short guide.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording",
@@ -74,7 +72,7 @@
 	{
 		"type": "lecture",
 		"name": "Deep Learning Optimizations",
-		"date": "November 3, 2020 | 3pm-5pm | Online lecture",
+		"date": "November 3, 2020 | 13.00-15.00 | Online lecture",
 		"desc": "Details will follow soon.",
 		"documents": [
 			{"name": "Slides",
@@ -98,7 +96,7 @@
 	{
 		"type": "tutorial",
 		"name": "Activation Functions",
-		"date": "November 3, 2020 | 5pm-7pm | Online tutorial + On-campus TA session",
+		"date": "November 3, 2020 | 17.00-19.00 | Online tutorial + On-campus TA session",
 		"desc": "In this tutorial, we will discuss the role of activation functions in a neural network, and take a closer look at the optimization issues a poorly designed activation function can have.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording",
