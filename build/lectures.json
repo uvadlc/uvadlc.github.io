@@ -4,19 +4,19 @@
 		"name": "Introduction to Deep Learning",
 		"date": "October 27, 2020 | 13.00-15.00 | Online lecture",
 		"desc": "This lecture introduces the structure of the Deep Learning course, and gives a short overview of the history and motivation of Deep Learning.",
-		"Slides": [
-			{"name": "1.1",
+		"documents": [
+			{"name": "Slides 1.1",
 			 "link": "https://canvas.uva.nl/courses/17398/files/3452605?module_item_id=716960",
-			 "type": "pdf"},
-			{"name": "1.2",
-				"link": "https://canvas.uva.nl/courses/17398/files/3452606?module_item_id=716961",
-				"type": "pdf"},
-			{"name": "1.3",
-				 "link": "https://canvas.uva.nl/courses/17398/files/3452608?module_item_id=716962",
-				 "type": "pdf"},
-			{"name": "1.4",
-				"link": "https://canvas.uva.nl/courses/17398/files/3452609?module_item_id=716963",
-				"type": "pdf"}
+			 "type": "powerpoint"},
+			{"name": "Slides 1.2",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3452606?module_item_id=716961",
+			 "type": "powerpoint"},
+			{"name": "Slides 1.3",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3452608?module_item_id=716962",
+			 "type": "powerpoint"},
+			{"name": "Slides 1.4",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3452609?module_item_id=716963",
+			 "type": "powerpoint"}
 		],
 		"recordings": [
 			{"name": "Course Information (no link)",
