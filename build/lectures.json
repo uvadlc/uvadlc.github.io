@@ -44,8 +44,20 @@
 		"date": "October 29, 2020 | 11.00-13.00 | Online lecture",
 		"desc": "Details will follow soon.",
 		"documents": [
-			{"name": "Slides",
-			 "link": "",
+			{"name": "Slides 2.1",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3469213?module_item_id=719119",
+			 "type": "powerpoint"},
+			{"name": "Slides 2.2",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3469214?module_item_id=719120",
+			 "type": "powerpoint"},
+			{"name": "Slides 2.3",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3469215?module_item_id=719121",
+			 "type": "powerpoint"},
+			{"name": "Slides 2.4",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3469216?module_item_id=719122",
+			 "type": "powerpoint"},
+			{"name": "Slides 2.5",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3469217?module_item_id=719123",
 			 "type": "powerpoint"}
 		],
 		"recordings": [
