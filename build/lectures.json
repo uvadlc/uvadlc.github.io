@@ -152,8 +152,11 @@
 		"date": "November 5, 2020 | 1pm-3pm | Online tutorial + Online TA session",
 		"desc": "In this tutorial, we will discuss the importance of proper parameter initialization in deep neural networks, and how we can find a suitable one for our network. In addition, we will review the optimizers SGD and Adam, and compare them on complex loss surfaces.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
-			{"name": "Recording",
-			 "link": "",
+			{"name": "Recording - Part 1 (Initialization)",
+			 "link": "https://youtu.be/X5m7bC4xCLY",
+			 "type": "video"},
+			{"name": "Recording - Part 2 (Optimization)",
+			 "link": "https://youtu.be/UcRBZbAP9hM",
 			 "type": "video"},
 			{"name": "Jupyter notebook",
 			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial4/Optimization_and_Initialization.html",
