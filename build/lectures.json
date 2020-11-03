@@ -62,13 +62,15 @@
 		],
 		"recordings": [
 			{"name": "Deep modularity",
-			 "link": ""},
+			 "link": "https://youtu.be/PQTSg7OQ8fI"},
 			{"name": "Deep learning modules",
-			 "link": ""},
+			 "link": "https://youtu.be/snPWuzCZGww"},
 			{"name": "Gradient-based optimization",
-			 "link": ""},
+			 "link": "https://youtu.be/bF3xrQjpcnA"},
+			 {"name": "Chain Rule",
+ 			 "link": "https://youtu.be/vvzVbk8MvP8"},
 			{"name": "Backpropagation",
-			 "link": ""}
+			 "link": "https://youtu.be/dSqN7V7_HOY"}
 		]
 	},
 
@@ -108,15 +110,15 @@
 		],
 		"recordings": [
 			{"name": "Optimizers",
-			 "link": ""},
+			 "link": "https://youtu.be/dcooML__Pwk"},
 			{"name": "Initialization",
-			 "link": ""},
+			 "link": "https://youtu.be/bqVQTzY4_sU"},
 			{"name": "Normalization",
-			 "link": ""},
+			 "link": "https://youtu.be/tc8zkdsmJWA"},
 			{"name": "Regularization",
-			 "link": ""},
+			 "link": "https://youtu.be/Y2A4ZH4gCpY"},
 			{"name": "Hyperparameters",
-			 "link": ""}
+			 "link": "https://youtu.be/G0WzYwmIyIE"}
 		]
 	},
 
