@@ -42,7 +42,7 @@
 		"type": "lecture",
 		"name": "Modular Learning",
 		"date": "October 29, 2020 | 11.00-13.00 | Online lecture",
-		"desc": "Details will follow soon.",
+		"desc": "This lecture series discusses modular learning in deep neural networks and covers linear and nonlinear modules, gradient-based learning and the backpropagation algorithm.",
 		"documents": [
 			{"name": "Slides 2.1 - Deep modularity",
 			 "link": "https://canvas.uva.nl/courses/17398/files/3469213?module_item_id=719119",
@@ -102,7 +102,7 @@
 		"type": "lecture",
 		"name": "Deep Learning Optimizations",
 		"date": "November 3, 2020 | 13.00-15.00 | Online lecture",
-		"desc": "Details will follow soon.",
+		"desc": "This lecture series discusses advanced optimizers, initialization, normalization and hyperparameter tuning.",
 		"documents": [
 			{"name": "Slides 3.1 - Optimizers",
 			 "link": "https://canvas.uva.nl/courses/17398/files/3497596?module_item_id=722849",
@@ -156,7 +156,37 @@
 		"type": "lecture",
 		"name": "Convolutional Neural Networks",
 		"date": "Online lecture",
-		"desc": "Details will follow soon."
+		"desc": "This lecture series covers convolutional neural networks for image processing.",
+		"documents": [
+			{"name": "Slides 4.1 - What makes images spatial and convolution inductive bias",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3514412?module_item_id=725085",
+			 "type": "powerpoint"},
+			{"name": "Slides 4.2 - Convolution and pooling",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3514413?module_item_id=725086",
+			 "type": "powerpoint"},
+			{"name": "Slides 4.3 - ConvNet Case Study 1: AlexNet",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3514414?module_item_id=725087",
+			 "type": "powerpoint"},
+			{"name": "Slides 4.4 - Visualizations",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3514415?module_item_id=725088",
+			 "type": "powerpoint"},
+			{"name": "Slides 4.5 - Transfer Learning",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3514416?module_item_id=725089",
+			 "type": "powerpoint"}
+		],	
+		
+		"recordings": [
+			{"name": "What makes images spatial and convolution inductive bias",
+			 "link": "https://www.youtube.com/watch?v=MVBTtTcwnxA&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=11"},
+			{"name": "Convolution and pooling",
+			 "link": "https://www.youtube.com/watch?v=0IdxMwguLL8&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=12"},
+			{"name": "ConvNet Case Study 1: AlexNet",
+			 "link": "https://www.youtube.com/watch?v=ynAL3e0mtLE&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=13"},
+			{"name": "Visualizations",
+			 "link": "https://www.youtube.com/watch?v=xt-1vNxJJkg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=14"},
+			{"name": "Transfer Learning",
+			 "link": "https://www.youtube.com/watch?v=8OtSM-eNwr8&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=15"}
+		]	
 	},
 
 
