@@ -245,9 +245,14 @@
 
 	{
 		"type": "tutorial",
-		"name": "RNNs and Attention",
+		"name": "Transformers and Multi-Head Attention",
 		"date": "Online tutorial + Online TA session",
-		"desc": "Details will follow soon."
+		"desc": "In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer. We will perform experiments on sequence-to-sequence tasks and set anomaly detection.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
+		"documents": [
+			{"name": "Jupyter notebook",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial6/Transformers_and_MHAttention.html",
+			 "type": "notebook"}
+		]
 	},
 
 	{
