@@ -246,7 +246,7 @@
 	{
 		"type": "tutorial",
 		"name": "Transformers and Multi-Head Attention",
-		"date": "Online tutorial + Online TA session",
+		"date": "November 7, 2020 | 12pm-1pm | Online tutorial + Online TA session",
 		"desc": "In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer. We will perform experiments on sequence-to-sequence tasks and set anomaly detection.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Jupyter notebook",
@@ -265,8 +265,19 @@
 	{
 		"type": "tutorial",
 		"name": "Graph Neural Networks",
-		"date": "Online tutorial + On-campus TA session",
-		"desc": "Details will follow soon."
+		"date": "November 14, 2020 | 12pm-1pm | Online tutorial + Online TA session",
+		"desc": "In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
+		"documents": [
+			{"name": "Recording - Part 1 (GCN and GAT)",
+			 "link": "https://youtu.be/fK7d56Ly9q8",
+			 "type": "video"},
+			{"name": "Recording - Part 2 (Experiments)",
+			 "link": "https://youtu.be/ZCNSUWe4a_Q",
+			 "type": "video"},
+			{"name": "Jupyter notebook",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial7/GNN_overview.html",
+			 "type": "notebook"}
+		]
 	},
 
 	{
@@ -364,20 +375,6 @@
 	{
 		"type": "tutorial",
 		"name": "Bayesian Deep Learning",
-		"date": "Online tutorial + On-campus TA session",
-		"desc": "Details will follow soon."
-	},
-
-	{
-		"type": "lecture",
-		"name": "Deep Dynamics",
-		"date": "Online lecture",
-		"desc": "Details will follow soon."
-	},
-
-	{
-		"type": "tutorial",
-		"name": "Deep Dynamics",
 		"date": "Online tutorial + On-campus TA session",
 		"desc": "Details will follow soon."
 	}
