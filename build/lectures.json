@@ -173,8 +173,8 @@
 			{"name": "Slides 4.5 - Transfer Learning",
 			 "link": "https://canvas.uva.nl/courses/17398/files/3514416?module_item_id=725089",
 			 "type": "powerpoint"}
-		],	
-		
+		],
+
 		"recordings": [
 			{"name": "What makes images spatial and convolution inductive bias",
 			 "link": "https://www.youtube.com/watch?v=MVBTtTcwnxA&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=11"},
@@ -186,7 +186,7 @@
 			 "link": "https://www.youtube.com/watch?v=xt-1vNxJJkg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=14"},
 			{"name": "Transfer Learning",
 			 "link": "https://www.youtube.com/watch?v=8OtSM-eNwr8&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=15"}
-		]	
+		]
 	},
 
 
@@ -212,7 +212,42 @@
 		"type": "lecture",
 		"name": "Modern ConvNets",
 		"date": "Online lecture",
-		"desc": "Details will follow soon."
+		"desc": "This lecture series covers modern ConvNet architecture.",
+		"documents": [
+			{"name": "Slides 5.1 - VGGs",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/736131",
+			 "type": "powerpoint"},
+			{"name": "Slides 5.2 - Vanishing and Exploding Gradients",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/736132",
+			 "type": "powerpoint"},
+			{"name": "Slides 5.3 - The Inceptions",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/736133",
+			 "type": "powerpoint"},
+			{"name": "Slides 5.4 - The Res/Dense/Highway Nets",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/736134",
+			 "type": "powerpoint"},
+			{"name": "Slides 5.5 - Depth & trainability",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/736135",
+			 "type": "powerpoint"},
+			 {"name": "Slides 5.6 - Advanced computer vision architectures",
+ 			 "link": "https://canvas.uva.nl/courses/17398/modules/items/736136",
+ 			 "type": "powerpoint"}
+		],
+
+		"recordings": [
+			{"name": "VGGs",
+			 "link": "https://www.youtube.com/watch?v=WrhwO32OYxg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=16"},
+			{"name": "Vanishing and Exploding Gradients",
+			 "link": "https://www.youtube.com/watch?v=iwgioNhO20A&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=17"},
+			{"name": "The Inceptions",
+			 "link": "https://www.youtube.com/watch?v=YkJhDfJaJbg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=18"},
+			{"name": "The Res/Dense/Highway Nets",
+			 "link": "https://www.youtube.com/watch?v=Z5mx8QXq8vQ&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=19"},
+			 {"name": "Depth & trainability",
+ 			 "link": "https://www.youtube.com/watch?v=6aafIBg-LG4&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=20"},
+			{"name": "Advanced computer vision architectures",
+ 			 "link": "https://www.youtube.com/watch?v=L2kKjZZpXN0&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=21"}
+		]
 	},
 
 	{
