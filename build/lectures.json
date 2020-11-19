@@ -275,7 +275,38 @@
 		"type": "lecture",
 		"name": "Recurrent Neural Networks",
 		"date": "Online lecture",
-		"desc": "Details will follow soon."
+		"desc": "This lecture series covers Recurrent Neural Networks.",
+		"documents": [
+				{"name": "Slides 6.1 - What makes sequences special and inductive bias",
+				 "link": "https://canvas.uva.nl/courses/17398/modules/items/732733",
+				 "type": "powerpoint"},
+				{"name": "Slides 6.2 - Backpropagation through time",
+				 "link": "https://canvas.uva.nl/courses/17398/modules/items/732735",
+				 "type": "powerpoint"},
+				{"name": "Slides 6.3 - LSTM and variants",
+				 "link": "https://canvas.uva.nl/courses/17398/modules/items/732736",
+				 "type": "powerpoint"},
+				{"name": "Slides 6.4 - Attention, transformers",
+				 "link": "https://canvas.uva.nl/courses/17398/modules/items/732957",
+				 "type": "powerpoint"},
+				{"name": "Slides 6.5 - Applications of sequence models",
+				 "link": "https://canvas.uva.nl/courses/17398/modules/items/732737",
+				 "type": "powerpoint"}
+			],
+
+			"recordings": [
+				{"name": "What makes sequences special and inductive bias",
+				 "link": "https://www.youtube.com/watch?v=yvLBqo3G5CY&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=22"},
+				{"name": "Backpropagation through time",
+				 "link": "https://www.youtube.com/watch?v=G6Kdp0adsbo&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=23"},
+				{"name": "LSTM and variants",
+				 "link": "https://www.youtube.com/watch?v=i9Lbh__u3Q4&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=24"},
+				{"name": "Attention, transformers",
+				 "link": "https://www.youtube.com/watch?v=Vwiq6StMFz0&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=25"},
+				{"name": "Applications of sequence models",
+				 "link": "https://www.youtube.com/watch?v=IR37kJLXStg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=26"}
+			]
+
 	},
 
 	{
