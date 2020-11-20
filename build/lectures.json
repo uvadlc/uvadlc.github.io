@@ -315,6 +315,15 @@
 		"date": "November 7, 2020 | 12pm-1pm | Online tutorial + Online TA session",
 		"desc": "In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer. We will perform experiments on sequence-to-sequence tasks and set anomaly detection.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
+			{"name": "Recording - Part 1 (What is Attention + MH Attention)",
+			 "link": "https://youtu.be/hGZ6wa07Vak",
+			 "type": "video"},
+			{"name": "Recording - Part 2 (Architecture and Training tricks)",
+			 "link": "https://youtu.be/QdTgJ85E6YA",
+			 "type": "video"},
+			{"name": "Recording - Part 3 (Experiments)",
+			 "link": "https://youtu.be/e7xvF2yS4Dg",
+			 "type": "video"},
 			{"name": "Jupyter notebook",
 			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial6/Transformers_and_MHAttention.html",
 			 "type": "notebook"}
