@@ -325,7 +325,38 @@
 		"type": "lecture",
 		"name": "Graph Neural Networks",
 		"date": "Online lecture",
-		"desc": "Details will follow soon."
+		"desc": "This lecture series covers Graph Neural Networks.",
+		"documents": [
+				{"name": "Slides 7.1 - Graph Neural Networks",
+				 "link": "https://canvas.uva.nl/courses/17398/modules/items/746430",
+				 "type": "powerpoint"},
+				{"name": "Slides 7.2 - Revisiting graphs",
+				 "link": "https://canvas.uva.nl/courses/17398/modules/items/746431",
+				 "type": "powerpoint"},
+				{"name": "Slides 7.3 - Revisiting convolutions",
+				 "link": "https://canvas.uva.nl/courses/17398/modules/items/746432",
+				 "type": "powerpoint"},
+				{"name": "Slides 7.4 - Spectral graph convolutions",
+				 "link": "https://canvas.uva.nl/courses/17398/modules/items/746433",
+				 "type": "powerpoint"},
+				{"name": "Lecture 7.5 - Spatial graph convolutions",
+				 "link": "https://canvas.uva.nl/courses/17398/modules/items/746434",
+				 "type": "powerpoint"}
+			],
+			"recordings": [
+				{"name": "Graph Neural Networks",
+				 "link": "https://youtu.be/KKkbq6gvHec"},
+				{"name": "Revisiting graphs",
+				 "link": "https://youtu.be/vPR_vfzbjfo"},
+				{"name": "Revisiting convolutions",
+				 "link": "https://youtu.be/zraW4JMv70Q"},
+				{"name": "Spectral graph convolutions",
+				 "link": "https://youtu.be/_9Kyv0GA99I"},
+				{"name": "Spatial graph convolutions",
+				 "link": "https://youtu.be/OjEKjZLfYsM"}
+			]
+
+
 	},
 
 	{
