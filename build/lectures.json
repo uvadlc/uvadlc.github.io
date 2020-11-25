@@ -193,7 +193,7 @@
 	{
 		"type": "tutorial",
 		"name": "Optimization and Initialization",
-		"date": "November 5, 2020 | 1pm-3pm | Online tutorial + Online TA session",
+		"date": "November 5, 2020 | 13.00-15.00 | Online tutorial + Online TA session",
 		"desc": "In this tutorial, we will discuss the importance of proper parameter initialization in deep neural networks, and how we can find a suitable one for our network. In addition, we will review the optimizers SGD and Adam, and compare them on complex loss surfaces.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (Initialization)",
@@ -253,7 +253,7 @@
 	{
 		"type": "tutorial",
 		"name": "Inception, ResNet and DenseNet",
-		"date": "November 10, 2020 | 1pm-3pm | Online tutorial + On-campus TA session",
+		"date": "November 10, 2020 | 13.00-15.00 | Online tutorial + On-campus TA session",
 		"desc": "In this tutorial, we will implement three popular, modern ConvNet architectures: GoogleNet, ResNet, and DenseNet. We will compare them on the CIFAR10 dataset, and discuss the advantages that made them popular and successful across many tasks.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (PyTorch Lightning)",
@@ -312,7 +312,7 @@
 	{
 		"type": "tutorial",
 		"name": "Transformers and Multi-Head Attention",
-		"date": "November 12, 2020 | 12pm-1pm | Online tutorial + Online TA session",
+		"date": "November 12, 2020 | 12.00-13.00 | Online tutorial + Online TA session",
 		"desc": "In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer. We will perform experiments on sequence-to-sequence tasks and set anomaly detection.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (What is Attention + MH Attention)",
@@ -371,7 +371,7 @@
 	{
 		"type": "tutorial",
 		"name": "Graph Neural Networks",
-		"date": "November 19, 2020 | 12pm-1pm | Online tutorial + Online TA session",
+		"date": "November 19, 2020 | 12.00-13.00 | Online tutorial + Online TA session",
 		"desc": "In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (GCN and GAT)",
@@ -396,7 +396,7 @@
 	{
 		"type": "tutorial",
 		"name": "Deep Energy-Based Generative Models",
-		"date": "November 24, 2020 | 2pm-3pm | Online tutorial + On-campus TA session",
+		"date": "November 24, 2020 | 14.00-15.00 | Online tutorial + On-campus TA session",
 		"desc": "In this tutorial, we will discuss energy-based models for the application of generative modeling. In the first part of the tutorial, we will shortly review the theory on energy-based models and how we can use them for generative modeling. The second part shows the application of an energy-based model on image generation, and we implement a CNN on MNIST digit generation.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 2, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (Theory)",
@@ -421,9 +421,15 @@
 	{
 		"type": "tutorial",
 		"name": "Deep Autoencoders",
-		"date": "Online tutorial + On-campus TA session",
-		"desc": "In this tutorial, we will discuss deep convolutional autoencoders and their applications. In the practical and lecture you have seen variational autoencoders (VAE), which add a stochastic part to vanilla autoencoders. Both have their advantages and applications, of which we visit image retrieval and compression.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 2, lecture content and more.",
+		"date": "November 26, 2020 | 12.00-13.00 | Online tutorial + Online TA session",
+		"desc": "In this tutorial, we will discuss deep convolutional autoencoders and their applications. In the practical and lecture, you will see variational autoencoders (VAE), which add a stochastic part to vanilla autoencoders. Both have their advantages and applications, of which we visit image retrieval and compression for the vanilla auotoencoder.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 2, lecture content and more.",
 		"documents": [
+			{"name": "Recording - Part 1 (Building an AE)",
+			 "link": "https://youtu.be/E2d8NRYt2e4",
+			 "type": "video"},
+			{"name": "Recording - Part 2 (Analysis)",
+			 "link": "https://youtu.be/3UrX2mTY610",
+			 "type": "video"},
 			{"name": "Jupyter notebook",
 			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial9/AE_CIFAR10.html",
 			 "type": "notebook"}
@@ -440,7 +446,7 @@
 	{
 		"type": "tutorial",
 		"name": "Adversarial Attacks",
-		"date": "Online tutorial + Online TA session",
+		"date": "December 01, 2020 | 14.00-15.00 | Online tutorial",
 		"desc": "Details will follow soon."
 	},
 
@@ -454,8 +460,8 @@
 	{
 		"type": "tutorial",
 		"name": "Normalizing flows for image modeling",
-		"date": "Online tutorial + On-campus TA session",
-		"desc": "In this tutorial, we will discuss the application of Normalizing Flows to the task of image modeling. We review the ideas of (variational) dequantization, and show the potential of multi-scale flow architectures.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 3, lecture content and more.",
+		"date": "December 03, 2020 | 12.00-13.00 | Online tutorial",
+		"desc": "In this tutorial, we will discuss the application of Normalizing Flows to the task of image modeling. We review the ideas of (variational) dequantization, and show the potential of multi-scale flow architectures.",
 		"documents": [
 			{"name": "Jupyter notebook",
 			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial11/NF_image_modeling.html",
@@ -473,7 +479,7 @@
 	{
 		"type": "tutorial",
 		"name": "Autoregressive Image Modeling",
-		"date": "Online tutorial + Online TA session",
+		"date": "December 08, 2020 | 14.00-15.00 | Online tutorial",
 		"desc": "In this tutorial, we will discuss the application of autoregressive models to the task of image modeling. Specifically, we implement our own, small PixelCNN model, and review the design of masked autoregressive convolutions.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 3, lecture content and more.",
 		"documents": [
 			{"name": "Jupyter notebook",
@@ -492,7 +498,7 @@
 	{
 		"type": "tutorial",
 		"name": "Bayesian Deep Learning",
-		"date": "Online tutorial + On-campus TA session",
+		"date": "December 10, 2020 | 14.00-15.00 | Online tutorial",
 		"desc": "Details will follow soon."
 	}
 ]
