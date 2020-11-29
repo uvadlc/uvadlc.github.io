@@ -390,7 +390,31 @@
 		"type": "lecture",
 		"name": "Deep Generative Models",
 		"date": "Online lecture",
-		"desc": "Details will follow soon."
+		"desc": "This lecture series introduces Deep Generative Models.",
+		"documents": [
+			{"name": "Slides 8.1 - Generative models: motivation",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3676494?module_item_id=754759",
+			 "type": "powerpoint"},
+			{"name": "Slides 8.2 - Energy-Based Models",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3676495?module_item_id=754760",
+			 "type": "powerpoint"},
+			{"name": "Slides 8.3 - Hopfield Networks",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3679247?module_item_id=755048",
+			 "type": "powerpoint"},
+			{"name": "Slides 8.4 - Boltzmann machines",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3692152?module_item_id=756534",
+			 "type": "powerpoint"}
+		],
+		"recordings": [
+			{"name": "Generative models: motivation",
+			 "link": "https://youtu.be/VZdvRHnYCPA"},
+			{"name": "Energy-Based Models",
+			 "link": "https://youtu.be/3WYgUkbjTPg"},
+			{"name": "Hopfield Networks",
+			 "link": "https://youtu.be/lPSBOYgBpkI"},
+			{"name": "Boltzmann machines",
+			 "link": "https://youtu.be/8izgCV7X1eQ"}
+		]
 	},
 
 	{
