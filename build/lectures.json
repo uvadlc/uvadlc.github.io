@@ -447,7 +447,21 @@
 		"type": "tutorial",
 		"name": "Adversarial Attacks",
 		"date": "December 01, 2020 | 14.00-15.00 | Online tutorial",
-		"desc": "Details will follow soon."
+		"desc": "In this tutorial, we will discuss adversarial attacks on deep neural networks, specifically CNNs. We will discuss the possible threads of such attacks, and implement two white-box attacks ourselves: FGSM and Adversarial Patches. Afterwards, we test the transferability of such attacks, and discuss how you could protect a network against adversarial attacks.",
+		"documents": [
+			{"name": "Recording - Part 1 (Intro and FGSM)",
+			 "link": "https://youtu.be/uidLtkhZFwY",
+			 "type": "video"},
+			{"name": "Recording - Part 2 (Adversarial Patches)",
+			 "link": "https://youtu.be/Dmbz0ffc6Wg",
+			 "type": "video"},
+			{"name": "Recording - Part 3 (Defence)",
+			 "link": "https://youtu.be/0dt2Su-SRpI",
+			 "type": "video"},
+			{"name": "Jupyter notebook",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial10/Adversarial_Attacks.html",
+			 "type": "notebook"}
+		]
 	},
 
 	{
