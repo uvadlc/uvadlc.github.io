@@ -439,7 +439,36 @@
 		"type": "lecture",
 		"name": "Deep Variational Inference",
 		"date": "Online lecture",
-		"desc": "Details will follow soon."
+		"desc": "This lecture series introduces the framework of variational inference and Variational Autoencoders (VAEs).",
+		"documents": [
+			{"name": "Slides 9.1 - Latent variable models",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3721929?module_item_id=759498",
+			 "type": "powerpoint"},
+			{"name": "Slides 9.2 - Autoencoders",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3721930?module_item_id=759499",
+			 "type": "powerpoint"},
+			{"name": "Slides 9.3 - Variational Inference",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3721931?module_item_id=759500",
+			 "type": "powerpoint"},
+			{"name": "Slides 9.4 - Variational Autoencoders",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3721932?module_item_id=759502",
+			 "type": "powerpoint"},
+			{"name": "Slides 9.5 - Reparameterization trick",
+			 "link": "https://canvas.uva.nl/courses/17398/files/3721936?module_item_id=759503",
+			 "type": "powerpoint"}
+		],
+		"recordings": [
+			{"name": "Latent variable models",
+			 "link": "https://youtu.be/E6XV5ICqoXg"},
+			{"name": "Autoencoders",
+			 "link": "https://youtu.be/8VE_a1FdPNk"},
+			{"name": "Variational Inference",
+			 "link": "https://youtu.be/ghlnVdmFn4w"},
+			{"name": "Variational Autoencoders",
+			 "link": "https://youtu.be/qneY6xfmvYc"},
+			{"name": "Reparameterization trick",
+			 "link": "https://youtu.be/Xv3ELA9DAEU"}
+		]
 	},
 
 	{
@@ -464,7 +493,31 @@
 		"type": "lecture",
 		"name": "Generative Adversarial Networks",
 		"date": "Online lecture",
-		"desc": "Details will follow soon."
+		"desc": "This lecture series discusses Generative Adversarial Networks.",
+		"documents": [
+			{"name": "Slides 10.1 - Implicit density functions",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/762125",
+			 "type": "powerpoint"},
+			{"name": "Slides 10.2 - Generative Adversarial Networks",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/762126",
+			 "type": "powerpoint"},
+			{"name": "Slides 10.3 - Challenges",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/762127",
+			 "type": "powerpoint"},
+			{"name": "Slides 10.4 - GAN models",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/762128",
+			 "type": "powerpoint"}
+		],
+		"recordings": [
+			{"name": "Implicit density functions",
+			 "link": "https://youtu.be/Z5rXFgYc8d0"},
+			{"name": "Generative Adversarial Networks",
+			 "link": "https://youtu.be/ubYCKnLBMQw"},
+			{"name": "Challenges",
+			 "link": "https://youtu.be/h91L_EkHh6M"},
+			{"name": "GAN models",
+			 "link": "https://youtu.be/876nPgU1y70"}
+		]
 	},
 
 	{
@@ -542,13 +595,6 @@
 		"type": "lecture",
 		"name": "Bayesian Deep Learning",
 		"date": "Online lecture",
-		"desc": "Details will follow soon."
-	},
-
-	{
-		"type": "tutorial",
-		"name": "Bayesian Deep Learning",
-		"date": "December 10, 2020 | 14.00-15.00 | Online tutorial",
 		"desc": "Details will follow soon."
 	}
 ]

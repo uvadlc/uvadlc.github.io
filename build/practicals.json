@@ -1,48 +1,48 @@
 [
 	{
 		"name": "MLPs, CNNs and Backpropagation",
-		"deadline": "TBA",
-		"desc": "To be announced soon...",
+		"deadline": "November 15, 2020",
+		"desc": "In this assignment, you will learn how to implement and train basic neural architectures like MLPs and CNNs for classification tasks. Therefore, you will make use of modern deep learning libraries such as PyTorch which come with sophisticated functionalities like abstracted layer classes, automatic differentiation, optimizers, and more.",
 		"image": "images/lenet.jpg",
 		"image_desc": "The LeNet was one of the first CNNs proposed.",
 		"documents": [
 			{"name": "PDF description",
-			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020",
+			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020/blob/master/assignment_1/1_mlp_cnn/assignment_1.pdf",
 			 "type": "pdf"},
 			{"name": "Code",
-			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020",
+			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020/tree/master/assignment_1/1_mlp_cnn",
 			 "type": "code"}
 		]
 	},
 
 	{
 		"name": "Recurrent Neural Networks &amp Graph CNNs",
-		"deadline": "TBA",
-		"desc": "To be announced soon...",
+		"deadline": "December 1, 2020",
+		"desc": "In this assignment you will study and implement recurrent neural networks (RNNs) and have a theoretical introduction to graph neural networks (GNNs). RNNs are best suited for sequential processing of data, such as a sequence of characters, words or video frames. Their applications are mostly in neural machine translation, speech analysis and video understanding. GNNs are specifically applied to graph-structured data, like knowledge graphs, molecules or citation networks.",
 		"image": "images/rnns.jpg",
 		"image_desc": "RNNs unroll a network over time.",
 		"documents": [
 			{"name": "PDF description",
-			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020",
+			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020/blob/master/assignment_2/2_recurrentnns_gnns/code/assignment_2.pdf",
 			 "type": "pdf"},
 			{"name": "Code",
-			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020",
+			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020/tree/master/assignment_2/2_recurrentnns_gnns/code",
 			 "type": "code"}
 		]
 	},
 
 	{
 		"name": "Generative Models",
-		"deadline": "TBA",
-		"desc": "To be announced soon...",
+		"deadline": "December 20, 2020",
+		"desc": "Modelling distributions in high dimensional spaces is difficult. Simple distributions such as multivariate Gaussians or mixture models are not powerful enough to model complicated high-dimensional distributions. The question is: How can we design complicated distributions over high-dimensional data, such as images or audio? In this assignment, you will focus on three examples of well-known generative models: Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs), and Normalizing Flows (NFs).",
 		"image": "images/vae.jpg",
 		"image_desc": "VAEs model a distribution in latent space.",
 		"documents": [
 			{"name": "PDF description",
-			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020",
+			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020/blob/master/assignment_3/3_generative/assignment_3.pdf",
 			 "type": "pdf"},
 			{"name": "Code",
-			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020",
+			 "link": "https://github.com/uvadlc/uvadlc_practicals_2020/tree/master/assignment_3/3_generative",
 			 "type": "code"}
 		]
 	}
