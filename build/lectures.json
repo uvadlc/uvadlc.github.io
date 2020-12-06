@@ -501,6 +501,18 @@
 		"date": "December 03, 2020 | 12.00-13.00 | Online tutorial",
 		"desc": "In this tutorial, we will discuss the application of Normalizing Flows to the task of image modeling. We review the ideas of (variational) dequantization, and show the potential of multi-scale flow architectures.",
 		"documents": [
+			{"name": "Recording - Part 1 (Intro and explanation of Normalizing Flows)",
+			 "link": "https://youtu.be/U1fwesIusbg",
+			 "type": "video"},
+			{"name": "Recording - Part 2 (Dequantization)",
+			 "link": "https://youtu.be/qMoGcRhVrF8",
+			 "type": "video"},
+			{"name": "Recording - Part 3 (Coupling layers)",
+			 "link": "https://youtu.be/YoAWiaEt41Y",
+			 "type": "video"},
+			{"name": "Recording - Part 4 (Multi-scale architectures and experiments)",
+			 "link": "https://youtu.be/nTyDvn-ADJ4",
+			 "type": "video"},
 			{"name": "Jupyter notebook",
 			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial11/NF_image_modeling.html",
 			 "type": "notebook"}
