@@ -545,13 +545,37 @@
 		"type": "lecture",
 		"name": "Advanced Generative Models",
 		"date": "Online lecture",
-		"desc": "Details will follow soon."
+		"desc": "This lecture series discusses autoregressive image modeling and normalizing flows.",
+		"documents": [
+			{"name": "Slides 11.1 - Early autoregressive models",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/765816",
+			 "type": "powerpoint"},
+			{"name": "Slides 11.2 - Modern autoregressive models",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/765817",
+			 "type": "powerpoint"},
+			{"name": "Slides 11.3 - Normalizing Flows",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/765818",
+			 "type": "powerpoint"},
+			{"name": "Slides 11.4 - Flow-based Models",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/765819",
+			 "type": "powerpoint"}
+		],
+		"recordings": [
+			{"name": "Early autoregressive models",
+			 "link": "https://youtu.be/Nx46Es3EECM"},
+			{"name": "Modern autoregressive models",
+			 "link": "https://youtu.be/wT8Ox-UlMWU"},
+			{"name": "Normalizing Flows",
+			 "link": "https://youtu.be/DtzJh7Awghk"},
+			{"name": "Flow-based Models",
+			 "link": "https://youtu.be/_toF1OD8vtg"}
+		]
 	},
 
 	{
 		"type": "tutorial",
 		"name": "Normalizing flows for image modeling",
-		"date": "December 03, 2020 | 12.00-13.00 | Online tutorial",
+		"date": "December 08, 2020 | 14.00-15.00 | Online tutorial",
 		"desc": "In this tutorial, we will discuss the application of Normalizing Flows to the task of image modeling. We review the ideas of (variational) dequantization, and show the potential of multi-scale flow architectures.",
 		"documents": [
 			{"name": "Recording - Part 1 (Intro and explanation of Normalizing Flows)",
@@ -576,25 +600,48 @@
 		"type": "lecture",
 		"name": "Deep Stochastic Models",
 		"date": "Online lecture",
-		"desc": "Details will follow soon."
+		"desc": "Details will follow soon.",
+		"documents": [
+			{"name": "Slides 12.1 - Monte Carlo Simulation",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/783142",
+			 "type": "powerpoint"},
+			{"name": "Slides 12.2 - Stochastic gradients",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/783143",
+			 "type": "powerpoint"},
+			{"name": "Slides 12.3 - Monte Carlo Gradient Estimation",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/783144",
+			 "type": "powerpoint"},
+			{"name": "Slides 12.4 - Bias and Variance in Gradient Estimators",
+			 "link": "https://canvas.uva.nl/courses/17398/modules/items/783145",
+			 "type": "powerpoint"}
+		],
+		"recordings": [
+			{"name": "Monte Carlo Simulation",
+			 "link": "https://youtu.be/R4kvg1CIz9U"},
+			{"name": "Stochastic gradients",
+			 "link": "https://youtu.be/D-w3tazV5_o"},
+			{"name": "Monte Carlo Gradient Estimation",
+			 "link": "https://youtu.be/fTgngf_jcJs"},
+			{"name": "Bias and Variance in Gradient Estimators",
+			 "link": "https://youtu.be/WCzftV4K2rA"}
+		]
 	},
 
 	{
 		"type": "tutorial",
 		"name": "Autoregressive Image Modeling",
-		"date": "December 08, 2020 | 14.00-15.00 | Online tutorial",
+		"date": "December 10, 2020 | 12.00-13.00 | Online tutorial",
 		"desc": "In this tutorial, we will discuss the application of autoregressive models to the task of image modeling. Specifically, we implement our own, small PixelCNN model, and review the design of masked autoregressive convolutions.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 3, lecture content and more.",
 		"documents": [
+			{"name": "Recording - Part 1 (Masked Convolutions)",
+			 "link": "https://youtu.be/ch0p2HGLa-o",
+			 "type": "video"},
+			{"name": "Recording - Part 2 (PixelCNN and Experiments)",
+			 "link": "https://youtu.be/H7dL3qjJKfE",
+			 "type": "video"},
 			{"name": "Jupyter notebook",
 			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling.html",
 			 "type": "notebook"}
 		]
-	},
-
-	{
-		"type": "lecture",
-		"name": "Bayesian Deep Learning",
-		"date": "Online lecture",
-		"desc": "Details will follow soon."
 	}
 ]
