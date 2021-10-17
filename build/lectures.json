@@ -1,84 +1,20 @@
 [
 	{
 		"type": "lecture",
-		"name": "Introduction to Deep Learning",
-		"date": "October 27, 2020 | 13.00-15.00 | Online lecture",
-		"desc": "This lecture introduces the structure of the Deep Learning course, and gives a short overview of the history and motivation of Deep Learning.",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
 		"documents": [
-			{"name": "Slides 1.1",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3452605?module_item_id=716960",
-			 "type": "powerpoint"},
-			{"name": "Slides 1.2",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3452606?module_item_id=716961",
-			 "type": "powerpoint"},
-			{"name": "Slides 1.3",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3452608?module_item_id=716962",
-			 "type": "powerpoint"},
-			{"name": "Slides 1.4",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3452609?module_item_id=716963",
-			 "type": "powerpoint"}
 		],
 		"recordings": [
-			{"name": "Course Information (no link)",
-			 "link": "#"},
-			{"name": "A brief history of NN and Perceptrons",
-			 "link": "https://canvas.uva.nl/courses/17398/pages/lecture-1-dot-2?module_item_id=716572"},
-			{"name": "Deep learning arrives",
-			 "link": "https://canvas.uva.nl/courses/17398/pages/lecture-1-dot-3?module_item_id=716573"},
-			{"name": "Deep learning: The what and why",
-			 "link": "https://canvas.uva.nl/courses/17398/pages/lecture-1-dot-4?module_item_id=716574"}
 		]
 	},
 
 	{
 		"type": "tutorial",
-		"name": "Getting to know",
-		"date": "October 27, 2020 | 17.00-19.00 | On-campus TA session",
-		"desc": "The first practical session will be used to help you setting up the provided conda environment in the assignment github repository. We will <i>not</i> have a notebook tutorial session in the first 30 minutes yet but start from the second tutorial on.",
-		"documents": []
-	},
-
-	{
-		"type": "lecture",
-		"name": "Modular Learning",
-		"date": "October 29, 2020 | 11.00-13.00 | Online lecture",
-		"desc": "This lecture series discusses modular learning in deep neural networks and covers linear and nonlinear modules, gradient-based learning and the backpropagation algorithm.",
-		"documents": [
-			{"name": "Slides 2.1 - Deep modularity",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3469213?module_item_id=719119",
-			 "type": "powerpoint"},
-			{"name": "Slides 2.2 - Deep learning modules",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3469214?module_item_id=719120",
-			 "type": "powerpoint"},
-			{"name": "Slides 2.3 - Gradient-based optimization",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3469215?module_item_id=719121",
-			 "type": "powerpoint"},
-			{"name": "Slides 2.4 - Chain Rule",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3469216?module_item_id=719122",
-			 "type": "powerpoint"},
-			{"name": "Slides 2.5 - Backpropagation",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3469217?module_item_id=719123",
-			 "type": "powerpoint"}
-		],
-		"recordings": [
-			{"name": "Deep modularity",
-			 "link": "https://youtu.be/PQTSg7OQ8fI"},
-			{"name": "Deep learning modules",
-			 "link": "https://youtu.be/snPWuzCZGww"},
-			{"name": "Gradient-based optimization",
-			 "link": "https://youtu.be/bF3xrQjpcnA"},
-			 {"name": "Chain Rule",
- 			 "link": "https://youtu.be/vvzVbk8MvP8"},
-			{"name": "Backpropagation",
-			 "link": "https://youtu.be/dSqN7V7_HOY"}
-		]
-	},
-
-	{
-		"type": "tutorial",
-		"name": "Introduction to PyTorch",
-		"date": "October 29, 2020 | 13.00-15.00 | Online tutorial + Online TA session",
-		"desc": "We will discuss the PyTorch machine learning framework, and introduce you to the basic concepts of Tensors, computation graphs and GPU computation. We will continue with a small hands-on tutorial of building your own, first neural network in PyTorch. If you are already familiar with PyTorch, you might just want to skim the notebook.</p><p>We also provide a short tutorial for working with the Lisa cluster, and how to setup your account for Lisa. This guide complements the Lisa presentation during the lecture. There will be no presentation about the Lisa notebook as it is only a short guide.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
+		"name": "Introduction to PyTorch + Working with the Lisa cluster",
+		"date": "November 4, 2021 | 13.00-15.00 | Tutorial session",
+		"desc": "This tutorial introduces the practical sessions, the TA organizer team, etc. Afterwards, we will discuss the PyTorch machine learning framework, and introduce you to the basic concepts of Tensors, computation graphs and GPU computation. We will continue with a small hands-on tutorial of building your own, first neural network in PyTorch.</p><p>We also provide a crash-course for working with the Lisa cluster, and how to setup your account for Lisa.</p>",
 		"documents": [
 			{"name": "Recording - Part 1 (Introduction)",
 			 "link": "https://youtu.be/oluO8JiC7EA",
@@ -100,45 +36,31 @@
 
 	{
 		"type": "lecture",
-		"name": "Deep Learning Optimizations",
-		"date": "November 3, 2020 | 13.00-15.00 | Online lecture",
-		"desc": "This lecture series discusses advanced optimizers, initialization, normalization and hyperparameter tuning.",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
 		"documents": [
-			{"name": "Slides 3.1 - Optimizers",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3497596?module_item_id=722849",
-			 "type": "powerpoint"},
-			{"name": "Slides 3.2 - Initialization",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3497601?module_item_id=722850",
-			 "type": "powerpoint"},
-			{"name": "Slides 3.3 - Normalization",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3497599?module_item_id=722851",
-			 "type": "powerpoint"},
-			{"name": "Slides 3.4 - Regularization",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3497598?module_item_id=722852",
-			 "type": "powerpoint"},
-			{"name": "Slides 3.5 - Hyperparameters",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3497597?module_item_id=722853",
-			 "type": "powerpoint"}
 		],
 		"recordings": [
-			{"name": "Optimizers",
-			 "link": "https://youtu.be/dcooML__Pwk"},
-			{"name": "Initialization",
-			 "link": "https://youtu.be/bqVQTzY4_sU"},
-			{"name": "Normalization",
-			 "link": "https://youtu.be/tc8zkdsmJWA"},
-			{"name": "Regularization",
-			 "link": "https://youtu.be/Y2A4ZH4gCpY"},
-			{"name": "Hyperparameters",
-			 "link": "https://youtu.be/G0WzYwmIyIE"}
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
+		"documents": [
+		],
+		"recordings": [
 		]
 	},
 
 	{
 		"type": "tutorial",
 		"name": "Activation Functions",
-		"date": "November 3, 2020 | 17.00-19.00 | Online tutorial + On-campus TA session",
-		"desc": "In this tutorial, we will discuss the role of activation functions in a neural network, and take a closer look at the optimization issues a poorly designed activation function can have.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 1, lecture content and more.",
+		"date": "November 11, 2021 | 13.00-15.00 | Tutorial session + TA Q&A",
+		"desc": "In this tutorial, we will discuss the role of activation functions in a neural network, and take a closer look at the optimization issues a poorly designed activation function can have.</p><p>After the presentation, there will by a TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1",
 			 "link": "https://youtu.be/3C_m71NDkPs",
@@ -154,47 +76,31 @@
 
 	{
 		"type": "lecture",
-		"name": "Convolutional Neural Networks",
-		"date": "Online lecture",
-		"desc": "This lecture series covers convolutional neural networks for image processing.",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
 		"documents": [
-			{"name": "Slides 4.1 - What makes images spatial and convolution inductive bias",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3514412?module_item_id=725085",
-			 "type": "powerpoint"},
-			{"name": "Slides 4.2 - Convolution and pooling",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3514413?module_item_id=725086",
-			 "type": "powerpoint"},
-			{"name": "Slides 4.3 - ConvNet Case Study 1: AlexNet",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3514414?module_item_id=725087",
-			 "type": "powerpoint"},
-			{"name": "Slides 4.4 - Visualizations",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3514415?module_item_id=725088",
-			 "type": "powerpoint"},
-			{"name": "Slides 4.5 - Transfer Learning",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3514416?module_item_id=725089",
-			 "type": "powerpoint"}
 		],
-
 		"recordings": [
-			{"name": "What makes images spatial and convolution inductive bias",
-			 "link": "https://www.youtube.com/watch?v=MVBTtTcwnxA&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=11"},
-			{"name": "Convolution and pooling",
-			 "link": "https://www.youtube.com/watch?v=0IdxMwguLL8&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=12"},
-			{"name": "ConvNet Case Study 1: AlexNet",
-			 "link": "https://www.youtube.com/watch?v=ynAL3e0mtLE&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=13"},
-			{"name": "Visualizations",
-			 "link": "https://www.youtube.com/watch?v=xt-1vNxJJkg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=14"},
-			{"name": "Transfer Learning",
-			 "link": "https://www.youtube.com/watch?v=8OtSM-eNwr8&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=15"}
 		]
 	},
 
+	{
+		"type": "lecture",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
+		"documents": [
+		],
+		"recordings": [
+		]
+	},
 
 	{
 		"type": "tutorial",
 		"name": "Optimization and Initialization",
-		"date": "November 5, 2020 | 13.00-15.00 | Online tutorial + Online TA session",
-		"desc": "In this tutorial, we will discuss the importance of proper parameter initialization in deep neural networks, and how we can find a suitable one for our network. In addition, we will review the optimizers SGD and Adam, and compare them on complex loss surfaces.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
+		"date": "November 18, 2020 | 13.00-15.00 | Tutorial session + TA Q&A",
+		"desc": "In this tutorial, we will discuss the importance of proper parameter initialization in deep neural networks, and how we can find a suitable one for our network. In addition, we will review the optimizers SGD and Adam, and compare them on complex loss surfaces.</p><p>After the presentation, there will by a TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (Initialization)",
 			 "link": "https://youtu.be/X5m7bC4xCLY",
@@ -210,51 +116,31 @@
 
 	{
 		"type": "lecture",
-		"name": "Modern ConvNets",
-		"date": "Online lecture",
-		"desc": "This lecture series covers modern ConvNet architecture.",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
 		"documents": [
-			{"name": "Slides 5.1 - VGGs",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/736131",
-			 "type": "powerpoint"},
-			{"name": "Slides 5.2 - Vanishing and Exploding Gradients",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/736132",
-			 "type": "powerpoint"},
-			{"name": "Slides 5.3 - The Inceptions",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/736133",
-			 "type": "powerpoint"},
-			{"name": "Slides 5.4 - The Res/Dense/Highway Nets",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/736134",
-			 "type": "powerpoint"},
-			{"name": "Slides 5.5 - Depth & trainability",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/736135",
-			 "type": "powerpoint"},
-			 {"name": "Slides 5.6 - Advanced computer vision architectures",
- 			 "link": "https://canvas.uva.nl/courses/17398/modules/items/736136",
- 			 "type": "powerpoint"}
 		],
-
 		"recordings": [
-			{"name": "VGGs",
-			 "link": "https://www.youtube.com/watch?v=WrhwO32OYxg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=16"},
-			{"name": "Vanishing and Exploding Gradients",
-			 "link": "https://www.youtube.com/watch?v=iwgioNhO20A&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=17"},
-			{"name": "The Inceptions",
-			 "link": "https://www.youtube.com/watch?v=YkJhDfJaJbg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=18"},
-			{"name": "The Res/Dense/Highway Nets",
-			 "link": "https://www.youtube.com/watch?v=Z5mx8QXq8vQ&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=19"},
-			 {"name": "Depth & trainability",
- 			 "link": "https://www.youtube.com/watch?v=6aafIBg-LG4&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=20"},
-			{"name": "Advanced computer vision architectures",
- 			 "link": "https://www.youtube.com/watch?v=L2kKjZZpXN0&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=21"}
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
+		"documents": [
+		],
+		"recordings": [
 		]
 	},
 
 	{
 		"type": "tutorial",
 		"name": "Inception, ResNet and DenseNet",
-		"date": "November 10, 2020 | 13.00-15.00 | Online tutorial + On-campus TA session",
-		"desc": "In this tutorial, we will implement three popular, modern ConvNet architectures: GoogleNet, ResNet, and DenseNet. We will compare them on the CIFAR10 dataset, and discuss the advantages that made them popular and successful across many tasks.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 1, lecture content and more.",
+		"date": "November 25, 2020 | 13.00-15.00 | Tutorial session + TA Q&A",
+		"desc": "In this tutorial, we will implement three popular, modern ConvNet architectures: GoogleNet, ResNet, and DenseNet. We will compare them on the CIFAR10 dataset, and discuss the advantages that made them popular and successful across many tasks.</p><p>After the presentation, there will by a TA session for Q&A for assignment 2, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (PyTorch Lightning)",
 			 "link": "https://youtu.be/vjSSyGxlczs",
@@ -273,47 +159,31 @@
 
 	{
 		"type": "lecture",
-		"name": "Recurrent Neural Networks",
-		"date": "Online lecture",
-		"desc": "This lecture series covers Recurrent Neural Networks.",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
 		"documents": [
-				{"name": "Slides 6.1 - What makes sequences special and inductive bias",
-				 "link": "https://canvas.uva.nl/courses/17398/modules/items/732733",
-				 "type": "powerpoint"},
-				{"name": "Slides 6.2 - Backpropagation through time",
-				 "link": "https://canvas.uva.nl/courses/17398/modules/items/732735",
-				 "type": "powerpoint"},
-				{"name": "Slides 6.3 - LSTM and variants",
-				 "link": "https://canvas.uva.nl/courses/17398/modules/items/732736",
-				 "type": "powerpoint"},
-				{"name": "Slides 6.4 - Attention, transformers",
-				 "link": "https://canvas.uva.nl/courses/17398/modules/items/732957",
-				 "type": "powerpoint"},
-				{"name": "Slides 6.5 - Applications of sequence models",
-				 "link": "https://canvas.uva.nl/courses/17398/modules/items/732737",
-				 "type": "powerpoint"}
-			],
+		],
+		"recordings": [
+		]
+	},
 
-			"recordings": [
-				{"name": "What makes sequences special and inductive bias",
-				 "link": "https://www.youtube.com/watch?v=yvLBqo3G5CY&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=22"},
-				{"name": "Backpropagation through time",
-				 "link": "https://www.youtube.com/watch?v=G6Kdp0adsbo&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=23"},
-				{"name": "LSTM and variants",
-				 "link": "https://www.youtube.com/watch?v=i9Lbh__u3Q4&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=24"},
-				{"name": "Attention, transformers",
-				 "link": "https://www.youtube.com/watch?v=Vwiq6StMFz0&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=25"},
-				{"name": "Applications of sequence models",
-				 "link": "https://www.youtube.com/watch?v=IR37kJLXStg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=26"}
-			]
-
+	{
+		"type": "lecture",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
+		"documents": [
+		],
+		"recordings": [
+		]
 	},
 
 	{
 		"type": "tutorial",
 		"name": "Transformers and Multi-Head Attention",
-		"date": "November 12, 2020 | 12.00-13.00 | Online tutorial + Online TA session",
-		"desc": "In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer. We will perform experiments on sequence-to-sequence tasks and set anomaly detection.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
+		"date": "December 2, 2020 | 13.00-15.00 | Tutorial session + TA Q&A",
+		"desc": "In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer. We will perform experiments on sequence-to-sequence tasks and set anomaly detection.</p><p>After the presentation, there will by a TA session for Q&A for assignment 2, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (What is Attention + MH Attention)",
 			 "link": "https://youtu.be/hGZ6wa07Vak",
@@ -332,47 +202,31 @@
 
 	{
 		"type": "lecture",
-		"name": "Graph Neural Networks",
-		"date": "Online lecture",
-		"desc": "This lecture series covers Graph Neural Networks.",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
 		"documents": [
-				{"name": "Slides 7.1 - Graph Neural Networks",
-				 "link": "https://canvas.uva.nl/courses/17398/modules/items/746430",
-				 "type": "powerpoint"},
-				{"name": "Slides 7.2 - Revisiting graphs",
-				 "link": "https://canvas.uva.nl/courses/17398/modules/items/746431",
-				 "type": "powerpoint"},
-				{"name": "Slides 7.3 - Revisiting convolutions",
-				 "link": "https://canvas.uva.nl/courses/17398/modules/items/746432",
-				 "type": "powerpoint"},
-				{"name": "Slides 7.4 - Spectral graph convolutions",
-				 "link": "https://canvas.uva.nl/courses/17398/modules/items/746433",
-				 "type": "powerpoint"},
-				{"name": "Lecture 7.5 - Spatial graph convolutions",
-				 "link": "https://canvas.uva.nl/courses/17398/modules/items/746434",
-				 "type": "powerpoint"}
-			],
-			"recordings": [
-				{"name": "Graph Neural Networks",
-				 "link": "https://youtu.be/KKkbq6gvHec"},
-				{"name": "Revisiting graphs",
-				 "link": "https://youtu.be/vPR_vfzbjfo"},
-				{"name": "Revisiting convolutions",
-				 "link": "https://youtu.be/zraW4JMv70Q"},
-				{"name": "Spectral graph convolutions",
-				 "link": "https://youtu.be/_9Kyv0GA99I"},
-				{"name": "Spatial graph convolutions",
-				 "link": "https://youtu.be/OjEKjZLfYsM"}
-			]
+		],
+		"recordings": [
+		]
+	},
 
-
+	{
+		"type": "lecture",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
+		"documents": [
+		],
+		"recordings": [
+		]
 	},
 
 	{
 		"type": "tutorial",
 		"name": "Graph Neural Networks",
-		"date": "November 19, 2020 | 12.00-13.00 | Online tutorial + Online TA session",
-		"desc": "In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.",
+		"date": "December 9, 2020 | 13.00-15.00 | Tutorial session + TA Q&A",
+		"desc": "In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.</p><p>After the presentation, there will by a TA session for Q&A for assignment 3, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (GCN and GAT)",
 			 "link": "https://youtu.be/fK7d56Ly9q8",
@@ -388,94 +242,31 @@
 
 	{
 		"type": "lecture",
-		"name": "Deep Generative Models",
-		"date": "Online lecture",
-		"desc": "This lecture series introduces Deep Generative Models.",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
 		"documents": [
-			{"name": "Slides 8.1 - Generative models: motivation",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3676494?module_item_id=754759",
-			 "type": "powerpoint"},
-			{"name": "Slides 8.2 - Energy-Based Models",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3676495?module_item_id=754760",
-			 "type": "powerpoint"},
-			{"name": "Slides 8.3 - Hopfield Networks",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3679247?module_item_id=755048",
-			 "type": "powerpoint"},
-			{"name": "Slides 8.4 - Boltzmann machines",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3692152?module_item_id=756534",
-			 "type": "powerpoint"}
 		],
 		"recordings": [
-			{"name": "Generative models: motivation",
-			 "link": "https://youtu.be/VZdvRHnYCPA"},
-			{"name": "Energy-Based Models",
-			 "link": "https://youtu.be/3WYgUkbjTPg"},
-			{"name": "Hopfield Networks",
-			 "link": "https://youtu.be/lPSBOYgBpkI"},
-			{"name": "Boltzmann machines",
-			 "link": "https://youtu.be/8izgCV7X1eQ"}
-		]
-	},
-
-	{
-		"type": "tutorial",
-		"name": "Deep Energy-Based Generative Models",
-		"date": "November 24, 2020 | 14.00-15.00 | Online tutorial + On-campus TA session",
-		"desc": "In this tutorial, we will discuss energy-based models for the application of generative modeling. In the first part of the tutorial, we will shortly review the theory on energy-based models and how we can use them for generative modeling. The second part shows the application of an energy-based model on image generation, and we implement a CNN on MNIST digit generation.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 2, lecture content and more.",
-		"documents": [
-			{"name": "Recording - Part 1 (Theory)",
-			 "link": "https://youtu.be/E6PDwquBBQc",
-			 "type": "video"},
-			{"name": "Recording - Part 2 (Implementation)",
-			 "link": "https://youtu.be/QJ94zuSQoP4",
-			 "type": "video"},
-			{"name": "Jupyter notebook",
-			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial8/Deep_Energy_Models.html",
-			 "type": "notebook"}
 		]
 	},
 
 	{
 		"type": "lecture",
-		"name": "Deep Variational Inference",
-		"date": "Online lecture",
-		"desc": "This lecture series introduces the framework of variational inference and Variational Autoencoders (VAEs).",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
 		"documents": [
-			{"name": "Slides 9.1 - Latent variable models",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3721929?module_item_id=759498",
-			 "type": "powerpoint"},
-			{"name": "Slides 9.2 - Autoencoders",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3721930?module_item_id=759499",
-			 "type": "powerpoint"},
-			{"name": "Slides 9.3 - Variational Inference",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3721931?module_item_id=759500",
-			 "type": "powerpoint"},
-			{"name": "Slides 9.4 - Variational Autoencoders",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3721932?module_item_id=759502",
-			 "type": "powerpoint"},
-			{"name": "Slides 9.5 - Reparameterization trick",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3721936?module_item_id=759503",
-			 "type": "powerpoint"}
 		],
 		"recordings": [
-			{"name": "Latent variable models",
-			 "link": "https://youtu.be/E6XV5ICqoXg"},
-			{"name": "Autoencoders",
-			 "link": "https://youtu.be/8VE_a1FdPNk"},
-			{"name": "Variational Inference",
-			 "link": "https://youtu.be/ghlnVdmFn4w"},
-			{"name": "Variational Autoencoders",
-			 "link": "https://youtu.be/qneY6xfmvYc"},
-			{"name": "Reparameterization trick",
-			 "link": "https://youtu.be/Xv3ELA9DAEU"}
 		]
 	},
 
 	{
 		"type": "tutorial",
 		"name": "Deep Autoencoders",
-		"date": "November 26, 2020 | 12.00-13.00 | Online tutorial + Online TA session",
-		"desc": "In this tutorial, we will discuss deep convolutional autoencoders and their applications. In the practical and lecture, you will see variational autoencoders (VAE), which add a stochastic part to vanilla autoencoders. Both have their advantages and applications, of which we visit image retrieval and compression for the vanilla auotoencoder.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 2, lecture content and more.",
+		"date": "December 16, 2020 | 13.00-15.00 | Tutorial session + TA Q&A",
+		"desc": "In this tutorial, we will discuss deep convolutional autoencoders and their applications. In the practical and lecture, you will see variational autoencoders (VAE), which add a stochastic part to vanilla autoencoders. Both have their advantages and applications, of which we visit image retrieval and compression for the vanilla auotoencoder.</p><p>After the presentation, there will by a TA session for Q&A for assignment 3, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (Building an AE)",
 			 "link": "https://youtu.be/E2d8NRYt2e4",
@@ -491,157 +282,13 @@
 
 	{
 		"type": "lecture",
-		"name": "Generative Adversarial Networks",
-		"date": "Online lecture",
-		"desc": "This lecture series discusses Generative Adversarial Networks.",
+		"name": "TBA",
+		"date": "TBA",
+		"desc": "",
 		"documents": [
-			{"name": "Slides 10.1 - Implicit density functions",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/762125",
-			 "type": "powerpoint"},
-			{"name": "Slides 10.2 - Generative Adversarial Networks",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/762126",
-			 "type": "powerpoint"},
-			{"name": "Slides 10.3 - Challenges",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/762127",
-			 "type": "powerpoint"},
-			{"name": "Slides 10.4 - GAN models",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/762128",
-			 "type": "powerpoint"}
 		],
 		"recordings": [
-			{"name": "Implicit density functions",
-			 "link": "https://youtu.be/Z5rXFgYc8d0"},
-			{"name": "Generative Adversarial Networks",
-			 "link": "https://youtu.be/ubYCKnLBMQw"},
-			{"name": "Challenges",
-			 "link": "https://youtu.be/h91L_EkHh6M"},
-			{"name": "GAN models",
-			 "link": "https://youtu.be/876nPgU1y70"}
-		]
-	},
-
-	{
-		"type": "tutorial",
-		"name": "Adversarial Attacks",
-		"date": "December 01, 2020 | 14.00-15.00 | Online tutorial",
-		"desc": "In this tutorial, we will discuss adversarial attacks on deep neural networks, specifically CNNs. We will discuss the possible threads of such attacks, and implement two white-box attacks ourselves: FGSM and Adversarial Patches. Afterwards, we test the transferability of such attacks, and discuss how you could protect a network against adversarial attacks.",
-		"documents": [
-			{"name": "Recording - Part 1 (Intro and FGSM)",
-			 "link": "https://youtu.be/uidLtkhZFwY",
-			 "type": "video"},
-			{"name": "Recording - Part 2 (Adversarial Patches)",
-			 "link": "https://youtu.be/Dmbz0ffc6Wg",
-			 "type": "video"},
-			{"name": "Recording - Part 3 (Defence)",
-			 "link": "https://youtu.be/0dt2Su-SRpI",
-			 "type": "video"},
-			{"name": "Jupyter notebook",
-			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial10/Adversarial_Attacks.html",
-			 "type": "notebook"}
-		]
-	},
-
-	{
-		"type": "lecture",
-		"name": "Advanced Generative Models",
-		"date": "Online lecture",
-		"desc": "This lecture series discusses autoregressive image modeling and normalizing flows.",
-		"documents": [
-			{"name": "Slides 11.1 - Early autoregressive models",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/765816",
-			 "type": "powerpoint"},
-			{"name": "Slides 11.2 - Modern autoregressive models",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/765817",
-			 "type": "powerpoint"},
-			{"name": "Slides 11.3 - Normalizing Flows",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3805963?module_item_id=782475",
-			 "type": "powerpoint"},
-			{"name": "Slides 11.4 - Flow-based Models",
-			 "link": "https://canvas.uva.nl/courses/17398/files/3805964?module_item_id=782476",
-			 "type": "powerpoint"}
-		],
-		"recordings": [
-			{"name": "Early autoregressive models",
-			 "link": "https://youtu.be/Nx46Es3EECM"},
-			{"name": "Modern autoregressive models",
-			 "link": "https://youtu.be/wT8Ox-UlMWU"},
-			{"name": "Normalizing Flows",
-			 "link": "https://youtu.be/DtzJh7Awghk"},
-			{"name": "Flow-based Models",
-			 "link": "https://youtu.be/_toF1OD8vtg"}
-		]
-	},
-
-	{
-		"type": "tutorial",
-		"name": "Normalizing flows for image modeling",
-		"date": "December 08, 2020 | 14.00-15.00 | Online tutorial",
-		"desc": "In this tutorial, we will discuss the application of Normalizing Flows to the task of image modeling. We review the ideas of (variational) dequantization, and show the potential of multi-scale flow architectures.",
-		"documents": [
-			{"name": "Recording - Part 1 (Intro and explanation of Normalizing Flows)",
-			 "link": "https://youtu.be/U1fwesIusbg",
-			 "type": "video"},
-			{"name": "Recording - Part 2 (Dequantization)",
-			 "link": "https://youtu.be/qMoGcRhVrF8",
-			 "type": "video"},
-			{"name": "Recording - Part 3 (Coupling layers)",
-			 "link": "https://youtu.be/YoAWiaEt41Y",
-			 "type": "video"},
-			{"name": "Recording - Part 4 (Multi-scale architectures and experiments)",
-			 "link": "https://youtu.be/nTyDvn-ADJ4",
-			 "type": "video"},
-			{"name": "Jupyter notebook",
-			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial11/NF_image_modeling.html",
-			 "type": "notebook"}
-		]
-	},
-
-	{
-		"type": "lecture",
-		"name": "Deep Stochastic Models",
-		"date": "Online lecture",
-		"desc": "Details will follow soon.",
-		"documents": [
-			{"name": "Slides 12.1 - Monte Carlo Simulation",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/783142",
-			 "type": "powerpoint"},
-			{"name": "Slides 12.2 - Stochastic gradients",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/783143",
-			 "type": "powerpoint"},
-			{"name": "Slides 12.3 - Monte Carlo Gradient Estimation",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/783144",
-			 "type": "powerpoint"},
-			{"name": "Slides 12.4 - Bias and Variance in Gradient Estimators",
-			 "link": "https://canvas.uva.nl/courses/17398/modules/items/783145",
-			 "type": "powerpoint"}
-		],
-		"recordings": [
-			{"name": "Monte Carlo Simulation",
-			 "link": "https://youtu.be/R4kvg1CIz9U"},
-			{"name": "Stochastic gradients",
-			 "link": "https://youtu.be/D-w3tazV5_o"},
-			{"name": "Monte Carlo Gradient Estimation",
-			 "link": "https://youtu.be/fTgngf_jcJs"},
-			{"name": "Bias and Variance in Gradient Estimators",
-			 "link": "https://youtu.be/WCzftV4K2rA"}
-		]
-	},
-
-	{
-		"type": "tutorial",
-		"name": "Autoregressive Image Modeling",
-		"date": "December 10, 2020 | 12.00-13.00 | Online tutorial",
-		"desc": "In this tutorial, we will discuss the application of autoregressive models to the task of image modeling. Specifically, we implement our own, small PixelCNN model, and review the design of masked autoregressive convolutions.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 3, lecture content and more.",
-		"documents": [
-			{"name": "Recording - Part 1 (Masked Convolutions)",
-			 "link": "https://youtu.be/ch0p2HGLa-o",
-			 "type": "video"},
-			{"name": "Recording - Part 2 (PixelCNN and Experiments)",
-			 "link": "https://youtu.be/H7dL3qjJKfE",
-			 "type": "video"},
-			{"name": "Jupyter notebook",
-			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling.html",
-			 "type": "notebook"}
 		]
 	}
+
 ]

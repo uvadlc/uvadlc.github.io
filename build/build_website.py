@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import re
+from glob import glob
 
 ICONS = {"pdf": "fa-file-text-o",
 		 "code": "fa-file-text-o",
@@ -11,7 +12,7 @@ DEFAULT_ICON = "fa-file-text-o"
 DEFAULT_DOCUMENT = "<a <!--$$LINK$$-->><i class='fa fa <!--$$ICON$$--> text-primary'></i><span class='lecture-document'><!--$$NAME$$--></span></a></br>"
 DEFAULT_RECORDING = "<a <!--$$LINK$$-->><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'><!--$$NAME$$--></span></a></br>"
 DEFAULT_TA_NAME = "<a href='<!--$$LINK$$-->' target='_blank' style='color: white;'><!--$$NAME$$--></a>"
-DEFAULT_TA_PICTURE = "<a href='<!--$$LINK$$-->'><img class='img-circle' src='<!--$$IMAGE$$-->' hspace='5' width='150' alt='<!--$$NAME$$-->' title='<!--$$NAME$$-->'></a>"
+DEFAULT_TA_PICTURE = "<a href='<!--$$LINK$$-->'><img class='img-circle' src='<!--$$IMAGE$$-->' hspace='5' width='120' alt='<!--$$NAME$$-->' title='<!--$$NAME$$-->'></a>"
 DEFAULT_PICTURE_FILENAME = "images/people/default-picture.png"
 
 def _create_document_list(document_dict):
@@ -57,6 +58,8 @@ def build_practicals(index_file,
 		practical_html = practical_template[:]
 		practical["name"] = "Practical %i: " % (index+1) + practical["name"]
 		assert os.path.isfile("../" + practical["image"]), "Given image path \"%s\" does not point to an existing image." % practical["image"]
+		if len(practical['desc']) == 0:
+			practical['desc'] = 'Details will follows soon.'
 
 		for tag, value in [("NAME", "name"), 
 						   ("DEADLINE", "deadline"),
@@ -101,14 +104,19 @@ def build_lectures(index_file,
 	lecture_count = 0
 
 	for dict_entry in lectures_dict:
+		if lecture_count % 2 == 0:
+			html_entries.append('<p><h3>Week %i</h3></p>' % (1 + lecture_count // 2))
+
 		is_tutorial = (dict_entry["type"] == "tutorial")
 		if is_tutorial:
 			entry_html = tutorial_template
-			dict_entry["name"] = "Tutorial %i: " % (lecture_count) + dict_entry["name"]
+			dict_entry["name"] = "Tutorial Week %i: " % (lecture_count // 2 + 1) + dict_entry["name"]
 		else:
 			lecture_count += 1
 			entry_html = lecture_template
 			dict_entry["name"] = "Lecture %i: " % (lecture_count) + dict_entry["name"]
+			if lecture_count % 2 == 0:
+				dict_entry["style"] = "margin-bottom: 40px;"
 
 		if "image" in dict_entry:
 			assert os.path.isfile("../" + dict_entry["image"]), "Given image path \"%s\" does not point to an existing image." % dict_entry["image"]
@@ -116,8 +124,11 @@ def build_lectures(index_file,
 		for tag, value in [("NAME", "name"), 
 						   ("DATE", "date"),
 						   ("DESCRIPTION", "desc"),
-						   ("IMAGE", "image")]:
-			if value in dict_entry and ("<!--$$%s$$-->" % tag) in entry_html:
+						   ("IMAGE", "image"),
+						   ("STYLE", "style")]:
+			if ("<!--$$%s$$-->" % tag) in entry_html:
+				if not value in dict_entry:
+					dict_entry[value] = ''
 				entry_html = entry_html.replace("<!--$$%s$$-->" % tag, dict_entry[value])
 
 		if "documents" in dict_entry:
@@ -161,6 +172,7 @@ def build_TA_list(index_file,
 			TA["link"] = "mailto:%s" % TA["mail"]
 		else:
 			# assert False, "Please provide at least a mail address for each TA."
+			print('Warning: No link found for %s' % TA['name'])
 			TA["link"] = ""
 		TA_name = TA_name.replace("<!--$$LINK$$-->", TA["link"])
 		TA_name_list.append(TA_name)
@@ -171,12 +183,19 @@ def build_TA_list(index_file,
 	for i, TA in enumerate(TA_dict):
 		TA_pic = DEFAULT_TA_PICTURE
 		TA_pic = TA_pic.replace("<!--$$NAME$$-->", TA["name"])
-		if not ("picture" in TA and len(TA["picture"]) > 0 and os.path.isfile("../" + TA["picture"])):
+		if not "picture" in TA or len(TA["picture"]) == 0:
+			search_str = '../images/people/' + TA['name'].lower().replace(' ','-') + '.*'
+			pos_files = glob(search_str)
+			if len(pos_files) == 0:
+				TA['picture'] = ''
+			else:
+				TA['picture'] = pos_files[0]
+		if len(TA["picture"]) == 0 or not (os.path.isfile(TA["picture"])):
 			print("Warning: Could not find picture for %s. Using default picture..." % TA["name"])
 			TA["picture"] = DEFAULT_PICTURE_FILENAME
 		TA_pic = TA_pic.replace("<!--$$IMAGE$$-->", TA["picture"])
 		TA_pic = TA_pic.replace("<!--$$LINK$$-->", TA["link"])
-		if (i+2) % 4 == 0: # Every row should only have 4 pictures. First one is lecturer
+		if (i+2) % 5 == 0: # Every row should only have 5 pictures. First one is lecturer
 			TA_pic = TA_pic + "</br></br>"
 		TA_pic_list.append(TA_pic)
 

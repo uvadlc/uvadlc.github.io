@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lectures Nov 2020</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86672135-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">UvA Deep Learning Course</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#lectures">Lectures</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#old-lectures">Past lectures</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#practicals">Practicals</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#course-links">Links</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section id="lectures">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Lectures November 2020 edition</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-university text-primary"></span><span class="lecture-title">Lecture 1: Introduction to Deep Learning</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">October 27, 2020 | 13.00-15.00 | Online lecture</p>
+                        <p>This lecture introduces the structure of the Deep Learning course, and gives a short overview of the history and motivation of Deep Learning.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://canvas.uva.nl/courses/17398/files/3452605?module_item_id=716960'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 1.1</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3452606?module_item_id=716961'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 1.2</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3452608?module_item_id=716962'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 1.3</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3452609?module_item_id=716963'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 1.4</span></a></br>
+                        </div>
+                        <h4>Lecture recordings:</h4>
+                        <div class="lecture-document-list">
+                            <a href='#'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 1: Course Information (no link)</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/pages/lecture-1-dot-2?module_item_id=716572'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 2: A brief history of NN and Perceptrons</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/pages/lecture-1-dot-3?module_item_id=716573'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 3: Deep learning arrives</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/pages/lecture-1-dot-4?module_item_id=716574'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 4: Deep learning: The what and why</span></a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Tutorial 1: Getting to know</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">October 27, 2020 | 17.00-19.00 | On-campus TA session</p>
+                        <p>The first practical session will be used to help you setting up the provided conda environment in the assignment github repository. We will <i>not</i> have a notebook tutorial session in the first 30 minutes yet but start from the second tutorial on.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            No documents.
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-university text-primary"></span><span class="lecture-title">Lecture 2: Modular Learning</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">October 29, 2020 | 11.00-13.00 | Online lecture</p>
+                        <p>This lecture series discusses modular learning in deep neural networks and covers linear and nonlinear modules, gradient-based learning and the backpropagation algorithm.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://canvas.uva.nl/courses/17398/files/3469213?module_item_id=719119'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 2.1 - Deep modularity</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3469214?module_item_id=719120'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 2.2 - Deep learning modules</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3469215?module_item_id=719121'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 2.3 - Gradient-based optimization</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3469216?module_item_id=719122'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 2.4 - Chain Rule</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3469217?module_item_id=719123'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 2.5 - Backpropagation</span></a></br>
+                        </div>
+                        <h4>Lecture recordings:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/PQTSg7OQ8fI'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 1: Deep modularity</span></a></br>
+            <a href='https://youtu.be/snPWuzCZGww'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 2: Deep learning modules</span></a></br>
+            <a href='https://youtu.be/bF3xrQjpcnA'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 3: Gradient-based optimization</span></a></br>
+            <a href='https://youtu.be/vvzVbk8MvP8'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 4: Chain Rule</span></a></br>
+            <a href='https://youtu.be/dSqN7V7_HOY'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 5: Backpropagation</span></a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Tutorial 2: Introduction to PyTorch</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">October 29, 2020 | 13.00-15.00 | Online tutorial + Online TA session</p>
+                        <p>We will discuss the PyTorch machine learning framework, and introduce you to the basic concepts of Tensors, computation graphs and GPU computation. We will continue with a small hands-on tutorial of building your own, first neural network in PyTorch. If you are already familiar with PyTorch, you might just want to skim the notebook.</p><p>We also provide a short tutorial for working with the Lisa cluster, and how to setup your account for Lisa. This guide complements the Lisa presentation during the lecture. There will be no presentation about the Lisa notebook as it is only a short guide.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/oluO8JiC7EA'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 1 (Introduction)</span></a></br>
+            <a href='https://youtu.be/wnKZZgFQY-E'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 2 (PyTorch Basics)</span></a></br>
+            <a href='https://youtu.be/schbjeU5X2g'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 3 (NNs in PyTorch)</span></a></br>
+            <a href='https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial1/Lisa_Cluster.html'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Lisa Tutorial</span></a></br>
+            <a href='https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial2/Introduction_to_PyTorch.html'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>PyTorch tutorial notebook</span></a></br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-university text-primary"></span><span class="lecture-title">Lecture 3: Deep Learning Optimizations</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">November 3, 2020 | 13.00-15.00 | Online lecture</p>
+                        <p>This lecture series discusses advanced optimizers, initialization, normalization and hyperparameter tuning.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://canvas.uva.nl/courses/17398/files/3497596?module_item_id=722849'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 3.1 - Optimizers</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3497601?module_item_id=722850'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 3.2 - Initialization</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3497599?module_item_id=722851'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 3.3 - Normalization</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3497598?module_item_id=722852'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 3.4 - Regularization</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3497597?module_item_id=722853'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 3.5 - Hyperparameters</span></a></br>
+                        </div>
+                        <h4>Lecture recordings:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/dcooML__Pwk'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 1: Optimizers</span></a></br>
+            <a href='https://youtu.be/bqVQTzY4_sU'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 2: Initialization</span></a></br>
+            <a href='https://youtu.be/tc8zkdsmJWA'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 3: Normalization</span></a></br>
+            <a href='https://youtu.be/Y2A4ZH4gCpY'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 4: Regularization</span></a></br>
+            <a href='https://youtu.be/G0WzYwmIyIE'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 5: Hyperparameters</span></a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Tutorial 3: Activation Functions</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">November 3, 2020 | 17.00-19.00 | Online tutorial + On-campus TA session</p>
+                        <p>In this tutorial, we will discuss the role of activation functions in a neural network, and take a closer look at the optimization issues a poorly designed activation function can have.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 1, lecture content and more.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/3C_m71NDkPs'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 1</span></a></br>
+            <a href='https://youtu.be/GjCfAeHGq9U'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 2</span></a></br>
+            <a href='https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial3/Activation_Functions.html'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Jupyter notebook</span></a></br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-university text-primary"></span><span class="lecture-title">Lecture 4: Convolutional Neural Networks</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">Online lecture</p>
+                        <p>This lecture series covers convolutional neural networks for image processing.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://canvas.uva.nl/courses/17398/files/3514412?module_item_id=725085'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 4.1 - What makes images spatial and convolution inductive bias</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3514413?module_item_id=725086'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 4.2 - Convolution and pooling</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3514414?module_item_id=725087'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 4.3 - ConvNet Case Study 1: AlexNet</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3514415?module_item_id=725088'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 4.4 - Visualizations</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3514416?module_item_id=725089'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 4.5 - Transfer Learning</span></a></br>
+                        </div>
+                        <h4>Lecture recordings:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://www.youtube.com/watch?v=MVBTtTcwnxA&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=11'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 1: What makes images spatial and convolution inductive bias</span></a></br>
+            <a href='https://www.youtube.com/watch?v=0IdxMwguLL8&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=12'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 2: Convolution and pooling</span></a></br>
+            <a href='https://www.youtube.com/watch?v=ynAL3e0mtLE&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=13'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 3: ConvNet Case Study 1: AlexNet</span></a></br>
+            <a href='https://www.youtube.com/watch?v=xt-1vNxJJkg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=14'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 4: Visualizations</span></a></br>
+            <a href='https://www.youtube.com/watch?v=8OtSM-eNwr8&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=15'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 5: Transfer Learning</span></a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Tutorial 4: Optimization and Initialization</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">November 5, 2020 | 13.00-15.00 | Online tutorial + Online TA session</p>
+                        <p>In this tutorial, we will discuss the importance of proper parameter initialization in deep neural networks, and how we can find a suitable one for our network. In addition, we will review the optimizers SGD and Adam, and compare them on complex loss surfaces.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/X5m7bC4xCLY'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 1 (Initialization)</span></a></br>
+            <a href='https://youtu.be/UcRBZbAP9hM'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 2 (Optimization)</span></a></br>
+            <a href='https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial4/Optimization_and_Initialization.html'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Jupyter notebook</span></a></br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-university text-primary"></span><span class="lecture-title">Lecture 5: Modern ConvNets</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">Online lecture</p>
+                        <p>This lecture series covers modern ConvNet architecture.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://canvas.uva.nl/courses/17398/modules/items/736131'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 5.1 - VGGs</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/736132'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 5.2 - Vanishing and Exploding Gradients</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/736133'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 5.3 - The Inceptions</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/736134'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 5.4 - The Res/Dense/Highway Nets</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/736135'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 5.5 - Depth & trainability</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/736136'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 5.6 - Advanced computer vision architectures</span></a></br>
+                        </div>
+                        <h4>Lecture recordings:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://www.youtube.com/watch?v=WrhwO32OYxg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=16'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 1: VGGs</span></a></br>
+            <a href='https://www.youtube.com/watch?v=iwgioNhO20A&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=17'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 2: Vanishing and Exploding Gradients</span></a></br>
+            <a href='https://www.youtube.com/watch?v=YkJhDfJaJbg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=18'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 3: The Inceptions</span></a></br>
+            <a href='https://www.youtube.com/watch?v=Z5mx8QXq8vQ&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=19'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 4: The Res/Dense/Highway Nets</span></a></br>
+            <a href='https://www.youtube.com/watch?v=6aafIBg-LG4&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=20'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 5: Depth & trainability</span></a></br>
+            <a href='https://www.youtube.com/watch?v=L2kKjZZpXN0&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=21'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 6: Advanced computer vision architectures</span></a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Tutorial 5: Inception, ResNet and DenseNet</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">November 10, 2020 | 13.00-15.00 | Online tutorial + On-campus TA session</p>
+                        <p>In this tutorial, we will implement three popular, modern ConvNet architectures: GoogleNet, ResNet, and DenseNet. We will compare them on the CIFAR10 dataset, and discuss the advantages that made them popular and successful across many tasks.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 1, lecture content and more.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/vjSSyGxlczs'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 1 (PyTorch Lightning)</span></a></br>
+            <a href='https://youtu.be/9yRXqYJDHr4'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 2 (Inception and ResNet)</span></a></br>
+            <a href='https://youtu.be/ELEqNwv9vkE'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 3 (DenseNet and comparison)</span></a></br>
+            <a href='https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial5/Inception_ResNet_DenseNet.html'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Jupyter notebook</span></a></br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-university text-primary"></span><span class="lecture-title">Lecture 6: Recurrent Neural Networks</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">Online lecture</p>
+                        <p>This lecture series covers Recurrent Neural Networks.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://canvas.uva.nl/courses/17398/modules/items/732733'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 6.1 - What makes sequences special and inductive bias</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/732735'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 6.2 - Backpropagation through time</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/732736'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 6.3 - LSTM and variants</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/732957'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 6.4 - Attention, transformers</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/732737'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 6.5 - Applications of sequence models</span></a></br>
+                        </div>
+                        <h4>Lecture recordings:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://www.youtube.com/watch?v=yvLBqo3G5CY&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=22'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 1: What makes sequences special and inductive bias</span></a></br>
+            <a href='https://www.youtube.com/watch?v=G6Kdp0adsbo&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=23'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 2: Backpropagation through time</span></a></br>
+            <a href='https://www.youtube.com/watch?v=i9Lbh__u3Q4&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=24'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 3: LSTM and variants</span></a></br>
+            <a href='https://www.youtube.com/watch?v=Vwiq6StMFz0&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=25'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 4: Attention, transformers</span></a></br>
+            <a href='https://www.youtube.com/watch?v=IR37kJLXStg&list=PLdlPlO1QhMiDlES3Vck6oQwO3TMYbdZDk&index=26'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 5: Applications of sequence models</span></a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Tutorial 6: Transformers and Multi-Head Attention</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">November 12, 2020 | 12.00-13.00 | Online tutorial + Online TA session</p>
+                        <p>In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer. We will perform experiments on sequence-to-sequence tasks and set anomaly detection.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/hGZ6wa07Vak'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 1 (What is Attention + MH Attention)</span></a></br>
+            <a href='https://youtu.be/QdTgJ85E6YA'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 2 (Architecture and Training tricks)</span></a></br>
+            <a href='https://youtu.be/e7xvF2yS4Dg'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 3 (Experiments)</span></a></br>
+            <a href='https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial6/Transformers_and_MHAttention.html'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Jupyter notebook</span></a></br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-university text-primary"></span><span class="lecture-title">Lecture 7: Graph Neural Networks</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">Online lecture</p>
+                        <p>This lecture series covers Graph Neural Networks.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://canvas.uva.nl/courses/17398/modules/items/746430'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 7.1 - Graph Neural Networks</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/746431'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 7.2 - Revisiting graphs</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/746432'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 7.3 - Revisiting convolutions</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/746433'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 7.4 - Spectral graph convolutions</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/746434'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Lecture 7.5 - Spatial graph convolutions</span></a></br>
+                        </div>
+                        <h4>Lecture recordings:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/KKkbq6gvHec'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 1: Graph Neural Networks</span></a></br>
+            <a href='https://youtu.be/vPR_vfzbjfo'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 2: Revisiting graphs</span></a></br>
+            <a href='https://youtu.be/zraW4JMv70Q'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 3: Revisiting convolutions</span></a></br>
+            <a href='https://youtu.be/_9Kyv0GA99I'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 4: Spectral graph convolutions</span></a></br>
+            <a href='https://youtu.be/OjEKjZLfYsM'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 5: Spatial graph convolutions</span></a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Tutorial 7: Graph Neural Networks</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">November 19, 2020 | 12.00-13.00 | Online tutorial + Online TA session</p>
+                        <p>In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 1, lecture content and more.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/fK7d56Ly9q8'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 1 (GCN and GAT)</span></a></br>
+            <a href='https://youtu.be/ZCNSUWe4a_Q'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 2 (Experiments)</span></a></br>
+            <a href='https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial7/GNN_overview.html'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Jupyter notebook</span></a></br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-university text-primary"></span><span class="lecture-title">Lecture 8: Deep Generative Models</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">Online lecture</p>
+                        <p>This lecture series introduces Deep Generative Models.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://canvas.uva.nl/courses/17398/files/3676494?module_item_id=754759'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 8.1 - Generative models: motivation</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3676495?module_item_id=754760'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 8.2 - Energy-Based Models</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3679247?module_item_id=755048'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 8.3 - Hopfield Networks</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3692152?module_item_id=756534'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 8.4 - Boltzmann machines</span></a></br>
+                        </div>
+                        <h4>Lecture recordings:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/VZdvRHnYCPA'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 1: Generative models: motivation</span></a></br>
+            <a href='https://youtu.be/3WYgUkbjTPg'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 2: Energy-Based Models</span></a></br>
+            <a href='https://youtu.be/lPSBOYgBpkI'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 3: Hopfield Networks</span></a></br>
+            <a href='https://youtu.be/8izgCV7X1eQ'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 4: Boltzmann machines</span></a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Tutorial 8: Deep Energy-Based Generative Models</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">November 24, 2020 | 14.00-15.00 | Online tutorial + On-campus TA session</p>
+                        <p>In this tutorial, we will discuss energy-based models for the application of generative modeling. In the first part of the tutorial, we will shortly review the theory on energy-based models and how we can use them for generative modeling. The second part shows the application of an energy-based model on image generation, and we implement a CNN on MNIST digit generation.</p><p>After the presentation, there will by an on-campus TA session for Q&A for assignment 2, lecture content and more.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/E6PDwquBBQc'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 1 (Theory)</span></a></br>
+            <a href='https://youtu.be/QJ94zuSQoP4'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 2 (Implementation)</span></a></br>
+            <a href='https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial8/Deep_Energy_Models.html'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Jupyter notebook</span></a></br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-university text-primary"></span><span class="lecture-title">Lecture 9: Deep Variational Inference</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">Online lecture</p>
+                        <p>This lecture series introduces the framework of variational inference and Variational Autoencoders (VAEs).</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://canvas.uva.nl/courses/17398/files/3721929?module_item_id=759498'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 9.1 - Latent variable models</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3721930?module_item_id=759499'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 9.2 - Autoencoders</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3721931?module_item_id=759500'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 9.3 - Variational Inference</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3721932?module_item_id=759502'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 9.4 - Variational Autoencoders</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3721936?module_item_id=759503'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 9.5 - Reparameterization trick</span></a></br>
+                        </div>
+                        <h4>Lecture recordings:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/E6XV5ICqoXg'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 1: Latent variable models</span></a></br>
+            <a href='https://youtu.be/8VE_a1FdPNk'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 2: Autoencoders</span></a></br>
+            <a href='https://youtu.be/ghlnVdmFn4w'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 3: Variational Inference</span></a></br>
+            <a href='https://youtu.be/qneY6xfmvYc'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 4: Variational Autoencoders</span></a></br>
+            <a href='https://youtu.be/Xv3ELA9DAEU'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 5: Reparameterization trick</span></a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Tutorial 9: Deep Autoencoders</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">November 26, 2020 | 12.00-13.00 | Online tutorial + Online TA session</p>
+                        <p>In this tutorial, we will discuss deep convolutional autoencoders and their applications. In the practical and lecture, you will see variational autoencoders (VAE), which add a stochastic part to vanilla autoencoders. Both have their advantages and applications, of which we visit image retrieval and compression for the vanilla auotoencoder.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 2, lecture content and more.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/E2d8NRYt2e4'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 1 (Building an AE)</span></a></br>
+            <a href='https://youtu.be/3UrX2mTY610'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 2 (Analysis)</span></a></br>
+            <a href='https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial9/AE_CIFAR10.html'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Jupyter notebook</span></a></br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-university text-primary"></span><span class="lecture-title">Lecture 10: Generative Adversarial Networks</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">Online lecture</p>
+                        <p>This lecture series discusses Generative Adversarial Networks.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://canvas.uva.nl/courses/17398/modules/items/762125'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 10.1 - Implicit density functions</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/762126'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 10.2 - Generative Adversarial Networks</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/762127'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 10.3 - Challenges</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/762128'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 10.4 - GAN models</span></a></br>
+                        </div>
+                        <h4>Lecture recordings:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/Z5rXFgYc8d0'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 1: Implicit density functions</span></a></br>
+            <a href='https://youtu.be/ubYCKnLBMQw'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 2: Generative Adversarial Networks</span></a></br>
+            <a href='https://youtu.be/h91L_EkHh6M'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 3: Challenges</span></a></br>
+            <a href='https://youtu.be/876nPgU1y70'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 4: GAN models</span></a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Tutorial 10: Adversarial Attacks</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">December 01, 2020 | 14.00-15.00 | Online tutorial</p>
+                        <p>In this tutorial, we will discuss adversarial attacks on deep neural networks, specifically CNNs. We will discuss the possible threads of such attacks, and implement two white-box attacks ourselves: FGSM and Adversarial Patches. Afterwards, we test the transferability of such attacks, and discuss how you could protect a network against adversarial attacks.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/uidLtkhZFwY'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 1 (Intro and FGSM)</span></a></br>
+            <a href='https://youtu.be/Dmbz0ffc6Wg'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 2 (Adversarial Patches)</span></a></br>
+            <a href='https://youtu.be/0dt2Su-SRpI'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 3 (Defence)</span></a></br>
+            <a href='https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial10/Adversarial_Attacks.html'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Jupyter notebook</span></a></br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-university text-primary"></span><span class="lecture-title">Lecture 11: Advanced Generative Models</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">Online lecture</p>
+                        <p>This lecture series discusses autoregressive image modeling and normalizing flows.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://canvas.uva.nl/courses/17398/modules/items/765816'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 11.1 - Early autoregressive models</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/765817'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 11.2 - Modern autoregressive models</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3805963?module_item_id=782475'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 11.3 - Normalizing Flows</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/files/3805964?module_item_id=782476'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 11.4 - Flow-based Models</span></a></br>
+                        </div>
+                        <h4>Lecture recordings:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/Nx46Es3EECM'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 1: Early autoregressive models</span></a></br>
+            <a href='https://youtu.be/wT8Ox-UlMWU'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 2: Modern autoregressive models</span></a></br>
+            <a href='https://youtu.be/DtzJh7Awghk'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 3: Normalizing Flows</span></a></br>
+            <a href='https://youtu.be/_toF1OD8vtg'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 4: Flow-based Models</span></a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Tutorial 11: Normalizing flows for image modeling</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">December 08, 2020 | 14.00-15.00 | Online tutorial</p>
+                        <p>In this tutorial, we will discuss the application of Normalizing Flows to the task of image modeling. We review the ideas of (variational) dequantization, and show the potential of multi-scale flow architectures.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/U1fwesIusbg'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 1 (Intro and explanation of Normalizing Flows)</span></a></br>
+            <a href='https://youtu.be/qMoGcRhVrF8'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 2 (Dequantization)</span></a></br>
+            <a href='https://youtu.be/YoAWiaEt41Y'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 3 (Coupling layers)</span></a></br>
+            <a href='https://youtu.be/nTyDvn-ADJ4'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 4 (Multi-scale architectures and experiments)</span></a></br>
+            <a href='https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial11/NF_image_modeling.html'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Jupyter notebook</span></a></br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-university text-primary"></span><span class="lecture-title">Lecture 12: Deep Stochastic Models</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">Online lecture</p>
+                        <p>Details will follow soon.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://canvas.uva.nl/courses/17398/modules/items/783142'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 12.1 - Monte Carlo Simulation</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/783143'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 12.2 - Stochastic gradients</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/783144'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 12.3 - Monte Carlo Gradient Estimation</span></a></br>
+            <a href='https://canvas.uva.nl/courses/17398/modules/items/783145'><i class='fa fa fa-file-powerpoint-o text-primary'></i><span class='lecture-document'>Slides 12.4 - Bias and Variance in Gradient Estimators</span></a></br>
+                        </div>
+                        <h4>Lecture recordings:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/R4kvg1CIz9U'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 1: Monte Carlo Simulation</span></a></br>
+            <a href='https://youtu.be/D-w3tazV5_o'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 2: Stochastic gradients</span></a></br>
+            <a href='https://youtu.be/fTgngf_jcJs'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 3: Monte Carlo Gradient Estimation</span></a></br>
+            <a href='https://youtu.be/WCzftV4K2rA'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Part 4: Bias and Variance in Gradient Estimators</span></a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorial-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Tutorial 12: Autoregressive Image Modeling</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <p class="text-muted" style="font-size: 12px">December 10, 2020 | 12.00-13.00 | Online tutorial</p>
+                        <p>In this tutorial, we will discuss the application of autoregressive models to the task of image modeling. Specifically, we implement our own, small PixelCNN model, and review the design of masked autoregressive convolutions.</p><p>After the presentation, there will by an online TA session for Q&A for assignment 3, lecture content and more.</p>
+                        <h4>Documents:</h4>
+                        <div class="lecture-document-list">
+                            <a href='https://youtu.be/ch0p2HGLa-o'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 1 (Masked Convolutions)</span></a></br>
+            <a href='https://youtu.be/H7dL3qjJKfE'><i class='fa fa fa-video-camera text-primary'></i><span class='lecture-document'>Recording - Part 2 (PixelCNN and Experiments)</span></a></br>
+            <a href='https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling.html'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Jupyter notebook</span></a></br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="practicals">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Practicals</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Practical 1: MLPs, CNNs and Backpropagation</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <table><tr><td style="width: 100%; margin: auto;">
+                            <p class="text-muted" style="font-size: 12px">Deadline: November 15, 2020</p>
+                            <p>In this assignment, you will learn how to implement and train basic neural architectures like MLPs and CNNs for classification tasks. Therefore, you will make use of modern deep learning libraries such as PyTorch which come with sophisticated functionalities like abstracted layer classes, automatic differentiation, optimizers, and more.</p>
+                            <h4>Documents:</h4>
+                            <div class="lecture-document-list">
+                                <a href='https://github.com/uvadlc/uvadlc_practicals_2020/blob/master/assignment_1/1_mlp_cnn/assignment_1.pdf'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>PDF description</span></a></br>
+            <a href='https://github.com/uvadlc/uvadlc_practicals_2020/tree/master/assignment_1/1_mlp_cnn'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Code</span></a></br>
+                            </div>
+                        </td><td>
+                            <img src="images/lenet.jpg" alt="" width="300" style="padding-bottom: 10px"></br>
+                            <center class="text-muted" style="font-size: 12px">The LeNet was one of the first CNNs proposed.</center>
+                        </td></tr></table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Practical 2: Recurrent Neural Networks &amp Graph CNNs</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <table><tr><td style="width: 100%; margin: auto;">
+                            <p class="text-muted" style="font-size: 12px">Deadline: December 1, 2020</p>
+                            <p>In this assignment you will study and implement recurrent neural networks (RNNs) and have a theoretical introduction to graph neural networks (GNNs). RNNs are best suited for sequential processing of data, such as a sequence of characters, words or video frames. Their applications are mostly in neural machine translation, speech analysis and video understanding. GNNs are specifically applied to graph-structured data, like knowledge graphs, molecules or citation networks.</p>
+                            <h4>Documents:</h4>
+                            <div class="lecture-document-list">
+                                <a href='https://github.com/uvadlc/uvadlc_practicals_2020/blob/master/assignment_2/2_recurrentnns_gnns/code/assignment_2.pdf'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>PDF description</span></a></br>
+            <a href='https://github.com/uvadlc/uvadlc_practicals_2020/tree/master/assignment_2/2_recurrentnns_gnns/code'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Code</span></a></br>
+                            </div>
+                        </td><td>
+                            <img src="images/rnns.jpg" alt="" width="300" style="padding-bottom: 10px"></br>
+                            <center class="text-muted" style="font-size: 12px">RNNs unroll a network over time.</center>
+                        </td></tr></table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lecture-box">
+                <button type="button" class="lecture-collapsible"><span class="fa fa-2x fa-desktop text-primary"></span><span class="lecture-title">Practical 3: Generative Models</span></button>
+                <div class="lecture-content">
+                    <div class="padding-div">
+                        <table><tr><td style="width: 100%; margin: auto;">
+                            <p class="text-muted" style="font-size: 12px">Deadline: December 20, 2020</p>
+                            <p>Modelling distributions in high dimensional spaces is difficult. Simple distributions such as multivariate Gaussians or mixture models are not powerful enough to model complicated high-dimensional distributions. The question is: How can we design complicated distributions over high-dimensional data, such as images or audio? In this assignment, you will focus on three examples of well-known generative models: Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs), and Normalizing Flows (NFs).</p>
+                            <h4>Documents:</h4>
+                            <div class="lecture-document-list">
+                                <a href='https://github.com/uvadlc/uvadlc_practicals_2020/blob/master/assignment_3/3_generative/assignment_3.pdf'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>PDF description</span></a></br>
+            <a href='https://github.com/uvadlc/uvadlc_practicals_2020/tree/master/assignment_3/3_generative'><i class='fa fa fa-file-text-o text-primary'></i><span class='lecture-document'>Code</span></a></br>
+                            </div>
+                        </td><td>
+                            <img src="images/vae.jpg" alt="" width="300" style="padding-bottom: 10px"></br>
+                            <center class="text-muted" style="font-size: 12px">VAEs model a distribution in latent space.</center>
+                        </td></tr></table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact us!</h2>
+                    <hr class="primary">
+                    <p class="running-text" style="text-align:justify">
+                    If you have any questions or recommendations for the website or the course, you can always drop us a line!
+                    The knowledge should be free, so feel also free to use any of the material provided here (but please be so kind to cite us).
+                    In case you are a course instuctor and you want the solutions, please send us an email.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-map-marker fa-3x wow bounceIn"></i>
+                    <p><a href="https://goo.gl/maps/HzB8CMdkTDA2">Room C3.229, Science Park 904 1098 XH, Amsterdam, The Netherlands</a></p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:egavves@uva.nl">egavves@uva.nl</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+    <script src="js/collapsible.js"></script>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+      </div>
+    </div>
+
+</body>
+
+</html>

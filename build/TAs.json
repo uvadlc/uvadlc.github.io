@@ -1,95 +1,117 @@
 [
 	{
-		"name": "Maurice Weiler",
-		"picture": "images/people/maurice-weiler.png",
+		"name": "Christos Athanasiadis",
 		"website": "",
-		"mail": "m.weiler@uva.nl"
-	},
-	{
-		"name": "Zenglin Shi",
-		"picture": "images/people/zenglin.jpeg",
-		"website": "",
-		"mail": "z.shi@uva.nl"
-	},
-	{
-		"name": "Gabriele Cesa",
-		"picture": "images/people/gabriele-cesa.png",
-		"website": "",
-		"mail": "cesa.gabriele@gmail.com"
-	},
-	{
-		"name": "Tao Hu",
-		"picture": "images/people/tao-hu.png",
-		"website": "",
-		"mail": "taohu620@gmail.com"
+		"mail": "c.athanasiadis@uva.nl"
 	},
 	{
 		"name": "Phillip Lippe",
-		"picture": "images/people/phillip-lippe.jpg",
-		"website": "",
+		"website": "https://phlippe.github.io",
 		"mail": "p.lippe@uva.nl"
 	},
 	{
-		"name": "Sindy Löwe",
-		"picture": "images/people/sindy-loewe.jpg",
-		"website": "",
-		"mail": "loewe.sindy@gmail.com"
-	},
-	{
-		"name": "Jiaojiao Zhao",
-		"picture": "images/people/jiaojiao-zhao.png",
-		"website": "",
-		"mail": "j.zhao3@uva.nl"
-	},
-	{
-		"name": "Riaan Zoetmulder",
-		"picture": "images/people/riaan.jpg",
-		"website": "",
-		"mail": "riaanzoetmulder@gmail.com"
-	},
-	{
-		"name": "Miltos Kofinas",
-		"picture": "images/people/miltos-kofinas.jpg",
-		"website": "",
-		"mail": "m.kofinas@uva.nl"
-	},
-	{
 		"name": "Alex Gabel",
-		"picture": "images/people/alex-gabel.jpeg",
 		"website": "",
 		"mail": "a.gabel@uva.nl"
 	},
 	{
-		"name": "Andreas Panteli",
-		"picture": "images/people/andreas-panteli.jpg",
-		"website": "",
-		"mail": "a.panteli.uva@gmail.com"
-	},
-	{
-		"name": "Christina Winkler",
-		"picture": "images/people/christina-winkler.jpg",
-		"website": "",
-		"mail": "c.e.winkler@uva.nl"
-	},
-	{
-		"name": "Emiel Hogeboom",
-		"picture": "images/people/emiel-hogeboom.jpeg",
-		"website": "",
-		"mail": "e.hogeboom@gmail.com"
-	},
-	{
 		"name": "Mariya Hendriksen",
-		"picture": "images/people/mariya-hendriksen.png",
 		"website": "",
 		"mail": "m.hendriksen@uva.nl"
 	},
-		{
-		"name": "Alvise Sembenico",
-		"picture": "images/people/alvise.jpg",
+	{
+		"name": "Tom Lieberum",
 		"website": "",
-		"mail": "alivse.sembenico@gmail.com"
+		"mail": "t.f.lieberum@uva.nl"
+	},
+	{
+		"name": "Jim Boelrijk",
+		"website": "",
+		"mail": "jim.boelrijk@gmail.com"
+	},
+	{
+		"name": "Ben Miller",
+		"website": "",
+		"mail": "b.k.miller@uva.nl"
+	},
+	{
+		"name": "Mohammad Mahdi Derakhshani",
+		"website": "",
+		"mail": "m.m.derakhshani@uva.nl"
+	},
+	{
+		"name": "Yingjun Du",
+		"website": "",
+		"mail": "y.du@uva.nl"
+	},
+	{
+		"name": "Ivona Najdenkoska",
+		"website": "",
+		"mail": "i.najdenkoska@uva.nl"
+	},
+	{
+		"name": "Jiayi Shen",
+		"website": "",
+		"mail": "j.shen@uva.nl"
+	},
+	{
+		"name": "Zehao Xiao",
+		"website": "",
+		"mail": "z.xiao@uva.nl"
+	},
+	{
+		"name": "Sarah Rastegar",
+		"website": "",
+		"mail": "s.rastegar2@uva.nl"
+	},
+	{
+		"name": "Ilze Amanda Auzina",
+		"website": "",
+		"mail": "i.a.auzina@uva.nl"
+	},
+	{
+		"name": "Nadja Rutsch",
+		"website": "",
+		"mail": ""
+	},
+	{
+		"name": "Winfried van den Dool",
+		"website": "",
+		"mail": "w.v.s.o.vandendool@uva.nl"
+	},
+	{
+		"name": "Tom van Sonsbeek",
+		"website": "",
+		"mail": "t.j.vansonsbeek@uva.nl"
+	},
+	{
+		"name": "Natasha Butt",
+		"website": "",
+		"mail": "n.e.butt@uva.nl"
+	},
+	{
+		"name": "Hoachen Wang",
+		"website": "",
+		"mail": "h.wang3@uva.nl"
+	},
+	{
+		"name": "Riccardo Valperga",
+		"website": "",
+		"mail": "r.valperga@uva.nl"
+	},
+	{
+		"name": "Leonard Beresha",
+		"website": "",
+		"mail": "l.f.bereska@uva.nl"
+	},
+	{
+		"name": "Yongtuo Liu",
+		"website": "",
+		"mail": ""
+	},
+	{
+		"name": "Mohammad Reza Salehi",
+		"website": "",
+		"mail": ""
 	}
-
-
-
 ]
