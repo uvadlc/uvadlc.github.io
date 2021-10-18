@@ -1,9 +1,9 @@
 [
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Introduction to Deep Learning",
+		"date": "November 4, 2021 | 11.00-13.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -36,9 +36,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Deep Feedforward Networks",
+		"date": "November 5, 2021 | 11.00-13.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -47,9 +47,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Deep Learning Optimizations I",
+		"date": "November 11, 2021 | 11.00-13.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -76,9 +76,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Deep Learning Optimizations II",
+		"date": "November 12, 2021 | 11.00-13.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -87,9 +87,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Convolutional Neural Networks",
+		"date": "November 18, 2021 | 11.00-13.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -116,9 +116,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Modern ConvNets",
+		"date": "November 19, 2021 | 11.00-13.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -127,9 +127,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Recurrent Neural Networks",
+		"date": "November 25, 2021 | 11.00-13.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -159,9 +159,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Graph Neural Networks",
+		"date": "November 26, 2021 | 13.00-15.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -170,9 +170,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Attention and Transformers",
+		"date": "December 2, 2021 | 11.00-13.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -202,9 +202,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Generative Adversarial Networks",
+		"date": "December 3, 2021 | 15.00-17.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -213,9 +213,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Variational Autoencoders",
+		"date": "December 9, 2021 | 11.00-13.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -242,9 +242,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Guest Lecture",
+		"date": "December 10, 2021 | 15.00-17.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -253,9 +253,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Meta-Learning I",
+		"date": "December 16, 2021 | 11.00-13.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
@@ -282,9 +282,9 @@
 
 	{
 		"type": "lecture",
-		"name": "TBA",
-		"date": "TBA",
-		"desc": "",
+		"name": "Meta-Learning II",
+		"date": "December 17, 2021 | 11.00-13.00 | Lecture",
+		"desc": "Details will follow soon.",
 		"documents": [
 		],
 		"recordings": [
