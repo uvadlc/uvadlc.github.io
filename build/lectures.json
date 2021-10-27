@@ -181,21 +181,18 @@
 
 	{
 		"type": "tutorial",
-		"name": "Transformers and Multi-Head Attention",
+		"name": "Graph Neural Networks",
 		"date": "December 2, 2020 | 13.00-15.00 | Tutorial session + TA Q&A",
-		"desc": "In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer. We will perform experiments on sequence-to-sequence tasks and set anomaly detection.</p><p>After the presentation, there will by a TA session for Q&A for assignment 2, lecture content and more.",
+		"desc": "In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.</p><p>After the presentation, there will by a TA session for Q&A for assignment 2, lecture content and more.",
 		"documents": [
-			{"name": "Recording - Part 1 (What is Attention + MH Attention)",
-			 "link": "https://youtu.be/hGZ6wa07Vak",
+			{"name": "Recording - Part 1 (GCN and GAT)",
+			 "link": "https://youtu.be/fK7d56Ly9q8",
 			 "type": "video"},
-			{"name": "Recording - Part 2 (Architecture and Training tricks)",
-			 "link": "https://youtu.be/QdTgJ85E6YA",
-			 "type": "video"},
-			{"name": "Recording - Part 3 (Experiments)",
-			 "link": "https://youtu.be/e7xvF2yS4Dg",
+			{"name": "Recording - Part 2 (Experiments)",
+			 "link": "https://youtu.be/ZCNSUWe4a_Q",
 			 "type": "video"},
 			{"name": "Jupyter notebook",
-			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial6/Transformers_and_MHAttention.html",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial7/GNN_overview.html",
 			 "type": "notebook"}
 		]
 	},
@@ -224,18 +221,21 @@
 
 	{
 		"type": "tutorial",
-		"name": "Graph Neural Networks",
+		"name": "Transformers and Multi-Head Attention",
 		"date": "December 9, 2020 | 13.00-15.00 | Tutorial session + TA Q&A",
-		"desc": "In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.</p><p>After the presentation, there will by a TA session for Q&A for assignment 3, lecture content and more.",
+		"desc": "In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer. We will perform experiments on sequence-to-sequence tasks and set anomaly detection.</p><p>After the presentation, there will by a TA session for Q&A for assignment 3, lecture content and more.",
 		"documents": [
-			{"name": "Recording - Part 1 (GCN and GAT)",
-			 "link": "https://youtu.be/fK7d56Ly9q8",
+			{"name": "Recording - Part 1 (What is Attention + MH Attention)",
+			 "link": "https://youtu.be/hGZ6wa07Vak",
 			 "type": "video"},
-			{"name": "Recording - Part 2 (Experiments)",
-			 "link": "https://youtu.be/ZCNSUWe4a_Q",
+			{"name": "Recording - Part 2 (Architecture and Training tricks)",
+			 "link": "https://youtu.be/QdTgJ85E6YA",
+			 "type": "video"},
+			{"name": "Recording - Part 3 (Experiments)",
+			 "link": "https://youtu.be/e7xvF2yS4Dg",
 			 "type": "video"},
 			{"name": "Jupyter notebook",
-			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial7/GNN_overview.html",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial6/Transformers_and_MHAttention.html",
 			 "type": "notebook"}
 		]
 	},
