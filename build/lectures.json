@@ -25,6 +25,9 @@
 			{"name": "Recording - Part 3 (NNs in PyTorch)",
 			 "link": "https://youtu.be/schbjeU5X2g",
 			 "type": "video"},
+			{"name": "Introduction Slides",
+			 "link": "https://canvas.uva.nl/courses/25602/files/folder/tutorial_sessions?preview=5576213",
+			 "type": "powerpoint"},
 			{"name": "Lisa Tutorial",
 			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial1/Lisa_Cluster.html",
 			 "type": "notebook"},
@@ -159,8 +162,8 @@
 
 	{
 		"type": "lecture",
-		"name": "Graph Neural Networks",
-		"date": "November 26, 2021 | 13.00-15.00 | Lecture",
+		"name": "Graph Neural Networks (Guest lecture)",
+		"date": "November 26, 2021 | 13.00-15.00 | Online Lecture",
 		"desc": "Details will follow soon.",
 		"documents": [
 		],
@@ -242,8 +245,8 @@
 
 	{
 		"type": "lecture",
-		"name": "Guest Lecture",
-		"date": "December 10, 2021 | 15.00-17.00 | Lecture",
+		"name": "Deep Learning Generalization (Guest Lecture)",
+		"date": "December 10, 2021 | 15.00-17.00 | Online Lecture",
 		"desc": "Details will follow soon.",
 		"documents": [
 		],
