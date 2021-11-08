@@ -55,7 +55,7 @@
 		"type": "lecture",
 		"name": "Deep Feedforward Networks",
 		"date": "November 5, 2021 | 11.00-13.00 | Lecture",
-		"desc": "This lecture introduces the structure of the Deep Learning course, and gives a short overview of the history and motivation of Deep Learning.",
+		"desc": "This lectures introduces basic concepts for Deep Feedforward Networks such linear and nonlinear modules, gradient-based learning and the backpropagation algorithm.",
 		"documents": [
 			{"name": "Slides 2.1",
 				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5606405",
