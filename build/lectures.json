@@ -91,15 +91,6 @@
 				"type": "powerpoint"},
 			   {"name": "Slides 3.3",
 				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628207",
-				"type": "powerpoint"},
-			   {"name": "Slides 3.4",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628209",
-				"type": "powerpoint"},
-				{"name": "Slides 3.5",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628210",
-				"type": "powerpoint"},
-				{"name": "Slides 3.6",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628211",
 				"type": "powerpoint"}
 	],
 		"recordings": [
@@ -128,8 +119,18 @@
 		"type": "lecture",
 		"name": "Deep Learning Optimizations II",
 		"date": "November 12, 2021 | 11.00-13.00 | Lecture",
-		"desc": "Details will follow soon.",
+		"desc": "This lecture series discusses advanced optimizers, initialization, normalization and hyperparameter tuning.",
 		"documents": [
+
+		{"name": "Slides 3.4",
+			"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628209",
+			"type": "powerpoint"},
+			{"name": "Slides 3.5",
+			"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628210",
+			"type": "powerpoint"},
+			{"name": "Slides 3.6",
+			"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628211",
+			"type": "powerpoint"}
 		],
 		"recordings": [
 		]
