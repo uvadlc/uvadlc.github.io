@@ -1,17 +1,23 @@
 [
 	{
 		"name": "MLPs and Backpropagation",
-		"deadline": "November 19, 2020",
-		"desc": "",
-		"image": "images/lenet.jpg",
-		"image_desc": "The LeNet was one of the first CNNs proposed.",
+		"deadline": "November 19, 2021",
+		"image": "images/nn2.png",
+		"image_desc": "An example of a neural network.",
+		"desc": "Multilayer perceptrons and backpropagation",
 		"documents": [
+			{"name": "First assignment description",
+			"link": "https://canvas.uva.nl/courses/25602/files/folder/Uploaded%20Media?preview=5607220",
+			"type": "pdf"},
+			{"name": "First assignment ANS Delft",
+			"link": "https://canvas.uva.nl/courses/25602/files/folder/Uploaded%20Media?preview=5610854",
+			"type": "pdf"}
 		]
 	},
 
 	{
 		"name": "CNNs, RNNs &amp Graph CNNs",
-		"deadline": "December 3, 2020",
+		"deadline": "December 3, 2021",
 		"desc": "",
 		"image": "images/rnns.jpg",
 		"image_desc": "RNNs unroll a network over time.",
@@ -21,7 +27,7 @@
 
 	{
 		"name": "Generative Models",
-		"deadline": "December 17, 2020",
+		"deadline": "December 17, 2021",
 		"desc": "",
 		"image": "images/vae.jpg",
 		"image_desc": "VAEs model a distribution in latent space.",
