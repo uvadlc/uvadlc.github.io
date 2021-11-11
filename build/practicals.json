@@ -2,8 +2,8 @@
 	{
 		"name": "MLPs and Backpropagation",
 		"deadline": "November 19, 2021",
-		"image": "images/nn2.png",
-		"image_desc": "An example of a neural network.",
+		"image": "images/nn.jpg",
+		"image_desc": "An example of a neuron.",
 		"desc": "Multilayer perceptrons and backpropagation",
 		"documents": [
 			{"name": "First assignment description",
