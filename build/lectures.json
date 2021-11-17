@@ -140,8 +140,18 @@
 		"type": "lecture",
 		"name": "Convolutional Neural Networks",
 		"date": "November 18, 2021 | 11.00-13.00 | Lecture",
-		"desc": "Details will follow soon.",
+		"desc": "This lecture series covers convolutional neural networks for image processing.",
 		"documents": [
+
+			{"name": "Slides 4.1",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5672737",
+				"type": "powerpoint"},
+			   {"name": "Slides 4.2",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5672738",
+				"type": "powerpoint"},
+			   {"name": "Slides 4.3",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5672739",
+				"type": "powerpoint"}
 		],
 		"recordings": [
 		]
@@ -169,8 +179,11 @@
 		"type": "lecture",
 		"name": "Modern ConvNets",
 		"date": "November 19, 2021 | 11.00-13.00 | Lecture",
-		"desc": "Details will follow soon.",
+		"desc": "This lecture series covers modern ConvNet architecture.",
 		"documents": [
+			{"name": "Slides 5.1",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5672736",
+				"type": "powerpoint"}
 		],
 		"recordings": [
 		]
