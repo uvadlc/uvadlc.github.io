@@ -193,8 +193,15 @@
 		"type": "lecture",
 		"name": "Recurrent Neural Networks",
 		"date": "November 25, 2021 | 11.00-13.00 | Lecture",
-		"desc": "Details will follow soon.",
+		"desc": "This lecture series covers Recurrent Neural Networks",
 		"documents": [
+
+			{"name": "Slides 6.1",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5747083",
+				"type": "powerpoint"},
+			   {"name": "Slides 6.2",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5747084",
+				"type": "powerpoint"}
 		],
 		"recordings": [
 		]
