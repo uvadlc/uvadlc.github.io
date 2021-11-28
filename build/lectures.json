@@ -232,10 +232,13 @@
 		"type": "lecture",
 		"name": "Graph Neural Networks (Guest lecture)",
 		"date": "November 26, 2021 | 13.00-15.00 | Online Lecture",
-		"desc": "Details will follow soon.",
+		"desc": "Petar Veličković lecture on Graph Neural Networks.",
 		"documents": [
 		],
 		"recordings": [
+			{"name": "Petar Veličković lecture on GNNs.",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Graph%20Neural%20Networks?preview=5762231",
+				"type": "video"}
 		]
 	},
 
