@@ -196,10 +196,10 @@
 		"desc": "This lecture series covers Recurrent Neural Networks",
 		"documents": [
 
-			{"name": "Slides 6.1",
+			{"name": "Slides 7.1",
 				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5747083",
 				"type": "powerpoint"},
-			   {"name": "Slides 6.2",
+			   {"name": "Slides 7.2",
 				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5747084",
 				"type": "powerpoint"}
 		],
@@ -234,6 +234,9 @@
 		"date": "November 26, 2021 | 13.00-15.00 | Online Lecture",
 		"desc": "Petar Veličković lecture on Graph Neural Networks.",
 		"documents": [
+			{"name": "Slides 8.1",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Graph%20Neural%20Networks?preview=5794037",
+				"type": "powerpoint"}
 		],
 		"recordings": [
 			{"name": "Petar Veličković lecture on GNNs.",
@@ -246,8 +249,11 @@
 		"type": "lecture",
 		"name": "Attention and Transformers",
 		"date": "December 2, 2021 | 11.00-13.00 | Lecture",
-		"desc": "Details will follow soon.",
+		"desc": "Ivona's lecture on Attention and Transformers.",
 		"documents": [
+			{"name": "Slides 9.1",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Transformers?preview=5791712",
+				"type": "powerpoint"}
 		],
 		"recordings": [
 		]
