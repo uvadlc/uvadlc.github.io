@@ -281,8 +281,13 @@
 		"type": "lecture",
 		"name": "Generative Adversarial Networks",
 		"date": "December 3, 2021 | 15.00-17.00 | Lecture",
-		"desc": "Details will follow soon.",
+		"desc": "This lecture series discusses Generative Adversarial Networks.",
 		"documents": [
+
+			{"name": "Slides 10.1",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Generative%20Adversarial%20Networks?preview=5797768",
+				"type": "powerpoint"}
+			
 		],
 		"recordings": [
 		]
