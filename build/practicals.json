@@ -18,7 +18,7 @@
 	{
 		"name": "CNNs, RNNs &amp Graph CNNs",
 		"deadline": "December 3, 2021",
-		"desc": "",
+		"desc": "CNNs, RNNs &amp Graph CNNs",
 		"image": "images/rnns.jpg",
 		"image_desc": "RNNs unroll a network over time.",
 		"documents": [
@@ -31,7 +31,7 @@
 	{
 		"name": "Generative Models",
 		"deadline": "December 17, 2021",
-		"desc": "",
+		"desc": "Generative Models",
 		"image": "images/vae.jpg",
 		"image_desc": "VAEs model a distribution in latent space.",
 		"documents": [
