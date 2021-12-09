@@ -22,6 +22,9 @@
 		"image": "images/rnns.jpg",
 		"image_desc": "RNNs unroll a network over time.",
 		"documents": [
+			{"name": "Second assignment description",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/Uploaded%20Media?preview=5684439",
+				"type": "pdf"}
 		]
 	},
 
@@ -32,6 +35,10 @@
 		"image": "images/vae.jpg",
 		"image_desc": "VAEs model a distribution in latent space.",
 		"documents": [
+
+			{"name": "Third assignment description",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/Uploaded%20Media?preview=5808534",
+				"type": "pdf"}
 		]
 	}
 ]
