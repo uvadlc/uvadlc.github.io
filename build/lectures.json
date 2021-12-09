@@ -297,8 +297,12 @@
 		"type": "lecture",
 		"name": "Variational Autoencoders",
 		"date": "December 9, 2021 | 11.00-13.00 | Lecture",
-		"desc": "Details will follow soon.",
+		"desc": "This lecture series introduces the framework of variational inference and Variational Autoencoders (VAEs).",
 		"documents": [
+
+			{"name": "Slides 11.1",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Deep%20Variational%20Inference?preview=5834936",
+				"type": "powerpoint"}
 		],
 		"recordings": [
 		]
