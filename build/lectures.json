@@ -335,8 +335,16 @@
 		"date": "December 10, 2021 | 15.00-17.00 | Online Lecture",
 		"desc": "Details will follow soon.",
 		"documents": [
+
+			{"name": "Slides from the guest lecture",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Deep%20Variational%20Inference?preview=5834936",
+				"type": "powerpoint"}
 		],
 		"recordings": [
+
+			{"name": "Recording of the guest lecture",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Guest%20Lecture%20-%20Deep%20learning%20regularization?preview=5848649",
+				"type": "video"}
 		]
 	},
 
@@ -344,10 +352,13 @@
 		"type": "lecture",
 		"name": "Meta-Learning I",
 		"date": "December 16, 2021 | 11.00-13.00 | Lecture",
-		"desc": "Details will follow soon.",
+		"desc": "Geometry and Structure Regularized Deep Learning.",
 		"documents": [
+
+		
 		],
 		"recordings": [
+
 		]
 	},
 
