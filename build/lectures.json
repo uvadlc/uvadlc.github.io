@@ -84,13 +84,13 @@
 				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628205",
 				"type": "powerpoint"},
 			   {"name": "Slides 3.2.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628206",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Optimization?preview=5701945",
 				"type": "powerpoint"},
 				{"name": "Slides 3.2.2",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5629993",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Optimization?preview=5676398",
 				"type": "powerpoint"},
 			   {"name": "Slides 3.3",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628207",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Optimization?preview=5628207",
 				"type": "powerpoint"}
 	],
 		"recordings": [
@@ -123,13 +123,13 @@
 		"documents": [
 
 		{"name": "Slides 4.1",
-			"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5663691",
+			"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Optimization?preview=5663691",
 			"type": "powerpoint"},
 			{"name": "Slides 4.2",
-			"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628210",
+			"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Optimization?preview=5725006",
 			"type": "powerpoint"},
 			{"name": "Slides 4.3",
-			"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628211",
+			"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Optimization?preview=5628211",
 			"type": "powerpoint"}
 		],
 		"recordings": [
@@ -182,7 +182,7 @@
 		"desc": "This lecture series covers modern ConvNet architecture.",
 		"documents": [
 			{"name": "Slides 6.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5680921",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Modern%20ConveNets?preview=5760039",
 				"type": "powerpoint"}
 		],
 		"recordings": [
@@ -197,10 +197,10 @@
 		"documents": [
 
 			{"name": "Slides 7.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5747083",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Recurrent%20Neural%20Networks?preview=5760033",
 				"type": "powerpoint"},
 			   {"name": "Slides 7.2",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5747084",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Recurrent%20Neural%20Networks?preview=5760036",
 				"type": "powerpoint"}
 		],
 		"recordings": [
@@ -252,7 +252,7 @@
 		"desc": "Ivona's lecture on Attention and Transformers.",
 		"documents": [
 			{"name": "Slides 9.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Transformers?preview=5791712",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Transformers?preview=5795237",
 				"type": "powerpoint"}
 		],
 		"recordings": [
@@ -301,7 +301,7 @@
 		"documents": [
 
 			{"name": "Slides 11.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Deep%20Variational%20Inference?preview=5834936",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Deep%20Variational%20Inference?preview=5840430",
 				"type": "powerpoint"}
 		],
 		"recordings": [
@@ -333,11 +333,11 @@
 		"type": "lecture",
 		"name": "Deep Learning Generalization (Guest Lecture)",
 		"date": "December 10, 2021 | 15.00-17.00 | Online Lecture",
-		"desc": "Details will follow soon.",
+		"desc": "Deep Learning Generalization.",
 		"documents": [
 
 			{"name": "Slides from the guest lecture",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Deep%20Variational%20Inference?preview=5834936",
+				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Guest%20Lecture%20-%20Deep%20learning%20regularization?preview=5848653",
 				"type": "powerpoint"}
 		],
 		"recordings": [
