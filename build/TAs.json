@@ -2,12 +2,14 @@
 	{
 		"name": "Christos Athanasiadis",
 		"website": "",
-		"mail": "c.athanasiadis@uva.nl"
+		"mail": "c.athanasiadis@uva.nl",
+		"type": "Head TA"
 	},
 	{
 		"name": "Phillip Lippe",
 		"website": "https://phlippe.github.io",
-		"mail": "p.lippe@uva.nl"
+		"mail": "p.lippe@uva.nl",
+		"type": "Head TA"
 	},
 	{
 		"name": "Alex Gabel",
@@ -15,49 +17,9 @@
 		"mail": "a.gabel@uva.nl"
 	},
 	{
-		"name": "Mariya Hendriksen",
-		"website": "",
-		"mail": "m.hendriksen@uva.nl"
-	},
-	{
-		"name": "Tom Lieberum",
-		"website": "",
-		"mail": "t.f.lieberum@uva.nl"
-	},
-	{
-		"name": "Jim Boelrijk",
-		"website": "",
-		"mail": "jim.boelrijk@gmail.com"
-	},
-	{
-		"name": "Ben Miller",
-		"website": "",
-		"mail": "b.k.miller@uva.nl"
-	},
-	{
-		"name": "Mohammad Mahdi Derakhshani",
-		"website": "",
-		"mail": "m.m.derakhshani@uva.nl"
-	},
-	{
-		"name": "Yingjun Du",
-		"website": "",
-		"mail": "y.du@uva.nl"
-	},
-	{
 		"name": "Ivona Najdenkoska",
 		"website": "",
 		"mail": "i.najdenkoska@uva.nl"
-	},
-	{
-		"name": "Jiayi Shen",
-		"website": "",
-		"mail": "j.shen@uva.nl"
-	},
-	{
-		"name": "Zehao Xiao",
-		"website": "",
-		"mail": "z.xiao@uva.nl"
 	},
 	{
 		"name": "Sarah Rastegar",
@@ -70,44 +32,9 @@
 		"mail": "i.a.auzina@uva.nl"
 	},
 	{
-		"name": "Nadja Rutsch",
-		"website": "",
-		"mail": "n.rutsch@uva.nl"
-	},
-	{
-		"name": "Winfried van den Dool",
-		"website": "",
-		"mail": "w.v.s.o.vandendool@uva.nl"
-	},
-	{
-		"name": "Tom van Sonsbeek",
-		"website": "",
-		"mail": "t.j.vansonsbeek@uva.nl"
-	},
-	{
-		"name": "Natasha Butt",
-		"website": "",
-		"mail": "n.e.butt@uva.nl"
-	},
-	{
-		"name": "Haochen Wang",
-		"website": "",
-		"mail": "h.wang3@uva.nl"
-	},
-	{
-		"name": "Riccardo Valperga",
-		"website": "",
-		"mail": "r.valperga@uva.nl"
-	},
-	{
 		"name": "Leonard Bereska",
 		"website": "",
 		"mail": "l.f.bereska@uva.nl"
-	},
-	{
-		"name": "Yongtuo Liu",
-		"website": "",
-		"mail": "y.liu6@uva.nl"
 	},
 	{
 		"name": "Mohammadreza Salehi",
@@ -115,8 +42,48 @@
 		"mail": "s.salehidehnavi@uva.nl"
 	},
 	{
-		"name": "Jie Liu",
+		"name": "Pengwan Yang",
 		"website": "",
-		"mail": "j.liu5@uva.nl"
+		"mail": ""
+	},
+	{
+		"name": "Floor Eijkelboom",
+		"website": "",
+		"mail": ""
+	},
+	{
+		"name": "J.S. Baan",
+		"website": "",
+		"mail": ""
+	},
+	{
+		"name": "Tin Hadzi Veljkovic",
+		"website": "",
+		"mail": ""
+	},
+	{
+		"name": "Danilo de Goede",
+		"website": "",
+		"mail": ""
+	},
+	{
+		"name": "Apostolos Panagiotopoulos",
+		"website": "",
+		"mail": ""
+	},
+	{
+		"name": "Angelos Nalmpantis",
+		"website": "",
+		"mail": ""
+	},
+	{
+		"name": "Konstantinos Papakostas",
+		"website": "",
+		"mail": ""
+	},
+	{
+		"name": "Tadija Radusinovic",
+		"website": "",
+		"mail": ""
 	}
 ]

@@ -2,23 +2,9 @@
 	{
 		"type": "lecture",
 		"name": "Introduction to Deep Learning",
-		"date": "November 4, 2021 | 11.00-13.00 | Lecture",
+		"date": "November 1, 2022 | 15.00-17.00 | Lecture",
 		"desc": "This lecture introduces the structure of the Deep Learning course, and gives a short overview of the history and motivation of Deep Learning.",
 		"documents": [
-
-			{"name": "Slides 1.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5606401",
-				"type": "powerpoint"},
-			   {"name": "Slides 1.2",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5606402",
-				"type": "powerpoint"},
-			   {"name": "Slides 1.3",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5606403",
-				"type": "powerpoint"},
-			   {"name": "Slides 1.4",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5606404",
-				"type": "powerpoint"}
-
 		],
 		"recordings": [
 		]
@@ -26,9 +12,9 @@
 
 	{
 		"type": "tutorial",
-		"name": "Introduction to PyTorch + Working with the Lisa cluster",
-		"date": "November 4, 2021 | 13.00-15.00 | Tutorial session",
-		"desc": "This tutorial introduces the practical sessions, the TA organizer team, etc. Afterwards, we will discuss the PyTorch machine learning framework, and introduce you to the basic concepts of Tensors, computation graphs and GPU computation. We will continue with a small hands-on tutorial of building your own, first neural network in PyTorch.</p><p>We also provide a crash-course for working with the Lisa cluster, and how to setup your account for Lisa.</p>",
+		"name": "Introduction to PyTorch",
+		"date": "November 1, 2022 | 17.00-19.00 | Tutorial session + TA Q&A",
+		"desc": "This tutorial introduces the practical sessions, the TA organizer team, etc. Afterwards, we will discuss the PyTorch machine learning framework, and introduce you to the basic concepts of Tensors, computation graphs and GPU computation. We will continue with a small hands-on tutorial of building your own, first neural network in PyTorch.</p>",
 		"documents": [
 			{"name": "Recording - Part 1 (Introduction)",
 			 "link": "https://youtu.be/oluO8JiC7EA",
@@ -53,22 +39,10 @@
 
 	{
 		"type": "lecture",
-		"name": "Deep Feedforward Networks",
-		"date": "November 5, 2021 | 11.00-13.00 | Lecture",
+		"name": "Modular Learning",
+		"date": "November 4, 2022 | 09.00-11.00 | Lecture",
 		"desc": "This lectures introduces basic concepts for Deep Feedforward Networks such linear and nonlinear modules, gradient-based learning and the backpropagation algorithm.",
 		"documents": [
-			{"name": "Slides 2.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5606405",
-				"type": "powerpoint"},
-			   {"name": "Slides 2.2",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5606406",
-				"type": "powerpoint"},
-			   {"name": "Slides 2.3",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5606407",
-				"type": "powerpoint"},
-			   {"name": "Slides 2.4",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5606408",
-				"type": "powerpoint"}
 		],
 		"recordings": [
 		]
@@ -77,22 +51,10 @@
 	{
 		"type": "lecture",
 		"name": "Deep Learning Optimizations I",
-		"date": "November 11, 2021 | 11.00-13.00 | Lecture",
+		"date": "November 8, 2022 | 15.00-17.00 | Lecture",
 		"desc": "This lecture series discusses advanced optimizers, initialization, normalization and hyperparameter tuning.",
 		"documents": [
-			{"name": "Slides 3.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5628205",
-				"type": "powerpoint"},
-			   {"name": "Slides 3.2.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Optimization?preview=5701945",
-				"type": "powerpoint"},
-				{"name": "Slides 3.2.2",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Optimization?preview=5676398",
-				"type": "powerpoint"},
-			   {"name": "Slides 3.3",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Optimization?preview=5628207",
-				"type": "powerpoint"}
-	],
+		],
 		"recordings": [
 		]
 	},
@@ -100,7 +62,7 @@
 	{
 		"type": "tutorial",
 		"name": "Activation Functions",
-		"date": "November 11, 2021 | 13.00-15.00 | Tutorial session + TA Q&A",
+		"date": "November 8, 2022 | 17.00-19.00 | Tutorial session + TA Q&A",
 		"desc": "In this tutorial, we will discuss the role of activation functions in a neural network, and take a closer look at the optimization issues a poorly designed activation function can have.</p><p>After the presentation, there will by a TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1",
@@ -118,19 +80,9 @@
 	{
 		"type": "lecture",
 		"name": "Deep Learning Optimizations II",
-		"date": "November 12, 2021 | 11.00-13.00 | Lecture",
+		"date": "November 11, 2022 | 09.00-11.00 | Lecture",
 		"desc": "This lecture series discusses advanced optimizers, initialization, normalization and hyperparameter tuning.",
 		"documents": [
-
-		{"name": "Slides 4.1",
-			"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Optimization?preview=5663691",
-			"type": "powerpoint"},
-			{"name": "Slides 4.2",
-			"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Optimization?preview=5725006",
-			"type": "powerpoint"},
-			{"name": "Slides 4.3",
-			"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Optimization?preview=5628211",
-			"type": "powerpoint"}
 		],
 		"recordings": [
 		]
@@ -139,19 +91,9 @@
 	{
 		"type": "lecture",
 		"name": "Convolutional Neural Networks",
-		"date": "November 18, 2021 | 11.00-13.00 | Lecture",
+		"date": "November 15, 2022 | 15.00-17.00 | Lecture",
 		"desc": "This lecture series covers convolutional neural networks for image processing.",
 		"documents": [
-
-			{"name": "Slides 5.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5674660",
-				"type": "powerpoint"},
-			   {"name": "Slides 5.2",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5672737",
-				"type": "powerpoint"},
-			   {"name": "Slides 5.3",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures?preview=5672739",
-				"type": "powerpoint"}
 		],
 		"recordings": [
 		]
@@ -160,7 +102,7 @@
 	{
 		"type": "tutorial",
 		"name": "Optimization and Initialization",
-		"date": "November 18, 2020 | 13.00-15.00 | Tutorial session + TA Q&A",
+		"date": "November 15, 2022 | 17.00-19.00 | Tutorial session + TA Q&A",
 		"desc": "In this tutorial, we will discuss the importance of proper parameter initialization in deep neural networks, and how we can find a suitable one for our network. In addition, we will review the optimizers SGD and Adam, and compare them on complex loss surfaces.</p><p>After the presentation, there will by a TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (Initialization)",
@@ -178,12 +120,9 @@
 	{
 		"type": "lecture",
 		"name": "Modern ConvNets",
-		"date": "November 19, 2021 | 11.00-13.00 | Lecture",
+		"date": "November 18, 2022 | 11.00-13.00 | Lecture",
 		"desc": "This lecture series covers modern ConvNet architecture.",
 		"documents": [
-			{"name": "Slides 6.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Modern%20ConveNets?preview=5760039",
-				"type": "powerpoint"}
 		],
 		"recordings": [
 		]
@@ -191,17 +130,10 @@
 
 	{
 		"type": "lecture",
-		"name": "Recurrent Neural Networks",
-		"date": "November 25, 2021 | 11.00-13.00 | Lecture",
-		"desc": "This lecture series covers Recurrent Neural Networks",
+		"name": "Transformers",
+		"date": "November 22, 2022 | 15.00-17.00 | Lecture",
+		"desc": "This lecture series covers Transformers",
 		"documents": [
-
-			{"name": "Slides 7.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Recurrent%20Neural%20Networks?preview=5760033",
-				"type": "powerpoint"},
-			   {"name": "Slides 7.2",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Recurrent%20Neural%20Networks?preview=5760036",
-				"type": "powerpoint"}
 		],
 		"recordings": [
 		]
@@ -210,7 +142,7 @@
 	{
 		"type": "tutorial",
 		"name": "Inception, ResNet and DenseNet",
-		"date": "November 25, 2020 | 13.00-15.00 | Tutorial session + TA Q&A",
+		"date": "November 22, 2022 | 17.00-19.00 | Tutorial session + TA Q&A",
 		"desc": "In this tutorial, we will implement three popular, modern ConvNet architectures: GoogleNet, ResNet, and DenseNet. We will compare them on the CIFAR10 dataset, and discuss the advantages that made them popular and successful across many tasks.</p><p>After the presentation, there will by a TA session for Q&A for assignment 2, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (PyTorch Lightning)",
@@ -230,64 +162,10 @@
 
 	{
 		"type": "lecture",
-		"name": "Graph Neural Networks (Guest lecture)",
-		"date": "November 26, 2021 | 13.00-15.00 | Online Lecture",
-		"desc": "Petar Veličković lecture on Graph Neural Networks.",
+		"name": "Graphical Neural Networks",
+		"date": "November 25, 2022 | 09.00-11.00 | Lecture",
+		"desc": "Lecture on Graph Neural Networks.",
 		"documents": [
-			{"name": "Slides 8.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Graph%20Neural%20Networks?preview=5794037",
-				"type": "powerpoint"}
-		],
-		"recordings": [
-			{"name": "Petar Veličković lecture on GNNs.",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Graph%20Neural%20Networks?preview=5762231",
-				"type": "video"}
-		]
-	},
-
-	{
-		"type": "lecture",
-		"name": "Attention and Transformers",
-		"date": "December 2, 2021 | 11.00-13.00 | Lecture",
-		"desc": "Ivona's lecture on Attention and Transformers.",
-		"documents": [
-			{"name": "Slides 9.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Transformers?preview=5795237",
-				"type": "powerpoint"}
-		],
-		"recordings": [
-		]
-	},
-
-	{
-		"type": "tutorial",
-		"name": "Graph Neural Networks",
-		"date": "December 2, 2020 | 13.00-15.00 | Tutorial session + TA Q&A",
-		"desc": "In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.</p><p>After the presentation, there will by a TA session for Q&A for assignment 2, lecture content and more.",
-		"documents": [
-			{"name": "Recording - Part 1 (GCN and GAT)",
-			 "link": "https://youtu.be/fK7d56Ly9q8",
-			 "type": "video"},
-			{"name": "Recording - Part 2 (Experiments)",
-			 "link": "https://youtu.be/ZCNSUWe4a_Q",
-			 "type": "video"},
-			{"name": "Jupyter notebook",
-			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial7/GNN_overview.html",
-			 "type": "notebook"}
-		]
-	},
-
-	{
-		"type": "lecture",
-		"name": "Generative Adversarial Networks",
-		"date": "December 3, 2021 | 15.00-17.00 | Lecture",
-		"desc": "This lecture series discusses Generative Adversarial Networks.",
-		"documents": [
-
-			{"name": "Slides 10.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Generative%20Adversarial%20Networks?preview=5797768",
-				"type": "powerpoint"}
-			
 		],
 		"recordings": [
 		]
@@ -295,14 +173,10 @@
 
 	{
 		"type": "lecture",
-		"name": "Variational Autoencoders",
-		"date": "December 9, 2021 | 11.00-13.00 | Lecture",
-		"desc": "This lecture series introduces the framework of variational inference and Variational Autoencoders (VAEs).",
+		"name": "Generative Modelling: GANs and diffusion models",
+		"date": "November 29, 2022 | 15.00-17.00 | Lecture",
+		"desc": "TBA.",
 		"documents": [
-
-			{"name": "Slides 11.1",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Deep%20Variational%20Inference?preview=5840430",
-				"type": "powerpoint"}
 		],
 		"recordings": [
 		]
@@ -311,7 +185,7 @@
 	{
 		"type": "tutorial",
 		"name": "Transformers and Multi-Head Attention",
-		"date": "December 9, 2020 | 13.00-15.00 | Tutorial session + TA Q&A",
+		"date": "November 29, 2022 | 17.00-19.00 | Tutorial session + TA Q&A",
 		"desc": "In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer. We will perform experiments on sequence-to-sequence tasks and set anomaly detection.</p><p>After the presentation, there will by a TA session for Q&A for assignment 3, lecture content and more.",
 		"documents": [
 			{"name": "Recording - Part 1 (What is Attention + MH Attention)",
@@ -331,28 +205,60 @@
 
 	{
 		"type": "lecture",
-		"name": "Deep Learning Generalization (Guest Lecture)",
-		"date": "December 10, 2021 | 15.00-17.00 | Online Lecture",
-		"desc": "Deep Learning Generalization.",
+		"name": "Deep Variational Inference",
+		"date": "December 2, 2022 | 09.00-11.00 | Lecture",
+		"desc": "TBA",
 		"documents": [
-
-			{"name": "Slides from the guest lecture",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Guest%20Lecture%20-%20Deep%20learning%20regularization?preview=5848653",
-				"type": "powerpoint"}
 		],
 		"recordings": [
-
-			{"name": "Recording of the guest lecture",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/2021_files/lectures/Guest%20Lecture%20-%20Deep%20learning%20regularization?preview=5848649",
-				"type": "video"}
 		]
 	},
 
 	{
 		"type": "lecture",
-		"name": "Meta-Learning I",
-		"date": "December 16, 2021 | 11.00-13.00 | Lecture",
-		"desc": "Geometry and Structure Regularized Deep Learning.",
+		"name": "Neural modelling of 3D",
+		"date": "December 6, 2022 | 15.00-17.00 | Lecture",
+		"desc": "TBA",
+		"documents": [
+		],
+		"recordings": [
+		]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Graph Neural Networks",
+		"date": "December 6, 2022 | 17.00-19.00 | Tutorial session + TA Q&A",
+		"desc": "In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.</p><p>After the presentation, there will by a TA session for Q&A for assignment 2, lecture content and more.",
+		"documents": [
+			{"name": "Recording - Part 1 (GCN and GAT)",
+			 "link": "https://youtu.be/fK7d56Ly9q8",
+			 "type": "video"},
+			{"name": "Recording - Part 2 (Experiments)",
+			 "link": "https://youtu.be/ZCNSUWe4a_Q",
+			 "type": "video"},
+			{"name": "Jupyter notebook",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial7/GNN_overview.html",
+			 "type": "notebook"}
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Guest Lecture",
+		"date": "December 9, 2022 | 09.00-11.00 | Lecture",
+		"desc": "TBA",
+		"documents": [
+		],
+		"recordings": [
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Self-Supervised Learning I",
+		"date": "December 13, 2022 | 15.00-17.00 | Lecture",
+		"desc": "TBA.",
 		"documents": [
 
 		
@@ -364,27 +270,18 @@
 
 	{
 		"type": "tutorial",
-		"name": "Deep Autoencoders",
-		"date": "December 16, 2020 | 13.00-15.00 | Tutorial session + TA Q&A",
-		"desc": "In this tutorial, we will discuss deep convolutional autoencoders and their applications. In the practical and lecture, you will see variational autoencoders (VAE), which add a stochastic part to vanilla autoencoders. Both have their advantages and applications, of which we visit image retrieval and compression for the vanilla auotoencoder.</p><p>After the presentation, there will by a TA session for Q&A for assignment 3, lecture content and more.",
+		"name": "TBA",
+		"date": "December 13, 2022 | 17.00-19.00 | Tutorial session + TA Q&A",
+		"desc": "TBA",
 		"documents": [
-			{"name": "Recording - Part 1 (Building an AE)",
-			 "link": "https://youtu.be/E2d8NRYt2e4",
-			 "type": "video"},
-			{"name": "Recording - Part 2 (Analysis)",
-			 "link": "https://youtu.be/3UrX2mTY610",
-			 "type": "video"},
-			{"name": "Jupyter notebook",
-			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial9/AE_CIFAR10.html",
-			 "type": "notebook"}
 		]
 	},
 
 	{
 		"type": "lecture",
-		"name": "Meta-Learning II",
-		"date": "December 17, 2021 | 11.00-13.00 | Lecture",
-		"desc": "Details will follow soon.",
+		"name": "Self-Supervised Learning II",
+		"date": "December 16, 2022 | 11.00-13.00 | Lecture",
+		"desc": "TBA.",
 		"documents": [
 		],
 		"recordings": [

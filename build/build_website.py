@@ -161,8 +161,10 @@ def build_TA_list(index_file,
 		TA_dict = json.load(f)
 
 	TA_dict = sorted(TA_dict, key=lambda x : x["name"].split(" ")[-1])
+	TA_dict = sorted(TA_dict, key=lambda x : x.get("type", None) is None)
 
 	TA_name_list = []
+	head_TA_name_list = []
 	for TA in TA_dict:
 		TA_name = DEFAULT_TA_NAME
 		TA_name = TA_name.replace("<!--$$NAME$$-->", TA["name"])
@@ -175,9 +177,13 @@ def build_TA_list(index_file,
 			print('Warning: No link found for %s' % TA['name'])
 			TA["link"] = ""
 		TA_name = TA_name.replace("<!--$$LINK$$-->", TA["link"])
-		TA_name_list.append(TA_name)
+		if "type" in TA and TA["type"] == "Head TA":
+			head_TA_name_list.append(TA_name)
+		else:
+			TA_name_list.append(TA_name)
 
 	index_file = index_file.replace("<!--$$TA_NAMES$$-->", ", ".join(TA_name_list))
+	index_file = index_file.replace("<!--$$HEAD_TA_NAMES$$-->", " and ".join(head_TA_name_list))
 
 	TA_pic_list = []	
 	for i, TA in enumerate(TA_dict):
@@ -195,7 +201,7 @@ def build_TA_list(index_file,
 			TA["picture"] = DEFAULT_PICTURE_FILENAME
 		TA_pic = TA_pic.replace("<!--$$IMAGE$$-->", TA["picture"])
 		TA_pic = TA_pic.replace("<!--$$LINK$$-->", TA["link"])
-		if (i+2) % 5 == 0: # Every row should only have 5 pictures. First one is lecturer
+		if (i+2+len(head_TA_name_list)) % 5 == 0: # Every row should only have 5 pictures. First one is lecturer
 			TA_pic = TA_pic + "</br></br>"
 		TA_pic_list.append(TA_pic)
 

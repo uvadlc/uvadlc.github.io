@@ -1,44 +1,31 @@
 [
 	{
 		"name": "MLPs and Backpropagation",
-		"deadline": "November 19, 2021",
+		"deadline": "TBA",
 		"image": "images/nn2.png",
 		"image_desc": "An example of a neural network.",
-		"desc": "Multilayer perceptrons and backpropagation",
+		"desc": "TBA",
 		"documents": [
-			{"name": "First assignment description",
-			"link": "https://canvas.uva.nl/courses/25602/files/folder/Uploaded%20Media?preview=5607220",
-			"type": "pdf"},
-			{"name": "First assignment ANS Delft",
-			"link": "https://canvas.uva.nl/courses/25602/files/folder/Uploaded%20Media?preview=5610854",
-			"type": "pdf"}
 		]
 	},
 
 	{
-		"name": "CNNs, RNNs &amp Graph CNNs",
-		"deadline": "December 3, 2021",
-		"desc": "CNNs, RNNs &amp Graph CNNs",
-		"image": "images/rnns.jpg",
-		"image_desc": "RNNs unroll a network over time.",
+		"name": "CNNs and Transformers",
+		"deadline": "TBA",
+		"desc": "TBA",
+		"image": "images/lenet5.png",
+		"image_desc": "LeNet",
 		"documents": [
-			{"name": "Second assignment description",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/Uploaded%20Media?preview=5684439",
-				"type": "pdf"}
 		]
 	},
 
 	{
 		"name": "Generative Models",
-		"deadline": "December 17, 2021",
+		"deadline": "TBA",
 		"desc": "Generative Models",
 		"image": "images/vae.jpg",
 		"image_desc": "VAEs model a distribution in latent space.",
 		"documents": [
-
-			{"name": "Third assignment description",
-				"link": "https://canvas.uva.nl/courses/25602/files/folder/Uploaded%20Media?preview=5808534",
-				"type": "pdf"}
 		]
 	}
 ]
