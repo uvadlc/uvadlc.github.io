@@ -270,9 +270,9 @@
 
 	{
 		"type": "tutorial",
-		"name": "TBA",
+		"name": "Self-Supervised and Causal Representation Learning",
 		"date": "December 13, 2022 | 17.00-19.00 | Tutorial session + TA Q&A",
-		"desc": "TBA",
+		"desc": "We will discuss Tutorial 17: Self-Supervised Learning, and have a short introduction to Causal Representation Learning.",
 		"documents": [
 		]
 	},
