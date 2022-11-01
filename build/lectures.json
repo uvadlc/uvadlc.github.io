@@ -5,6 +5,11 @@
 		"date": "November 1, 2022 | 15.00-17.00 | Lecture",
 		"desc": "This lecture introduces the structure of the Deep Learning course, and gives a short overview of the history and motivation of Deep Learning.",
 		"documents": [
+		
+		{"name": "Introduction lecture",
+			 "link": "https://canvas.uva.nl/courses/32260/files/7566802?module_item_id=1471147",
+			 "type": "pdf"}
+			 
 		],
 		"recordings": [
 		]
