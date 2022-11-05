@@ -12,6 +12,10 @@
 			 
 		],
 		"recordings": [
+		{"name": "Introduction lecture",
+			 "link": "https://canvas.uva.nl/courses/32260/files/7567606?module_item_id=1481902",
+			 "type": "video"}
+
 		]
 	},
 
@@ -48,8 +52,16 @@
 		"date": "November 4, 2022 | 09.00-11.00 | Lecture",
 		"desc": "This lectures introduces basic concepts for Deep Feedforward Networks such linear and nonlinear modules, gradient-based learning and the backpropagation algorithm.",
 		"documents": [
+		
+		{"name": "Deep Feedforward Networks",
+					 "link": "https://canvas.uva.nl/courses/32260/files/7600701?module_item_id=1482465",
+					 "type": "pdf"}
+			 
 		],
 		"recordings": [
+			{"name": "Deep Feedforward Networks",
+			 "link": "https://canvas.uva.nl/courses/32260/modules/items/1482884",
+			 "type": "video"}
 		]
 	},
 
