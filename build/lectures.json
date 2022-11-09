@@ -71,9 +71,17 @@
 		"date": "November 8, 2022 | 15.00-17.00 | Lecture",
 		"desc": "This lecture series discusses advanced optimizers, initialization, normalization and hyperparameter tuning.",
 		"documents": [
-		],
-		"recordings": [
-		]
+		
+			{"name": "Deep Learning Optimizers",
+						 "link": "https://canvas.uva.nl/courses/32260/files/7624620?module_item_id=1484954",
+						 "type": "pdf"}
+				 
+			],
+			"recordings": [
+				{"name": "Deep Learning Optimizers",
+				 "link": "https://canvas.uva.nl/courses/32260/modules/items/1484959",
+				 "type": "video"}
+			]
 	},
 
 	{
