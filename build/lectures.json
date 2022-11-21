@@ -126,9 +126,16 @@
 		"date": "November 15, 2022 | 15.00-17.00 | Lecture",
 		"desc": "This lecture series covers convolutional neural networks for image processing.",
 		"documents": [
-		],
-		"recordings": [
-		]
+			{"name": "Convolutional neural networks for image processing.",
+			"link": "https://canvas.uva.nl/courses/32260/files/7692767?module_item_id=1502070",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "Convolutional neural networks for image processing.",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/0d19e61221ce490980496e8d963336075f/watch/a798167f4f714473b75bf38342eedc1e1d",
+			"type": "video"}
+			]
 	},
 
 	{
@@ -155,9 +162,16 @@
 		"date": "November 18, 2022 | 11.00-13.00 | Lecture",
 		"desc": "This lecture series covers modern ConvNet architecture.",
 		"documents": [
-		],
-		"recordings": [
-		]
+			{"name": "ConvNet architecture",
+			"link": "https://canvas.uva.nl/courses/32260/files/7711232?module_item_id=1504101",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "ConvNet architecture",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/0d19e61221ce490980496e8d963336075f/watch/9853b2fd146a4a2fa45d372b8dd8740d1d",
+			"type": "video"}
+			]
 	},
 
 	{
