@@ -180,9 +180,16 @@
 		"date": "November 22, 2022 | 15.00-17.00 | Lecture",
 		"desc": "This lecture series covers Transformers",
 		"documents": [
-		],
-		"recordings": [
-		]
+			{"name": "Attention and transformers",
+			"link": "https://canvas.uva.nl/courses/32260/files/7736900?module_item_id=1505989",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "Attention and transformers",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/0d19e61221ce490980496e8d963336075f/watch/45d440914a224a4a827572d5d75fcd4e1d",
+			"type": "video"}
+			]
 	},
 
 	{
@@ -212,9 +219,16 @@
 		"date": "November 25, 2022 | 09.00-11.00 | Lecture",
 		"desc": "Lecture on Graph Neural Networks.",
 		"documents": [
-		],
-		"recordings": [
-		]
+			{"name": "Graph Neural Networks",
+			"link": "https://canvas.uva.nl/courses/32260/files/7736900?module_item_id=1505989",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "Graph Neural Networks",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/0d19e61221ce490980496e8d963336075f/watch/e1733662f1ab4a62b6a78f3425f27c121d",
+			"type": "video"}
+			]
 	},
 
 	{
