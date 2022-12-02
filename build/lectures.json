@@ -272,17 +272,17 @@
 
 	{
 		"type": "lecture",
-		"name": "Generative Adversarial Networks",
+		"name": "Generative Adversarial Networks and Diffusion models",
 		"date": "December 2, 2022 | 09.00-11.00 | Lecture",
 		"desc": "Lecture on Generative Adversarial Networks",
 		"documents": [
-			{"name": "Generative Adversarial Networks",
+			{"name": "Generative Adversarial Networks and Diffusion models",
 			"link": "https://canvas.uva.nl/courses/32260/files/7814200?module_item_id=1515506",
 			"type": "pdf"}
 	
 			],
 			"recordings": [
-			{"name": "Generative Adversarial Networks",
+			{"name": "Generative Adversarial Networks and Diffusion models",
 			"link": "https://webcolleges.uva.nl/Mediasite/Channel/0d19e61221ce490980496e8d963336075f/watch/ee63dbd892b64ea7a753205fc65c6b191d",
 			"type": "video"}
 			]
