@@ -220,7 +220,7 @@
 		"desc": "Lecture on Graph Neural Networks.",
 		"documents": [
 			{"name": "Graph Neural Networks",
-			"link": "https://canvas.uva.nl/courses/32260/files/7736900?module_item_id=1505989",
+			"link": "https://canvas.uva.nl/courses/32260/files/7764875?module_item_id=1509926",
 			"type": "pdf"}
 	
 			],
@@ -272,17 +272,17 @@
 
 	{
 		"type": "lecture",
-		"name": " Generative Adversarial Networks and Diffusion models",
+		"name": "Generative Adversarial Networks and Diffusion models",
 		"date": "December 2, 2022 | 09.00-11.00 | Lecture",
 		"desc": "TBA",
 		"documents": [
-			{"name": "Generative Modelling and deep variational modelling",
+			{"name": "Generative Adversarial Networks and Diffusion models",
 			"link": "https://canvas.uva.nl/courses/32260/files/7814200?module_item_id=1515506",
 			"type": "pdf"}
 	
 			],
 			"recordings": [
-			{"name": "Generative Modelling and deep variational modelling",
+			{"name": "Generative Adversarial Networks and Diffusion models",
 			"link": "https://webcolleges.uva.nl/Mediasite/Channel/0d19e61221ce490980496e8d963336075f/watch/ee63dbd892b64ea7a753205fc65c6b191d",
 			"type": "video"}
 			]
