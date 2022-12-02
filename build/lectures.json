@@ -233,13 +233,20 @@
 
 	{
 		"type": "lecture",
-		"name": "Generative Modelling: GANs and diffusion models",
+		"name": "Generative Modelling and deep variational modelling",
 		"date": "November 29, 2022 | 15.00-17.00 | Lecture",
 		"desc": "TBA.",
 		"documents": [
-		],
-		"recordings": [
-		]
+			{"name": "Generative Modelling and deep variational modelling",
+			"link": "https://canvas.uva.nl/courses/32260/files/7783882?module_item_id=1511554",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "Generative Modelling and deep variational modelling",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/0d19e61221ce490980496e8d963336075f/watch/7771c44f16a749a6aa1e1067197857911d",
+			"type": "video"}
+			]
 	},
 
 	{
@@ -265,13 +272,20 @@
 
 	{
 		"type": "lecture",
-		"name": "Deep Variational Inference",
+		"name": " Generative Adversarial Networks and Diffusion models",
 		"date": "December 2, 2022 | 09.00-11.00 | Lecture",
 		"desc": "TBA",
 		"documents": [
-		],
-		"recordings": [
-		]
+			{"name": "Generative Modelling and deep variational modelling",
+			"link": "https://canvas.uva.nl/courses/32260/files/7814200?module_item_id=1515506",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "Generative Modelling and deep variational modelling",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/0d19e61221ce490980496e8d963336075f/watch/ee63dbd892b64ea7a753205fc65c6b191d",
+			"type": "video"}
+			]
 	},
 
 	{
