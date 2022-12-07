@@ -292,11 +292,18 @@
 		"type": "lecture",
 		"name": "Neural modelling of 3D",
 		"date": "December 6, 2022 | 15.00-17.00 | Lecture",
-		"desc": "TBA",
+		"desc": "Learning 3D geometry (guest lecture)",
 		"documents": [
-		],
-		"recordings": [
-		]
+			{"name": "Learning 3D geometry (guest lecture)",
+			"link": "https://canvas.uva.nl/courses/32260/files/7850268?module_item_id=1520983",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "GLearning 3D geometry (guest lecture)",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/0d19e61221ce490980496e8d963336075f/watch/871bc8dbd4e5469a85554cc8203c10471d",
+			"type": "video"}
+			]
 	},
 
 	{
