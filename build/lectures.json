@@ -328,11 +328,18 @@
 		"type": "lecture",
 		"name": "Guest Lecture",
 		"date": "December 9, 2022 | 09.00-11.00 | Lecture",
-		"desc": "TBA",
+		"desc": "Transforming PDE solving via machice learning (Max Welling guest lecture)",
 		"documents": [
-		],
-		"recordings": [
-		]
+			{"name": "Transforming PDE solving via machice learning",
+			"link": "...",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "Transforming PDE solving via machice learning",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/0d19e61221ce490980496e8d963336075f/watch/e26c072d9c1b42dcae97d1966f2a93c61d",
+			"type": "video"}
+			]
 	},
 
 	{
