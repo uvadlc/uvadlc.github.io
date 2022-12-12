@@ -362,6 +362,18 @@
 		"date": "December 13, 2022 | 17.00-19.00 | Tutorial session + TA Q&A",
 		"desc": "We will discuss Tutorial 17: Self-Supervised Learning, and have a short introduction to Causal Representation Learning.",
 		"documents": [
+			{"name": "Recording - Part 1",
+			 "link": "https://youtu.be/waVZDFR-06U",
+			 "type": "video"},
+			{"name": "Recording - Part 2",
+			 "link": "https://youtu.be/o3FktysLLd4",
+			 "type": "video"},
+			{"name": "Jupyter notebook (SimCLR)",
+			 "link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial17/SimCLR.html",
+			 "type": "notebook"},
+			{"name": "Slides (Causal Representation Learning)",
+			 "link": "https://canvas.uva.nl/courses/32260/files/folder/2022_files?preview=7928664",
+			 "type": "pdf"}
 		]
 	},
 
