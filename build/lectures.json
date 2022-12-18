@@ -331,7 +331,7 @@
 		"desc": "Transforming PDE solving via machice learning (Max Welling guest lecture)",
 		"documents": [
 			{"name": "Transforming PDE solving via machice learning",
-			"link": "...",
+			"link": "https://canvas.uva.nl/courses/32260/files/7919446?module_item_id=1544500",
 			"type": "pdf"}
 	
 			],
@@ -346,14 +346,18 @@
 		"type": "lecture",
 		"name": "Self-Supervised Learning I",
 		"date": "December 13, 2022 | 15.00-17.00 | Lecture",
-		"desc": "TBA.",
+		"desc": "Self-supervised learning part I",
 		"documents": [
-
-		
-		],
-		"recordings": [
-
-		]
+			{"name": "Self-supervised learning part I",
+			"link": "https://canvas.uva.nl/courses/32260/files/7935886?module_item_id=1545923",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "Self-supervised learning part I",
+			"link": "https://webcolleges.uva.nl/Mediasite/channel/0d19e61221ce490980496e8d963336075f/watch/5332755a43394b94a7286ee82afb61471d",
+			"type": "video"}
+			]
 	},
 
 	{
@@ -369,11 +373,18 @@
 		"type": "lecture",
 		"name": "Self-Supervised Learning II",
 		"date": "December 16, 2022 | 11.00-13.00 | Lecture",
-		"desc": "TBA.",
+		"desc": "Self-supervised learning part II",
 		"documents": [
-		],
-		"recordings": [
-		]
+			{"name": "Self-supervised learning part II",
+			"link": "https://canvas.uva.nl/courses/32260/files/7953914?module_item_id=1547760",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "Self-supervised learning part II",
+			"link": "https://webcolleges.uva.nl/Mediasite/channel/0d19e61221ce490980496e8d963336075f/watch/d09d02132b4b47aea95b604a72e8b2271d",
+			"type": "video"}
+			]
 	}
 
 ]
