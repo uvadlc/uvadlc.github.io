@@ -6,50 +6,21 @@
 		"type": "Head TA"
 	},
 	{
-		"name": "Phillip Lippe",
-		"website": "https://phlippe.github.io",
-		"mail": "p.lippe@uva.nl",
+		"name": "Danilo de Goede",
+		"website": "",
+		"mail": "danilogoede@gmail.com",
 		"type": "Head TA"
-	},
-	{
-		"name": "Alex Gabel",
-		"website": "",
-		"mail": "a.gabel@uva.nl"
-	},
-	{
-		"name": "Ivona Najdenkoska",
-		"website": "",
-		"mail": "i.najdenkoska@uva.nl"
-	},
-	{
-		"name": "Sarah Rastegar",
-		"website": "",
-		"mail": "s.rastegar2@uva.nl"
-	},
-	{
-		"name": "Piyush Bagad",
-		"website": "",
-		"mail": "piyush.bagad@student.uva.nl"
-	},
-	{
-		"name": "Leonard Bereska",
-		"website": "",
-		"mail": "l.f.bereska@uva.nl"
 	},
 	{
 		"name": "Mohammadreza Salehi",
 		"website": "",
-		"mail": "s.salehidehnavi@uva.nl"
+		"mail": "s.salehidehnavi@uva.nl",
+		"type": "Head TA"
 	},
 	{
-		"name": "Pengwan Yang",
+		"name": "Gergely Papp",
 		"website": "",
-		"mail": "yangpengwan2016@gmail.com"
-	},
-	{
-		"name": "Floor Eijkelboom",
-		"website": "",
-		"mail": "eijkelboomfloor@gmail.com"
+		"mail": "gergely.papp@student.uva.nl"
 	},
 	{
 		"name": "Joris Baan",
@@ -57,33 +28,38 @@
 		"mail": "j.s.baan@uva.nl"
 	},
 	{
-		"name": "Tin Hadzi Veljkovic",
+		"name": "Madhura Pawar",
 		"website": "",
-		"mail": "tin.hadzi@gmail.com"
+		"mail": "madhura.pawar@student.uva.nl"
 	},
 	{
-		"name": "Danilo de Goede",
+		"name": "Jacobus Dijkman",
 		"website": "",
-		"mail": "danilogoede@gmail.com"
+		"mail": "j.j.l.dijkman@uva.nl"
 	},
 	{
-		"name": "Apostolos Panagiotopoulos",
+		"name": "Jona Ruthardt",
 		"website": "",
-		"mail": "apostolos.panagiotopoulos@student.uva.nl"
+		"mail": "jona@ruthardt.de"
 	},
 	{
-		"name": "Angelos Nalmpantis",
+		"name": "Valentinos Pariza",
 		"website": "",
-		"mail": "angelos.nalmpantis@student.uva.nl"
+		"mail": "valentinos.pariza@student.uva.nl"
 	},
 	{
-		"name": "Konstantinos Papakostas",
+		"name": "Pengwan Yang",
 		"website": "",
-		"mail": "konstantinos.papakostas@student.uva.nl"
+		"mail": "yangpengwan2016@gmail.com"
 	},
 	{
-		"name": "Tadija Radusinovic",
+		"name": "Nimi Barazani",
 		"website": "",
-		"mail": "tadija.radusinovic@student.uva.nl"
+		"mail": "nimrod.barazani@student.uva.nl"
+	},
+	{
+		"name": "Wenzhe Yin",
+		"website": "",
+		"mail": "w.yin@uva.nl"
 	}
 ]
