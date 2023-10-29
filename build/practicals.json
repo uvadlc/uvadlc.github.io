@@ -1,31 +1,3 @@
 [
-	{
-		"name": "MLPs and Backpropagation",
-		"deadline": "TBA",
-		"image": "images/nn2.png",
-		"image_desc": "An example of a neural network.",
-		"desc": "TBA",
-		"documents": [
-		]
-	},
-
-	{
-		"name": "CNNs and Transformers",
-		"deadline": "TBA",
-		"desc": "TBA",
-		"image": "images/lenet5.png",
-		"image_desc": "LeNet",
-		"documents": [
-		]
-	},
-
-	{
-		"name": "Generative Models",
-		"deadline": "TBA",
-		"desc": "Generative Models",
-		"image": "images/vae.jpg",
-		"image_desc": "VAEs model a distribution in latent space.",
-		"documents": [
-		]
-	}
+	
 ]
