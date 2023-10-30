@@ -1,4 +1,271 @@
 [
+	{
+		"type": "lecture",
+		"name": "Introduction to Deep Learning",
+		"date": "",
+		"desc": "This lecture introduces the structure of the Deep Learning course, and gives a short overview of the history and motivation of Deep Learning.",
+		"documents": [
+		
 
+			 
+		],
+		"recordings": [
+
+
+		]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Introduction to PyTorch",
+		"date": "",
+		"desc": "This tutorial introduces the practical sessions, the TA organizer team, etc. Afterwards, we will discuss the PyTorch machine learning framework, and introduce you to the basic concepts of Tensors, computation graphs and GPU computation. We will continue with a small hands-on tutorial of building your own, first neural network in PyTorch.</p>",
+		"documents": [
+
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Modular Learning",
+		"date": "",
+		"desc": "This lectures introduces basic concepts for Deep Feedforward Networks such linear and nonlinear modules, gradient-based learning and the backpropagation algorithm.",
+		"documents": [
+		
+
+			 
+		],
+		"recordings": [
+
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Deep Learning Optimizations I",
+		"date": "",
+		"desc": "This lecture series discusses advanced optimizers, initialization, normalization and hyperparameter tuning.",
+		"documents": [
+		
+				 
+			],
+			"recordings": [
+
+			]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Activation Functions",
+		"date": "",
+		"desc": "In this tutorial, we will discuss the role of activation functions in a neural network, and take a closer look at the optimization issues a poorly designed activation function can have.</p><p>After the presentation, there will by a TA session for Q&A for assignment 1, lecture content and more.",
+		"documents": [
+
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Deep Learning Optimizations II",
+		"date": "",
+		"desc": "This lecture series discusses advanced optimizers, initialization, normalization and hyperparameter tuning.",
+		"documents": [
+
+	
+			],
+			"recordings": [
+
+			]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Convolutional Neural Networks",
+		"date": "",
+		"desc": "This lecture series covers convolutional neural networks for image processing.",
+		"documents": [
+
+	
+			],
+			"recordings": [
+
+			]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Optimization and Initialization",
+		"date": "",
+		"desc": "In this tutorial, we will discuss the importance of proper parameter initialization in deep neural networks, and how we can find a suitable one for our network. In addition, we will review the optimizers SGD and Adam, and compare them on complex loss surfaces.</p><p>After the presentation, there will by a TA session for Q&A for assignment 1, lecture content and more.",
+		"documents": [
+
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Modern ConvNets",
+		"date": "",
+		"desc": "This lecture series covers modern ConvNet architecture.",
+		"documents": [
+
+	
+			],
+			"recordings": [
+
+			]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Transformers",
+		"date": "",
+		"desc": "This lecture series covers Transformers",
+		"documents": [
+
+	
+			],
+			"recordings": [
+
+			]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Inception, ResNet and DenseNet",
+		"date": "",
+		"desc": "In this tutorial, we will implement three popular, modern ConvNet architectures: GoogleNet, ResNet, and DenseNet. We will compare them on the CIFAR10 dataset, and discuss the advantages that made them popular and successful across many tasks.</p><p>After the presentation, there will by a TA session for Q&A for assignment 2, lecture content and more.",
+		"documents": [
+
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Graphical Neural Networks",
+		"date": "",
+		"desc": "Lecture on Graph Neural Networks.",
+		"documents": [
+
+	
+			],
+			"recordings": [
+
+			]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Generative Modelling and deep variational modelling",
+		"date": "",
+		"desc": "Lecturer in deep variational autoencoder.",
+		"documents": [
+
+	
+			],
+			"recordings": [
+
+			]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Transformers and Multi-Head Attention",
+		"date": "",
+		"desc": "In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer. We will perform experiments on sequence-to-sequence tasks and set anomaly detection.</p><p>After the presentation, there will by a TA session for Q&A for assignment 3, lecture content and more.",
+		"documents": [
+
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Generative Adversarial Networks and Diffusion models",
+		"date": "",
+		"desc": "Lecture on Generative Adversarial Networks",
+		"documents": [
+
+	
+			],
+			"recordings": [
+
+			]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Neural modelling of 3D",
+		"date": "",
+		"desc": "Learning 3D geometry (guest lecture)",
+		"documents": [
+
+	
+			],
+			"recordings": [
+
+			]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Graph Neural Networks",
+		"date": "",
+		"desc": "In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.</p><p>After the presentation, there will by a TA session for Q&A for assignment 2, lecture content and more.",
+		"documents": [
+
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Guest Lecture",
+		"date": "",
+		"desc": "Transforming PDE solving via machice learning (Max Welling guest lecture)",
+		"documents": [
+
+	
+			],
+			"recordings": [
+
+			]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Self-Supervised Learning I",
+		"date": "",
+		"desc": "Self-supervised learning part I",
+		"documents": [
+
+	
+			],
+			"recordings": [
+
+			]
+	},
+
+	{
+		"type": "tutorial",
+		"name": "Self-Supervised and Causal Representation Learning",
+		"date": "",
+		"desc": "We will discuss Tutorial 17: Self-Supervised Learning, and have a short introduction to Causal Representation Learning.",
+		"documents": [
+
+		]
+	},
+
+	{
+		"type": "lecture",
+		"name": "Self-Supervised Learning II",
+		"date": "",
+		"desc": "Self-supervised learning part II",
+		"documents": [
+
+	
+			],
+			"recordings": [
+
+			]
+	}
 
 ]
