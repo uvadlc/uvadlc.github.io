@@ -3,6 +3,7 @@ import sys
 import json
 import re
 from glob import glob
+import pdb
 
 ICONS = {"pdf": "fa-file-text-o",
 		 "code": "fa-file-text-o",
@@ -190,7 +191,7 @@ def build_TA_list(index_file,
 		TA_pic = DEFAULT_TA_PICTURE
 		TA_pic = TA_pic.replace("<!--$$NAME$$-->", TA["name"])
 		if not "picture" in TA or len(TA["picture"]) == 0:
-			search_str = '../images/people/' + TA['name'].lower().replace(' ','-') + '.*'
+			search_str = '../images/people/' + TA['name'].lower().replace(' ','-') + '.jpg'
 			pos_files = glob(search_str)
 			if len(pos_files) == 0:
 				TA['picture'] = ''
@@ -199,14 +200,17 @@ def build_TA_list(index_file,
 		if len(TA["picture"]) == 0 or not (os.path.isfile(TA["picture"])):
 			print("Warning: Could not find picture for %s. Using default picture..." % TA["name"])
 			TA["picture"] = DEFAULT_PICTURE_FILENAME
+		
+		TA['picture'] = TA['picture'].replace('../','')
 		TA_pic = TA_pic.replace("<!--$$IMAGE$$-->", TA["picture"])
 		TA_pic = TA_pic.replace("<!--$$LINK$$-->", TA["link"])
-		if (i+2+len(head_TA_name_list)) % 5 == 0: # Every row should only have 5 pictures. First one is lecturer
+		
+		if (i+2) % 5 == 0: # Every row should only have 5 pictures. First one is lecturer
 			TA_pic = TA_pic + "</br></br>"
 		TA_pic_list.append(TA_pic)
+		
 
 	index_file = index_file.replace("<!--$$TA_PICTURES$$-->", "\n".join(TA_pic_list))
-
 	return index_file
 
 
