@@ -5,14 +5,16 @@
 		"date": "",
 		"desc": "This lecture introduces the structure of the Deep Learning course, and gives a short overview of the history and motivation of Deep Learning.",
 		"documents": [
-		
-
-			 
-		],
-		"recordings": [
-
-
-		]
+			{"name": "Intro lecture to Deep Learning",
+			"link": "https://canvas.uva.nl/courses/39284/files/9643757?module_item_id=1851298",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "Intro lecture to Deep Learning",
+			"link": "https://canvas.uva.nl/courses/39284/files/9644586?module_item_id=1851580",
+			"type": "video"}
+			]
 	},
 
 	{
@@ -21,8 +23,16 @@
 		"date": "",
 		"desc": "This tutorial introduces the practical sessions, the TA organizer team, etc. Afterwards, we will discuss the PyTorch machine learning framework, and introduce you to the basic concepts of Tensors, computation graphs and GPU computation. We will continue with a small hands-on tutorial of building your own, first neural network in PyTorch.</p>",
 		"documents": [
-
-		]
+			{"name": "Introduction to PyTorch",
+			"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial2/Introduction_to_PyTorch.html",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "Introduction to PyTorch",
+			"link": "https://canvas.uva.nl/courses/39284/files/9650549?module_item_id=1852464",
+			"type": "video"}
+			]
 	},
 
 	{
