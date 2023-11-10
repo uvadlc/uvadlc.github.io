@@ -25,7 +25,7 @@
 		"documents": [
 			{"name": "Introduction to PyTorch",
 			"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial2/Introduction_to_PyTorch.html",
-			"type": "pdf"}
+			"type": "html"}
 	
 			],
 			"recordings": [
@@ -77,8 +77,16 @@
 		"date": "",
 		"desc": "In this tutorial, we will discuss the role of activation functions in a neural network, and take a closer look at the optimization issues a poorly designed activation function can have.</p><p>After the presentation, there will by a TA session for Q&A for assignment 1, lecture content and more.",
 		"documents": [
-
-		]
+			{"name": "Activation Functions",
+			"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial3/Activation_Functions.html",
+			"type": "html"}
+	
+			],
+			"recordings": [
+			{"name": "Activation Functions",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/84388ac29c6d4b1986ac39e60c2e7a011d",
+			"type": "video"}
+			]
 	},
 
 	{
