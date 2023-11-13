@@ -25,7 +25,7 @@
 		"documents": [
 			{"name": "Introduction to PyTorch",
 			"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial2/Introduction_to_PyTorch.html",
-			"type": "html"}
+			"type": "pdf"}
 	
 			],
 			"recordings": [
@@ -79,7 +79,7 @@
 		"documents": [
 			{"name": "Activation Functions",
 			"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial3/Activation_Functions.html",
-			"type": "html"}
+			"type": "pdf"}
 	
 			],
 			"recordings": [
@@ -96,10 +96,15 @@
 		"desc": "This lecture series discusses advanced optimizers, initialization, normalization and hyperparameter tuning.",
 		"documents": [
 
+			{"name": "Deep Learning Optimizations II",
+			"link": "hhttps://canvas.uva.nl/courses/39284/files/9709661?module_item_id=1860415",
+			"type": "pdf"}
 	
 			],
 			"recordings": [
-
+			{"name": "Deep Learning Optimizations II",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/a780b7ccafd2423cb606397a82cf23fc1d",
+			"type": "video"}
 			]
 	},
 
