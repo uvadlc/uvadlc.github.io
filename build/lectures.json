@@ -116,9 +116,15 @@
 		"documents": [
 
 	
+			{"name": "Convolutional neural networks for image processing",
+			"link": "https://canvas.uva.nl/courses/39284/files/9753820?module_item_id=1872215",
+			"type": "pdf"}
+	
 			],
 			"recordings": [
-
+			{"name": "Convolutional neural networks for image processing",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/65aeed110a7b4a5aa623fbd88e9b534c1d",
+			"type": "video"}
 			]
 	},
 
@@ -139,10 +145,15 @@
 		"desc": "This lecture series covers modern ConvNet architecture.",
 		"documents": [
 
+			{"name": "Convolutional neural networks for image processing",
+			"link": "https://canvas.uva.nl/courses/39284/files/9775772?module_item_id=1874641",
+			"type": "pdf"}
 	
 			],
 			"recordings": [
-
+			{"name": "Convolutional neural networks for image processing",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/c33a64ae33df4740ad94d7864c12513c1d",
+			"type": "video"}
 			]
 	},
 
