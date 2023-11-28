@@ -165,8 +165,15 @@
 		"documents": [
 
 	
+			{"name": "Transformers",
+			"link": "https://canvas.uva.nl/courses/39284/files/9845745?module_item_id=1887643",
+			"type": "pdf"}
+	
 			],
 			"recordings": [
+			{"name": "Transformers",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/45b0181044e04e97812e43daf8d023671d",
+			"type": "video"}
 
 			]
 	},
@@ -189,8 +196,15 @@
 		"documents": [
 
 	
+			{"name": "Graph Neural Networks",
+			"link": "https://canvas.uva.nl/courses/39284/files/9863326?module_item_id=1889899",
+			"type": "pdf"}
+	
 			],
 			"recordings": [
+			{"name": "Graph Neural Networks",
+			"link": "https://webcolleges.uva.nl/Mediasite/channel/0d19e61221ce490980496e8d963336075f/watch/e1733662f1ab4a62b6a78f3425f27c121d",
+			"type": "video"}
 
 			]
 	},
@@ -203,8 +217,15 @@
 		"documents": [
 
 	
+			{"name": "Deep variational autoencoder",
+			"link": "https://uvadlc.github.io/lectures/nov2022/lecture9.pdf",
+			"type": "pdf"}
+	
 			],
 			"recordings": [
+			{"name": "Deep variational autoencoder",
+			"link": "https://www.youtube.com/watch?v=vQ1zxWcK318&list=PLu510v7B3XLMSeLaIBLylKYzFYKPLD1K1&index=9&ab_channel=YukiAsano",
+			"type": "video"}
 
 			]
 	},
