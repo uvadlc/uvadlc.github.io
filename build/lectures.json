@@ -242,29 +242,40 @@
 
 	{
 		"type": "lecture",
-		"name": "Generative Adversarial Networks and Diffusion models",
+		"name": "Guest Lecture on AI and science by Max Welling",
 		"date": "",
-		"desc": "Lecture on Generative Adversarial Networks",
+		"desc": "AI and science",
 		"documents": [
 
+			{"name": "AI and science",
+			"link": "",
+			"type": "pdf"}
 	
 			],
 			"recordings": [
-
+			{"name": "AI and science",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/7db4eaf7927a45adab80cf625aef8d721d",
+			"type": "video"}
 			]
 	},
 
 	{
 		"type": "lecture",
-		"name": "Neural modelling of 3D",
+		"name": "Gemerative Advetsarial Networks and difusion models",
 		"date": "",
-		"desc": "Learning 3D geometry (guest lecture)",
+		"desc": "Gemerative Advetsarial Networks and difusion models",
 		"documents": [
 
 	
+			{"name": "Gemerative Advetsarial Networks and difusion models",
+			"link": "https://canvas.uva.nl/courses/39284/modules/items/1898523",
+			"type": "pdf"}
+	
 			],
 			"recordings": [
-
+			{"name": "Gemerative Advetsarial Networks and difusion models",
+			"link": "https://www.youtube.com/watch?v=OI1Ud0mn3Gk&list=PLu510v7B3XLMSeLaIBLylKYzFYKPLD1K1&index=9&ab_channel=YukiAsano",
+			"type": "video"}
 			]
 	},
 
