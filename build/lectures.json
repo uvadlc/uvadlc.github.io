@@ -244,16 +244,16 @@
 		"type": "lecture",
 		"name": "Guest Lecture on AI and science by Max Welling",
 		"date": "",
-		"desc": "AI and science",
+		"desc": "Deep Learning & The Natural Sciences",
 		"documents": [
 
-			{"name": "AI and science",
-			"link": "",
+			{"name": "Deep Learning & The Natural Sciences",
+			"link": "https://canvas.uva.nl/courses/39284/files/9946365?module_item_id=1900286",
 			"type": "pdf"}
 	
 			],
 			"recordings": [
-			{"name": "AI and science",
+			{"name": "Deep Learning & The Natural Sciences",
 			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/7db4eaf7927a45adab80cf625aef8d721d",
 			"type": "video"}
 			]
