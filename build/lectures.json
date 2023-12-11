@@ -293,13 +293,18 @@
 		"type": "lecture",
 		"name": "Guest Lecture",
 		"date": "",
-		"desc": "Transforming PDE solving via machice learning (Max Welling guest lecture)",
+		"desc": "Guest Lecture: Deep Learning for 3D (Christian Rupprecht)",
 		"documents": [
 
+			{"name": "Guest Lecture: Deep Learning for 3D (Christian Rupprecht)",
+			"link": "",
+			"type": "pdf"}
 	
 			],
 			"recordings": [
-
+			{"name": "Guest Lecture: Deep Learning for 3D (Christian Rupprecht)",
+			"link": "https://youtu.be/iFqJy8S8HLI",
+			"type": "video"}
 			]
 	},
 
