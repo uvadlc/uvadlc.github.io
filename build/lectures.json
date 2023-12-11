@@ -286,7 +286,16 @@
 		"desc": "In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.</p><p>After the presentation, there will by a TA session for Q&A for assignment 2, lecture content and more.",
 		"documents": [
 
-		]
+			{"name": "Tutorial on Graph Neural Networks",
+			"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial7/GNN_overview.html",
+			"type": "pdf"}
+	
+			],
+			"recordings": [
+			{"name": "Tutorial on Graph Neural Networks",
+			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/2167a16dd7854953a35718a4775ed8ae1d",
+			"type": "video"}
+			]
 	},
 
 	{
