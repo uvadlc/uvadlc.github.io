@@ -1,358 +1,212 @@
 [
 	{
 		"type": "lecture",
-		"name": "Introduction to Deep Learning",
+		"name": "Intro and history of deep learning",
 		"date": "",
 		"desc": "This lecture introduces the structure of the Deep Learning course, and gives a short overview of the history and motivation of Deep Learning.",
-		"documents": [
-			{"name": "Intro lecture to Deep Learning",
-			"link": "https://canvas.uva.nl/courses/39284/files/9643757?module_item_id=1851298",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Intro lecture to Deep Learning",
-			"link": "https://canvas.uva.nl/courses/39284/files/9644586?module_item_id=1851580",
-			"type": "video"}
-			]
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "tutorial",
 		"name": "Introduction to PyTorch",
 		"date": "",
-		"desc": "This tutorial introduces the practical sessions, the TA organizer team, etc. Afterwards, we will discuss the PyTorch machine learning framework, and introduce you to the basic concepts of Tensors, computation graphs and GPU computation. We will continue with a small hands-on tutorial of building your own, first neural network in PyTorch.</p>",
+		"desc": "This tutorial introduces the practical sessions, the TA organizer team, etc. Afterwards, we will discuss the PyTorch machine learning framework, and introduce you to the basic concepts of Tensors, computation graphs and GPU computation.",
 		"documents": [
-			{"name": "Introduction to PyTorch",
-			"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial2/Introduction_to_PyTorch.html",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Introduction to PyTorch",
-			"link": "https://canvas.uva.nl/courses/39284/files/9650549?module_item_id=1852464",
-			"type": "video"}
-			]
+			{
+				"name": "Introduction to PyTorch",
+				"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial2/Introduction_to_PyTorch.html",
+				"type": "pdf"
+			}
+		],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Modular Learning",
+		"name": "Manually forward, automatically backward",
 		"date": "",
-		"desc": "This lectures introduces basic concepts for Deep Feedforward Networks such linear and nonlinear modules, gradient-based learning and the backpropagation algorithm.",
-		"documents": [
-			{"name": "Deep Feedforward Networks",
-			"link": "https://canvas.uva.nl/courses/39284/files/9665084?module_item_id=1855370",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Deep Feedforward Networks",
-			"link": "https://canvas.uva.nl/courses/39284/modules/items/1855889",
-			"type": "video"}
-			]
+		"desc": "This lecture covers the basics of forward and backward propagation in neural networks.",
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Deep Learning Optimizations I",
+		"name": "Deep learning optimization I",
 		"date": "",
-		"desc": "This lecture series discusses advanced optimizers, initialization, normalization and hyperparameter tuning.",
-		"documents": [
-			{"name": "Deep Feedforward Networks",
-			"link": "https://canvas.uva.nl/courses/39284/files/9688066?module_item_id=1858021",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Deep Feedforward Networks",
-			"link": "https://canvas.uva.nl/courses/39284/modules/items/1855889",
-			"type": "video"}
-			]
+		"desc": "This lecture covers the first part of deep learning optimization techniques.",
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "tutorial",
 		"name": "Activation Functions",
 		"date": "",
-		"desc": "In this tutorial, we will discuss the role of activation functions in a neural network, and take a closer look at the optimization issues a poorly designed activation function can have.</p><p>After the presentation, there will by a TA session for Q&A for assignment 1, lecture content and more.",
+		"desc": "In this tutorial, we will discuss the role of activation functions in a neural network, and take a closer look at the optimization issues a poorly designed activation function can have.",
 		"documents": [
-			{"name": "Activation Functions",
-			"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial3/Activation_Functions.html",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Activation Functions",
-			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/84388ac29c6d4b1986ac39e60c2e7a011d",
-			"type": "video"}
-			]
+			{
+				"name": "Activation Functions",
+				"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial3/Activation_Functions.html",
+				"type": "pdf"
+			}
+		],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Deep Learning Optimizations II",
+		"name": "Deep learning optimization II",
 		"date": "",
-		"desc": "This lecture series discusses advanced optimizers, initialization, normalization and hyperparameter tuning.",
-		"documents": [
-
-			{"name": "Deep Learning Optimizations II",
-			"link": "hhttps://canvas.uva.nl/courses/39284/files/9709661?module_item_id=1860415",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Deep Learning Optimizations II",
-			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/a780b7ccafd2423cb606397a82cf23fc1d",
-			"type": "video"}
-			]
+		"desc": "This lecture covers the second part of deep learning optimization techniques.",
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Convolutional Neural Networks",
+		"name": "Convolutional Neural Networks I",
 		"date": "",
-		"desc": "This lecture series covers convolutional neural networks for image processing.",
-		"documents": [
-
-	
-			{"name": "Convolutional neural networks for image processing",
-			"link": "https://canvas.uva.nl/courses/39284/files/9753820?module_item_id=1872215",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Convolutional neural networks for image processing",
-			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/65aeed110a7b4a5aa623fbd88e9b534c1d",
-			"type": "video"}
-			]
+		"desc": "This lecture covers the first part of Convolutional Neural Networks.",
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "tutorial",
 		"name": "Optimization and Initialization",
 		"date": "",
-		"desc": "In this tutorial, we will discuss the importance of proper parameter initialization in deep neural networks, and how we can find a suitable one for our network. In addition, we will review the optimizers SGD and Adam, and compare them on complex loss surfaces.</p><p>After the presentation, there will by a TA session for Q&A for assignment 1, lecture content and more.",
+		"desc": "In this tutorial, we will discuss the importance of proper parameter initialization in deep neural networks, and how we can find a suitable one for our network. In addition, we will review the optimizers SGD and Adam, and compare them on complex loss surfaces.",
 		"documents": [
-
-		]
+			{
+				"name": "Optimization and Initialization",
+				"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial4/Optimization_and_Initialization.html",
+				"type": "pdf"
+			}
+		],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Modern ConvNets",
+		"name": "Convolutional Neural Networks II",
 		"date": "",
-		"desc": "This lecture series covers modern ConvNet architecture.",
-		"documents": [
-
-			{"name": "Convolutional neural networks for image processing",
-			"link": "https://canvas.uva.nl/courses/39284/files/9775772?module_item_id=1874641",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Convolutional neural networks for image processing",
-			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/c33a64ae33df4740ad94d7864c12513c1d",
-			"type": "video"}
-			]
+		"desc": "This lecture covers the second part of Convolutional Neural Networks.",
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Transformers",
+		"name": "Attention",
 		"date": "",
-		"desc": "This lecture series covers Transformers",
-		"documents": [
-
-	
-			{"name": "Transformers",
-			"link": "https://canvas.uva.nl/courses/39284/files/9845745?module_item_id=1887643",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Transformers",
-			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/45b0181044e04e97812e43daf8d023671d",
-			"type": "video"}
-
-			]
+		"desc": "This lecture covers attention mechanisms in deep learning.",
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "tutorial",
 		"name": "Inception, ResNet and DenseNet",
 		"date": "",
-		"desc": "In this tutorial, we will implement three popular, modern ConvNet architectures: GoogleNet, ResNet, and DenseNet. We will compare them on the CIFAR10 dataset, and discuss the advantages that made them popular and successful across many tasks.</p><p>After the presentation, there will by a TA session for Q&A for assignment 2, lecture content and more.",
+		"desc": "In this tutorial, we will implement three popular, modern ConvNet architectures: GoogleNet, ResNet, and DenseNet. We will compare them on the CIFAR10 dataset, and discuss the advantages that made them popular and successful across many tasks.",
 		"documents": [
-
-		]
+			{
+				"name": "Inception, ResNet and DenseNet",
+				"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial5/Inception_ResNet_DenseNet.html",
+				"type": "pdf"
+			}
+		],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Graphical Neural Networks",
+		"name": "Graph Neural Networks",
 		"date": "",
-		"desc": "Lecture on Graph Neural Networks.",
-		"documents": [
-
-	
-			{"name": "Graph Neural Networks",
-			"link": "https://canvas.uva.nl/courses/39284/files/9863326?module_item_id=1889899",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Graph Neural Networks",
-			"link": "https://webcolleges.uva.nl/Mediasite/channel/0d19e61221ce490980496e8d963336075f/watch/e1733662f1ab4a62b6a78f3425f27c121d",
-			"type": "video"}
-
-			]
+		"desc": "This lecture covers Graph Neural Networks.",
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Generative Modelling and deep variational modelling",
+		"name": "Self-supervised and vision-language learning",
 		"date": "",
-		"desc": "Lecturer in deep variational autoencoder.",
-		"documents": [
-
-	
-			{"name": "Deep variational autoencoder",
-			"link": "https://uvadlc.github.io/lectures/nov2022/lecture9.pdf",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Deep variational autoencoder",
-			"link": "https://www.youtube.com/watch?v=vQ1zxWcK318&list=PLu510v7B3XLMSeLaIBLylKYzFYKPLD1K1&index=9&ab_channel=YukiAsano",
-			"type": "video"}
-
-			]
+		"desc": "This lecture covers self-supervised learning and vision-language learning.",
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "tutorial",
 		"name": "Transformers and Multi-Head Attention",
 		"date": "",
-		"desc": "In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer. We will perform experiments on sequence-to-sequence tasks and set anomaly detection.</p><p>After the presentation, there will by a TA session for Q&A for assignment 3, lecture content and more.",
+		"desc": "In this tutorial, we will discuss the relatively new breakthrough architecture: Transformers. We will start from the basics of attention and multi-head attention, and build our own Transformer.",
 		"documents": [
-
-		]
+			{
+				"name": "Transformers and Multi-Head Attention",
+				"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial6/Transformers_and_MHAttention.html",
+				"type": "pdf"
+			}
+		],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Guest Lecture on AI and science by Max Welling",
+		"name": "Auto-encoding and generation",
 		"date": "",
-		"desc": "Deep Learning & The Natural Sciences",
-		"documents": [
-
-			{"name": "Deep Learning & The Natural Sciences",
-			"link": "https://canvas.uva.nl/courses/39284/files/9946365?module_item_id=1900286",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Deep Learning & The Natural Sciences",
-			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/7db4eaf7927a45adab80cf625aef8d721d",
-			"type": "video"}
-			]
+		"desc": "This lecture covers auto-encoding and generation techniques in deep learning.",
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Gemerative Advetsarial Networks and difusion models",
+		"name": "The oddities of deep learning",
 		"date": "",
-		"desc": "Gemerative Advetsarial Networks and difusion models",
-		"documents": [
-
-	
-			{"name": "Gemerative Advetsarial Networks and difusion models",
-			"link": "https://canvas.uva.nl/courses/39284/modules/items/1898523",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Gemerative Advetsarial Networks and difusion models",
-			"link": "https://www.youtube.com/watch?v=OI1Ud0mn3Gk&list=PLu510v7B3XLMSeLaIBLylKYzFYKPLD1K1&index=9&ab_channel=YukiAsano",
-			"type": "video"}
-			]
+		"desc": "This lecture covers various unusual aspects and phenomena in deep learning.",
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "tutorial",
 		"name": "Graph Neural Networks",
 		"date": "",
-		"desc": "In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.</p><p>After the presentation, there will by a TA session for Q&A for assignment 2, lecture content and more.",
+		"desc": "In this tutorial, we will discuss the implementation of Graph Neural Networks. In the first part of the tutorial, we will implement the GCN and GAT layer ourselves. In the second part, we use PyTorch Geometric to look at node-level, edge-level and graph-level tasks.",
 		"documents": [
-
-			{"name": "Tutorial on Graph Neural Networks",
-			"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial7/GNN_overview.html",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Tutorial on Graph Neural Networks",
-			"link": "https://webcolleges.uva.nl/Mediasite/Channel/faed683f06a74bb9a87cf2a9847ccb245f/watch/2167a16dd7854953a35718a4775ed8ae1d",
-			"type": "video"}
-			]
+			{
+				"name": "Graph Neural Networks",
+				"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial7/GNN_overview.html",
+				"type": "pdf"
+			}
+		],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Guest Lecture",
+		"name": "Non-Euclidean deep learning",
 		"date": "",
-		"desc": "Guest Lecture: Deep Learning for 3D (Christian Rupprecht)",
-		"documents": [
-
-			{"name": "Guest Lecture: Deep Learning for 3D (Christian Rupprecht)",
-			"link": "",
-			"type": "pdf"}
-	
-			],
-			"recordings": [
-			{"name": "Guest Lecture: Deep Learning for 3D (Christian Rupprecht)",
-			"link": "https://youtu.be/iFqJy8S8HLI",
-			"type": "video"}
-			]
+		"desc": "This lecture covers deep learning techniques for non-Euclidean data.",
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Self-Supervised Learning I",
+		"name": "Deep learning for videos",
 		"date": "",
-		"desc": "Self-supervised learning part I",
-		"documents": [
-
-	
-			],
-			"recordings": [
-
-			]
+		"desc": "This lecture covers deep learning techniques for video processing.",
+		"documents": [],
+		"recordings": []
 	},
-
 	{
 		"type": "tutorial",
-		"name": "Self-Supervised and Causal Representation Learning",
+		"name": "Self-Supervised Contrastive Learning with SimCLR",
 		"date": "",
-		"desc": "We will discuss Tutorial 17: Self-Supervised Learning, and have a short introduction to Causal Representation Learning.",
+		"desc": "In this tutorial, we will explore self-supervised contrastive learning using the SimCLR framework.",
 		"documents": [
-
-		]
+			{
+				"name": "Self-Supervised Contrastive Learning with SimCLR",
+				"link": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial17/SimCLR.html",
+				"type": "pdf"
+			}
+		],
+		"recordings": []
 	},
-
 	{
 		"type": "lecture",
-		"name": "Self-Supervised Learning II",
+		"name": "Q&A",
 		"date": "",
-		"desc": "Self-supervised learning part II",
-		"documents": [
-
-	
-			],
-			"recordings": [
-
-			]
+		"desc": "Question and Answer session for the course.",
+		"documents": [],
+		"recordings": []
 	}
-
 ]
