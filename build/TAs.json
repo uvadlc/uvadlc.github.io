@@ -1,8 +1,14 @@
 [
 	{
-		"name": "Christos Athanasiadis",
+		"name": "Melika Davood Zadeh",
 		"website": "",
-		"mail": "c.athanasiadis@uva.nl",
+		"mail": "m.davoodzadeh@uva.nl",
+		"type": "Head TA"
+	},
+	{
+		"name": "Mohammadreza Salehidehnavi",
+		"website": "",
+		"mail": "s.salehidehnavi@uva.nl",
 		"type": "Head TA"
 	},
 	{
@@ -12,50 +18,29 @@
 		"type": "Head TA"
 	},
 	{
-		"name": "Mohammadreza Salehi",
+		"name": "Matey Krastev",
 		"website": "",
-		"mail": "s.salehidehnavi@uva.nl",
-		"type": "Head TA"
+		"mail": "matey.krastev@student.uva.nl"
 	},
 	{
-		"name": "Gergely Papp",
+		"name": "Nesta Midavaine",
 		"website": "",
-		"mail": "gergely.papp@student.uva.nl"
+		"mail": "n.m.midavaine2@uva.nl"
 	},
 	{
-		"name": "Joris Baan",
+		"name": "Konrad Szewczyk",
 		"website": "",
-		"mail": "j.s.baan@uva.nl"
+		"mail": "konrad.szewczyk@student.uva.nl"
 	},
 	{
-		"name": "Madhura Pawar",
+		"name": "Luan Fletcher",
 		"website": "",
-		"mail": "madhura.pawar@student.uva.nl"
+		"mail": "l.fletcher@uva.nl"
 	},
 	{
-		"name": "Jacobus Dijkman",
+		"name": "Max van Spengler",
 		"website": "",
-		"mail": "j.j.l.dijkman@uva.nl"
-	},
-	{
-		"name": "Jona Ruthardt",
-		"website": "",
-		"mail": "jona@ruthardt.de"
-	},
-	{
-		"name": "Valentinos Pariza",
-		"website": "",
-		"mail": "valentinos.pariza@student.uva.nl"
-	},
-	{
-		"name": "Pengwan Yang",
-		"website": "",
-		"mail": "yangpengwan2016@gmail.com"
-	},
-	{
-		"name": "Nimi Barazani",
-		"website": "",
-		"mail": "nimrod.barazani@student.uva.nl"
+		"mail": "m.w.f.vanspengler@uva.nl"
 	},
 	{
 		"name": "Wenzhe Yin",
@@ -63,18 +48,43 @@
 		"mail": "w.yin@uva.nl"
 	},
 	{
-		"name": "Mohammad Mahdi Derakhshani",
+		"name": "Samuele Papa",
 		"website": "",
-		"mail": "m.m.derakhshani@uva.nl"
+		"mail": "s.papa@uva.nl"
 	},
 	{
-		"name": "Davis Wessels",
+		"name": "Marina Orozco González",
 		"website": "",
-		"mail": "d.r.wessels@uva.nl"
+		"mail": "marinaorozcglez00@gmail.com"
 	},
 	{
-		"name": "Wangyuan Ding",
+		"name": "Gowreesh Mago",
 		"website": "",
-		"mail": "w.ding@uva.nl"
+		"mail": "g.mago@uva.nl"
+	},
+	{
+		"name": "Swasti Mishra",
+		"website": "",
+		"mail": "s.s.mishra@uva.nl"
+	},
+	{
+		"name": "Antoniοs Tragoudaras",
+		"website": "",
+		"mail": "antonistragoudaras@gmail.com"
+	},
+	{
+		"name": "Floris Six Dijkstra",
+		"website": "",
+		"mail": "floris.six.dijkstra@student.uva.nl"
+	},
+	{
+		"name": "Ruthu Hulikal Rooparaghunath",
+		"website": "",
+		"mail": "r.h.rooparaghunath@uva.nl"
+	},
+	{
+		"name": "Ana Manzano Rodriguez",
+		"website": "",
+		"mail": "a.manzanorodriguez@uva.nl"
 	}
 ]
